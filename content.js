@@ -68,6 +68,15 @@
     return {};
   }
 
+  function createGitHubLink(username) {
+    const a = document.createElement('a');
+    a.href = `https://github.com/${username}`;
+    a.target = '_blank';
+    a.innerText = username;
+    a.className = 'affi-link';
+    return a;
+  }
+
   function renderOverlay(content, aliases) {
     const existing = document.getElementById('affi-overlay');
     if (existing) existing.remove();
@@ -76,7 +85,7 @@
     container.id = 'affi-overlay';
     // Open by default
     container.className = ''; 
-    
+
     const toggle = document.createElement('div');
     toggle.id = 'affi-toggle';
     toggle.innerText = 'Affi';
@@ -91,62 +100,67 @@
 
     const contentDiv = document.createElement('div');
     contentDiv.id = 'affi-content';
-const lines = content.split('\n');
-lines.forEach(line => {
-  const lineDiv = document.createElement('div');
-  lineDiv.className = 'affi-line';
 
-  const trimmed = line.trim();
-  // Only expand aliases if they are part of a list item (starts with '- ')
-  // or if it's an alias definition key in OWNERS_ALIASES (ends with ':')
-  const isListItem = trimmed.startsWith('- ');
-  const isAliasKey = trimmed.endsWith(':') && !trimmed.startsWith('#');
+    const lines = content.split('\n');
+    lines.forEach(line => {
+      const lineDiv = document.createElement('div');
+      lineDiv.className = 'affi-line';
 
-  if (isListItem || isAliasKey) {
-    const indentMatch = line.match(/^(\s*)/);
-    const baseIndent = indentMatch ? indentMatch[1] : '';
-    const subIndent = baseIndent + '  ';
+      const trimmed = line.trim();
+      // Only expand aliases if they are part of a list item (starts with '- ')
+      // or if it's an alias definition key in OWNERS_ALIASES (ends with ':')
+      const isListItem = trimmed.startsWith('- ');
+      const isAliasKey = trimmed.endsWith(':') && !trimmed.startsWith('#');
 
-    const parts = line.split(/([\w-]+)/);
-    parts.forEach(part => {
-      if (aliases[part]) {
-        const span = document.createElement('span');
-        span.className = 'affi-alias';
-        span.innerText = part;
+      if (isListItem || isAliasKey) {
+        const indentMatch = line.match(/^(\s*)/);
+        const baseIndent = indentMatch ? indentMatch[1] : '';
+        const subIndent = baseIndent + '  ';
 
-        const btn = document.createElement('button');
-        btn.className = 'affi-expand-btn';
-        btn.innerText = ' [+]';
-        btn.onclick = (e) => {
-          e.stopPropagation();
-          const next = btn.nextElementSibling;
-          if (next && next.classList.contains('affi-expanded-list')) {
-            next.remove();
+        const parts = line.split(/([\w-]+)/);
+        parts.forEach(part => {
+          if (aliases[part]) {
+            const span = document.createElement('span');
+            span.className = 'affi-alias';
+            span.innerText = part;
+
+            const btn = document.createElement('button');
+            btn.className = 'affi-expand-btn';
             btn.innerText = ' [+]';
+            btn.onclick = (e) => {
+              e.stopPropagation();
+              const next = btn.nextElementSibling;
+              if (next && next.classList.contains('affi-expanded-list')) {
+                next.remove();
+                btn.innerText = ' [+]';
+              } else {
+                const list = document.createElement('div');
+                list.className = 'affi-expanded-list';
+                const members = aliases[part];
+                members.forEach(member => {
+                  const item = document.createElement('div');
+                  item.appendChild(document.createTextNode(`${subIndent}- `));
+                  item.appendChild(createGitHubLink(member));
+                  list.appendChild(item);
+                });
+                btn.after(list);
+                btn.innerText = ' [-]';
+              }
+            };
+            lineDiv.appendChild(span);
+            lineDiv.appendChild(btn);
+          } else if (isListItem && part.match(/^[\w-]+$/) && part !== '-') {
+            // Check if part is the actual username in the list item
+            lineDiv.appendChild(createGitHubLink(part));
           } else {
-            const list = document.createElement('div');
-            list.className = 'affi-expanded-list';
-            const members = aliases[part];
-            members.forEach(member => {
-              const item = document.createElement('div');
-              item.innerText = `${subIndent}- ${member}`;
-              list.appendChild(item);
-            });
-            btn.after(list);
-            btn.innerText = ' [-]';
+            lineDiv.appendChild(document.createTextNode(part));
           }
-        };
-        lineDiv.appendChild(span);
-        lineDiv.appendChild(btn);
+        });
       } else {
-        lineDiv.appendChild(document.createTextNode(part));
+        lineDiv.appendChild(document.createTextNode(line));
       }
+      contentDiv.appendChild(lineDiv);
     });
-  } else {
-    lineDiv.appendChild(document.createTextNode(line));
-  }
-  contentDiv.appendChild(lineDiv);
-});
 
     container.appendChild(toggle);
     container.appendChild(header);

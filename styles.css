@@ -24,7 +24,7 @@
     top: 20px;
     width: 40px;
     height: 40px;
-    background: #24292f;
+    background: #ffa500;
     color: white;
     display: flex;
     align-items: center;
@@ -53,6 +53,15 @@
 
 .affi-line {
     margin-bottom: 2px;
+}
+
+.affi-link {
+    color: #0969da;
+    text-decoration: none;
+}
+
+.affi-link:hover {
+    text-decoration: underline;
 }
 
 .affi-alias {
