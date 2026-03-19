@@ -1,0 +1,38 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/publishing-bot --repository-devstats=kubernetes/publishing-bot --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:07:20
+Processed /private/tmp/affi_stats/kubernetes_publishing-bot/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_publishing-bot/OWNERS_ALIASES
+Found 3 unique aliases
+Found 17 unique users
+.....
+
+
+>>>>> Contributions from kubernetes/publishing-bot devstats repo and kubernetes/publishing-bot github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+akhilerm : 31 : 33 
+cpanato : 12 : 65 
+saschagrunert : 24 : 50 
+xmudrii : 10 : 7 
+dims : 9 : 5 
+
+
+>>>>> Missing Contributions in kubernetes/publishing-bot (devstats == 0): 12
+Verolop
+ameukam
+cici37
+jeremyrickard
+jimangel
+jrsapi
+justaugustus
+nikhita
+palnabarun
+puerco
+salaxander
+sttts
+
+
+>>>>> Low reviews/approvals in kubernetes/publishing-bot (GH pr comments <= 10 && devstats <=20): 2
+dims
+xmudrii
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

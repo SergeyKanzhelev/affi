@@ -1,0 +1,24 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/windows-gmsa --repository-devstats=kubernetes-sigs/windows-gmsa --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:50:11
+Processed /private/tmp/affi_stats/kubernetes-sigs_windows-gmsa/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_windows-gmsa/OWNERS_ALIASES
+Found 0 unique aliases
+Found 3 unique users
+.........
+
+
+>>>>> Contributions from kubernetes-sigs/windows-gmsa devstats repo and kubernetes-sigs/windows-gmsa github repo : 3
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+jsturtevant : 5 : 104 
+marosset : 1 : 1 
+zylxjtu : 2 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/windows-gmsa (devstats == 0): 0
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/windows-gmsa (GH pr comments <= 10 && devstats <=20): 2
+marosset
+zylxjtu
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

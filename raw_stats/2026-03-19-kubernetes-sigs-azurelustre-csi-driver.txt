@@ -1,0 +1,22 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/azurelustre-csi-driver --repository-devstats=kubernetes-sigs/azurelustre-csi-driver --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:08:45
+Processed /private/tmp/affi_stats/kubernetes-sigs_azurelustre-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_azurelustre-csi-driver/OWNERS_ALIASES
+Found 0 unique aliases
+Found 3 unique users
+..
+
+
+>>>>> Contributions from kubernetes-sigs/azurelustre-csi-driver devstats repo and kubernetes-sigs/azurelustre-csi-driver github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+dabradley : 62 : 26 
+t-mialve : 38 : 28 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/azurelustre-csi-driver (devstats == 0): 1
+andyzhangx
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/azurelustre-csi-driver (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

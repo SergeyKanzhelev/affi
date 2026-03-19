@@ -1,0 +1,57 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/sig-release --repository-devstats=kubernetes/sig-release --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:03:42
+Processed /private/tmp/affi_stats/kubernetes_sig-release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/release-engineering/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/release-team/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/release-team/role-handbooks/communications/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/release-team/role-handbooks/docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/release-team/role-handbooks/enhancements/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/release-team/role-handbooks/release-signal/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/releases/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/releases/release-1.35/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/releases/release-1.36/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-release/OWNERS_ALIASES
+Found 10 unique aliases
+Found 23 unique users
+.............................
+
+
+>>>>> Contributions from kubernetes/sig-release devstats repo and kubernetes/sig-release github repo : 18
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+justaugustus : 14 : 12 
+sayanchowdhury : 34 : 8 
+saschagrunert : 22 : 29 
+rytswd : 49 : 22 
+dipesh-rawat : 44 : 22 
+jenshu : 40 : 22 
+rayandas : 60 : 10 
+katcosgrove : 9 : 15 
+jmickey : 5 : 7 
+Verolop : 27 : 3 
+palnabarun : 18 : 1 
+jimangel : 3 : 0 
+puerco : 1 : 2 
+jeremyrickard : 3 : 0 
+cpanato : 1 : 48 
+aibarbetta : 33 : 7 
+xmudrii : 81 : 5 
+chadmcrowell : 2 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/sig-release (devstats == 0): 5
+Prajyot-Parab
+ameukam
+cici37
+jrsapi
+salaxander
+
+
+>>>>> Low reviews/approvals in kubernetes/sig-release (GH pr comments <= 10 && devstats <=20): 6
+chadmcrowell
+jeremyrickard
+jimangel
+jmickey
+palnabarun
+puerco
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

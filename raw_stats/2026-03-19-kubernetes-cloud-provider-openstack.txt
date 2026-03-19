@@ -1,0 +1,35 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/cloud-provider-openstack --repository-devstats=kubernetes/cloud-provider-openstack --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:08:28
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-openstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-openstack/pkg/autohealing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-openstack/pkg/csi/manila/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-openstack/pkg/openstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-openstack/OWNERS_ALIASES
+Found 0 unique aliases
+Found 13 unique users
+.....
+
+
+>>>>> Contributions from kubernetes/cloud-provider-openstack devstats repo and kubernetes/cloud-provider-openstack github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+kayrus : 181 : 136 
+stephenfin : 109 : 48 
+zetaab : 50 : 38 
+dulek : 9 : 20 
+gouthampacha : 21 : 9 
+
+
+>>>>> Missing Contributions in kubernetes/cloud-provider-openstack (devstats == 0): 8
+Fedosin
+FengyunPan2
+anguslees
+gman0
+lingxiankong
+openstacker
+tombarron
+tsmetana
+
+
+>>>>> Low reviews/approvals in kubernetes/cloud-provider-openstack (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

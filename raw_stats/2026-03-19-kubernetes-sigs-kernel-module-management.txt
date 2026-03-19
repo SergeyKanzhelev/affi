@@ -1,0 +1,25 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kernel-module-management --repository-devstats=kubernetes-sigs/kernel-module-management --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:09:43
+Processed /private/tmp/affi_stats/kubernetes-sigs_kernel-module-management/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_kernel-module-management/OWNERS_ALIASES
+Found 0 unique aliases
+Found 5 unique users
+..........
+
+
+>>>>> Contributions from kubernetes-sigs/kernel-module-management devstats repo and kubernetes-sigs/kernel-module-management github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+ybettan : 426 : 128 
+yevgeny-shnaidman : 228 : 161 
+TomerNewman : 86 : 44 
+mresvanis : 3 : 6 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/kernel-module-management (devstats == 0): 1
+qbarrand
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/kernel-module-management (GH pr comments <= 10 && devstats <=20): 1
+mresvanis
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

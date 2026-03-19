@@ -1,0 +1,23 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kubebuilder-declarative-pattern --repository-devstats=kubernetes-sigs/kubebuilder-declarative-pattern --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:51:02
+Processed /private/tmp/affi_stats/kubernetes-sigs_kubebuilder-declarative-pattern/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_kubebuilder-declarative-pattern/OWNERS_ALIASES
+Found 0 unique aliases
+Found 4 unique users
+..
+
+
+>>>>> Contributions from kubernetes-sigs/kubebuilder-declarative-pattern devstats repo and kubernetes-sigs/kubebuilder-declarative-pattern github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+tomasaschan : 36 : 5 
+justinsb : 27 : 4 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/kubebuilder-declarative-pattern (devstats == 0): 2
+atoato88
+johnsonj
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/kubebuilder-declarative-pattern (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

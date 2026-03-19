@@ -1,0 +1,26 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/gengo --repository-devstats=kubernetes/gengo --period-devstats=y --dryrun ---
+Running script : 03-19-2026 00:57:02
+Processed /private/tmp/affi_stats/kubernetes_gengo/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_gengo/examples/defaulter-gen/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_gengo/OWNERS_ALIASES
+Found 0 unique aliases
+Found 6 unique users
+..
+
+
+>>>>> Contributions from kubernetes/gengo devstats repo and kubernetes/gengo github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+jpbetz : 94 : 68 
+thockin : 108 : 12 
+
+
+>>>>> Missing Contributions in kubernetes/gengo (devstats == 0): 4
+alexzielenski
+smarterclayton
+sttts
+wojtek-t
+
+
+>>>>> Low reviews/approvals in kubernetes/gengo (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

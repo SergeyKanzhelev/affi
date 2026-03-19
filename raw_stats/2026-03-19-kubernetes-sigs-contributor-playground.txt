@@ -1,0 +1,282 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/contributor-playground --repository-devstats=kubernetes-sigs/contributor-playground --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:44:31
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/aotearoa/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/australia/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/austria/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/barcelona/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/bay-area-kube-day/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/beijing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/brazil/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/czechia/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/denmark/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/denver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/india/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/india/k8s-blr-2021/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/india/kcd-blr-2021/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/india/remote/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/cndo-2021/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/cndt-2019/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/cndt-2020/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/cndt-2021/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/japan-community-day-2025/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/kft-2020/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/ood-2019/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/japan/ossj-2021/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/oscon-2019/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/paris/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/remote/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/remote/ghc-osd-2021/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/remote/hackillinois-osf-2021/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/sandiego/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/seattle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/shanghai/2018/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/shanghai/2019/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/shanghai/2020/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/shanghai/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/shanghai/qiniu/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_contributor-playground/OWNERS_ALIASES
+Found 0 unique aliases
+Found 216 unique users
+.........................
+
+
+>>>>> Contributions from kubernetes-sigs/contributor-playground devstats repo and kubernetes-sigs/contributor-playground github repo : 18
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+shu-mutou : 381 : 353 
+Okabe-Junya : 30 : 37 
+atoato88 : 26 : 24 
+ziyi-xie : 11 : 11 
+mochizuki875 : 5 : 10 
+rikatz : 7 : 8 
+sreeram-venkitesh : 5 : 6 
+mkimuram : 8 : 5 
+nasa9084 : 5 : 13 
+MadhavJivrajani : 2 : 6 
+palnabarun : 1 : 3 
+inductor : 1 : 1 
+nehalandrew : 10 : 1 
+s-kawamura-w664 : 1 : 0 
+cpanato : 1 : 44 
+jberkus : 1 : 0 
+stormqueen1990 : 1 : 0 
+Priyankasaggu11929 : 1 : 3 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/contributor-playground (devstats == 0): 198
+ASmallLemon
+AkihiroSuda
+Allisonwang
+AnkitPurohit01
+DirectXMan12
+FengJunLiu
+Jeffwan
+KaiWu
+Kendallnelson
+Lazyshot
+Mark
+Nessex
+Nightghos
+PaulineLc
+RinkiyaKeDad
+TanishShinde
+TaylorHere
+Techgirl1800
+TheGhostHuCodes
+Xiaodandan2722
+YuikoTakada
+agamdua
+aivazart
+alisondy
+allenstecat
+amarnathkarthik
+ameukam
+annehwatson
+asambeka
+ashahab
+ashutoshkumarsinha
+aylei
+bartsmykla
+bensherman
+bergwolf
+blueviggen
+bob-bins
+bobymcbobs
+brandon-mcrae-hs
+capsmalt
+carlisia
+cblecker
+cezarygerard
+chirimo
+chris-short
+coderanger
+cofyc
+congfairy
+cryptophobia
+cscmucmm
+cyberblack28
+davidmukiibi
+directxman12
+divya-mohan0209
+dwmkerr
+eahydra
+editaxz
+edsoncelio
+esudyin
+evillgenius75
+ewt_tang
+fanfanbj
+fstrudel
+gemagomez
+georgekuruvillak
+girikuncoro
+gitbytes
+gkarthiks
+gmingsuge
+godliness
+grimradical
+guineveresaenger
+haiker2011
+harche
+harikrishna-patnala
+hellmage
+hemani19
+heyste
+hh
+iamzhout
+ichekrygin
+idealhack
+ij0516
+imkin
+indigophillips
+irbull
+jayapriya90
+jdjgya
+jeefy
+jmulhern
+joaopluigi
+jojohappy
+jpeach
+jsturtevant
+k-toyoda-pi
+karinnainiguez
+kartik-karz
+kaslin
+katsew
+kmova
+kschumy
+kxing-k8s
+kylix3511
+lichen2013
+lilyerfeng
+m13m
+magaldima
+mandianjun
+mangelajo
+markyjackson-taulia
+matsu1235
+matthewbrahms
+miles-
+mitsutaka
+morosawamikihito
+mosabua
+mporier
+mrbobbytables
+mrhillsman
+ms4720
+muthu-s
+mychen66
+nandakishorek
+neolit123
+nikhilprathapani
+nikhita
+nin2yasu
+niyue
+nullck
+oleotiger
+omkensey
+oneoneonepig
+oomichi
+osswangxining
+paavininanda
+parispittman
+petermbenjamin
+pgdagenais
+phenixblue
+pixiake
+pjsawicki
+pkuzhangkai
+pluradj
+puja
+qedrakmar
+quietcoolwu
+raelga
+raghu67
+rajula96reddy
+richardmarshall
+rifelpet
+rldutka
+rochesterinnyc
+rosti
+s-ito-ts
+sameerkhan2k1
+secretasian29
+serngawy
+shabicheng
+shyaamsn
+smirl
+smourapina
+soggiest
+spiffxp
+ssurenr
+stevemcquaid
+sumitranr
+sureshanaparti
+swiftdiaries
+t-inu
+tan-c
+tani-yu
+tdihp
+tlmiller
+tomba7
+tommyp1ckles
+tong101
+tpepper
+tusharsappal
+vikramk7
+violet2016
+vllry
+wenlock
+wentao-zh
+wikix
+wilhelmguo
+xiangpengzhao
+xiaoanyunfei
+xiongfeng
+yahhhhhya
+yamahata
+yanhan
+yogeshojha
+yumima
+yuqi-zhang
+yylin1
+zghuang
+zhanggbj
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/contributor-playground (GH pr comments <= 10 && devstats <=20): 12
+MadhavJivrajani
+Priyankasaggu11929
+inductor
+jberkus
+mkimuram
+mochizuki875
+nehalandrew
+palnabarun
+rikatz
+s-kawamura-w664
+sreeram-venkitesh
+stormqueen1990
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,0 +1,46 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/contributor-site --repository-devstats=kubernetes/contributor-site --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:21:11
+Processed /private/tmp/affi_stats/kubernetes_contributor-site/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_contributor-site/content/en/docs/code/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_contributor-site/OWNERS_ALIASES
+Found 2 unique aliases
+Found 18 unique users
+.........................
+
+
+>>>>> Contributions from kubernetes/contributor-site devstats repo and kubernetes/contributor-site github repo : 12
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+lmktfy : 78 : 26 
+jberkus : 34 : 20 
+Priyankasaggu11929 : 14 : 15 
+kaslin : 18 : 7 
+stmcginnis : 10 : 69 
+SayakMukhopadhyay : 7 : 2 
+natalisucks : 4 : 6 
+reylejano : 4 : 4 
+MadhavJivrajani : 3 : 1 
+mfahlandt : 2 : 3 
+jeefy : 1 : 1 
+tokt : 1 : 3 
+
+
+>>>>> Missing Contributions in kubernetes/contributor-site (devstats == 0): 6
+derekwaynecarr
+dims
+johnbelamaric
+mrbobbytables
+nimbinatus
+palnabarun
+
+
+>>>>> Low reviews/approvals in kubernetes/contributor-site (GH pr comments <= 10 && devstats <=20): 8
+MadhavJivrajani
+SayakMukhopadhyay
+jeefy
+kaslin
+mfahlandt
+natalisucks
+reylejano
+tokt
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

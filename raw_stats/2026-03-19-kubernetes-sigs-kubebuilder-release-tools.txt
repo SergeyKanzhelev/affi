@@ -1,0 +1,31 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kubebuilder-release-tools --repository-devstats=kubernetes-sigs/kubebuilder-release-tools --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:01:39
+Processed /private/tmp/affi_stats/kubernetes-sigs_kubebuilder-release-tools/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_kubebuilder-release-tools/OWNERS_ALIASES
+Found 4 unique aliases
+Found 11 unique users
+.
+
+
+>>>>> Contributions from kubernetes-sigs/kubebuilder-release-tools devstats repo and kubernetes-sigs/kubebuilder-release-tools github repo : 1
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+camilamacedo86 : 3 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/kubebuilder-release-tools (devstats == 0): 10
+adirio
+directxman12
+droot
+estroz
+jmrodri
+joelanford
+mengqiy
+pwittrock
+varshaprasad96
+vincepri
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/kubebuilder-release-tools (GH pr comments <= 10 && devstats <=20): 1
+camilamacedo86
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

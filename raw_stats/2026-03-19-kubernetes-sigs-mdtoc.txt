@@ -1,0 +1,35 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/mdtoc --repository-devstats=kubernetes-sigs/mdtoc --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:55:06
+Processed /private/tmp/affi_stats/kubernetes-sigs_mdtoc/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_mdtoc/OWNERS_ALIASES
+Found 4 unique aliases
+Found 15 unique users
+...
+
+
+>>>>> Contributions from kubernetes-sigs/mdtoc devstats repo and kubernetes-sigs/mdtoc github repo : 3
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cpanato : 17 : 74 
+saschagrunert : 13 : 42 
+puerco : 1 : 2 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/mdtoc (devstats == 0): 12
+Verolop
+ameukam
+cici37
+jeremyrickard
+jimangel
+johnbelamaric
+jrsapi
+justaugustus
+palnabarun
+salaxander
+tallclair
+xmudrii
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/mdtoc (GH pr comments <= 10 && devstats <=20): 1
+puerco
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

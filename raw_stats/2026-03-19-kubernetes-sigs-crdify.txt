@@ -1,0 +1,23 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/crdify --repository-devstats=kubernetes-sigs/crdify --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:25:05
+Processed /private/tmp/affi_stats/kubernetes-sigs_crdify/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_crdify/OWNERS_ALIASES
+Found 0 unique aliases
+Found 3 unique users
+..
+
+
+>>>>> Contributions from kubernetes-sigs/crdify devstats repo and kubernetes-sigs/crdify github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+everettraven : 49 : 12 
+JoelSpeed : 17 : 6 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/crdify (devstats == 0): 1
+jpbetz
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/crdify (GH pr comments <= 10 && devstats <=20): 1
+JoelSpeed
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

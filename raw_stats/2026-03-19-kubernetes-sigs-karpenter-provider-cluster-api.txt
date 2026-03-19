@@ -1,0 +1,36 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/karpenter-provider-cluster-api --repository-devstats=kubernetes-sigs/karpenter-provider-cluster-api --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:19:53
+Processed /private/tmp/affi_stats/kubernetes-sigs_karpenter-provider-cluster-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_karpenter-provider-cluster-api/OWNERS_ALIASES
+Found 4 unique aliases
+Found 14 unique users
+....
+
+
+>>>>> Contributions from kubernetes-sigs/karpenter-provider-cluster-api devstats repo and kubernetes-sigs/karpenter-provider-cluster-api github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+elmiko : 60 : 34 
+maxcao13 : 16 : 9 
+fabriziopandini : 1 : 4 
+faermanj : 2 : 3 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/karpenter-provider-cluster-api (devstats == 0): 10
+JoelSpeed
+chrischdi
+enxebre
+jackfrancis
+justinsb
+killianmuldoon
+neolit123
+richardcase
+sbueringer
+vincepri
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/karpenter-provider-cluster-api (GH pr comments <= 10 && devstats <=20): 3
+fabriziopandini
+faermanj
+maxcao13
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

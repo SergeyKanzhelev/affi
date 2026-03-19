@@ -1,0 +1,62 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api --repository-devstats=kubernetes-sigs/cluster-api --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:31:49
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/CHANGELOG/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/bootstrap/kubeadm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/bootstrap/kubeadm/internal/ignition/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/cmd/clusterctl/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/controlplane/kubeadm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/docs/release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/hack/tools/release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/internal/controllers/machinepool/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/internal/controllers/topology/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/test/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/test/framework/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/test/infrastructure/docker/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/test/infrastructure/docker/internal/provisioning/ignition/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/test/infrastructure/inmemory/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api/OWNERS_ALIASES
+Found 28 unique aliases
+Found 23 unique users
+...............................
+
+
+>>>>> Contributions from kubernetes-sigs/cluster-api devstats repo and kubernetes-sigs/cluster-api github repo : 19
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+sbueringer : 3044 : 1013 
+fabriziopandini : 1194 : 564 
+chrischdi : 584 : 208 
+sivchari : 449 : 198 
+JoelSpeed : 239 : 95 
+mboersma : 177 : 143 
+neolit123 : 92 : 29 
+karthik-k-n(Karthik-K-N) : 102 : 26 
+elmiko : 33 : 19 
+chandankumar4 : 38 : 19 
+richardcase : 70 : 17 
+enxebre : 21 : 10 
+AndiDog : 33 : 9 
+arshadd-b : 55 : 8 
+aman4433 : 8 : 7 
+wendy-ha18 : 11 : 6 
+g-gaston : 7 : 2 
+Peppi-Lotta(peppi-lotta) : 10 : 2 
+Jont828 : 2 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cluster-api (devstats == 0): 4
+SD-13
+anshuman-agarwala
+justinsb
+vincepri
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cluster-api (GH pr comments <= 10 && devstats <=20): 5
+Jont828
+Peppi-Lotta
+aman4433
+g-gaston
+wendy-ha18
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

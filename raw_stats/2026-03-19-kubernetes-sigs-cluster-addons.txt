@@ -1,0 +1,26 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-addons --repository-devstats=kubernetes-sigs/cluster-addons --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:51:13
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-addons/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-addons/OWNERS_ALIASES
+Found 1 unique aliases
+Found 7 unique users
+
+
+
+>>>>> Contributions from kubernetes-sigs/cluster-addons devstats repo and kubernetes-sigs/cluster-addons github repo : 0
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cluster-addons (devstats == 0): 7
+atoato88
+johnsonj
+justinsb
+luxas
+rajansandeep
+stealthybox
+timothysc
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cluster-addons (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

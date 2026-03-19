@@ -1,0 +1,23 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/cel-admission-webhook --repository-devstats=kubernetes/cel-admission-webhook --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:25:10
+Processed /private/tmp/affi_stats/kubernetes_cel-admission-webhook/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cel-admission-webhook/OWNERS_ALIASES
+Found 0 unique aliases
+Found 4 unique users
+
+
+
+>>>>> Contributions from kubernetes/cel-admission-webhook devstats repo and kubernetes/cel-admission-webhook github repo : 0
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+
+
+>>>>> Missing Contributions in kubernetes/cel-admission-webhook (devstats == 0): 4
+alexzielenski
+cici37
+jiahuif
+jpbetz
+
+
+>>>>> Low reviews/approvals in kubernetes/cel-admission-webhook (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

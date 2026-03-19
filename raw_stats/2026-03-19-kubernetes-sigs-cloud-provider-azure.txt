@@ -1,0 +1,33 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cloud-provider-azure --repository-devstats=kubernetes-sigs/cloud-provider-azure --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:34:48
+Processed /private/tmp/affi_stats/kubernetes-sigs_cloud-provider-azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cloud-provider-azure/helm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cloud-provider-azure/OWNERS_ALIASES
+Found 1 unique aliases
+Found 11 unique users
+..............
+
+
+>>>>> Contributions from kubernetes-sigs/cloud-provider-azure devstats repo and kubernetes-sigs/cloud-provider-azure github repo : 8
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+nilo19 : 627 : 232 
+MartinForReal : 193 : 72 
+feiskyer : 187 : 131 
+andyzhangx : 161 : 55 
+mainred : 49 : 18 
+mboersma : 25 : 40 
+jackfrancis : 5 : 8 
+elmiko : 1 : 2 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cloud-provider-azure (devstats == 0): 3
+bridgetkromhout
+cheftako
+joelspeed
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cloud-provider-azure (GH pr comments <= 10 && devstats <=20): 2
+elmiko
+jackfrancis
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

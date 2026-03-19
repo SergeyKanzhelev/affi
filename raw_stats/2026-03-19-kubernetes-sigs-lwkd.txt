@@ -1,0 +1,29 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/lwkd --repository-devstats=kubernetes-sigs/lwkd --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:31:31
+Processed /private/tmp/affi_stats/kubernetes-sigs_lwkd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_lwkd/OWNERS_ALIASES
+Found 2 unique aliases
+Found 9 unique users
+....
+
+
+>>>>> Contributions from kubernetes-sigs/lwkd devstats repo and kubernetes-sigs/lwkd github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+jberkus : 283 : 45 
+sreeram-venkitesh : 175 : 40 
+Hii-Arpit : 49 : 3 
+kaslin : 1 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/lwkd (devstats == 0): 5
+MadhavJivrajani
+Priyankasaggu11929
+coderanger
+mfahlandt
+palnabarun
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/lwkd (GH pr comments <= 10 && devstats <=20): 1
+kaslin
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

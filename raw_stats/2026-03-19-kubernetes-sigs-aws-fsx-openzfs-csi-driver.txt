@@ -1,0 +1,26 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/aws-fsx-openzfs-csi-driver --repository-devstats=kubernetes-sigs/aws-fsx-openzfs-csi-driver --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:16:43
+Processed /private/tmp/affi_stats/kubernetes-sigs_aws-fsx-openzfs-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_aws-fsx-openzfs-csi-driver/OWNERS_ALIASES
+Found 0 unique aliases
+Found 4 unique users
+...
+
+
+>>>>> Contributions from kubernetes-sigs/aws-fsx-openzfs-csi-driver devstats repo and kubernetes-sigs/aws-fsx-openzfs-csi-driver github repo : 3
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+gomesjason : 16 : 3 
+hughdanliu : 8 : 6 
+dankova22 : 2 : 0 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/aws-fsx-openzfs-csi-driver (devstats == 0): 1
+nckturner
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/aws-fsx-openzfs-csi-driver (GH pr comments <= 10 && devstats <=20): 3
+dankova22
+gomesjason
+hughdanliu
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

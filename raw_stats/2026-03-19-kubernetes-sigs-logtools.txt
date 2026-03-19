@@ -1,0 +1,27 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/logtools --repository-devstats=kubernetes-sigs/logtools --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:10:55
+Processed /private/tmp/affi_stats/kubernetes-sigs_logtools/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_logtools/OWNERS_ALIASES
+Found 1 unique aliases
+Found 6 unique users
+..
+
+
+>>>>> Contributions from kubernetes-sigs/logtools devstats repo and kubernetes-sigs/logtools github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+pohly : 3 : 3 
+dims : 1 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/logtools (devstats == 0): 4
+ehashman
+logicalhan
+serathius
+thockin
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/logtools (GH pr comments <= 10 && devstats <=20): 2
+dims
+pohly
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

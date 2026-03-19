@@ -1,0 +1,28 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/dynamic-resource-allocation --repository-devstats=kubernetes/dynamic-resource-allocation --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:25:08
+Processed /private/tmp/affi_stats/kubernetes_dynamic-resource-allocation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_dynamic-resource-allocation/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_dynamic-resource-allocation/structured/schedulerapi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_dynamic-resource-allocation/OWNERS_ALIASES
+Found 0 unique aliases
+Found 7 unique users
+
+
+
+>>>>> Contributions from kubernetes/dynamic-resource-allocation devstats repo and kubernetes/dynamic-resource-allocation github repo : 0
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+
+
+>>>>> Missing Contributions in kubernetes/dynamic-resource-allocation (devstats == 0): 7
+api-approvers
+bart0sh
+klueska
+pohly
+sig-autoscaling-maintainers
+sig-node-approvers
+sig-node-reviewers
+
+
+>>>>> Low reviews/approvals in kubernetes/dynamic-resource-allocation (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

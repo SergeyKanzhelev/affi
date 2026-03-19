@@ -1,0 +1,24 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-provider-ibmcloud --repository-devstats=kubernetes-sigs/cluster-api-provider-ibmcloud --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:51:51
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-ibmcloud/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-ibmcloud/OWNERS_ALIASES
+Found 0 unique aliases
+Found 5 unique users
+....
+
+
+>>>>> Contributions from kubernetes-sigs/cluster-api-provider-ibmcloud devstats repo and kubernetes-sigs/cluster-api-provider-ibmcloud github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+Prajyot-Parab : 339 : 226 
+Amulyam24 : 240 : 117 
+Karthik-K-N : 218 : 65 
+mkumatag : 134 : 135 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cluster-api-provider-ibmcloud (devstats == 0): 1
+spzala
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cluster-api-provider-ibmcloud (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

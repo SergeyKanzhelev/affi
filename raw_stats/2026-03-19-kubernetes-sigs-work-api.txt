@@ -1,0 +1,25 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/work-api --repository-devstats=kubernetes-sigs/work-api --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:04:51
+Processed /private/tmp/affi_stats/kubernetes-sigs_work-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_work-api/OWNERS_ALIASES
+Found 0 unique aliases
+Found 4 unique users
+.......
+
+
+>>>>> Contributions from kubernetes-sigs/work-api devstats repo and kubernetes-sigs/work-api github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+RainbowMango : 13 : 8 
+qiujian16 : 2 : 7 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/work-api (devstats == 0): 2
+jeremyot
+pmorie
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/work-api (GH pr comments <= 10 && devstats <=20): 2
+RainbowMango
+qiujian16
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

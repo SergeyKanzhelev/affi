@@ -1,0 +1,41 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/sig-security --repository-devstats=kubernetes/sig-security --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:24:05
+Processed /private/tmp/affi_stats/kubernetes_sig-security/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-security/sig-security-assessments/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-security/sig-security-docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-security/sig-security-external-audit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-security/sig-security-tooling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-security/sig-security-tooling/cve-feed/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-security/sig-security-tooling/vulnerability-mgmt/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_sig-security/OWNERS_ALIASES
+Found 1 unique aliases
+Found 10 unique users
+..............
+
+
+>>>>> Contributions from kubernetes/sig-security devstats repo and kubernetes/sig-security github repo : 8
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+mtardy : 47 : 14 
+tabbysable : 61 : 12 
+reylejano : 7 : 6 
+cailyn-codes : 3 : 3 
+raesene : 3 : 3 
+savitharaghunathan : 3 : 5 
+krol3 : 1 : 1 
+smarticu5 : 3 : 1 
+
+
+>>>>> Missing Contributions in kubernetes/sig-security (devstats == 0): 2
+IanColdwater
+ericsmalling
+
+
+>>>>> Low reviews/approvals in kubernetes/sig-security (GH pr comments <= 10 && devstats <=20): 6
+cailyn-codes
+krol3
+raesene
+reylejano
+savitharaghunathan
+smarticu5
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

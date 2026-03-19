@@ -1,0 +1,24 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/aws-load-balancer-controller --repository-devstats=kubernetes-sigs/aws-load-balancer-controller --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:28:36
+Processed /private/tmp/affi_stats/kubernetes-sigs_aws-load-balancer-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_aws-load-balancer-controller/OWNERS_ALIASES
+Found 0 unique aliases
+Found 5 unique users
+...........
+
+
+>>>>> Contributions from kubernetes-sigs/aws-load-balancer-controller devstats repo and kubernetes-sigs/aws-load-balancer-controller github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+zac-nixon : 869 : 193 
+shraddhabang : 477 : 165 
+shuqz : 296 : 103 
+wweiwei-li : 152 : 63 
+oliviassss : 12 : 18 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/aws-load-balancer-controller (devstats == 0): 0
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/aws-load-balancer-controller (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,0 +1,51 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/cloud-provider --repository-devstats=kubernetes/cloud-provider --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:23:06
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider/controllers/nodelifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider/controllers/route/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider/controllers/service/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider/controllers/service/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider/OWNERS_ALIASES
+Found 0 unique aliases
+Found 26 unique users
+..
+
+
+>>>>> Contributions from kubernetes/cloud-provider devstats repo and kubernetes/cloud-provider github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+elmiko : 8 : 2 
+justinsb : 2 : 1 
+
+
+>>>>> Missing Contributions in kubernetes/cloud-provider (devstats == 0): 24
+MrHohn
+andrewsykim
+aojea
+api-approvers
+api-reviewers
+bowei
+cheftako
+dchen1107
+deads2k
+derekwaynecarr
+dims
+freehan
+jingxu97
+joelspeed
+jsafrane
+liggitt
+luxas
+mikedanese
+mtaufen
+saad-ali
+sttts
+thockin
+wlan0
+wojtek-t
+
+
+>>>>> Low reviews/approvals in kubernetes/cloud-provider (GH pr comments <= 10 && devstats <=20): 2
+elmiko
+justinsb
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

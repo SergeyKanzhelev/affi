@@ -1,0 +1,68 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/cloud-provider-gcp --repository-devstats=kubernetes/cloud-provider-gcp --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:08:47
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/cluster/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/cmd/auth-provider-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/cmd/cloud-controller-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/cmd/gke-gcloud-auth-plugin/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/pkg/controller/nodeipam/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/pkg/controller/service/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/providers/gce/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/test/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/OWNERS_ALIASES
+Found 1 unique aliases
+Found 35 unique users
+..........................
+
+
+>>>>> Contributions from kubernetes/cloud-provider-gcp devstats repo and kubernetes/cloud-provider-gcp github repo : 13
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+YifeiZhuang : 141 : 47 
+mmamczur : 80 : 46 
+aojea : 61 : 24 
+hdp617 : 25 : 18 
+bowei : 25 : 17 
+felipeyepez(FelipeYepez) : 61 : 14 
+justinsb : 46 : 8 
+LogicalShark : 16 : 7 
+elmiko : 1 : 5 
+BenTheElder : 15 : 3 
+cheftako : 7 : 2 
+joelspeed(JoelSpeed) : 2 : 1 
+seans3 : 1 : 4 
+
+
+>>>>> Missing Contributions in kubernetes/cloud-provider-gcp (devstats == 0): 22
+MaciekPytel
+SergeyKanzhelev
+ahmedtd
+amwat
+bridgetkromhout
+cici37
+cjcullen
+dangerontheranger
+freehan
+jiahuif
+jingxu97
+jpbetz
+jprzychodzen
+mrhohn
+mtaufen
+mwielgus
+saad-ali
+thockin
+vinayakankugoyal
+vishh
+yujuhong
+zshihang
+
+
+>>>>> Low reviews/approvals in kubernetes/cloud-provider-gcp (GH pr comments <= 10 && devstats <=20): 6
+BenTheElder
+LogicalShark
+cheftako
+elmiko
+joelspeed
+seans3
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

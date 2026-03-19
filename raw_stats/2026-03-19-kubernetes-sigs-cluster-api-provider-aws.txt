@@ -1,0 +1,42 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-provider-aws --repository-devstats=kubernetes-sigs/cluster-api-provider-aws --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:41:01
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/config/crd/bases/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/controllers/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/controlplane/rosa/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/docs/book/src/topics/rosa/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/exp/api/v1beta2/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/exp/controllers/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/pkg/cloud/scope/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/pkg/rosa/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/templates/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-aws/OWNERS_ALIASES
+Found 4 unique aliases
+Found 13 unique users
+..............
+
+
+>>>>> Contributions from kubernetes-sigs/cluster-api-provider-aws devstats repo and kubernetes-sigs/cluster-api-provider-aws github repo : 9
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+damdo : 487 : 163 
+richardcase : 355 : 130 
+nrb : 254 : 124 
+AndiDog : 87 : 51 
+serngawy : 174 : 48 
+dlipovetsky : 26 : 15 
+faiq : 83 : 15 
+fiunchinho : 77 : 23 
+fabriziopandini : 1 : 3 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cluster-api-provider-aws (devstats == 0): 4
+justinsb
+muraee
+neolit123
+vincepri
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cluster-api-provider-aws (GH pr comments <= 10 && devstats <=20): 1
+fabriziopandini
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

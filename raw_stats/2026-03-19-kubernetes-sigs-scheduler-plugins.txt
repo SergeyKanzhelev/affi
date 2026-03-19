@@ -1,0 +1,31 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/scheduler-plugins --repository-devstats=kubernetes-sigs/scheduler-plugins --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:01:17
+Processed /private/tmp/affi_stats/kubernetes-sigs_scheduler-plugins/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_scheduler-plugins/OWNERS_ALIASES
+Found 0 unique aliases
+Found 9 unique users
+......
+
+
+>>>>> Contributions from kubernetes-sigs/scheduler-plugins devstats repo and kubernetes-sigs/scheduler-plugins github repo : 6
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+Huang-Wei : 106 : 40 
+googs1025 : 64 : 17 
+ffromani : 38 : 10 
+PiotrProkop : 2 : 1 
+Tal-or : 2 : 0 
+swatisehgal : 1 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/scheduler-plugins (devstats == 0): 3
+denkensk
+seanmalloy
+zwpaper
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/scheduler-plugins (GH pr comments <= 10 && devstats <=20): 3
+PiotrProkop
+Tal-or
+swatisehgal
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

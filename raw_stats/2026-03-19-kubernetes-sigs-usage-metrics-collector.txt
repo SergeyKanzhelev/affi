@@ -1,0 +1,25 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/usage-metrics-collector --repository-devstats=kubernetes-sigs/usage-metrics-collector --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:13:58
+Processed /private/tmp/affi_stats/kubernetes-sigs_usage-metrics-collector/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_usage-metrics-collector/OWNERS_ALIASES
+Found 0 unique aliases
+Found 6 unique users
+
+
+
+>>>>> Contributions from kubernetes-sigs/usage-metrics-collector devstats repo and kubernetes-sigs/usage-metrics-collector github repo : 0
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+
+
+>>>>> Missing Contributions in kubernetes-sigs/usage-metrics-collector (devstats == 0): 6
+KnVerey
+campoy
+ehashman
+ndipebot
+pmorie
+pwittrock
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/usage-metrics-collector (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

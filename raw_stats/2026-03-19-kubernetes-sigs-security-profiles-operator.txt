@@ -1,0 +1,26 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/security-profiles-operator --repository-devstats=kubernetes-sigs/security-profiles-operator --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:02:40
+Processed /private/tmp/affi_stats/kubernetes-sigs_security-profiles-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_security-profiles-operator/OWNERS_ALIASES
+Found 0 unique aliases
+Found 6 unique users
+..........
+
+
+>>>>> Contributions from kubernetes-sigs/security-profiles-operator devstats repo and kubernetes-sigs/security-profiles-operator github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+saschagrunert : 309 : 264 
+ccojocar : 72 : 62 
+ngopalak-redhat : 134 : 38 
+JAORMX : 6 : 29 
+Vincent056 : 8 : 8 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/security-profiles-operator (devstats == 0): 1
+jhrozek
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/security-profiles-operator (GH pr comments <= 10 && devstats <=20): 1
+Vincent056
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

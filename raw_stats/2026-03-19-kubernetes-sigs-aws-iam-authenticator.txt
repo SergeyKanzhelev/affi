@@ -1,0 +1,26 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/aws-iam-authenticator --repository-devstats=kubernetes-sigs/aws-iam-authenticator --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:30:40
+Processed /private/tmp/affi_stats/kubernetes-sigs_aws-iam-authenticator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_aws-iam-authenticator/OWNERS_ALIASES
+Found 0 unique aliases
+Found 5 unique users
+..........
+
+
+>>>>> Contributions from kubernetes-sigs/aws-iam-authenticator devstats repo and kubernetes-sigs/aws-iam-authenticator github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+kmala : 100 : 74 
+haoranleo : 30 : 20 
+yue9944882 : 14 : 7 
+jyotimahapatra : 3 : 3 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/aws-iam-authenticator (devstats == 0): 1
+micahhausler
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/aws-iam-authenticator (GH pr comments <= 10 && devstats <=20): 2
+jyotimahapatra
+yue9944882
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

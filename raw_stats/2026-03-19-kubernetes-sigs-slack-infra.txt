@@ -1,0 +1,26 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/slack-infra --repository-devstats=kubernetes-sigs/slack-infra --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:51:15
+Processed /private/tmp/affi_stats/kubernetes-sigs_slack-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_slack-infra/OWNERS_ALIASES
+Found 0 unique aliases
+Found 6 unique users
+..
+
+
+>>>>> Contributions from kubernetes-sigs/slack-infra devstats repo and kubernetes-sigs/slack-infra github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cpanato : 3 : 45 
+BenTheElder : 2 : 2 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/slack-infra (devstats == 0): 4
+coderanger
+jberkus
+jeefy
+mrbobbytables
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/slack-infra (GH pr comments <= 10 && devstats <=20): 1
+BenTheElder
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

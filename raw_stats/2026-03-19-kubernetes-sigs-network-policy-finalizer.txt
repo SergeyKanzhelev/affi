@@ -1,0 +1,22 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/network-policy-finalizer --repository-devstats=kubernetes-sigs/network-policy-finalizer --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:28:22
+Processed /private/tmp/affi_stats/kubernetes-sigs_network-policy-finalizer/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_network-policy-finalizer/OWNERS_ALIASES
+Found 0 unique aliases
+Found 3 unique users
+.
+
+
+>>>>> Contributions from kubernetes-sigs/network-policy-finalizer devstats repo and kubernetes-sigs/network-policy-finalizer github repo : 1
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+aojea : 5 : 12 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/network-policy-finalizer (devstats == 0): 2
+danwinship
+thockin
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/network-policy-finalizer (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

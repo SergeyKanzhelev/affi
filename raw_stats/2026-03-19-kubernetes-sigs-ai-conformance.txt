@@ -1,0 +1,26 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/ai-conformance --repository-devstats=kubernetes-sigs/ai-conformance --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:29:39
+Processed /private/tmp/affi_stats/kubernetes-sigs_ai-conformance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_ai-conformance/OWNERS_ALIASES
+Found 0 unique aliases
+Found 5 unique users
+.........
+
+
+>>>>> Contributions from kubernetes-sigs/ai-conformance devstats repo and kubernetes-sigs/ai-conformance github repo : 3
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+janetkuo : 10 : 10 
+dims : 1 : 8 
+terrytangyuan : 1 : 14 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/ai-conformance (devstats == 0): 2
+mfahlandt
+ritazh
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/ai-conformance (GH pr comments <= 10 && devstats <=20): 2
+dims
+janetkuo
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

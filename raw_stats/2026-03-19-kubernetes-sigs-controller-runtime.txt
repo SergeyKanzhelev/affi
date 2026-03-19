@@ -1,0 +1,33 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/controller-runtime --repository-devstats=kubernetes-sigs/controller-runtime --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:36:29
+Processed /private/tmp/affi_stats/kubernetes-sigs_controller-runtime/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_controller-runtime/pkg/envtest/komega/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_controller-runtime/OWNERS_ALIASES
+Found 6 unique aliases
+Found 13 unique users
+....
+
+
+>>>>> Contributions from kubernetes-sigs/controller-runtime devstats repo and kubernetes-sigs/controller-runtime github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+sbueringer : 571 : 166 
+alvaroaleman : 372 : 124 
+troy0820 : 52 : 22 
+JoelSpeed : 29 : 11 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/controller-runtime (devstats == 0): 9
+directxman12
+droot
+inteon
+joelanford
+mengqiy
+pwittrock
+schrej
+varshaprasad96
+vincepri
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/controller-runtime (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

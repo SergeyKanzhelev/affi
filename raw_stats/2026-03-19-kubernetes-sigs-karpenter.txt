@@ -1,0 +1,33 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/karpenter --repository-devstats=kubernetes-sigs/karpenter --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:12:47
+Processed /private/tmp/affi_stats/kubernetes-sigs_karpenter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_karpenter/OWNERS_ALIASES
+Found 4 unique aliases
+Found 12 unique users
+................
+
+
+>>>>> Contributions from kubernetes-sigs/karpenter devstats repo and kubernetes-sigs/karpenter github repo : 9
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+jonathan-innis : 689 : 190 
+jmdeal : 583 : 144 
+engedaam : 413 : 86 
+DerekFrank : 263 : 63 
+ellistarn : 106 : 36 
+bwagner5 : 8 : 2 
+njtran : 1 : 11 
+tallaxes : 15 : 2 
+tzneal : 6 : 11 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/karpenter (devstats == 0): 3
+gjtempleton
+maciekpytel
+mwielgus
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/karpenter (GH pr comments <= 10 && devstats <=20): 2
+bwagner5
+tallaxes
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

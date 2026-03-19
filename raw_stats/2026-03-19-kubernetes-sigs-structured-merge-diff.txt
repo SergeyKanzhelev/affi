@@ -1,0 +1,27 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/structured-merge-diff --repository-devstats=kubernetes-sigs/structured-merge-diff --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:45:57
+Processed /private/tmp/affi_stats/kubernetes-sigs_structured-merge-diff/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_structured-merge-diff/OWNERS_ALIASES
+Found 0 unique aliases
+Found 6 unique users
+..........
+
+
+>>>>> Contributions from kubernetes-sigs/structured-merge-diff devstats repo and kubernetes-sigs/structured-merge-diff github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+jpbetz : 26 : 70 
+liggitt : 44 : 10 
+yongruilin : 3 : 2 
+yliaog : 1 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/structured-merge-diff (devstats == 0): 2
+cici37
+jefftree
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/structured-merge-diff (GH pr comments <= 10 && devstats <=20): 2
+yliaog
+yongruilin
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

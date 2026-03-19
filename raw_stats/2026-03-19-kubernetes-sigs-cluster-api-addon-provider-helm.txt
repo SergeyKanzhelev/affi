@@ -1,0 +1,30 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-addon-provider-helm --repository-devstats=kubernetes-sigs/cluster-api-addon-provider-helm --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:15:51
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-addon-provider-helm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-addon-provider-helm/OWNERS_ALIASES
+Found 4 unique aliases
+Found 11 unique users
+...
+
+
+>>>>> Contributions from kubernetes-sigs/cluster-api-addon-provider-helm devstats repo and kubernetes-sigs/cluster-api-addon-provider-helm github repo : 3
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+mboersma : 95 : 86 
+Jont828 : 26 : 10 
+jackfrancis : 8 : 17 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cluster-api-addon-provider-helm (devstats == 0): 8
+cluster-api-addon-helm-reviewers
+enxebre
+fabriziopandini
+justinsb
+neolit123
+sbueringer
+timothysc
+vincepri
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cluster-api-addon-provider-helm (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,0 +1,34 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/gcp-filestore-csi-driver --repository-devstats=kubernetes-sigs/gcp-filestore-csi-driver --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:39:01
+Processed /private/tmp/affi_stats/kubernetes-sigs_gcp-filestore-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_gcp-filestore-csi-driver/OWNERS_ALIASES
+Found 0 unique aliases
+Found 13 unique users
+..........
+
+
+>>>>> Contributions from kubernetes-sigs/gcp-filestore-csi-driver devstats repo and kubernetes-sigs/gcp-filestore-csi-driver github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+riteshghorse : 75 : 65 
+savirg : 54 : 33 
+tyuchn : 48 : 35 
+leiyiz : 7 : 4 
+msau42 : 1 : 0 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/gcp-filestore-csi-driver (devstats == 0): 8
+amacaskill
+dannawang0221
+judemars
+mattcary
+pwschuurman
+saikat-royc
+songjiaxun
+sunnylovestiramisu
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/gcp-filestore-csi-driver (GH pr comments <= 10 && devstats <=20): 2
+leiyiz
+msau42
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

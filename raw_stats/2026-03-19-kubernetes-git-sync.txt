@@ -1,0 +1,24 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/git-sync --repository-devstats=kubernetes/git-sync --period-devstats=y --dryrun ---
+Running script : 03-19-2026 00:38:46
+Processed /private/tmp/affi_stats/kubernetes_git-sync/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_git-sync/OWNERS_ALIASES
+Found 0 unique aliases
+Found 4 unique users
+.......
+
+
+>>>>> Contributions from kubernetes/git-sync devstats repo and kubernetes/git-sync github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+thockin : 82 : 12 
+sdowell : 5 : 4 
+
+
+>>>>> Missing Contributions in kubernetes/git-sync (devstats == 0): 2
+janetkuo
+stp-ip
+
+
+>>>>> Low reviews/approvals in kubernetes/git-sync (GH pr comments <= 10 && devstats <=20): 1
+sdowell
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

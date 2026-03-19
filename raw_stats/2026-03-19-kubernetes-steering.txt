@@ -1,0 +1,28 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/steering --repository-devstats=kubernetes/steering --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:05:25
+Processed /private/tmp/affi_stats/kubernetes_steering/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_steering/OWNERS_ALIASES
+Found 1 unique aliases
+Found 7 unique users
+..............
+
+
+>>>>> Contributions from kubernetes/steering devstats repo and kubernetes/steering github repo : 7
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+BenTheElder : 36 : 0 
+aojea : 11 : 15 
+pacoxu : 7 : 109 
+katcosgrove : 1 : 1 
+ritazh : 1 : 3 
+saschagrunert : 1 : 25 
+soltysh : 16 : 21 
+
+
+>>>>> Missing Contributions in kubernetes/steering (devstats == 0): 0
+
+
+>>>>> Low reviews/approvals in kubernetes/steering (GH pr comments <= 10 && devstats <=20): 2
+katcosgrove
+ritazh
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

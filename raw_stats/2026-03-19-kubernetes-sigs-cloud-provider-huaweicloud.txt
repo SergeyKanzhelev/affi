@@ -1,0 +1,26 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cloud-provider-huaweicloud --repository-devstats=kubernetes-sigs/cloud-provider-huaweicloud --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:00:37
+Processed /private/tmp/affi_stats/kubernetes-sigs_cloud-provider-huaweicloud/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cloud-provider-huaweicloud/OWNERS_ALIASES
+Found 0 unique aliases
+Found 4 unique users
+........
+
+
+>>>>> Contributions from kubernetes-sigs/cloud-provider-huaweicloud devstats repo and kubernetes-sigs/cloud-provider-huaweicloud github repo : 3
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+RainbowMango : 2 : 0 
+chengxiangdong : 2 : 3 
+niuzhenguo : 1 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cloud-provider-huaweicloud (devstats == 0): 1
+kevin-wangzefeng
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cloud-provider-huaweicloud (GH pr comments <= 10 && devstats <=20): 3
+RainbowMango
+chengxiangdong
+niuzhenguo
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

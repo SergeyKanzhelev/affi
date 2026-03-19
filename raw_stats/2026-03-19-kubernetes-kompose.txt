@@ -1,0 +1,23 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kompose --repository-devstats=kubernetes/kompose --period-devstats=y --dryrun ---
+Running script : 03-19-2026 00:38:12
+Processed /private/tmp/affi_stats/kubernetes_kompose/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kompose/OWNERS_ALIASES
+Found 0 unique aliases
+Found 3 unique users
+..
+
+
+>>>>> Contributions from kubernetes/kompose devstats repo and kubernetes/kompose github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cdrage : 60 : 22 
+TessaIO : 1 : 4 
+
+
+>>>>> Missing Contributions in kubernetes/kompose (devstats == 0): 1
+hangyan
+
+
+>>>>> Low reviews/approvals in kubernetes/kompose (GH pr comments <= 10 && devstats <=20): 1
+TessaIO
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

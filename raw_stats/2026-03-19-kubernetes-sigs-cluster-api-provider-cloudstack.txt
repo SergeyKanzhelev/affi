@@ -1,0 +1,27 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-provider-cloudstack --repository-devstats=kubernetes-sigs/cluster-api-provider-cloudstack --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:08:23
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-cloudstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-cloudstack/OWNERS_ALIASES
+Found 0 unique aliases
+Found 8 unique users
+....
+
+
+>>>>> Contributions from kubernetes-sigs/cluster-api-provider-cloudstack devstats repo and kubernetes-sigs/cluster-api-provider-cloudstack github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+vishesh92 : 50 : 18 
+weizhouapache : 34 : 20 
+g-gaston : 2 : 11 
+yadvr : 2 : 18 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cluster-api-provider-cloudstack (devstats == 0): 4
+chrisdoherty4
+davidjumani
+dims
+jweite-amazon
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cluster-api-provider-cloudstack (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

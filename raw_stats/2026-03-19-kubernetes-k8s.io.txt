@@ -1,0 +1,661 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/k8s.io --repository-devstats=kubernetes/k8s.io --period-devstats=y --dryrun ---
+Running script : 03-19-2026 00:39:27
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/cert-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/codesearch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/elekto/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/gcsweb/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/k8s-io/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/kubernetes-external-secrets/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/perfdash/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/publishing-bot/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/slack-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/triageparty-cli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/artifacts/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/artifacts/manifests/k8s-staging-cri-tools/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/artifacts/manifests/k8s-staging-kops/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/artifacts/manifests/k8s-staging-provider-aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/artifacts/manifests/k8s-staging-provider-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/audit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/dns/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/committee-code-of-conduct/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/committee-security-response/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/committee-steering/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-agentic-net/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-api-machinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-architecture/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-cli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-cloud-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-cluster-lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-contributor-experience/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-instrumentation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-k8s-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-multicluster/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-scalability/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-security/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-ui/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/sig-windows/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-ai-conformance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-ai-gateway/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-ai-integration/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-batch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-checkpoint-restore/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-data-protection/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-device-management/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-etcd-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-lts/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-node-lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-serving/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/groups/wg-structured-logging/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/hack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/cloudformation/iam/cdn.packages.k8s.io/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/cloudformation/iam/eks-e2e-boskos/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/terraform/cdn.packages.k8s.io/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/terraform/iam/k8s-infra-prow/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/terraform/iam/k8s-infra-prow-canary/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/terraform/modules/eks-prow-iam/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/terraform/prow-build-cluster/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/aws/terraform/service-quotas/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/azure/terraform/capz/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/fastly/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/bash/backup_tools/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/bash/cip-auditor/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/bash/namespaces/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/bash/roles/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/k8s-infra-gcp-gcve/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/k8s-infra-ii-sandbox/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/k8s-infra-oci-proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/k8s-infra-oci-proxy-prod/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/k8s-infra-prow-build/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/k8s-infra-prow-build-trusted/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/k8s-infra-prow-build-trusted/prow-build-trusted/resources/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/k8s-infra-sandbox-capg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/gcp/terraform/modules/oci-proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/infra/ibmcloud/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/kubernetes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/kubernetes/ibm-ppc64le/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/kubernetes/ibm-s390x/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/charts/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-addon-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-agent-sandbox/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-agentic-net/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-apisnoop/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-artifact-promoter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-aws-encryption-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-bom/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-build-image/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-capi-cloudstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-capi-docker/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-capi-ibmcloud/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-capi-ipam-ic/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-capi-openstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-capi-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-capi-vsphere/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cloud-provider-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cloud-provider-ibm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cloud-provider-kind/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cloud-pv-labeler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cloud-pv-vsphere/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cluster-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cluster-api-aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cluster-api-azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cluster-api-do/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cluster-api-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cluster-api-helm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cluster-api-kubeadm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cluster-api-nested/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-coredns/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-cpa/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-csi-secrets-store/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-csi-vsphere/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-descheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-dns/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-dra-driver-cpu/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-dra-example-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-e2e-test-images/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-etcd-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-experimental/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-external-dns/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-gateway-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-gateway-api-inference-extension/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-git-sync/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-gmsa-webhook/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-infra-tools/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-ingress-controller-conformance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-ingress-nginx/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-jobset/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-karpenter-cluster-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kas-network-proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kops/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kro/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kube-state-metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kubebuilder/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kubernetes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kueue/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kustomize/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-kwok/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-lws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-mcp-lifecycle-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-metrics-server/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-minikube/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-networking/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-nfd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-node-readiness-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-npd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-perf-tests/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-prometheus-adapter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-provider-aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-provider-os/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-publishing-bot/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-releng/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-sched-simulator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-scheduler-plugins/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-scl-image-builder/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-secrets-store-sync/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-sig-auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-sig-storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-slack-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-sp-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-storage-migrator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-tejolote/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-tg-exporter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-wasm-scheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-win-op-rdnss/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-zeitgeist/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/OWNERS_ALIASES
+Found 55 unique aliases
+Found 347 unique users
+......................................................................................................................................................................................................................................................................................................
+
+
+>>>>> Contributions from kubernetes/k8s.io devstats repo and kubernetes/k8s.io github repo : 171
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+ameukam : 238 : 138 
+upodroid : 207 : 120 
+hakman : 101 : 93 
+tenzen-y : 140 : 64 
+strongjz : 59 : 90 
+BenTheElder : 192 : 46 
+mboersma : 126 : 74 
+mkumatag : 65 : 54 
+mimowo : 92 : 39 
+Gacko : 89 : 29 
+cpanato : 81 : 148 
+bentheelder(BenTheElder) : 192 : 46 
+xmudrii : 86 : 92 
+kannon92 : 56 : 11 
+puerco : 11 : 16 
+Huang-Wei : 6 : 18 
+zhanggbj : 13 : 8 
+xing-yang : 16 : 18 
+willie-yao : 17 : 15 
+jackfrancis : 21 : 31 
+Prajyot-Parab : 43 : 23 
+Priyankasaggu11929 : 22 : 20 
+jsturtevant : 7 : 105 
+torredil : 10 : 16 
+Verolop : 11 : 25 
+fabriziopandini : 32 : 44 
+justinsb : 22 : 14 
+a-hilaly : 11 : 15 
+Amulyam24 : 14 : 11 
+sbueringer : 56 : 58 
+ahg-g : 14 : 14 
+ahrtr : 47 : 73 
+saschagrunert : 43 : 103 
+kerthcet : 30 : 8 
+kfswain : 20 : 18 
+aojea : 30 : 35 
+jeremyrickard : 20 : 22 
+dipesh-rawat : 15 : 8 
+richardcase : 11 : 14 
+dims : 53 : 50 
+lentzi90 : 18 : 15 
+pacoxu : 19 : 122 
+cartermckinnon : 19 : 11 
+medyagh : 19 : 33 
+nojnhuh : 12 : 11 
+nirrozenbaum : 11 : 11 
+neolit123 : 27 : 11 
+chrischdi : 42 : 25 
+nawazkh : 26 : 9 
+mrueg : 4 : 21 
+damdo : 12 : 19 
+ConnorJC3 : 14 : 13 
+alexander-demicev : 10 : 8 
+enj : 5 : 9 
+ElijahQuinones : 7 : 8 
+rifelpet : 6 : 13 
+robscott : 4 : 10 
+salasberryfin : 5 : 11 
+nrb : 5 : 7 
+towca : 6 : 9 
+danehans : 4 : 9 
+emilienm(EmilienM) : 4 : 11 
+silvery1622 : 7 : 7 
+AverageMarcus : 5 : 7 
+Rajalakshmi-Girish : 9 : 8 
+furkatgofurov7 : 10 : 9 
+stp-ip : 4 : 7 
+haircommander : 3 : 6 
+pohly : 3 : 2 
+Danil-Grigorev : 3 : 5 
+humblec : 4 : 4 
+ingvagabund : 5 : 4 
+ivankatliarchuk : 1 : 9 
+gabesaba : 5 : 6 
+jakobmoellerdev : 6 : 1 
+janetkuo : 6 : 2 
+jbpratt : 4 : 1 
+kwiesmueller : 1 : 2 
+joaquimrocha : 3 : 1 
+johnbelamaric : 1 : 3 
+jsafrane : 1 : 2 
+fmuyassarov : 2 : 2 
+justaugustus : 4 : 5 
+elmiko : 10 : 6 
+dulek : 1 : 4 
+katcosgrove : 7 : 6 
+kayrus : 1 : 6 
+drew-viles : 3 : 6 
+dom4ha : 4 : 2 
+knabben : 1 : 6 
+JAORMX : 2 : 18 
+divyenpatel : 4 : 3 
+GenPage : 2 : 6 
+yussufsh : 1 : 2 
+liorlieberman(LiorLieberman) : 3 : 3 
+marosset : 12 : 5 
+marquiz : 3 : 6 
+marseel : 1 : 2 
+mattcary : 4 : 1 
+yadvr : 1 : 2 
+DanielXiao : 3 : 3 
+mcbenjemaa : 6 : 4 
+dgrisonnet : 3 : 2 
+michelle192837 : 2 : 4 
+DamianSawicki : 7 : 2 
+david-martin : 2 : 9 
+liggitt : 1 : 2 
+x13n : 1 : 7 
+wojtek-t : 2 : 3 
+Edwinhr716 : 3 : 3 
+msau42 : 2 : 5 
+LiorLieberman : 3 : 3 
+comradeprogrammer(ComradeProgrammer) : 6 : 5 
+chenlin07 : 1 : 2 
+cheftako : 3 : 3 
+ccojocar : 1 : 5 
+cblecker : 2 : 18 
+varshaprasad96 : 1 : 3 
+palnabarun : 8 : 5 
+gjtempleton : 5 : 5 
+pravk03 : 14 : 2 
+AndrewSirenko : 7 : 6 
+bnallapeta : 2 : 7 
+raffo(Raffo) : 3 : 3 
+randomvariable : 2 : 5 
+rexagod : 4 : 4 
+SergeyKanzhelev : 3 : 7 
+atiratree : 3 : 1 
+ardaguclu : 3 : 4 
+ritazh : 4 : 3 
+aramase : 6 : 3 
+thockin : 7 : 3 
+ArangoGutierrez : 1 : 18 
+Fedosin : 3 : 3 
+sanposhiho : 2 : 4 
+ajaysundark : 10 : 6 
+adrianmoisey : 5 : 6 
+tao12345666333 : 3 : 30 
+serathius : 13 : 6 
+tabbysable : 2 : 5 
+a7i : 4 : 4 
+szuecs : 1 : 6 
+smoshiur1237 : 4 : 6 
+soltysh : 2 : 18 
+stmcginnis : 2 : 59 
+YifeiZhuang : 3 : 4 
+Vyom-Yadav : 19 : 4 
+sunnylovestiramisu : 2 : 2 
+viktoriaas : 1 : 1 
+prezha : 1 : 1 
+tallclair : 1 : 1 
+schrej : 1 : 0 
+rthallisey : 1 : 1 
+rst0git : 1 : 1 
+reylejano : 1 : 1 
+wangzhen127 : 1 : 1 
+vishesh92 : 2 : 0 
+bridgetkromhout : 1 : 0 
+shyamjvs : 1 : 1 
+siyuanfoundation : 2 : 1 
+MrHohn : 1 : 0 
+wenjiaswe : 2 : 1 
+natherz97 : 1 : 0 
+mrhohn(MrHohn) : 1 : 0 
+mrbobbytables : 1 : 1 
+Karthik-K-N : 1 : 0 
+AndiDog : 1 : 1 
+matthchr : 1 : 0 
+mloiseleur : 2 : 0 
+zetaab : 2 : 1 
+koba1t : 2 : 1 
+
+
+>>>>> Missing Contributions in kubernetes/k8s.io (devstats == 0): 176
+196Ikuchil
+AnaMMedina21
+BobyMCbobs
+CatherineF-dev
+CecileRobertMichon
+Fei-Guo
+IanColdwater
+Jeffwan
+JimBugwadia
+JoelSpeed
+Jont828
+Katharine
+LogicalShark
+M00nF1sh
+MadhavJivrajani
+MorrisLaw
+Random-Liu
+Riaankl
+SandeepPissay
+XudongLiuHarold
+abgworrall
+adrianreber
+aledbf
+ambiknai
+andrewsykim
+andyxning
+anfernee
+arahamad
+aravindhp
+barney-s
+bart0sh
+bartsmykla
+bigdarkclown
+bobymcbobs
+bowei
+brancz
+bskiba
+byako
+caesarxuchao
+cailyn-codes
+camilamacedo86
+cantbewong
+charleszheng44
+chrisohaver
+christopherhein
+chuckha
+cjcullen
+cjwagner
+claudiubelu
+craiglpeters
+damemi
+danielvegamyhre
+danwinship
+dashpole
+davidewatson
+davidjumani
+dchen1107
+deads2k
+deepakkinni
+dekkagaijin
+denkensk
+derekwaynecarr
+detiber
+divya-mohan0209
+dlipovetsky
+eddiezane
+elezar
+endocrimes
+enxebre
+fedebongio
+feiskyer
+ffromani
+floreks
+frapposelli
+gab-satchi
+gracenng
+hdp617
+hh
+intUnderflow
+jaypipes
+jbartosik
+jberkus
+jefftree
+jeremyot
+jhrozek
+jichenjc
+jimdaga
+jingyih
+jkh52
+jmhbnz
+joelsmith
+joelspeed
+johngmyers
+jpbetz
+kad
+kaslin
+keithmattix
+kflynn
+kgolab
+khenidak
+killianmuldoon
+kkeshavamurthy
+kl52752
+klueska
+knelasevero
+knverey
+kow3ns
+krzysied
+kwilczynski
+logicalhan
+lubronzhan
+maciaszczykm
+maciekpytel
+macsko
+mandre
+maxcao13
+mengjiao-liu
+mengqiy
+mfahlandt
+micahhausler
+mikebrow
+mikezappa87
+mm4tt
+mmiranda96
+mpuckett159
+mrunalp
+munnerz
+mwielgus
+nan-yu
+natalisucks
+nckturner
+nikhita
+olemarkus
+pkprzekwas
+poonam-lamba
+prksu
+pwittrock
+rajansandeep
+richabanker
+roycaihw
+rushmash91
+s-urbaniak
+saad-ali
+salaxander
+shaneutt
+shu-mutou
+skitt
+spiffxp
+spowelljr
+spzala
+srm09
+stephenfin
+sttts
+sudermanjr
+tengqm
+terrytangyuan
+test-infra-oncall
+timoreimann
+timothysc
+vinayakankugoyal
+vincepri
+vteratipally
+weizhouapache
+wongma7
+wzshiming
+xdu31
+xlgao-zju
+xmcqueen
+xueweiz
+xunzhuo
+yastij
+yibozhuang
+youngnick
+yujuhong
+yuxiangqian
+zvonkok
+
+
+>>>>> Low reviews/approvals in kubernetes/k8s.io (GH pr comments <= 10 && devstats <=20): 112
+AndiDog
+AndrewSirenko
+AverageMarcus
+DamianSawicki
+DanielXiao
+Danil-Grigorev
+Edwinhr716
+ElijahQuinones
+Fedosin
+GenPage
+Karthik-K-N
+LiorLieberman
+MrHohn
+Rajalakshmi-Girish
+SergeyKanzhelev
+Vyom-Yadav
+YifeiZhuang
+a7i
+adrianmoisey
+ajaysundark
+alexander-demicev
+aramase
+ardaguclu
+atiratree
+bnallapeta
+bridgetkromhout
+ccojocar
+cheftako
+chenlin07
+comradeprogrammer
+danehans
+david-martin
+dgrisonnet
+dipesh-rawat
+divyenpatel
+dom4ha
+drew-viles
+dulek
+elmiko
+enj
+fmuyassarov
+furkatgofurov7
+gabesaba
+gjtempleton
+haircommander
+humblec
+ingvagabund
+ivankatliarchuk
+jakobmoellerdev
+janetkuo
+jbpratt
+joaquimrocha
+johnbelamaric
+jsafrane
+justaugustus
+katcosgrove
+kayrus
+knabben
+koba1t
+kwiesmueller
+liggitt
+liorlieberman
+marosset
+marquiz
+marseel
+mattcary
+matthchr
+mcbenjemaa
+michelle192837
+mloiseleur
+mrbobbytables
+mrhohn
+msau42
+natherz97
+nrb
+palnabarun
+pohly
+pravk03
+prezha
+raffo
+randomvariable
+rexagod
+reylejano
+ritazh
+robscott
+rst0git
+rthallisey
+sanposhiho
+schrej
+serathius
+shyamjvs
+silvery1622
+siyuanfoundation
+smoshiur1237
+stp-ip
+sunnylovestiramisu
+szuecs
+tabbysable
+tallclair
+thockin
+towca
+varshaprasad96
+viktoriaas
+vishesh92
+wangzhen127
+wenjiaswe
+wojtek-t
+x13n
+yadvr
+yussufsh
+zetaab
+zhanggbj
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,0 +1,32 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/committee-security-response --repository-devstats=kubernetes/committee-security-response --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:23:20
+Processed /private/tmp/affi_stats/kubernetes_committee-security-response/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_committee-security-response/OWNERS_ALIASES
+Found 1 unique aliases
+Found 10 unique users
+...
+
+
+>>>>> Contributions from kubernetes/committee-security-response devstats repo and kubernetes/committee-security-response github repo : 3
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+ritazh : 10 : 4 
+enj : 4 : 2 
+natherz97 : 3 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/committee-security-response (devstats == 0): 7
+Vyom-Yadav
+cjcullen
+joelsmith
+micahhausler
+puerco
+tabbysable
+vinayakankugoyal
+
+
+>>>>> Low reviews/approvals in kubernetes/committee-security-response (GH pr comments <= 10 && devstats <=20): 3
+enj
+natherz97
+ritazh
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

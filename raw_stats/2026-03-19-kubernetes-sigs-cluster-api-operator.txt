@@ -1,0 +1,29 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-operator --repository-devstats=kubernetes-sigs/cluster-api-operator --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:09:27
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-operator/test/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-operator/OWNERS_ALIASES
+Found 3 unique aliases
+Found 9 unique users
+....
+
+
+>>>>> Contributions from kubernetes-sigs/cluster-api-operator devstats repo and kubernetes-sigs/cluster-api-operator github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+furkatgofurov7 : 181 : 127 
+alexander-demicev : 78 : 67 
+Danil-Grigorev : 39 : 18 
+Fedosin : 10 : 14 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/cluster-api-operator (devstats == 0): 5
+damdo
+fabriziopandini
+justinsb
+neolit123
+timothysc
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/cluster-api-operator (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

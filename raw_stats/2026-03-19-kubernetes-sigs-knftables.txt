@@ -1,0 +1,21 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/knftables --repository-devstats=kubernetes-sigs/knftables --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:17:52
+Processed /private/tmp/affi_stats/kubernetes-sigs_knftables/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_knftables/OWNERS_ALIASES
+Found 0 unique aliases
+Found 2 unique users
+..
+
+
+>>>>> Contributions from kubernetes-sigs/knftables devstats repo and kubernetes-sigs/knftables github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+aojea : 11 : 14 
+danwinship : 22 : 6 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/knftables (devstats == 0): 0
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/knftables (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

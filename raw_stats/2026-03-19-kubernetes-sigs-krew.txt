@@ -1,0 +1,23 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/krew --repository-devstats=kubernetes-sigs/krew --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:39:59
+Processed /private/tmp/affi_stats/kubernetes-sigs_krew/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_krew/OWNERS_ALIASES
+Found 1 unique aliases
+Found 4 unique users
+.......
+
+
+>>>>> Contributions from kubernetes-sigs/krew devstats repo and kubernetes-sigs/krew github repo : 1
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+ahmetb : 18 : 27 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/krew (devstats == 0): 3
+chriskim06
+corneliusweig
+soltysh
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/krew (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

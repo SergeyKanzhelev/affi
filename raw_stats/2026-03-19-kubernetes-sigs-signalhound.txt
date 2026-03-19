@@ -1,0 +1,39 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/signalhound --repository-devstats=kubernetes-sigs/signalhound --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:31:24
+Processed /private/tmp/affi_stats/kubernetes-sigs_signalhound/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_signalhound/OWNERS_ALIASES
+Found 3 unique aliases
+Found 18 unique users
+....
+
+
+>>>>> Contributions from kubernetes-sigs/signalhound devstats repo and kubernetes-sigs/signalhound github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+knabben : 39 : 19 
+tico88612 : 6 : 19 
+Prajyot-Parab : 2 : 3 
+benjaminapetersen : 5 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/signalhound (devstats == 0): 14
+Verolop
+ameukam
+cici37
+cpanato
+drewhagen
+jeremyrickard
+jimangel
+jrsapi
+justaugustus
+palnabarun
+puerco
+salaxander
+saschagrunert
+xmudrii
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/signalhound (GH pr comments <= 10 && devstats <=20): 2
+Prajyot-Parab
+benjaminapetersen
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

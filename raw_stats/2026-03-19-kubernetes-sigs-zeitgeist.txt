@@ -1,0 +1,38 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/zeitgeist --repository-devstats=kubernetes-sigs/zeitgeist --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:57:13
+Processed /private/tmp/affi_stats/kubernetes-sigs_zeitgeist/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_zeitgeist/buoy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_zeitgeist/OWNERS_ALIASES
+Found 6 unique aliases
+Found 15 unique users
+............
+
+
+>>>>> Contributions from kubernetes-sigs/zeitgeist devstats repo and kubernetes-sigs/zeitgeist github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cpanato : 88 : 191 
+saschagrunert : 43 : 104 
+Pluies : 6 : 3 
+justaugustus : 4 : 1 
+puerco : 4 : 7 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/zeitgeist (devstats == 0): 10
+Verolop
+ameukam
+cici37
+jeremyrickard
+jimangel
+jrsapi
+n3wscott
+palnabarun
+salaxander
+xmudrii
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/zeitgeist (GH pr comments <= 10 && devstats <=20): 3
+Pluies
+justaugustus
+puerco
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

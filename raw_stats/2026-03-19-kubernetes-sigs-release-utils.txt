@@ -1,0 +1,35 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/release-utils --repository-devstats=kubernetes-sigs/release-utils --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:05:29
+Processed /private/tmp/affi_stats/kubernetes-sigs_release-utils/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_release-utils/OWNERS_ALIASES
+Found 3 unique aliases
+Found 13 unique users
+.....
+
+
+>>>>> Contributions from kubernetes-sigs/release-utils devstats repo and kubernetes-sigs/release-utils github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cpanato : 17 : 66 
+saschagrunert : 8 : 39 
+puerco : 6 : 6 
+xmudrii : 5 : 8 
+justaugustus : 2 : 1 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/release-utils (devstats == 0): 8
+Verolop
+ameukam
+cici37
+jeremyrickard
+jimangel
+jrsapi
+palnabarun
+salaxander
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/release-utils (GH pr comments <= 10 && devstats <=20): 3
+justaugustus
+puerco
+xmudrii
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

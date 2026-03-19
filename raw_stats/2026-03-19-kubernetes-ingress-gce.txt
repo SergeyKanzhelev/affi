@@ -1,0 +1,62 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/ingress-gce --repository-devstats=kubernetes/ingress-gce --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:06:24
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/cmd/ingress-controller-e2e-test/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/cmd/neg-e2e-test/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/cmd/psc-e2e-test/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/apis/backendconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/apis/frontendconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/apis/providerconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/apis/serviceattachment/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/apis/svcneg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/backendconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/frontendconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/healthchecks/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/l4/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/l4lbconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/loadbalancers/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/multiproject/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/neg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/providerconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/psc/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/serviceattachment/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/svcneg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/translator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/utils/healthcheck/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/pkg/utils/serviceattachment/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_ingress-gce/OWNERS_ALIASES
+Found 3 unique aliases
+Found 12 unique users
+...............
+
+
+>>>>> Contributions from kubernetes/ingress-gce devstats repo and kubernetes/ingress-gce github repo : 9
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+mmamczur : 160 : 101 
+tortillazhawaii(TortillaZHawaii) : 234 : 88 
+swetharepakula : 114 : 45 
+08volt : 80 : 12 
+felipeyepez(FelipeYepez) : 66 : 30 
+aojea : 4 : 10 
+bowei : 15 : 6 
+kl52752 : 1 : 8 
+thockin : 1 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/ingress-gce (devstats == 0): 3
+DamianSawicki
+freehan
+spencerhance
+
+
+>>>>> Low reviews/approvals in kubernetes/ingress-gce (GH pr comments <= 10 && devstats <=20): 4
+aojea
+bowei
+kl52752
+thockin
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

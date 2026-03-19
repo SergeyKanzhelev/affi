@@ -1,0 +1,30 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/descheduler --repository-devstats=kubernetes-sigs/descheduler --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:30:22
+Processed /private/tmp/affi_stats/kubernetes-sigs_descheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_descheduler/OWNERS_ALIASES
+Found 0 unique aliases
+Found 10 unique users
+......
+
+
+>>>>> Contributions from kubernetes-sigs/descheduler devstats repo and kubernetes-sigs/descheduler github repo : 6
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+ingvagabund : 291 : 77 
+googs1025 : 280 : 38 
+ricardomaraschini : 128 : 109 
+a7i : 69 : 33 
+jklaw90 : 11 : 13 
+seanmalloy : 2 : 5 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/descheduler (devstats == 0): 4
+damemi
+janeliul
+knelasevero
+lixiang233
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/descheduler (GH pr comments <= 10 && devstats <=20): 1
+seanmalloy
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,0 +1,25 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/node-readiness-controller --repository-devstats=kubernetes-sigs/node-readiness-controller --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:31:19
+Processed /private/tmp/affi_stats/kubernetes-sigs_node-readiness-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_node-readiness-controller/OWNERS_ALIASES
+Found 0 unique aliases
+Found 6 unique users
+.
+
+
+>>>>> Contributions from kubernetes-sigs/node-readiness-controller devstats repo and kubernetes-sigs/node-readiness-controller github repo : 1
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+ajaysundark : 236 : 85 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/node-readiness-controller (devstats == 0): 5
+SergeyKanzhelev
+dchen1107
+haircommander
+mrunalp
+tallclair
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/node-readiness-controller (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

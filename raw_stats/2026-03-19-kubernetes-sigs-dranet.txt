@@ -1,0 +1,27 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/dranet --repository-devstats=kubernetes-sigs/dranet --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:31:36
+Processed /private/tmp/affi_stats/kubernetes-sigs_dranet/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_dranet/OWNERS_ALIASES
+Found 0 unique aliases
+Found 7 unique users
+....
+
+
+>>>>> Contributions from kubernetes-sigs/dranet devstats repo and kubernetes-sigs/dranet github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+aojea : 39 : 51 
+gauravkghildiyal : 24 : 30 
+michaelasp : 15 : 14 
+mikezappa87(MikeZappa87) : 16 : 4 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/dranet (devstats == 0): 3
+bowei
+danwinship
+thockin
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/dranet (GH pr comments <= 10 && devstats <=20): 1
+mikezappa87
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES
