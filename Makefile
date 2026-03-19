@@ -294,3 +294,8 @@ parse-stats:
 	for repo in $(REPOS); do \
 		python3 generate_stats.py --repo $$repo --parse-only; \
 	done
+
+dist:
+	rm -f affi.zip
+	zip -r affi.zip manifest.json content.js parser.js styles.css js-yaml.min.js maintainers_stats.json icons/
+
