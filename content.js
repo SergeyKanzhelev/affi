@@ -18,14 +18,11 @@
     if (existing) {
         existing.remove();
     }
-    
-    // Brief delay to allow GitHub to finish rendering the new page
     setTimeout(init, 500);
   }
 
   async function init() {
     const pathParts = window.location.pathname.split('/').filter(Boolean);
-    // Expecting /owner/repo/blob/branch/path
     if (pathParts.length < 5) return; 
 
     const owner = pathParts[0];
@@ -37,31 +34,65 @@
 
     if (!isOwnersFile && !isAliasesFile) return;
 
-    console.log('Affi: Identified OWNERS file, fetching data...');
-
     const rawBaseUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}`;
     const aliasesUrl = `${rawBaseUrl}/OWNERS_ALIASES`;
-    const currentFileUrl = `${rawBaseUrl}/${filePath}`;
 
     try {
-      const [aliasesResp, currentFileResp] = await Promise.all([
-        fetch(aliasesUrl).then(r => r.ok ? r.text() : ''),
-        fetch(currentFileUrl).then(r => r.text())
-      ]);
-
+      const aliasesResp = await fetch(aliasesUrl).then(r => r.ok ? r.text() : '');
       const aliasesData = aliasesResp ? parseYamlAliases(aliasesResp) : {};
-      renderOverlay(currentFileResp, aliasesData);
+
+      const ownersFiles = await fetchOwnersHierarchy(rawBaseUrl, filePath);
+      renderOverlay(ownersFiles, aliasesData);
     } catch (err) {
-      console.error('Affi: Error fetching files', err);
+      console.error('Affi: Error fetching data', err);
     }
+  }
+
+  async function fetchOwnersHierarchy(baseUrl, currentPath) {
+    const pathSegments = currentPath.split('/');
+    const fileName = pathSegments.pop(); // Usually 'OWNERS'
+    const folders = [];
+    
+    // Build list of folders to check
+    let currentFolder = "";
+    folders.push(""); // Root
+    for (let segment of pathSegments) {
+      currentFolder += (currentFolder ? "/" : "") + segment;
+      folders.push(currentFolder);
+    }
+
+    // Fetch all in parallel
+    const fetchPromises = folders.map(folder => {
+      const url = `${baseUrl}/${folder ? folder + '/' : ''}OWNERS`;
+      return fetch(url).then(async r => {
+        if (!r.ok) return null;
+        const text = await r.text();
+        return { path: folder || '/', content: text };
+      });
+    });
+
+    let results = await Promise.all(fetchPromises);
+    results = results.filter(r => r !== null);
+
+    // Apply no_parent_owners logic (traverse from bottom to top)
+    let filteredResults = [];
+    for (let i = results.length - 1; i >= 0; i--) {
+      filteredResults.unshift(results[i]);
+      try {
+        const doc = jsyaml.load(results[i].content);
+        if (doc && doc.no_parent_owners === true) {
+          break;
+        }
+      } catch (e) {}
+    }
+
+    return filteredResults;
   }
 
   function parseYamlAliases(content) {
     try {
       const doc = jsyaml.load(content);
-      if (doc && doc.aliases) {
-        return doc.aliases;
-      }
+      if (doc && doc.aliases) return doc.aliases;
     } catch (e) {
       console.error('Affi: Error parsing YAML', e);
     }
@@ -77,15 +108,13 @@
     return a;
   }
 
-  function renderOverlay(content, aliases) {
+  function renderOverlay(files, aliases) {
     const existing = document.getElementById('affi-overlay');
     if (existing) existing.remove();
 
     const container = document.createElement('div');
     container.id = 'affi-overlay';
-    // Open by default
-    container.className = ''; 
-
+    
     const toggle = document.createElement('div');
     toggle.id = 'affi-toggle';
     toggle.innerText = 'Affi';
@@ -96,70 +125,91 @@
 
     const header = document.createElement('div');
     header.id = 'affi-header';
-    header.innerText = 'Affi - Kubernetes OWNERS';
+    header.innerText = 'Affi - Kubernetes OWNERS Hierarchy';
 
     const contentDiv = document.createElement('div');
     contentDiv.id = 'affi-content';
 
-    const lines = content.split('\n');
-    lines.forEach(line => {
-      const lineDiv = document.createElement('div');
-      lineDiv.className = 'affi-line';
+    files.forEach((file, index) => {
+      const isLast = index === files.length - 1;
+      const fileSection = document.createElement('div');
+      fileSection.className = 'affi-file-section';
+      if (!isLast) fileSection.classList.add('affi-file-collapsed');
+      
+      const pathLabel = document.createElement('div');
+      pathLabel.className = 'affi-path-label';
+      pathLabel.innerText = `${isLast ? '▼' : '▶'} File: ${file.path}/OWNERS`;
+      pathLabel.style.cursor = 'pointer';
+      
+      const fileBody = document.createElement('div');
+      fileBody.className = 'affi-file-body';
 
-      const trimmed = line.trim();
-      // Only expand aliases if they are part of a list item (starts with '- ')
-      // or if it's an alias definition key in OWNERS_ALIASES (ends with ':')
-      const isListItem = trimmed.startsWith('- ');
-      const isAliasKey = trimmed.endsWith(':') && !trimmed.startsWith('#');
+      pathLabel.onclick = () => {
+          const isCollapsed = fileSection.classList.toggle('affi-file-collapsed');
+          pathLabel.innerText = `${isCollapsed ? '▶' : '▼'} File: ${file.path}/OWNERS`;
+      };
 
-      if (isListItem || isAliasKey) {
-        const indentMatch = line.match(/^(\s*)/);
-        const baseIndent = indentMatch ? indentMatch[1] : '';
-        const subIndent = baseIndent + '  ';
+      fileSection.appendChild(pathLabel);
+      fileSection.appendChild(fileBody);
 
-        const parts = line.split(/([\w-]+)/);
-        parts.forEach(part => {
-          if (aliases[part]) {
-            const span = document.createElement('span');
-            span.className = 'affi-alias';
-            span.innerText = part;
+      const lines = file.content.split('\n');
+      lines.forEach(line => {
+        const lineDiv = document.createElement('div');
+        lineDiv.className = 'affi-line';
 
-            const btn = document.createElement('button');
-            btn.className = 'affi-expand-btn';
-            btn.innerText = ' [+]';
-            btn.onclick = (e) => {
-              e.stopPropagation();
-              const next = btn.nextElementSibling;
-              if (next && next.classList.contains('affi-expanded-list')) {
-                next.remove();
-                btn.innerText = ' [+]';
-              } else {
-                const list = document.createElement('div');
-                list.className = 'affi-expanded-list';
-                const members = aliases[part];
-                members.forEach(member => {
-                  const item = document.createElement('div');
-                  item.appendChild(document.createTextNode(`${subIndent}- `));
-                  item.appendChild(createGitHubLink(member));
-                  list.appendChild(item);
-                });
-                btn.after(list);
-                btn.innerText = ' [-]';
-              }
-            };
-            lineDiv.appendChild(span);
-            lineDiv.appendChild(btn);
-          } else if (isListItem && part.match(/^[\w-]+$/) && part !== '-') {
-            // Check if part is the actual username in the list item
-            lineDiv.appendChild(createGitHubLink(part));
-          } else {
-            lineDiv.appendChild(document.createTextNode(part));
-          }
-        });
-      } else {
-        lineDiv.appendChild(document.createTextNode(line));
-      }
-      contentDiv.appendChild(lineDiv);
+        const trimmed = line.trim();
+        const isListItem = trimmed.startsWith('- ');
+        const isAliasKey = trimmed.endsWith(':') && !trimmed.startsWith('#');
+
+        if (isListItem || isAliasKey) {
+          const indentMatch = line.match(/^(\s*)/);
+          const baseIndent = indentMatch ? indentMatch[1] : '';
+          const subIndent = baseIndent + '  ';
+
+          const parts = line.split(/([\w-]+)/);
+          parts.forEach(part => {
+            if (aliases[part]) {
+              const span = document.createElement('span');
+              span.className = 'affi-alias';
+              span.innerText = part;
+
+              const btn = document.createElement('button');
+              btn.className = 'affi-expand-btn';
+              btn.innerText = ' [+]';
+              btn.onclick = (e) => {
+                e.stopPropagation();
+                const next = btn.nextElementSibling;
+                if (next && next.classList.contains('affi-expanded-list')) {
+                  next.remove();
+                  btn.innerText = ' [+]';
+                } else {
+                  const list = document.createElement('div');
+                  list.className = 'affi-expanded-list';
+                  const members = aliases[part];
+                  members.forEach(member => {
+                    const item = document.createElement('div');
+                    item.appendChild(document.createTextNode(`${subIndent}- `));
+                    item.appendChild(createGitHubLink(member));
+                    list.appendChild(item);
+                  });
+                  btn.after(list);
+                  btn.innerText = ' [-]';
+                }
+              };
+              lineDiv.appendChild(span);
+              lineDiv.appendChild(btn);
+            } else if (isListItem && part.match(/^[\w-]+$/) && part !== '-') {
+              lineDiv.appendChild(createGitHubLink(part));
+            } else {
+              lineDiv.appendChild(document.createTextNode(part));
+            }
+          });
+        } else {
+          lineDiv.appendChild(document.createTextNode(line));
+        }
+        fileBody.appendChild(lineDiv);
+      });
+      contentDiv.appendChild(fileSection);
     });
 
     container.appendChild(toggle);
@@ -168,7 +218,5 @@
     document.body.appendChild(container);
   }
 
-  // Initial call
   init();
-
 })();
