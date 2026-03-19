@@ -57,40 +57,15 @@
   }
 
   function parseYamlAliases(content) {
-    const lines = content.split('\n');
-    const result = {};
-    let currentAlias = null;
-    let inAliasesSection = false;
-
-    for (let line of lines) {
-      const trimmed = line.trim();
-      if (!trimmed || trimmed.startsWith('#')) continue;
-
-      if (trimmed === 'aliases:') {
-        inAliasesSection = true;
-        continue;
+    try {
+      const doc = jsyaml.load(content);
+      if (doc && doc.aliases) {
+        return doc.aliases;
       }
-
-      if (inAliasesSection) {
-        const aliasMatch = line.match(/^\s*([\w-]+):\s*$/);
-        if (aliasMatch) {
-          currentAlias = aliasMatch[1];
-          result[currentAlias] = [];
-          continue;
-        }
-
-        const userMatch = line.match(/^\s*-\s+([\w-]+)\s*$/);
-        if (userMatch && currentAlias) {
-          result[currentAlias].push(userMatch[1]);
-          continue;
-        }
-
-        if (line.match(/^\w/) && !line.startsWith(' ')) {
-           if (trimmed !== 'aliases:') inAliasesSection = false;
-        }
-      }
+    } catch (e) {
+      console.error('Affi: Error parsing YAML', e);
     }
-    return result;
+    return {};
   }
 
   function renderOverlay(content, aliases) {
@@ -115,44 +90,53 @@
 
     const contentDiv = document.createElement('div');
     contentDiv.id = 'affi-content';
+const lines = content.split('\n');
+lines.forEach(line => {
+  const lineDiv = document.createElement('div');
+  lineDiv.className = 'affi-line';
 
-    const lines = content.split('\n');
-    lines.forEach(line => {
-      const lineDiv = document.createElement('div');
-      lineDiv.className = 'affi-line';
-      
-      const parts = line.split(/([\w-]+)/);
-      parts.forEach(part => {
-          if (aliases[part]) {
-              const span = document.createElement('span');
-              span.className = 'affi-alias';
-              span.innerText = part;
-              
-              const btn = document.createElement('button');
-              btn.className = 'affi-expand-btn';
-              btn.innerText = ' [+]';
-              btn.onclick = (e) => {
-                  e.stopPropagation();
-                  const next = btn.nextElementSibling;
-                  if (next && next.classList.contains('affi-expanded-list')) {
-                      next.remove();
-                      btn.innerText = ' [+]';
-                  } else {
-                      const list = document.createElement('div');
-                      list.className = 'affi-expanded-list';
-                      list.innerText = aliases[part].join(', ');
-                      btn.after(list);
-                      btn.innerText = ' [-]';
-                  }
-              };
-              lineDiv.appendChild(span);
-              lineDiv.appendChild(btn);
+  const trimmed = line.trim();
+  // Only expand aliases if they are part of a list item (starts with '- ')
+  // or if it's an alias definition key in OWNERS_ALIASES (ends with ':')
+  const isListItem = trimmed.startsWith('- ');
+  const isAliasKey = trimmed.endsWith(':') && !trimmed.startsWith('#');
+
+  if (isListItem || isAliasKey) {
+    const parts = line.split(/([\w-]+)/);
+    parts.forEach(part => {
+      if (aliases[part]) {
+        const span = document.createElement('span');
+        span.className = 'affi-alias';
+        span.innerText = part;
+
+        const btn = document.createElement('button');
+        btn.className = 'affi-expand-btn';
+        btn.innerText = ' [+]';
+        btn.onclick = (e) => {
+          e.stopPropagation();
+          const next = btn.nextElementSibling;
+          if (next && next.classList.contains('affi-expanded-list')) {
+            next.remove();
+            btn.innerText = ' [+]';
           } else {
-              lineDiv.appendChild(document.createTextNode(part));
+            const list = document.createElement('div');
+            list.className = 'affi-expanded-list';
+            list.innerText = aliases[part].join(', ');
+            btn.after(list);
+            btn.innerText = ' [-]';
           }
-      });
-      contentDiv.appendChild(lineDiv);
+        };
+        lineDiv.appendChild(span);
+        lineDiv.appendChild(btn);
+      } else {
+        lineDiv.appendChild(document.createTextNode(part));
+      }
     });
+  } else {
+    lineDiv.appendChild(document.createTextNode(line));
+  }
+  contentDiv.appendChild(lineDiv);
+});
 
     container.appendChild(toggle);
     container.appendChild(header);

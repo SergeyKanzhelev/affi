@@ -8,7 +8,7 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*/*/blob/*/OWNERS", "https://github.com/*/*/blob/*/OWNERS_ALIASES"],
-      "js": ["content.js"],
+      "js": ["js-yaml.min.js", "content.js"],
       "css": ["styles.css"]
     }
   ],
