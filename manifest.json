@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "affi",
+  "version": "1.0.0",
+  "description": "Understand aliases in Kubernetes OWNERS files.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://github.com/*", "https://raw.githubusercontent.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/blob/*/OWNERS", "https://github.com/*/*/blob/*/OWNERS_ALIASES"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
