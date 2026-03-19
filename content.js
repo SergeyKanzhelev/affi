@@ -1,17 +1,19 @@
 (function() {
   console.log('Affi extension initialized');
 
-  let lastUrl = location.href;
+  if (typeof location !== 'undefined' && typeof MutationObserver !== 'undefined') {
+    let lastUrl = location.href;
 
-  const observer = new MutationObserver(() => {
-    const url = location.href;
-    if (url !== lastUrl) {
-      lastUrl = url;
-      onUrlChange();
-    }
-  });
+    const observer = new MutationObserver(() => {
+      const url = location.href;
+      if (url !== lastUrl) {
+        lastUrl = url;
+        onUrlChange();
+      }
+    });
 
-  observer.observe(document, { subtree: true, childList: true });
+    observer.observe(document, { subtree: true, childList: true });
+  }
 
   function onUrlChange() {
     const existing = document.getElementById('affi-overlay');
@@ -41,8 +43,9 @@
       const aliasesResp = await fetch(aliasesUrl).then(r => r.ok ? r.text() : '');
       const aliasesData = aliasesResp ? parseYamlAliases(aliasesResp) : {};
 
-      const ownersFiles = await fetchOwnersHierarchy(rawBaseUrl, filePath);
-      renderOverlay(ownersFiles, aliasesData);
+      const hierarchy = await fetchOwnersHierarchy(rawBaseUrl, filePath);
+      const githubBlobUrl = `https://github.com/${owner}/${repo}/blob/${branch}`;
+      renderOverlay(hierarchy, aliasesData, githubBlobUrl);
     } catch (err) {
       console.error('Affi: Error fetching data', err);
     }
@@ -50,18 +53,16 @@
 
   async function fetchOwnersHierarchy(baseUrl, currentPath) {
     const pathSegments = currentPath.split('/');
-    const fileName = pathSegments.pop(); // Usually 'OWNERS'
     const folders = [];
     
-    // Build list of folders to check
     let currentFolder = "";
     folders.push(""); // Root
     for (let segment of pathSegments) {
+      if (segment === 'OWNERS' || segment === 'OWNERS_ALIASES') continue;
       currentFolder += (currentFolder ? "/" : "") + segment;
       folders.push(currentFolder);
     }
 
-    // Fetch all in parallel
     const fetchPromises = folders.map(folder => {
       const url = `${baseUrl}/${folder ? folder + '/' : ''}OWNERS`;
       return fetch(url).then(async r => {
@@ -74,29 +75,17 @@
     let results = await Promise.all(fetchPromises);
     results = results.filter(r => r !== null);
 
-    // Apply no_parent_owners logic (traverse from bottom to top)
     let filteredResults = [];
+    let truncated = false;
     for (let i = results.length - 1; i >= 0; i--) {
       filteredResults.unshift(results[i]);
-      try {
-        const doc = jsyaml.load(results[i].content);
-        if (doc && doc.no_parent_owners === true) {
-          break;
-        }
-      } catch (e) {}
+      if (shouldTruncate(results[i].content)) {
+        if (i > 0) truncated = true;
+        break;
+      }
     }
 
-    return filteredResults;
-  }
-
-  function parseYamlAliases(content) {
-    try {
-      const doc = jsyaml.load(content);
-      if (doc && doc.aliases) return doc.aliases;
-    } catch (e) {
-      console.error('Affi: Error parsing YAML', e);
-    }
-    return {};
+    return { files: filteredResults, truncated };
   }
 
   function createGitHubLink(username) {
@@ -108,7 +97,7 @@
     return a;
   }
 
-  function renderOverlay(files, aliases) {
+  function renderOverlay(hierarchy, aliases, githubBlobUrl) {
     const existing = document.getElementById('affi-overlay');
     if (existing) existing.remove();
 
@@ -130,15 +119,35 @@
     const contentDiv = document.createElement('div');
     contentDiv.id = 'affi-content';
 
-    files.forEach((file, index) => {
-      const isLast = index === files.length - 1;
+    if (hierarchy.truncated) {
+      const truncatedDiv = document.createElement('div');
+      truncatedDiv.className = 'affi-truncated-msg';
+      truncatedDiv.innerText = '❌ no_parent_owners';
+      contentDiv.appendChild(truncatedDiv);
+    }
+
+    hierarchy.files.forEach((file, index) => {
+      const isLast = index === hierarchy.files.length - 1;
       const fileSection = document.createElement('div');
       fileSection.className = 'affi-file-section';
       if (!isLast) fileSection.classList.add('affi-file-collapsed');
       
       const pathLabel = document.createElement('div');
       pathLabel.className = 'affi-path-label';
-      pathLabel.innerText = `${isLast ? '▼' : '▶'} File: ${file.path}/OWNERS`;
+      
+      const labelText = document.createElement('span');
+      labelText.innerText = `${isLast ? '▼' : '▶'} File: ${file.path}/OWNERS`;
+      pathLabel.appendChild(labelText);
+
+      const sourceLink = document.createElement('a');
+      const relativePath = file.path === '/' ? '' : (file.path.startsWith('/') ? file.path : '/' + file.path);
+      sourceLink.href = `${githubBlobUrl}${relativePath}/OWNERS`;
+      sourceLink.target = '_blank';
+      sourceLink.innerText = ' [view source]';
+      sourceLink.className = 'affi-source-link';
+      sourceLink.onclick = (e) => e.stopPropagation();
+      pathLabel.appendChild(sourceLink);
+
       pathLabel.style.cursor = 'pointer';
       
       const fileBody = document.createElement('div');
@@ -146,7 +155,7 @@
 
       pathLabel.onclick = () => {
           const isCollapsed = fileSection.classList.toggle('affi-file-collapsed');
-          pathLabel.innerText = `${isCollapsed ? '▶' : '▼'} File: ${file.path}/OWNERS`;
+          labelText.innerText = `${isCollapsed ? '▶' : '▼'} File: ${file.path}/OWNERS`;
       };
 
       fileSection.appendChild(pathLabel);
@@ -156,18 +165,17 @@
       lines.forEach(line => {
         const lineDiv = document.createElement('div');
         lineDiv.className = 'affi-line';
+        
+        if (line.trim() === '') {
+            lineDiv.textContent = ' ';
+            fileBody.appendChild(lineDiv);
+            return;
+        }
 
-        const trimmed = line.trim();
-        const isListItem = trimmed.startsWith('- ');
-        const isAliasKey = trimmed.endsWith(':') && !trimmed.startsWith('#');
+        const analysis = analyzeOwnersLine(line);
 
-        if (isListItem || isAliasKey) {
-          const indentMatch = line.match(/^(\s*)/);
-          const baseIndent = indentMatch ? indentMatch[1] : '';
-          const subIndent = baseIndent + '  ';
-
-          const parts = line.split(/([\w-]+)/);
-          parts.forEach(part => {
+        if (analysis.isListItem || analysis.isAliasKey) {
+          analysis.tokens.forEach(part => {
             if (aliases[part]) {
               const span = document.createElement('span');
               span.className = 'affi-alias';
@@ -188,7 +196,7 @@
                   const members = aliases[part];
                   members.forEach(member => {
                     const item = document.createElement('div');
-                    item.appendChild(document.createTextNode(`${subIndent}- `));
+                    item.appendChild(document.createTextNode(`${analysis.subIndent}- `));
                     item.appendChild(createGitHubLink(member));
                     list.appendChild(item);
                   });
@@ -198,14 +206,14 @@
               };
               lineDiv.appendChild(span);
               lineDiv.appendChild(btn);
-            } else if (isListItem && part.match(/^[\w-]+$/) && part !== '-') {
+            } else if (analysis.isListItem && part.match(/^[\w-]+$/) && part !== '-') {
               lineDiv.appendChild(createGitHubLink(part));
             } else {
               lineDiv.appendChild(document.createTextNode(part));
             }
           });
         } else {
-          lineDiv.appendChild(document.createTextNode(line));
+          lineDiv.textContent = line;
         }
         fileBody.appendChild(lineDiv);
       });
@@ -218,5 +226,14 @@
     document.body.appendChild(container);
   }
 
-  init();
+  if (typeof location !== 'undefined') {
+    init();
+  }
+
+  // Export functions for testing if we are in a Node environment
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+      fetchOwnersHierarchy
+    };
+  }
 })();
