@@ -74,7 +74,8 @@
 
     const container = document.createElement('div');
     container.id = 'affi-overlay';
-    container.className = 'affi-collapsed'; // Start collapsed by default
+    // Open by default
+    container.className = ''; 
     
     const toggle = document.createElement('div');
     toggle.id = 'affi-toggle';
