@@ -1,0 +1,894 @@
+{
+  "repositories": {
+    "kubernetes/node-problem-detector": {
+      "date_generated": "2026-03-18",
+      "users": {
+        "hakman": {
+          "pr_comments": 126,
+          "devstats_score": 219
+        },
+        "sergeykanzhelev": {
+          "pr_comments": 40,
+          "devstats_score": 79
+        },
+        "wangzhen127": {
+          "pr_comments": 49,
+          "devstats_score": 56
+        },
+        "mmiranda96": {
+          "pr_comments": 7,
+          "devstats_score": 2
+        },
+        "random-liu": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "andyxning": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "dchen1107": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "derekwaynecarr": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "klueska": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mrunalp": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "sjenning": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "tallclair": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "xueweiz": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "yujuhong": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        }
+      }
+    },
+    "kubernetes/kubernetes": {
+      "date_generated": "2026-03-18",
+      "users": {
+        "liggitt": {
+          "pr_comments": 814,
+          "devstats_score": 2654
+        },
+        "sergeykanzhelev": {
+          "pr_comments": 441,
+          "devstats_score": 1157
+        },
+        "bentheelder": {
+          "pr_comments": 371,
+          "devstats_score": 1813
+        },
+        "dims": {
+          "pr_comments": 612,
+          "devstats_score": 1397
+        },
+        "pohly": {
+          "pr_comments": 561,
+          "devstats_score": 3559
+        },
+        "macsko": {
+          "pr_comments": 235,
+          "devstats_score": 1255
+        },
+        "bart0sh": {
+          "pr_comments": 225,
+          "devstats_score": 1618
+        },
+        "aojea": {
+          "pr_comments": 366,
+          "devstats_score": 1290
+        },
+        "sanposhiho": {
+          "pr_comments": 139,
+          "devstats_score": 812
+        },
+        "wojtek-t": {
+          "pr_comments": 155,
+          "devstats_score": 335
+        },
+        "tallclair": {
+          "pr_comments": 136,
+          "devstats_score": 745
+        },
+        "jpbetz": {
+          "pr_comments": 361,
+          "devstats_score": 621
+        },
+        "aaron-prindle": {
+          "pr_comments": 148,
+          "devstats_score": 412
+        },
+        "kannon92": {
+          "pr_comments": 109,
+          "devstats_score": 400
+        },
+        "soltysh": {
+          "pr_comments": 274,
+          "devstats_score": 667
+        },
+        "lalitc375": {
+          "pr_comments": 82,
+          "devstats_score": 412
+        },
+        "haircommander": {
+          "pr_comments": 139,
+          "devstats_score": 378
+        },
+        "danwinship": {
+          "pr_comments": 126,
+          "devstats_score": 526
+        },
+        "thockin": {
+          "pr_comments": 319,
+          "devstats_score": 792
+        },
+        "yongruilin": {
+          "pr_comments": 154,
+          "devstats_score": 385
+        },
+        "pacoxu": {
+          "pr_comments": 497,
+          "devstats_score": 648
+        },
+        "neolit123": {
+          "pr_comments": 147,
+          "devstats_score": 519
+        },
+        "ffromani": {
+          "pr_comments": 134,
+          "devstats_score": 835
+        },
+        "hirazawaui": {
+          "pr_comments": 168,
+          "devstats_score": 687
+        },
+        "serathius": {
+          "pr_comments": 133,
+          "devstats_score": 741
+        },
+        "dom4ha": {
+          "pr_comments": 85,
+          "devstats_score": 355
+        },
+        "mortent": {
+          "pr_comments": 68,
+          "devstats_score": 432
+        },
+        "saschagrunert": {
+          "pr_comments": 161,
+          "devstats_score": 228
+        },
+        "carlory": {
+          "pr_comments": 188,
+          "devstats_score": 627
+        },
+        "richabanker": {
+          "pr_comments": 107,
+          "devstats_score": 485
+        },
+        "natasha41575": {
+          "pr_comments": 111,
+          "devstats_score": 753
+        },
+        "ardaguclu": {
+          "pr_comments": 83,
+          "devstats_score": 290
+        },
+        "gnufied": {
+          "pr_comments": 79,
+          "devstats_score": 247
+        },
+        "enj": {
+          "pr_comments": 65,
+          "devstats_score": 214
+        },
+        "michaelasp": {
+          "pr_comments": 61,
+          "devstats_score": 542
+        },
+        "verolop": {
+          "pr_comments": 127,
+          "devstats_score": 87
+        },
+        "cici37": {
+          "pr_comments": 81,
+          "devstats_score": 162
+        },
+        "jsafrane": {
+          "pr_comments": 97,
+          "devstats_score": 117
+        },
+        "adrianmoisey": {
+          "pr_comments": 84,
+          "devstats_score": 174
+        },
+        "seans3": {
+          "pr_comments": 128,
+          "devstats_score": 180
+        },
+        "deads2k": {
+          "pr_comments": 67,
+          "devstats_score": 106
+        },
+        "siyuanfoundation": {
+          "pr_comments": 70,
+          "devstats_score": 167
+        },
+        "yliaog": {
+          "pr_comments": 50,
+          "devstats_score": 733
+        },
+        "aramase": {
+          "pr_comments": 68,
+          "devstats_score": 171
+        },
+        "xmudrii": {
+          "pr_comments": 115,
+          "devstats_score": 91
+        },
+        "lmktfy": {
+          "pr_comments": 64,
+          "devstats_score": 206
+        },
+        "cpanato": {
+          "pr_comments": 77,
+          "devstats_score": 56
+        },
+        "ania-borowiec": {
+          "pr_comments": 54,
+          "devstats_score": 362
+        },
+        "mrunalp": {
+          "pr_comments": 55,
+          "devstats_score": 76
+        },
+        "xing-yang": {
+          "pr_comments": 55,
+          "devstats_score": 63
+        },
+        "mimowo": {
+          "pr_comments": 59,
+          "devstats_score": 248
+        },
+        "dgrisonnet": {
+          "pr_comments": 58,
+          "devstats_score": 113
+        },
+        "mkumatag": {
+          "pr_comments": 46,
+          "devstats_score": 114
+        },
+        "atiratree": {
+          "pr_comments": 42,
+          "devstats_score": 255
+        },
+        "marosset": {
+          "pr_comments": 41,
+          "devstats_score": 86
+        },
+        "skitt": {
+          "pr_comments": 40,
+          "devstats_score": 86
+        },
+        "sttts": {
+          "pr_comments": 51,
+          "devstats_score": 67
+        },
+        "joelspeed": {
+          "pr_comments": 40,
+          "devstats_score": 184
+        },
+        "omerap12": {
+          "pr_comments": 40,
+          "devstats_score": 201
+        },
+        "dashpole": {
+          "pr_comments": 38,
+          "devstats_score": 47
+        },
+        "aroradaman": {
+          "pr_comments": 32,
+          "devstats_score": 139
+        },
+        "msau42": {
+          "pr_comments": 37,
+          "devstats_score": 64
+        },
+        "johnbelamaric": {
+          "pr_comments": 36,
+          "devstats_score": 160
+        },
+        "rata": {
+          "pr_comments": 29,
+          "devstats_score": 154
+        },
+        "wzshiming": {
+          "pr_comments": 53,
+          "devstats_score": 14
+        },
+        "jsturtevant": {
+          "pr_comments": 113,
+          "devstats_score": 34
+        },
+        "utam0k": {
+          "pr_comments": 38,
+          "devstats_score": 206
+        },
+        "tosi3k": {
+          "pr_comments": 26,
+          "devstats_score": 178
+        },
+        "sunnylovestiramisu": {
+          "pr_comments": 28,
+          "devstats_score": 56
+        },
+        "klueska": {
+          "pr_comments": 28,
+          "devstats_score": 71
+        },
+        "rexagod": {
+          "pr_comments": 27,
+          "devstats_score": 114
+        },
+        "jackfrancis": {
+          "pr_comments": 24,
+          "devstats_score": 75
+        },
+        "janetkuo": {
+          "pr_comments": 22,
+          "devstats_score": 65
+        },
+        "rphillips": {
+          "pr_comments": 19,
+          "devstats_score": 34
+        },
+        "humblec": {
+          "pr_comments": 19,
+          "devstats_score": 51
+        },
+        "brianpursley": {
+          "pr_comments": 14,
+          "devstats_score": 38
+        },
+        "sbangari": {
+          "pr_comments": 20,
+          "devstats_score": 16
+        },
+        "mengqiy": {
+          "pr_comments": 16,
+          "devstats_score": 75
+        },
+        "sataqiu": {
+          "pr_comments": 21,
+          "devstats_score": 31
+        },
+        "palnabarun": {
+          "pr_comments": 24,
+          "devstats_score": 24
+        },
+        "axezhan": {
+          "pr_comments": 17,
+          "devstats_score": 37
+        },
+        "matthyx": {
+          "pr_comments": 13,
+          "devstats_score": 34
+        },
+        "kerthcet": {
+          "pr_comments": 12,
+          "devstats_score": 21
+        },
+        "dchen1107": {
+          "pr_comments": 17,
+          "devstats_score": 17
+        },
+        "elmiko": {
+          "pr_comments": 14,
+          "devstats_score": 44
+        },
+        "daschott": {
+          "pr_comments": 11,
+          "devstats_score": 11
+        },
+        "mauriciopoppe": {
+          "pr_comments": 10,
+          "devstats_score": 10
+        },
+        "priyankasaggu11929": {
+          "pr_comments": 3,
+          "devstats_score": 44
+        },
+        "mborsz": {
+          "pr_comments": 5,
+          "devstats_score": 9
+        },
+        "mikebrow": {
+          "pr_comments": 6,
+          "devstats_score": 20
+        },
+        "yujuhong": {
+          "pr_comments": 8,
+          "devstats_score": 16
+        },
+        "yue9944882": {
+          "pr_comments": 7,
+          "devstats_score": 74
+        },
+        "huang-wei": {
+          "pr_comments": 22,
+          "devstats_score": 1
+        },
+        "x13n": {
+          "pr_comments": 9,
+          "devstats_score": 9
+        },
+        "mpuckett159": {
+          "pr_comments": 5,
+          "devstats_score": 25
+        },
+        "ingvagabund": {
+          "pr_comments": 5,
+          "devstats_score": 23
+        },
+        "mattcary": {
+          "pr_comments": 7,
+          "devstats_score": 9
+        },
+        "mrhohn": {
+          "pr_comments": 8,
+          "devstats_score": 2
+        },
+        "mtaufen": {
+          "pr_comments": 3,
+          "devstats_score": 10
+        },
+        "munnerz": {
+          "pr_comments": 6,
+          "devstats_score": 36
+        },
+        "tzneal": {
+          "pr_comments": 3,
+          "devstats_score": 5
+        },
+        "endocrimes": {
+          "pr_comments": 4,
+          "devstats_score": 1
+        },
+        "towca": {
+          "pr_comments": 8,
+          "devstats_score": 18
+        },
+        "nmn3m": {
+          "pr_comments": 7,
+          "devstats_score": 64
+        },
+        "hzxuzhonghu": {
+          "pr_comments": 8,
+          "devstats_score": 1
+        },
+        "tnqn": {
+          "pr_comments": 3,
+          "devstats_score": 3
+        },
+        "cheftako": {
+          "pr_comments": 6,
+          "devstats_score": 23
+        },
+        "fabriziopandini": {
+          "pr_comments": 3,
+          "devstats_score": 2
+        },
+        "cblecker": {
+          "pr_comments": 21,
+          "devstats_score": 1
+        },
+        "puerco": {
+          "pr_comments": 11,
+          "devstats_score": 8
+        },
+        "tkashem": {
+          "pr_comments": 5,
+          "devstats_score": 40
+        },
+        "raywainman": {
+          "pr_comments": 7,
+          "devstats_score": 19
+        },
+        "mengjiao-liu": {
+          "pr_comments": 4,
+          "devstats_score": 1
+        },
+        "tenzen-y": {
+          "pr_comments": 10,
+          "devstats_score": 35
+        },
+        "robscott": {
+          "pr_comments": 10,
+          "devstats_score": 1
+        },
+        "roycaihw": {
+          "pr_comments": 10,
+          "devstats_score": 90
+        },
+        "feiskyer": {
+          "pr_comments": 19,
+          "devstats_score": 1
+        },
+        "tengqm": {
+          "pr_comments": 3,
+          "devstats_score": 5
+        },
+        "rainbowmango": {
+          "pr_comments": 3,
+          "devstats_score": 4
+        },
+        "gjtempleton": {
+          "pr_comments": 4,
+          "devstats_score": 4
+        },
+        "tabbysable": {
+          "pr_comments": 2,
+          "devstats_score": 71
+        },
+        "bowei": {
+          "pr_comments": 5,
+          "devstats_score": 40
+        },
+        "benluddy": {
+          "pr_comments": 10,
+          "devstats_score": 25
+        },
+        "kow3ns": {
+          "pr_comments": 6,
+          "devstats_score": 8
+        },
+        "shaneutt": {
+          "pr_comments": 4,
+          "devstats_score": 19
+        },
+        "shyamjvs": {
+          "pr_comments": 5,
+          "devstats_score": 5
+        },
+        "andyzhangx": {
+          "pr_comments": 8,
+          "devstats_score": 7
+        },
+        "andrewsykim": {
+          "pr_comments": 5,
+          "devstats_score": 7
+        },
+        "smarterclayton": {
+          "pr_comments": 8,
+          "devstats_score": 10
+        },
+        "ahg-g": {
+          "pr_comments": 4,
+          "devstats_score": 1
+        },
+        "knabben": {
+          "pr_comments": 7,
+          "devstats_score": 3
+        },
+        "lojies": {
+          "pr_comments": 0,
+          "devstats_score": 14
+        },
+        "kaslin": {
+          "pr_comments": 1,
+          "devstats_score": 1
+        },
+        "krmayankk": {
+          "pr_comments": 1,
+          "devstats_score": 1
+        },
+        "caesarxuchao": {
+          "pr_comments": 2,
+          "devstats_score": 1
+        },
+        "saad-ali": {
+          "pr_comments": 2,
+          "devstats_score": 1
+        },
+        "caseydavenport": {
+          "pr_comments": 1,
+          "devstats_score": 1
+        },
+        "stevekuznetsov": {
+          "pr_comments": 1,
+          "devstats_score": 7
+        },
+        "luxas": {
+          "pr_comments": 1,
+          "devstats_score": 10
+        },
+        "claudiubelu": {
+          "pr_comments": 1,
+          "devstats_score": 3
+        },
+        "odinuge": {
+          "pr_comments": 1,
+          "devstats_score": 3
+        },
+        "damemi": {
+          "pr_comments": 0,
+          "devstats_score": 1
+        },
+        "natalisucks": {
+          "pr_comments": 0,
+          "devstats_score": 3
+        },
+        "uablrek": {
+          "pr_comments": 0,
+          "devstats_score": 5
+        },
+        "justinsb": {
+          "pr_comments": 2,
+          "devstats_score": 13
+        },
+        "wangzhen127": {
+          "pr_comments": 1,
+          "devstats_score": 2
+        },
+        "marseel": {
+          "pr_comments": 0,
+          "devstats_score": 3
+        },
+        "mrbobbytables": {
+          "pr_comments": 0,
+          "devstats_score": 1
+        },
+        "jayunit100": {
+          "pr_comments": 1,
+          "devstats_score": 1
+        },
+        "mikespreitzer": {
+          "pr_comments": 1,
+          "devstats_score": 21
+        },
+        "madhavjivrajani": {
+          "pr_comments": 1,
+          "devstats_score": 1
+        },
+        "dipesh-rawat": {
+          "pr_comments": 2,
+          "devstats_score": 2
+        },
+        "damiansawicki": {
+          "pr_comments": 2,
+          "devstats_score": 1
+        },
+        "eddiezane": {
+          "pr_comments": 1,
+          "devstats_score": 3
+        },
+        "iancoldwater": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "knverey": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "random-liu": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "sayakmukhopadhyay": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "yoyinzyc": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "abhiraut": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "alexzielenski": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "alisondy": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "anfernee": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "apelisse": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "bobbypage": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "cjcullen": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "coffeepac": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "cofyc": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "denkensk": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "derekwaynecarr": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "divya-mohan0209": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "divyenpatel": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "freehan": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "gautierdelorme": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "gracenng": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "guineveresaenger": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "ibabou": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "jeremyrickard": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "jiahuif": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "jingxu97": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "johnschnake": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "justaugustus": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "k82cn": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "katcosgrove": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "kwiesmueller": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mattfenwick": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mfahlandt": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mikedanese": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "monotek": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mwielgus": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "nate-double-u": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "nikhita": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "oomichi": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "parispittman": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "ping035627": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "pwittrock": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "ravisantoshgudimetla": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "reylejano": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "s-urbaniak": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "saikat-royc": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "salaxander": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "satyampsoni": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "sjenning": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "spiffxp": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "vincepri": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "wlan0": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        }
+      }
+    }
+  }
+}

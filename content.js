@@ -40,16 +40,20 @@
     const aliasesUrl = `${rawBaseUrl}/OWNERS_ALIASES`;
 
     try {
-      const aliasesResp = await fetch(aliasesUrl).then(r => r.ok ? r.text() : '');
+      const statsUrl = chrome.runtime.getURL('maintainers_stats.json');
+      const [aliasesResp, statsResp] = await Promise.all([
+        fetch(aliasesUrl).then(r => r.ok ? r.text() : ''),
+        fetch(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+      ]);
       const aliasesData = aliasesResp ? parseYamlAliases(aliasesResp) : {};
 
       const hierarchy = await fetchOwnersHierarchy(rawBaseUrl, filePath);
       const githubBlobUrl = `https://github.com/${owner}/${repo}/blob/${branch}`;
-      renderOverlay(hierarchy, aliasesData, githubBlobUrl);
+      renderOverlay(hierarchy, aliasesData, githubBlobUrl, statsResp);
     } catch (err) {
       console.error('Affi: Error fetching data', err);
     }
-  }
+    }
 
   async function fetchOwnersHierarchy(baseUrl, currentPath) {
     const pathSegments = currentPath.split('/');
@@ -88,18 +92,89 @@
     return { files: filteredResults, truncated };
   }
 
-  function createGitHubLink(username) {
+  function createGitHubLink(username, statusClass) {
     const a = document.createElement('a');
     a.href = `https://github.com/${username}`;
     a.target = '_blank';
     a.innerText = username;
     a.className = 'affi-link';
+    if (statusClass) a.classList.add(statusClass);
     return a;
   }
 
-  function renderOverlay(hierarchy, aliases, githubBlobUrl) {
+  function createStatsSpan(repoStats, globalStats) {
+    const span = document.createElement('span');
+    span.className = 'affi-stats';
+    
+    const getVal = (s, key) => (s && s[key] !== undefined) ? s[key] : '?';
+    
+    const rPRs = getVal(repoStats, 'pr_comments');
+    const rDS = getVal(repoStats, 'devstats_score');
+    const gPRs = getVal(globalStats, 'pr_comments');
+    const gDS = getVal(globalStats, 'devstats_score');
+
+    span.innerText = ` (Repo: ${rPRs}/${rDS} | All: ${gPRs}/${gDS})`;
+    return span;
+  }
+
+  function getContributorStatus(rStat, gStat) {
+    const rComments = rStat ? (rStat.pr_comments || 0) : 0;
+    const rDev = rStat ? (rStat.devstats_score || 0) : 0;
+    const gComments = gStat ? (gStat.pr_comments || 0) : 0;
+    const gDev = gStat ? (gStat.devstats_score || 0) : 0;
+    
+    // Completely inactive across all tracked repos
+    if (gComments === 0 && gDev === 0) return 'affi-user-zero';
+    
+    // Locally inactive but globally active (high global score)
+    if (rComments === 0 && rDev === 0 && (gComments >= 50 || gDev >= 100)) {
+        return 'affi-user-locally-inactive';
+    }
+
+    // Low local activity
+    if (rComments < 10) return 'affi-user-low';
+    
+    // Highly active locally
+    if (rComments >= 50) return 'affi-user-active';
+    
+    return '';
+  }
+
+  function renderOverlay(hierarchy, aliases, githubBlobUrl, statsData) {
     const existing = document.getElementById('affi-overlay');
     if (existing) existing.remove();
+
+    const repoPath = window.location.pathname.split('/').slice(1, 3).join('/').toLowerCase();
+    
+    // Find matching repo in additive structure
+    let userStats = {};
+    if (statsData && statsData.repositories) {
+        // Robust check for repo matching (handle casing and trailing slashes)
+        const matchingKey = Object.keys(statsData.repositories).find(k => {
+            const cleanK = k.toLowerCase().replace(/\/$/, "");
+            const cleanP = repoPath.replace(/\/$/, "");
+            return cleanK === cleanP;
+        });
+        if (matchingKey) {
+            userStats = statsData.repositories[matchingKey].users || {};
+        }
+    }
+
+    // Calculate global stats across all repos
+    const globalStats = {};
+    if (statsData && statsData.repositories) {
+        Object.values(statsData.repositories).forEach(repo => {
+            if (repo.users) {
+                Object.entries(repo.users).forEach(([user, stats]) => {
+                    if (!globalStats[user]) {
+                        globalStats[user] = { pr_comments: 0, devstats_score: 0 };
+                    }
+                    globalStats[user].pr_comments += (stats.pr_comments || 0);
+                    globalStats[user].devstats_score += (stats.devstats_score || 0);
+                });
+            }
+        });
+    }
 
     const container = document.createElement('div');
     container.id = 'affi-overlay';
@@ -176,6 +251,7 @@
 
         if (analysis.isListItem || analysis.isAliasKey) {
           analysis.tokens.forEach(part => {
+            const partLower = part.toLowerCase();
             if (aliases[part]) {
               const span = document.createElement('span');
               span.className = 'affi-alias';
@@ -184,8 +260,8 @@
               const btn = document.createElement('button');
               btn.className = 'affi-expand-btn';
               btn.innerText = ' [+]';
-              btn.onclick = (e) => {
-                e.stopPropagation();
+              
+              const expandAlias = () => {
                 const next = btn.nextElementSibling;
                 if (next && next.classList.contains('affi-expanded-list')) {
                   next.remove();
@@ -193,21 +269,48 @@
                 } else {
                   const list = document.createElement('div');
                   list.className = 'affi-expanded-list';
+                  
                   const members = aliases[part];
                   members.forEach(member => {
                     const item = document.createElement('div');
                     item.appendChild(document.createTextNode(`${analysis.subIndent}- `));
-                    item.appendChild(createGitHubLink(member));
+                    
+                    const mLower = member.toLowerCase();
+                    const rStat = userStats[mLower];
+                    const gStat = globalStats[mLower];
+                    
+                    const statusClass = getContributorStatus(rStat, gStat);
+                    item.appendChild(createGitHubLink(member, statusClass));
+                    
+                    if (rStat || gStat) {
+                        item.appendChild(createStatsSpan(rStat, gStat));
+                    }
                     list.appendChild(item);
                   });
                   btn.after(list);
                   btn.innerText = ' [-]';
                 }
               };
+
+              btn.onclick = (e) => {
+                e.stopPropagation();
+                expandAlias();
+              };
+              
               lineDiv.appendChild(span);
               lineDiv.appendChild(btn);
+              
+              // Expand automatically on load
+              expandAlias();
             } else if (analysis.isListItem && part.match(/^[\w-]+$/) && part !== '-') {
-              lineDiv.appendChild(createGitHubLink(part));
+              const rStat = userStats[partLower];
+              const gStat = globalStats[partLower];
+              const statusClass = getContributorStatus(rStat, gStat);
+              lineDiv.appendChild(createGitHubLink(part, statusClass));
+              
+              if (rStat || gStat) {
+                  lineDiv.appendChild(createStatsSpan(rStat, gStat));
+              }
             } else {
               lineDiv.appendChild(document.createTextNode(part));
             }
@@ -220,9 +323,19 @@
       contentDiv.appendChild(fileSection);
     });
 
+    const statsToggle = document.createElement('button');
+    statsToggle.id = 'affi-stats-toggle';
+    statsToggle.innerText = 'Show Activity Stats';
+    statsToggle.onclick = () => {
+        const showing = container.classList.toggle('affi-show-stats');
+        statsToggle.innerText = showing ? 'Hide Activity Stats' : 'Show Activity Stats';
+    };
+
     container.appendChild(toggle);
     container.appendChild(header);
+    container.appendChild(statsToggle);
     container.appendChild(contentDiv);
+
     document.body.appendChild(container);
   }
 

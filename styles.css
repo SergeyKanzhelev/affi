@@ -51,6 +51,15 @@
     white-space: pre-wrap;
 }
 
+#affi-footer {
+    padding: 8px 16px;
+    background: #f6f8fa;
+    border-top: 1px solid #d0d7de;
+    font-size: 10px;
+    color: #57606a;
+    text-align: center;
+}
+
 .affi-truncated-msg {
     padding: 8px 12px;
     margin-bottom: 16px;
@@ -117,9 +126,53 @@
     text-decoration: underline;
 }
 
-.affi-alias {
-    color: #0969da;
+.affi-user-active {
     font-weight: bold;
+}
+
+.affi-user-low {
+    opacity: 0.6;
+}
+
+.affi-user-locally-inactive {
+    opacity: 0.7;
+}
+
+.affi-user-zero {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+.affi-stats {
+    font-size: 10px;
+    color: #57606a;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: none; /* Hide by default */
+}
+
+.affi-show-stats .affi-stats {
+    display: inline;
+}
+
+#affi-stats-toggle {
+    margin: 8px 16px;
+    padding: 4px 12px;
+    font-size: 11px;
+    cursor: pointer;
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    color: #24292f;
+}
+
+#affi-stats-toggle:hover {
+    background: #f3f4f6;
+}
+
+.affi-alias {
+    color: #24292f;
+    font-weight: normal;
 }
 
 .affi-expand-btn {

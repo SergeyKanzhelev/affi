@@ -1,0 +1,821 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --period-devstats=y --dryrun ---
+Running script : 03-18-2026 23:22:00
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/.github/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/CHANGELOG/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/LICENSES/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/build/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/build/build-image/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/build/pause/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/addon-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/calico-policy-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/cluster-loadbalancing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/dns/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/dns-horizontal-autoscaler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/fluentd-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/ip-masq-agent/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/kube-network-policies/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/metadata-agent/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/metadata-proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/metrics-server/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/node-problem-detector/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/addons/volumesnapshots/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/gce/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/gce/gci/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/gce/manifests/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/gce/windows/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/images/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/images/etcd-version-monitor/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/images/kubemark/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/kubemark/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/log-dump/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/pre-existing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cluster/skeleton/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/clicheck/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/cloud-controller-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/dependencycheck/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/dependencyverifier/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/gendocs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/genman/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/genyaml/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/gotemplate/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/importverifier/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kube-apiserver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kube-controller-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kube-proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kube-scheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kubeadm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kubectl/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kubectl-convert/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kubelet/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kubelet/app/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/kubemark/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/preferredimports/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/cmd/prune-junit-xml/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/hack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/hack/jenkins/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/hack/kube-api-linter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/hack/testdata/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/hack/verify-flags/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/logo/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/api/persistentvolumeclaim/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/api/pod/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/api/service/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/api/testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/api/v1/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/abac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/authentication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/authorization/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/batch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/certificates/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/core/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/core/install/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/core/v1/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/core/validation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/extensions/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/imagepolicy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/networking/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/rbac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/resource/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/apis/storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/client/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/apis/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/certificates/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/certificates/approver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/cronjob/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/cronjob/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/daemon/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/daemon/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/deployment/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/deployment/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/devicetainteviction/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/disruption/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/endpoint/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/endpoint/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/endpointslice/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/endpointslicemirroring/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/garbagecollector/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/garbagecollector/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/history/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/job/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/job/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/namespace/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/namespace/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/nodeipam/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/nodeipam/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/nodeipam/ipam/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/nodelifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/nodelifecycle/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/nodelifecycle/scheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/podautoscaler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/podautoscaler/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/podgc/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/podgc/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/replicaset/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/replicaset/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/replication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/replication/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/resourceclaim/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/resourceclaim/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/resourcequota/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/resourcequota/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/serviceaccount/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/servicecidrs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/statefulset/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/statefulset/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/storageversiongc/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/storageversionmigrator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/tainteviction/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/ttlafterfinished/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/util/endpointslice/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/validatingadmissionpolicystatus/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/volume/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controller/volume/ephemeral/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controlplane/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controlplane/apiserver/samples/generic/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controlplane/controller/defaultservicecidr/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/controlplane/controller/leaderelection/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/credentialprovider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/features/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/generated/openapi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubeapiserver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubeapiserver/authenticator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubeapiserver/authorizer/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubeapiserver/options/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubeapiserver/options/testdata/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubectl/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/apis/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/apis/podresources/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/certificate/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/client/testdata/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/cm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/cm/cpumanager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/cm/devicemanager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/cm/dra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/cm/topologymanager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/kubeletconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/network/dns/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/pluginmanager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/server/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/stats/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/token/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubelet/volumemanager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/kubemark/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/printers/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/probe/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/proxy/apis/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/proxy/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/proxy/iptables/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/proxy/ipvs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/proxy/kubemark/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/proxy/winkernel/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/quota/v1/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/quota/v1/evaluator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/quota/v1/install/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/admissionregistration/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/authentication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/authorization/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/batch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/certificates/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/persistentvolume/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/persistentvolumeclaim/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/pod/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/podtemplate/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/rangeallocation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/replicationcontroller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/service/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/core/serviceaccount/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/events/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/networking/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/rbac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/registrytest/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/resource/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/registry/storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/routes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/scheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/scheduler/apis/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/scheduler/framework/autoscaler_contract/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/scheduler/framework/plugins/dynamicresources/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/scheduler/framework/plugins/nodevolumelimits/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/scheduler/framework/plugins/volumebinding/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/scheduler/framework/plugins/volumerestrictions/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/scheduler/framework/plugins/volumezone/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/security/apparmor/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/securitycontext/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/serviceaccount/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/util/bandwidth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/util/coverage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/util/goroutinemap/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/util/iptables/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/util/kernel/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/util/removeall/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/configmap/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/downwardapi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/emptydir/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/fc/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/flexvolume/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/git_repo/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/image/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/iscsi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/nfs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/secret/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/volume/util/subpath/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/pkg/windows/service/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/certificates/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/eventratelimit/apis/eventratelimit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/imagepolicy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/nodedeclaredfeatures/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/noderestriction/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/podresize/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/podtolerationrestriction/apis/podtolerationrestriction/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/runtimeclass/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/admission/serviceaccount/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/auth/authenticator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/auth/authorizer/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/plugin/pkg/auth/authorizer/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/publishing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/authentication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/authorization/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/batch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/certificates/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/extensions/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/imagepolicy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/networking/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/rbac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/resource/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/api/storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiextensions-apiserver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiextensions-apiserver/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiextensions-apiserver/pkg/features/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/api/errors/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/api/meta/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/api/resource/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/api/validation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/apis/meta/v1/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/util/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/util/mergepatch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/util/strategicpatch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/pkg/util/validation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apimachinery/third_party/forked/golang/json/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/admission/plugin/cel/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/admission/plugin/policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/admission/plugin/resourcequota/apis/resourcequota/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/apis/audit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/audit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/authentication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/authentication/request/x509/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/authorization/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/cel/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/discovery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/filters/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/filters/impersonation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/handlers/fieldmanager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/handlers/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/request/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/endpoints/testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/features/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/quota/v1/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/quota/v1/generic/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/registry/generic/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/registry/rest/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/filters/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/flagz/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/flagz/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/mux/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/options/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/options/encryptionconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/routes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/statusz/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/server/statusz/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storage/cacher/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storage/etcd3/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storage/etcd3/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storage/storagebackend/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storage/testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storage/value/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storage/value/encrypt/envelope/kmsv2/v2/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/storageversion/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/pkg/util/flowcontrol/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/plugin/pkg/audit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/plugin/pkg/authenticator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/apiserver/plugin/pkg/authorizer/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cli-runtime/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/applyconfigurations/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/kubernetes/typed/authentication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/kubernetes/typed/authorization/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/kubernetes/typed/rbac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/listers/rbac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/openapi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/pkg/apis/clientauthentication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/plugin/pkg/client/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/rest/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/tools/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/tools/cache/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/tools/events/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/tools/leaderelection/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/tools/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/tools/portforward/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/tools/record/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/tools/remotecommand/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/transport/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/util/cert/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/util/certificate/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/util/csaupgrade/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/util/keyutil/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/client-go/util/retry/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cloud-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cloud-provider/controllers/nodelifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cloud-provider/controllers/route/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cloud-provider/controllers/service/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cloud-provider/controllers/service/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cluster-bootstrap/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cluster-bootstrap/token/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/code-generator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/code-generator/cmd/client-gen/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/code-generator/cmd/go-to-protobuf/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/cli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/codec/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/compatibility/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/configz/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/featuregate/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/logs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/logs/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/term/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/tracing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/tracing/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/version/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-base/zpages/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/apimachinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/nodedeclaredfeatures/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/nodedeclaredfeatures/features/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/resource/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/component-helpers/storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/controller-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/controller-manager/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/controller-manager/pkg/features/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cri-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cri-client/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/cri-streaming/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/csi-translation-lib/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/dynamic-resource-allocation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/dynamic-resource-allocation/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/dynamic-resource-allocation/structured/schedulerapi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/endpointslice/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/externaljwt/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/externaljwt/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kms/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kms/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-aggregator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-aggregator/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-aggregator/pkg/registry/apiservice/etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-controller-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-controller-manager/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-proxy/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-scheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-scheduler/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kube-scheduler/extender/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubectl/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubectl/pkg/cmd/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubectl/pkg/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubectl/pkg/explain/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubectl/pkg/util/i18n/translations/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubectl/pkg/util/i18n/translations/kubectl/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubectl/pkg/util/openapi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubelet/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubelet/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubelet/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubelet/pkg/apis/credentialprovider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubelet/pkg/apis/deviceplugin/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubelet/pkg/apis/dra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/kubelet/pkg/apis/dra-health/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/metrics/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/mount-utils/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/pod-security-admission/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/sample-apiserver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/sample-cli-plugin/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/sample-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/staging/src/k8s.io/streaming/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/cmd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/compatibility_lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/compatibility_lifecycle/reference/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/conformance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/conformance/image/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/conformance/testdata/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/apimachinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/architecture/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/cloud/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/cloud/gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/common/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/common/network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/common/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/common/storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/dra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/feature/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/framework/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/framework/autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/framework/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/framework/providers/vsphere/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/framework/volume/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/instrumentation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/instrumentation/logging/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/invariants/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/kubectl/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/network/netpol/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/testing-manifests/auth/encrypt/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/testing-manifests/dra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/testing-manifests/statefulset/etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/testing-manifests/storage-csi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/upgrades/apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/upgrades/autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e/windows/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e_kubeadm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e_node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e_node/jenkins/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/e2e_node/perf/workloads/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/fixtures/pkg/kubectl/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/fuzz/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/agnhost/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/agnhost/nonewprivs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/apparmor-loader/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/busybox/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/glibc-dns-testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/kitten/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/nautilus/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/nonewprivs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/nonroot/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/regression-issue-74839/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/sample-apiserver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/images/volume/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/instrumentation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/instrumentation/testdata/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/apiserver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/apiserver/tracing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/controllermanager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/controlplane/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/daemonset/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/deployment/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/dra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/dryrun/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/job/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/logs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/podgc/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/pods/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/scheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/scheduler_perf/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/scheduler_perf/dra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/volume/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/integration/volumescheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/kubemark/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/typecheck/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/test/utils/image/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/third_party/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/third_party/forked/shell2junit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes/OWNERS_ALIASES
+Found 73 unique aliases
+Found 212 unique users
+..................................................................................................................................................................................................................................................................................
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/kubernetes github repo : 160
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+liggitt : 2654 : 814 
+SergeyKanzhelev : 1157 : 441 
+BenTheElder : 1813 : 371 
+dims : 1397 : 612 
+pohly : 3559 : 561 
+bentheelder(BenTheElder) : 1813 : 371 
+macsko : 1255 : 235 
+bart0sh : 1618 : 225 
+sergeykanzhelev(SergeyKanzhelev) : 1157 : 441 
+aojea : 1290 : 366 
+sanposhiho : 812 : 139 
+wojtek-t : 335 : 155 
+tallclair : 745 : 136 
+jpbetz : 621 : 361 
+aaron-prindle : 412 : 148 
+kannon92 : 400 : 109 
+soltysh : 667 : 274 
+lalitc375 : 412 : 82 
+haircommander : 378 : 139 
+danwinship : 526 : 126 
+thockin : 792 : 319 
+yongruilin : 385 : 154 
+pacoxu : 648 : 497 
+neolit123 : 519 : 147 
+ffromani : 835 : 134 
+HirazawaUi : 687 : 168 
+serathius : 741 : 133 
+dom4ha : 355 : 85 
+mortent : 432 : 68 
+saschagrunert : 228 : 161 
+jefftree(Jefftree) : 352 : 229 
+carlory : 627 : 188 
+richabanker : 485 : 107 
+natasha41575 : 753 : 111 
+ardaguclu : 290 : 83 
+gnufied : 247 : 79 
+enj : 214 : 65 
+michaelasp : 542 : 61 
+Verolop : 87 : 127 
+cici37 : 162 : 81 
+jsafrane : 117 : 97 
+adrianmoisey : 174 : 84 
+seans3 : 180 : 128 
+deads2k : 106 : 67 
+siyuanfoundation : 167 : 70 
+yliaog : 733 : 50 
+aramase : 171 : 68 
+xmudrii : 91 : 115 
+lmktfy : 206 : 64 
+cpanato : 56 : 77 
+ania-borowiec : 362 : 54 
+mrunalp : 76 : 55 
+xing-yang : 63 : 55 
+mimowo : 248 : 59 
+dgrisonnet : 113 : 58 
+mkumatag : 114 : 46 
+atiratree : 255 : 42 
+marosset : 86 : 41 
+skitt : 86 : 40 
+sttts : 67 : 51 
+JoelSpeed : 184 : 40 
+omerap12 : 201 : 40 
+joelspeed(JoelSpeed) : 184 : 40 
+dashpole : 47 : 38 
+aroradaman : 139 : 32 
+msau42 : 64 : 37 
+johnbelamaric : 160 : 36 
+rata : 154 : 29 
+wzshiming : 14 : 53 
+jsturtevant : 34 : 113 
+utam0k : 206 : 38 
+tosi3k : 178 : 26 
+sunnylovestiramisu : 56 : 28 
+klueska : 71 : 28 
+rexagod : 114 : 27 
+jackfrancis : 75 : 24 
+janetkuo : 65 : 22 
+rphillips : 34 : 19 
+humblec : 51 : 19 
+brianpursley : 38 : 14 
+sbangari : 16 : 20 
+mengqiy : 75 : 16 
+SataQiu : 31 : 21 
+palnabarun : 24 : 24 
+AxeZhan : 37 : 17 
+matthyx : 34 : 13 
+kerthcet : 21 : 12 
+dchen1107 : 17 : 17 
+elmiko : 44 : 14 
+daschott : 11 : 11 
+mauriciopoppe : 10 : 10 
+Priyankasaggu11929 : 44 : 3 
+mborsz : 9 : 5 
+mikebrow : 20 : 6 
+yujuhong : 16 : 8 
+yue9944882 : 74 : 7 
+Huang-Wei : 1 : 22 
+x13n : 9 : 9 
+mpuckett159 : 25 : 5 
+ingvagabund : 23 : 5 
+mrhohn(MrHohn) : 2 : 8 
+mattcary : 9 : 7 
+MrHohn : 2 : 8 
+mtaufen : 10 : 3 
+munnerz : 36 : 6 
+tzneal : 5 : 3 
+endocrimes : 1 : 4 
+towca : 18 : 8 
+nmn3m : 64 : 7 
+hzxuzhonghu : 1 : 8 
+tnqn : 3 : 3 
+cheftako : 23 : 6 
+fabriziopandini : 2 : 3 
+cblecker : 1 : 21 
+puerco : 8 : 11 
+tkashem : 40 : 5 
+raywainman : 19 : 7 
+mengjiao-liu : 1 : 4 
+tenzen-y : 35 : 10 
+robscott : 1 : 10 
+roycaihw : 90 : 10 
+feiskyer : 1 : 19 
+tengqm : 5 : 3 
+RainbowMango : 4 : 3 
+gjtempleton : 4 : 4 
+tabbysable : 71 : 2 
+bowei : 40 : 5 
+benluddy : 25 : 10 
+kow3ns : 8 : 6 
+shaneutt : 19 : 4 
+shyamjvs : 5 : 5 
+andyzhangx : 7 : 8 
+andrewsykim : 7 : 5 
+smarterclayton : 10 : 8 
+ahg-g : 1 : 4 
+knabben : 3 : 7 
+lojies : 14 : 0 
+kaslin : 1 : 1 
+krmayankk : 1 : 1 
+caesarxuchao : 1 : 2 
+saad-ali : 1 : 2 
+caseydavenport : 1 : 1 
+stevekuznetsov : 7 : 1 
+luxas : 10 : 1 
+claudiubelu : 3 : 1 
+odinuge : 3 : 1 
+damemi : 1 : 0 
+natalisucks : 3 : 0 
+uablrek : 5 : 0 
+justinsb : 13 : 2 
+wangzhen127 : 2 : 1 
+marseel : 3 : 0 
+mrbobbytables : 1 : 0 
+jayunit100 : 1 : 1 
+MikeSpreitzer : 21 : 1 
+MadhavJivrajani : 1 : 1 
+dipesh-rawat : 2 : 2 
+DamianSawicki : 1 : 2 
+eddiezane : 3 : 1 
+mikezappa87(MikeZappa87) : 12 : 1 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 52
+IanColdwater
+KnVerey
+Random-Liu
+SayakMukhopadhyay
+YoyinZyc
+abhiraut
+alexzielenski
+alisondy
+anfernee
+apelisse
+bobbypage
+cjcullen
+coffeepac
+cofyc
+denkensk
+derekwaynecarr
+divya-mohan0209
+divyenpatel
+freehan
+gautierdelorme
+gracenng
+guineveresaenger
+ibabou
+jeremyrickard
+jiahuif
+jingxu97
+johnSchnake
+justaugustus
+k82cn
+katcosgrove
+kwiesmueller
+mattfenwick
+mfahlandt
+mikedanese
+monotek
+mwielgus
+nate-double-u
+nikhita
+oomichi
+parispittman
+ping035627
+pwittrock
+ravisantoshgudimetla
+reylejano
+s-urbaniak
+saikat-royc
+salaxander
+satyampsoni
+sjenning
+spiffxp
+vincepri
+wlan0
+
+
+>>>>> Low reviews/approvals in kubernetes/kubernetes (GH pr comments <= 10 && devstats <=20): 52
+DamianSawicki
+MadhavJivrajani
+MrHohn
+RainbowMango
+ahg-g
+andrewsykim
+andyzhangx
+caesarxuchao
+caseydavenport
+claudiubelu
+damemi
+dipesh-rawat
+eddiezane
+endocrimes
+fabriziopandini
+gjtempleton
+hzxuzhonghu
+jayunit100
+justinsb
+kaslin
+knabben
+kow3ns
+krmayankk
+lojies
+luxas
+marseel
+mattcary
+mauriciopoppe
+mborsz
+mengjiao-liu
+mikebrow
+mikezappa87
+mrbobbytables
+mrhohn
+mtaufen
+natalisucks
+odinuge
+raywainman
+robscott
+saad-ali
+shaneutt
+shyamjvs
+smarterclayton
+stevekuznetsov
+tengqm
+tnqn
+towca
+tzneal
+uablrek
+wangzhen127
+x13n
+yujuhong
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES
