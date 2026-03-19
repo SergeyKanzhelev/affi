@@ -74,11 +74,10 @@
 }
 
 .affi-expanded-list {
-    background: #fff8c5;
-    padding: 4px 8px;
-    border-radius: 4px;
-    margin: 4px 0;
-    font-size: 11px;
-    color: #24292f;
-    border: 1px solid #d4a72c;
+    margin: 2px 0;
+    color: #57606a;
+}
+
+.affi-expanded-list div {
+    line-height: 1.4;
 }

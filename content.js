@@ -102,6 +102,10 @@ lines.forEach(line => {
   const isAliasKey = trimmed.endsWith(':') && !trimmed.startsWith('#');
 
   if (isListItem || isAliasKey) {
+    const indentMatch = line.match(/^(\s*)/);
+    const baseIndent = indentMatch ? indentMatch[1] : '';
+    const subIndent = baseIndent + '  ';
+
     const parts = line.split(/([\w-]+)/);
     parts.forEach(part => {
       if (aliases[part]) {
@@ -121,7 +125,12 @@ lines.forEach(line => {
           } else {
             const list = document.createElement('div');
             list.className = 'affi-expanded-list';
-            list.innerText = aliases[part].join(', ');
+            const members = aliases[part];
+            members.forEach(member => {
+              const item = document.createElement('div');
+              item.innerText = `${subIndent}- ${member}`;
+              list.appendChild(item);
+            });
             btn.after(list);
             btn.innerText = ' [-]';
           }
