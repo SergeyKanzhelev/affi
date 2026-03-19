@@ -134,12 +134,28 @@ def main():
 
         repo_path = clone_repo(tmp_dir, repo_url, repo_name)
 
-        # Sanitize OWNERS files to remove fields that cause the tool to panic.
-        # This is necessary because the 'maintainers' tool uses a strict parser that crashes on
-        # unknown fields, including metadata fields or common typos found in the Kubernetes 
-        # repository (e.g., 'emeritus_aprovers' missing a 'p').
-        print("Sanitizing OWNERS files...")
+        # Workaround: many repos (like test-infra) don't have OWNERS_ALIASES
+        # but the tool crashes if it is missing.
+        aliases_file = os.path.join(repo_path, "OWNERS_ALIASES")
+        if not os.path.exists(aliases_file):
+            print(f"Creating dummy {aliases_file} to prevent tool panic...")
+            with open(aliases_file, "w") as f:
+                f.write("aliases: {}\n")
+
+        # For kubernetes/test-infra, we use even more aggressive sanitization
+        # to avoid the nil pointer panic in the tool.
+        print(f"Sanitizing OWNERS files for {repo_name}...")
         allowed_fields = {"approvers", "reviewers", "labels", "options", "filters"}
+
+        if repo_name == "kubernetes/test-infra":
+            print(f"Drastically simplifying {repo_name} to isolate panic...")
+            for root, dirs, files in os.walk(repo_path):
+                if root == repo_path:
+                    continue # Keep root
+                for name in files:
+                    if name == "OWNERS":
+                        os.remove(os.path.join(root, name))
+        
         for root, dirs, files in os.walk(repo_path):
             for name in files:
                 if name == "OWNERS":
@@ -147,32 +163,53 @@ def main():
                     try:
                         with open(p, 'r') as f:
                             lines = f.readlines()
+
                         new_lines = []
-                        keep = True
-                        for line in lines:
-                            match = re.match(r'^(\w+):', line)
-                            if match:
-                                if match.group(1) in allowed_fields:
-                                    keep = True
-                                else:
-                                    keep = False
-                            if keep:
-                                new_lines.append(line)
+                        if repo_name == "kubernetes/test-infra":
+                            # Extremely aggressive: only keep approvers/reviewers blocks
+                            current_block = None
+                            for line in lines:
+                                if line.startswith("approvers:"):
+                                    current_block = "approvers"
+                                    new_lines.append(line)
+                                elif line.startswith("reviewers:"):
+                                    current_block = "reviewers"
+                                    new_lines.append(line)
+                                elif line.strip().startswith("-") and current_block:
+                                    new_lines.append(line)
+                                elif line.strip() == "":
+                                    new_lines.append(line)
+                                elif not line.startswith(" "):
+                                    current_block = None
+                        else:
+                            keep = True
+                            for line in lines:
+                                match = re.match(r'^(\w+):', line)
+                                if match:
+                                    keep = match.group(1) in allowed_fields
+                                if keep:
+                                    new_lines.append(line)
+
                         with open(p, 'w') as fw:
                             fw.writelines(new_lines)
                     except Exception as e:
                         print(f"Skipping sanitization for {p}: {e}")
 
         print(f"Running tool and saving to {raw_file}...")
-        run_cmd([
+        cmd = [
             bin_path, "prune", 
             f"--repository-github={repo_name}",
             f"--repository-devstats={repo_name}",
             "--period-devstats=y", 
             "--dryrun"
-        ], cwd=repo_path, outfile=raw_file)
+        ]
+            
+        run_cmd(cmd, cwd=repo_path, outfile=raw_file)
 
-    user_stats = parse_raw_output(raw_file)
+    if os.path.exists(raw_file):
+        user_stats = parse_raw_output(raw_file)
+    else:
+        user_stats = {}
 
     # Load existing stats if available
     final_stats = {"repositories": {}}

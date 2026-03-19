@@ -280,20 +280,28 @@ REPOS ?= kubernetes/kubernetes \
 	kubernetes-sigs/kubernetes-network-drivers \
 	kubernetes-sigs/mcp-lifecycle-operator
 
-REPO ?= kubernetes/kubernetes
+REPO ?=
 
 test:
 	npm test
 
 generate-stats:
-	for repo in $(REPOS); do \
-		python3 generate_stats.py --repo $$repo; \
-	done
+	@if [ -n "$(REPO)" ]; then \
+		python3 generate_stats.py --repo $(REPO); \
+	else \
+		for repo in $(REPOS); do \
+			python3 generate_stats.py --repo $$repo; \
+		done; \
+	fi
 
 parse-stats:
-	for repo in $(REPOS); do \
-		python3 generate_stats.py --repo $$repo --parse-only; \
-	done
+	@if [ -n "$(REPO)" ]; then \
+		python3 generate_stats.py --repo $(REPO) --parse-only; \
+	else \
+		for repo in $(REPOS); do \
+			python3 generate_stats.py --repo $$repo --parse-only; \
+		done; \
+	fi
 
 dist:
 	rm -f affi.zip

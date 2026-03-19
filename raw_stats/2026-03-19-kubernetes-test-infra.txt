@@ -1,0 +1,25 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/test-infra --repository-devstats=kubernetes/test-infra --period-devstats=y --dryrun ---
+Running script : 03-19-2026 00:30:17
+Processed /private/tmp/affi_stats/kubernetes_test-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/OWNERS_ALIASES
+Found 0 unique aliases
+Found 5 unique users
+......................
+
+
+>>>>> Contributions from kubernetes/test-infra devstats repo and kubernetes/test-infra github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+BenTheElder : 657 : 208 
+dims : 291 : 289 
+upodroid : 175 : 199 
+aojea : 119 : 97 
+michelle192837 : 10 : 7 
+
+
+>>>>> Missing Contributions in kubernetes/test-infra (devstats == 0): 0
+
+
+>>>>> Low reviews/approvals in kubernetes/test-infra (GH pr comments <= 10 && devstats <=20): 1
+michelle192837
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

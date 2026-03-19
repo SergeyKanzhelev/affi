@@ -1,0 +1,404 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/community --repository-devstats=kubernetes/community --period-devstats=y --dryrun ---
+Running script : 03-19-2026 00:24:49
+Processed /private/tmp/affi_stats/kubernetes_community/.github/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/sig-cluster-ops/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/sig-pm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/sig-rktnetes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/sig-service-catalog/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/sig-usability/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/ug-big-data/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-ai-conformance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-api-expression/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-app-def/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-apply/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-container-identity/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-iot-edge/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-kubeadm-adoption/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-multitenancy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-naming/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-resource-management/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-security-audit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/archive/wg-serving/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/committee-code-of-conduct/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/committee-security-response/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/committee-steering/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/contributor-comms/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-architecture/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-cloud-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-k8s-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-security/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/slack-config/sig-testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/communication/youtube/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-api-machinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-architecture/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-instrumentation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-scalability/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/devel/sig-testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/contributors/guide/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/code-of-conduct/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2018/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2019/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2020/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2021/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2022/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2023/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2023-GB/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2024/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2025/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/2025-GB/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/elections/steering/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/events/2020/03-contributor-summit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/events/2020/07-contributor-summit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/events/2020/11-contributor-summit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/events/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/generator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/github-management/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/hack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/mentoring/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/mentoring/programs/contributor-workshop/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-api-machinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-apps/minutes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-architecture/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-cli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-cloud-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-cloud-provider/cloud-provider-extraction-migration/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-cluster-lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-contributor-experience/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-contributor-experience/devstats/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-instrumentation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-k8s-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-multicluster/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-scalability/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-scalability/blogs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-scalability/configs-and-limits/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-scalability/governance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-scalability/processes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-scalability/slos/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-security/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-storage/1.3-retrospective/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-ui/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/sig-windows/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/wg-ai-gateway/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/wg-ai-integration/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/wg-checkpoint-restore/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/wg-data-protection/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/wg-node-lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_community/OWNERS_ALIASES
+Found 45 unique aliases
+Found 193 unique users
+............................................................................................................................................................................................................
+
+
+>>>>> Contributions from kubernetes/community devstats repo and kubernetes/community github repo : 115
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+pacoxu : 80 : 177 
+BenTheElder : 182 : 51 
+soltysh : 154 : 93 
+Priyankasaggu11929 : 78 : 48 
+aojea : 66 : 47 
+cblecker : 56 : 89 
+jberkus : 47 : 18 
+SergeyKanzhelev : 53 : 18 
+palnabarun : 37 : 24 
+pohly : 57 : 19 
+dims : 29 : 20 
+haircommander : 27 : 14 
+ahrtr : 15 : 61 
+sanposhiho : 31 : 11 
+janetkuo : 26 : 11 
+ivanvc : 8 : 62 
+liggitt : 39 : 14 
+sreeram-venkitesh : 17 : 11 
+saschagrunert : 17 : 39 
+adrianreber : 23 : 16 
+mfahlandt : 44 : 13 
+shaneutt : 28 : 12 
+stmcginnis : 14 : 68 
+mrbobbytables : 11 : 12 
+justaugustus : 8 : 12 
+fabriziopandini : 7 : 10 
+ritazh : 7 : 13 
+ameukam : 19 : 10 
+ardaguclu : 9 : 10 
+keithmattix : 6 : 9 
+kannon92 : 33 : 8 
+dom4ha : 19 : 8 
+neolit123 : 8 : 9 
+johnbelamaric : 5 : 8 
+richabanker : 18 : 8 
+danwinship : 10 : 9 
+katcosgrove : 6 : 8 
+shu-mutou : 9 : 6 
+dashpole : 6 : 6 
+mrunalp : 23 : 6 
+chris-short : 13 : 7 
+elmiko : 17 : 7 
+jasonbraganza : 8 : 7 
+nirrozenbaum : 6 : 6 
+natalisucks : 6 : 6 
+jackfrancis : 6 : 6 
+rexagod : 3 : 5 
+marosset : 4 : 3 
+jeefy : 2 : 5 
+xmudrii : 8 : 5 
+jmhbnz : 5 : 4 
+viktoriaas : 6 : 4 
+joelspeed(JoelSpeed) : 27 : 5 
+intUnderflow : 9 : 3 
+jpbetz : 2 : 61 
+upodroid : 3 : 3 
+hakman : 5 : 3 
+gjtempleton : 4 : 3 
+kaslin : 15 : 4 
+thockin : 8 : 4 
+fedebongio : 19 : 3 
+tenzen-y : 9 : 2 
+enj : 6 : 5 
+macsko : 3 : 6 
+jbpratt : 2 : 3 
+tabbysable : 8 : 4 
+endocrimes : 3 : 5 
+sttts : 1 : 3 
+michelle192837 : 13 : 4 
+mikezappa87(MikeZappa87) : 3 : 4 
+MadhavJivrajani : 5 : 4 
+divya-mohan0209 : 7 : 3 
+skitt : 13 : 5 
+Vyom-Yadav : 10 : 2 
+adrianmoisey : 11 : 3 
+serathius : 6 : 5 
+aramase : 11 : 5 
+aravindhp : 5 : 2 
+dchen1107 : 1 : 3 
+npolshakova : 5 : 5 
+cpanato : 1 : 47 
+rushmash91 : 1 : 4 
+castrojo : 1 : 73 
+puerco : 6 : 1 
+bridgetkromhout : 8 : 3 
+reylejano : 7 : 3 
+rthallisey : 12 : 2 
+atiratree : 136 : 5 
+rst0git : 18 : 5 
+bowei : 3 : 2 
+xing-yang : 2 : 2 
+jsafrane : 3 : 2 
+kflynn : 2 : 1 
+tengqm : 2 : 1 
+natherz97 : 3 : 1 
+dgrisonnet : 2 : 2 
+DylanGraham : 2 : 2 
+siyuanfoundation : 2 : 2 
+dipesh-rawat : 3 : 1 
+mpuckett159 : 2 : 1 
+IanColdwater : 1 : 0 
+floreks : 1 : 1 
+munnerz : 1 : 2 
+micahhausler : 1 : 2 
+mengqiy : 1 : 1 
+deads2k : 1 : 2 
+nikhita : 1 : 2 
+spzala : 1 : 1 
+towca : 1 : 1 
+salaxander : 1 : 1 
+joaquimrocha : 1 : 1 
+claudiubelu : 1 : 1 
+jeremyrickard : 1 : 0 
+zvonkok : 1 : 2 
+zylxjtu : 1 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/community (devstats == 0): 78
+AnaMMedina21
+EnergyLiYN
+GenPage
+LappleApple
+Verolop
+abgworrall
+alejandrox1
+alisondy
+andrewsykim
+bgrant0607
+cailyn-codes
+calebamiles
+cantbewong
+cheftako
+cjcullen
+coderanger
+countspongebob
+craiglpeters
+derekwaynecarr
+dulek
+eddiezane
+feiskyer
+frapposelli
+fsmunoz
+geekygirldawn
+gracenng
+guineveresaenger
+idvoretskyi
+jbeda
+jdumars
+jeremyot
+jichenjc
+joelsmith
+justinsb
+kayrus
+kfswain
+khenidak
+klueska
+kow3ns
+lavalamp
+markyjackson-taulia
+marseel
+msau42
+mwielgus
+nckturner
+parispittman
+petr-muller
+rjsadow
+saad-ali
+shyamjvs
+sig-cluster-ops-leads
+sig-pm-leads
+sig-service-catalog-leads
+sig-usability-leads
+spiffxp
+tpepper
+ug-big-data-leads
+usize
+vinayakankugoyal
+vincepri
+wg-ai-conformance-leads
+wg-api-expression-leads
+wg-app-def-leads
+wg-apply-leads
+wg-container-identity-leads
+wg-iot-edge-leads
+wg-kubeadm-adoption-leads
+wg-multitenancy-leads
+wg-naming-leads
+wg-policy-leads
+wg-resource-management-leads
+wg-security-audit-leads
+wg-serving-leads
+wojtek-t
+wongma7
+xmcqueen
+yuxiangqian
+zetaab
+
+
+>>>>> Low reviews/approvals in kubernetes/community (GH pr comments <= 10 && devstats <=20): 82
+DylanGraham
+IanColdwater
+MadhavJivrajani
+Vyom-Yadav
+adrianmoisey
+ameukam
+aramase
+aravindhp
+ardaguclu
+bowei
+bridgetkromhout
+chris-short
+claudiubelu
+danwinship
+dashpole
+dchen1107
+deads2k
+dgrisonnet
+dipesh-rawat
+divya-mohan0209
+dom4ha
+elmiko
+endocrimes
+enj
+fabriziopandini
+fedebongio
+floreks
+gjtempleton
+hakman
+intUnderflow
+jackfrancis
+jasonbraganza
+jbpratt
+jeefy
+jeremyrickard
+jmhbnz
+joaquimrocha
+johnbelamaric
+jsafrane
+kaslin
+katcosgrove
+keithmattix
+kflynn
+macsko
+marosset
+mengqiy
+micahhausler
+michelle192837
+mikezappa87
+mpuckett159
+munnerz
+natalisucks
+natherz97
+neolit123
+nikhita
+nirrozenbaum
+npolshakova
+puerco
+rexagod
+reylejano
+richabanker
+rst0git
+rthallisey
+rushmash91
+salaxander
+serathius
+shu-mutou
+siyuanfoundation
+skitt
+spzala
+sttts
+tabbysable
+tengqm
+tenzen-y
+thockin
+towca
+upodroid
+viktoriaas
+xing-yang
+xmudrii
+zvonkok
+zylxjtu
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

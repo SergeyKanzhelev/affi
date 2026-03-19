@@ -1,0 +1,67 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/release --repository-devstats=kubernetes/release --period-devstats=y --dryrun ---
+Running script : 03-19-2026 00:13:22
+Processed /private/tmp/affi_stats/kubernetes_release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/cmd/ci-reporter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/cmd/krel/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/cmd/release-notes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/images/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/images/build/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/images/build/debian-base/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/images/build/distroless-iptables/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/images/build/go-runner/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/pkg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/pkg/notes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_release/OWNERS_ALIASES
+Found 10 unique aliases
+Found 34 unique users
+..................
+
+
+>>>>> Contributions from kubernetes/release devstats repo and kubernetes/release github repo : 11
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cpanato : 171 : 210 
+saschagrunert : 84 : 132 
+xmudrii : 89 : 42 
+puerco : 28 : 34 
+BenTheElder : 27 : 11 
+ameukam : 20 : 14 
+aojea : 5 : 11 
+Verolop : 3 : 9 
+danwinship : 5 : 2 
+palnabarun : 7 : 2 
+Vyom-Yadav : 2 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/release (devstats == 0): 23
+BenjaminKazemi
+MushuEE
+andrewsykim
+bowei
+caseydavenport
+cici37
+dcbw
+drewhagen
+freehan
+gracenng
+jeremyrickard
+jimangel
+jrsapi
+justaugustus
+khenidak
+lauralorenz
+leonardpahlke
+mehabhalodiya
+mrhohn
+robscott
+salaxander
+spiffxp
+thockin
+
+
+>>>>> Low reviews/approvals in kubernetes/release (GH pr comments <= 10 && devstats <=20): 4
+Verolop
+Vyom-Yadav
+danwinship
+palnabarun
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

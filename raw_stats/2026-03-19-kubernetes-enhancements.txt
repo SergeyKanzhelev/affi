@@ -1,0 +1,258 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/enhancements --repository-devstats=kubernetes/enhancements --period-devstats=y --dryrun ---
+Running script : 03-19-2026 00:14:51
+Processed /private/tmp/affi_stats/kubernetes_enhancements/.githooks/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/cmd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/hack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/internal/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/prod-readiness/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/provider-aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-api-machinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-architecture/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-cli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-cloud-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-cloud-provider/azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-cluster-lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-contributor-experience/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-instrumentation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-multicluster/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/127-user-namespaces/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/1769-memory-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/2000-graceful-node-shutdown/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/2033-kubelet-in-userns-aka-rootless/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/2625-cpumanager-policies-thread-placement/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/2862-fine-grained-kubelet-authz/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/3386-kubelet-evented-pleg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/3545-improved-multi-numa-alignment/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/3695-pod-resources-for-dra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/3721-support-for-env-files/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/3960-pod-lifecycle-sleep-action/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/3983-drop-in-configuration/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4176-cpumanager-spread-cpus-preferred-policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4188-kubelet-pod-readiness-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4205-psi-metric/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4265-proc-mount/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4369-allow-special-characters-environment-variable/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4438-container-restart-termination/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4540-strict-cpu-reservation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4622-topologymanager-max-allowable-numa-nodes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4639-oci-volume-source/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4680-add-resource-health-to-pod-status/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4800-cpumanager-split-uncorecache/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/4818-allow-zero-value-for-sleep-action-of-prestop-hook/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/5328-node-declared-features/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/5394-psi-node-conditions/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/5419-pod-level-resources-in-place-resize/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/5526-pod-level-resource-managers/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/5532-restart-all-containers-on-container-exits/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/5607-hostnetwork-userns/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-security/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-ui/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/keps/sig-windows/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/pkg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/test/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_enhancements/OWNERS_ALIASES
+Found 47 unique aliases
+Found 146 unique users
+.............................................................................................................................................................
+
+
+>>>>> Contributions from kubernetes/enhancements devstats repo and kubernetes/enhancements github repo : 81
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+deads2k : 180 : 67 
+jpbetz : 155 : 135 
+SergeyKanzhelev : 497 : 92 
+soltysh : 456 : 110 
+johnbelamaric : 340 : 63 
+wojtek-t : 438 : 61 
+kannon92 : 430 : 77 
+liggitt : 358 : 62 
+macsko : 327 : 47 
+haircommander : 327 : 64 
+dom4ha : 313 : 50 
+aojea : 153 : 46 
+pohly : 521 : 45 
+thockin : 368 : 29 
+mrunalp : 72 : 96 
+xing-yang : 50 : 20 
+dchen1107 : 33 : 34 
+sanposhiho : 465 : 29 
+BenTheElder : 240 : 36 
+saschagrunert : 32 : 26 
+ffromani : 204 : 25 
+tallclair : 142 : 20 
+enj : 89 : 22 
+skitt : 30 : 18 
+ardaguclu : 56 : 13 
+richabanker : 77 : 16 
+ndixita : 75 : 12 
+kikisdeliveryservice : 37 : 18 
+dgrisonnet : 37 : 14 
+joelspeed(JoelSpeed) : 67 : 6 
+aramase : 53 : 14 
+adrianmoisey : 101 : 17 
+jackfrancis : 90 : 16 
+danwinship : 128 : 15 
+serathius : 45 : 11 
+msau42 : 30 : 8 
+MrFreezeex : 44 : 7 
+ryanzhang-oss : 37 : 8 
+dashpole : 29 : 6 
+ritazh : 24 : 5 
+Priyankasaggu11929 : 30 : 3 
+zylxjtu : 10 : 4 
+jsafrane : 12 : 13 
+klueska : 11 : 6 
+dims : 23 : 16 
+janetkuo : 30 : 3 
+marosset : 15 : 5 
+micahhausler : 13 : 4 
+mikebrow : 40 : 5 
+rexagod : 49 : 5 
+towca : 22 : 10 
+gjtempleton : 6 : 4 
+tenzen-y : 18 : 5 
+elmiko : 35 : 5 
+neolit123 : 13 : 7 
+pacoxu : 20 : 116 
+bowei : 15 : 3 
+RainbowMango : 8 : 2 
+hakman : 5 : 1 
+ahrtr : 2 : 55 
+divya-mohan0209 : 3 : 1 
+yujuhong : 6 : 1 
+derekwaynecarr : 2 : 4 
+bridgetkromhout : 5 : 0 
+xmudrii : 2 : 0 
+dipesh-rawat : 69 : 1 
+siyuanfoundation : 4 : 1 
+aravindhp : 5 : 0 
+ameukam : 10 : 1 
+sttts : 5 : 9 
+munnerz : 3 : 2 
+alvaroaleman : 1 : 1 
+tengqm : 1 : 1 
+tabbysable : 1 : 0 
+shaneutt : 1 : 4 
+justaugustus : 1 : 1 
+mpuckett159 : 1 : 1 
+joaquimrocha : 1 : 0 
+eddiezane : 1 : 1 
+saad-ali : 1 : 1 
+katcosgrove : 1 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/enhancements (devstats == 0): 65
+AnaMMedina21
+CecileRobertMichon
+GenPage
+IanColdwater
+JimBugwadia
+MadhavJivrajani
+SaranBalaji90
+Verolop
+abgworrall
+annajung
+apelisse
+cantbewong
+cheftako
+cindyxing
+cjcullen
+cji
+cjwagner
+claudiubelu
+cpanato
+craiglpeters
+dejanb
+dulek
+ehashman
+endocrimes
+fabriziopandini
+fedebongio
+feiskyer
+floreks
+frapposelli
+hlipsig
+jbpratt
+jeremyot
+jeremyrickard
+jichenjc
+jmhbnz
+joelsmith
+justinsb
+kaslin
+kayrus
+khenidak
+kow3ns
+kwiesmueller
+maciaszczykm
+marseel
+mengqiy
+michelle192837
+mikezappa87
+mrbobbytables
+mwielgus
+natalisucks
+nckturner
+palnabarun
+puerco
+reylejano
+rficcaglia
+salaxander
+shu-mutou
+shyamjvs
+spzala
+upodroid
+vincepri
+wongma7
+xmcqueen
+yuxiangqian
+zetaab
+
+
+>>>>> Low reviews/approvals in kubernetes/enhancements (GH pr comments <= 10 && devstats <=20): 30
+RainbowMango
+alvaroaleman
+ameukam
+aravindhp
+bowei
+bridgetkromhout
+derekwaynecarr
+divya-mohan0209
+eddiezane
+gjtempleton
+hakman
+joaquimrocha
+justaugustus
+katcosgrove
+klueska
+marosset
+micahhausler
+mpuckett159
+munnerz
+neolit123
+saad-ali
+shaneutt
+siyuanfoundation
+sttts
+tabbysable
+tengqm
+tenzen-y
+xmudrii
+yujuhong
+zylxjtu
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES
