@@ -36,6 +36,7 @@ function analyzeOwnersLine(line) {
   const isComment = trimmed.startsWith('#');
   const isAliasKey = trimmed.endsWith(':') && !isComment;
   const isEmeritusBlock = trimmed === 'emeritus_reviewers:' || trimmed === 'emeritus_approvers:';
+  const isLabelsBlock = trimmed === 'labels:' || trimmed.startsWith('labels:');
   
   let baseIndent = '';
   let subIndent = '';
@@ -62,6 +63,7 @@ function analyzeOwnersLine(line) {
     isListItem,
     isAliasKey,
     isEmeritusBlock,
+    isLabelsBlock,
     isComment,
     baseIndent,
     subIndent,

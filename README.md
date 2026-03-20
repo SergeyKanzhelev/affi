@@ -1,5 +1,7 @@
 # Affi - Kubernetes OWNERS Hierarchy & Stats
 
+[Available on the Chrome Web Store](https://chromewebstore.google.com/detail/affi/fflpjbbjhlededagabjhaodefilblglg?pli=1)
+
 Affi is a Chrome extension designed for Kubernetes developers and maintainers. It provides an interactive overlay when viewing `OWNERS` and `OWNERS_ALIASES` files on GitHub, making it easier to understand maintainer hierarchies and contribution activity.
 
 ## Features
@@ -10,6 +12,19 @@ Affi is a Chrome extension designed for Kubernetes developers and maintainers. I
 - **Contributor Activity Stats:** Toggleable statistics for individual maintainers, showing both repository-specific and global (across all Kubernetes repos) activity.
 - **Visual Engagement Cues:** Intuitively identifies active, low-activity, and completely inactive maintainers based on PR comments and DevStats scores.
 - **Direct GitHub Links:** Every maintainer handle is a clickable link to their GitHub profile.
+- **Company Affiliations & Roles:** Displays company affiliations and official Kubernetes community roles (e.g., SIG Chairs, Tech Leads) directly next to maintainer handles.
+- **Customizable Visibility:** Toggleable buttons allow you to show or hide stats, affiliations, and roles to suit your workflow.
+
+## Data Sources
+
+The extension uses a pre-generated database (`maintainers_stats.json`) derived from several authoritative sources:
+- **Contribution Stats:** Aggregated activity from all repositories in the `kubernetes` and `kubernetes-sigs` organizations. Generated using the [maintainers](https://github.com/dims/maintainers) tool, which retrieves data from [K8s DevStats](https://k8s.devstats.cncf.io).
+- **Company Affiliations:** Derived from the [CNCF gitdm](https://github.com/cncf/gitdm) (Developer Data Miner) project.
+- **Community Roles:** Extracted from the official Kubernetes [sigs.yaml](https://github.com/kubernetes/community/blob/master/sigs.yaml).
+
+## Privacy & Performance
+
+All information displayed by the extension (statistics, affiliations, and roles) is **static** and bundled directly within the extension. No external API calls are made to GitHub, CNCF, or DevStats during use. To ensure you have the most up-to-date data, please keep the extension updated to the latest version. See [PRIVACY.md](PRIVACY.md) for more details.
 
 ## Project Structure
 

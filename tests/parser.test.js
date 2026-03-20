@@ -56,6 +56,26 @@ describe('Affi Parser Logic', () => {
       expect(analysis.tokens).toContain("approvers");
     });
 
+    test('identifies a labels block', () => {
+      const line = "labels:";
+      const analysis = analyzeOwnersLine(line);
+      expect(analysis.isLabelsBlock).toBe(true);
+    });
+
+    test('populates tokens for list items', () => {
+      const line = "  - user1";
+      const analysis = analyzeOwnersLine(line);
+      expect(analysis.tokens).toContain("user1");
+    });
+
+    test('populates tokens for list items with slashes (labels)', () => {
+      const line = "  - sig/release";
+      const analysis = analyzeOwnersLine(line);
+      expect(analysis.tokens).toContain("sig");
+      expect(analysis.tokens).toContain("/");
+      expect(analysis.tokens).toContain("release");
+    });
+
     test('ignores comments', () => {
       const line = "# this is a comment";
       const analysis = analyzeOwnersLine(line);

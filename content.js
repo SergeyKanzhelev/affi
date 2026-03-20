@@ -318,6 +318,7 @@
 
       const lines = file.content.split('\n');
       let inEmeritusSection = false;
+      let inLabelsSection = false;
       lines.forEach(line => {
         const lineDiv = document.createElement('div');
         lineDiv.className = 'affi-line';
@@ -330,19 +331,21 @@
 
         const analysis = analyzeOwnersLine(line);
         
-        // Tracking emeritus section state
-        // emeritus_reviewers:
-        //   - user1
-        // approvers:  <-- This should reset it
+        // Tracking section state
         const isTopLevelKey = !line.startsWith(" ") && !line.startsWith("-") && line.includes(":");
         
         if (analysis.isEmeritusBlock) {
             inEmeritusSection = true;
-        } else if (isTopLevelKey && !analysis.isEmeritusBlock) {
+            inLabelsSection = false;
+        } else if (analysis.isLabelsBlock) {
+            inLabelsSection = true;
             inEmeritusSection = false;
+        } else if (isTopLevelKey) {
+            inEmeritusSection = false;
+            inLabelsSection = false;
         }
 
-        if (!analysis.isComment && (analysis.isListItem || analysis.isAliasKey)) {
+        if (!analysis.isComment && (analysis.isListItem || analysis.isAliasKey) && !inLabelsSection && !analysis.isLabelsBlock) {
           analysis.tokens.forEach(part => {
             const partLower = part.toLowerCase();
             if (aliases[part]) {
