@@ -23,14 +23,67 @@
     setTimeout(init, 500);
   }
 
-  async function init() {
-    const pathParts = window.location.pathname.split('/').filter(Boolean);
-    if (pathParts.length < 5) return; 
+  function parseGitHubBlobContext(pathname, doc) {
+    const pathParts = pathname.split('/').filter(Boolean);
+    if (pathParts.length < 5 || pathParts[2] !== 'blob') return null;
 
-    const owner = pathParts[0];
-    const repo = pathParts[1];
-    const branch = pathParts[3];
-    const filePath = pathParts.slice(4).join('/');
+    const fallback = {
+      owner: pathParts[0],
+      repo: pathParts[1],
+      branch: pathParts[3],
+      filePath: pathParts.slice(4).join('/')
+    };
+
+    if (!doc || typeof doc.querySelector !== 'function') {
+      return fallback;
+    }
+
+    const refSelector = doc.querySelector('button[data-testid="anchor-button"][aria-label$=" branch"], button[data-testid="anchor-button"][aria-label$=" tag"]');
+    const refLabel = refSelector?.getAttribute('aria-label');
+    if (refLabel) {
+      const branch = refLabel.replace(/ (branch|tag)$/, '');
+      const combinedPath = pathParts.slice(3).join('/');
+      const prefix = `${branch}/`;
+      if (combinedPath.startsWith(prefix)) {
+        return {
+          owner: pathParts[0],
+          repo: pathParts[1],
+          branch,
+          filePath: combinedPath.slice(prefix.length)
+        };
+      }
+    }
+
+    const embeddedDataScript = doc.querySelector('script[data-target="react-app.embeddedData"]');
+    if (!embeddedDataScript || !embeddedDataScript.textContent) {
+      return fallback;
+    }
+
+    try {
+      const embeddedData = JSON.parse(embeddedDataScript.textContent);
+      const layoutRoute = embeddedData?.payload?.codeViewLayoutRoute;
+      const blobRoute = embeddedData?.payload?.codeViewBlobLayoutRoute;
+      const owner = layoutRoute?.repo?.ownerLogin;
+      const repo = layoutRoute?.repo?.name;
+      const branch = blobRoute?.refInfo?.name || layoutRoute?.refInfo?.name;
+      const filePath = blobRoute?.path || layoutRoute?.path;
+
+      if (!owner || !repo || !branch || !filePath) {
+        return fallback;
+      }
+
+      return { owner, repo, branch, filePath };
+    } catch (err) {
+      console.warn('Affi: Could not parse GitHub embedded blob data', err);
+      return fallback;
+    }
+  }
+
+  async function init() {
+    const blobContext = parseGitHubBlobContext(window.location.pathname, document);
+    if (!blobContext) return;
+
+    const { owner, repo, branch, filePath } = blobContext;
     const isOwnersFile = filePath.endsWith('OWNERS');
     const isAliasesFile = filePath.endsWith('OWNERS_ALIASES');
 
@@ -346,7 +399,8 @@
   // Export functions for testing if we are in a Node environment
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
-      fetchOwnersHierarchy
+      fetchOwnersHierarchy,
+      parseGitHubBlobContext
     };
   }
 })();
