@@ -69,6 +69,16 @@ describe('Affi Parser Logic', () => {
       expect(analysis.isListItem).toBe(false);
       expect(analysis.isAliasKey).toBe(false);
     });
+
+    test('handles inline comments', () => {
+      const line = "  - user1 # some comment";
+      const analysis = analyzeOwnersLine(line);
+      expect(analysis.isListItem).toBe(true);
+      expect(analysis.tokens).toContain("user1");
+      expect(analysis.tokens).toContain("# some comment");
+      // Check that words in comment are not separate tokens
+      expect(analysis.tokens).not.toContain("some");
+    });
   });
 
 });

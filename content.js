@@ -213,10 +213,14 @@
         }
     }
 
-    // Calculate global stats across all repos
+    // Calculate global stats across all repos and find latest date
+    let latestDate = '';
     const globalStats = {};
     if (statsData && statsData.repositories) {
         Object.values(statsData.repositories).forEach(repo => {
+            if (repo.date_generated && (!latestDate || repo.date_generated > latestDate)) {
+                latestDate = repo.date_generated;
+            }
             if (repo.users) {
                 Object.entries(repo.users).forEach(([user, stats]) => {
                     if (!globalStats[user]) {
@@ -290,6 +294,7 @@
       fileSection.appendChild(fileBody);
 
       const lines = file.content.split('\n');
+      let inEmeritusSection = false;
       lines.forEach(line => {
         const lineDiv = document.createElement('div');
         lineDiv.className = 'affi-line';
@@ -301,8 +306,20 @@
         }
 
         const analysis = analyzeOwnersLine(line);
+        
+        // Tracking emeritus section state
+        // emeritus_reviewers:
+        //   - user1
+        // approvers:  <-- This should reset it
+        const isTopLevelKey = !line.startsWith(" ") && !line.startsWith("-") && line.includes(":");
+        
+        if (analysis.isEmeritusBlock) {
+            inEmeritusSection = true;
+        } else if (isTopLevelKey && !analysis.isEmeritusBlock) {
+            inEmeritusSection = false;
+        }
 
-        if (analysis.isListItem || analysis.isAliasKey) {
+        if (!analysis.isComment && (analysis.isListItem || analysis.isAliasKey)) {
           analysis.tokens.forEach(part => {
             const partLower = part.toLowerCase();
             if (aliases[part]) {
@@ -333,7 +350,9 @@
                     const gStat = globalStats[mLower];
                     
                     const statusClass = getContributorStatus(rStat, gStat);
-                    item.appendChild(createGitHubLink(member, statusClass));
+                    const link = createGitHubLink(member, statusClass);
+                    if (inEmeritusSection) link.classList.add('affi-emeritus');
+                    item.appendChild(link);
                     
                     if (rStat || gStat) {
                         item.appendChild(createStatsSpan(rStat, gStat));
@@ -355,11 +374,13 @@
               
               // Expand automatically on load
               expandAlias();
-            } else if (analysis.isListItem && part.match(/^[\w-]+$/) && part !== '-') {
+            } else if (!part.startsWith('#') && analysis.isListItem && part.match(/^[\w-]+$/) && part !== '-') {
               const rStat = userStats[partLower];
               const gStat = globalStats[partLower];
               const statusClass = getContributorStatus(rStat, gStat);
-              lineDiv.appendChild(createGitHubLink(part, statusClass));
+              const link = createGitHubLink(part, statusClass);
+              if (inEmeritusSection) link.classList.add('affi-emeritus');
+              lineDiv.appendChild(link);
               
               if (rStat || gStat) {
                   lineDiv.appendChild(createStatsSpan(rStat, gStat));
@@ -384,10 +405,39 @@
         statsToggle.innerText = showing ? 'Hide Activity Stats' : 'Show Activity Stats';
     };
 
+    // Find collection date for this repo or fallback to latest across all
+    let displayDate = latestDate;
+    if (statsData && statsData.repositories) {
+        const matchingKey = Object.keys(statsData.repositories).find(k => {
+            return k.toLowerCase().replace(/\/$/, "") === repoPath.replace(/\/$/, "");
+        });
+        if (matchingKey && statsData.repositories[matchingKey].date_generated) {
+            displayDate = statsData.repositories[matchingKey].date_generated;
+        }
+    }
+
     container.appendChild(toggle);
     container.appendChild(header);
     container.appendChild(statsToggle);
     container.appendChild(contentDiv);
+
+    // Create dynamic footer
+    const footer = document.createElement('div');
+    footer.id = 'affi-footer';
+    
+    const dateDiv = document.createElement('div');
+    dateDiv.innerText = `Data collected on: ${displayDate || 'unknown'}`;
+    footer.appendChild(dateDiv);
+
+    const toolDiv = document.createElement('div');
+    toolDiv.innerHTML = 'Collected using <a href="https://github.com/kubernetes-sigs/maintainers/" target="_blank" class="affi-footer-link">maintainers</a> tool.';
+    footer.appendChild(toolDiv);
+
+    const updateDiv = document.createElement('div');
+    updateDiv.innerHTML = 'Update data at <a href="https://github.com/SergeyKanzhelev/affi" target="_blank" class="affi-footer-link">affi repo</a>.';
+    footer.appendChild(updateDiv);
+
+    container.appendChild(footer);
 
     document.body.appendChild(container);
   }

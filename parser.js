@@ -33,23 +33,36 @@ function parseYamlAliases(content) {
 function analyzeOwnersLine(line) {
   const trimmed = line.trim();
   const isListItem = trimmed.startsWith('- ');
-  const isAliasKey = trimmed.endsWith(':') && !trimmed.startsWith('#');
+  const isComment = trimmed.startsWith('#');
+  const isAliasKey = trimmed.endsWith(':') && !isComment;
+  const isEmeritusBlock = trimmed === 'emeritus_reviewers:' || trimmed === 'emeritus_approvers:';
   
   let baseIndent = '';
   let subIndent = '';
   let tokens = [];
 
-  if (isListItem || isAliasKey) {
+  if (!isComment && (isListItem || isAliasKey)) {
     const indentMatch = line.match(/^(\s*)/);
     baseIndent = indentMatch ? indentMatch[1] : '';
     subIndent = baseIndent + '  ';
-    tokens = line.split(/([\w-]+)/);
+    
+    // Strip inline comments before tokenizing
+    const lineWithoutComment = line.split('#')[0];
+    tokens = lineWithoutComment.split(/([\w-]+)/);
+    
+    // Add the comment part back as a single text token if it exists
+    if (line.includes('#')) {
+        const commentIndex = line.indexOf('#');
+        tokens.push(line.substring(commentIndex));
+    }
   }
 
   return {
     trimmed,
     isListItem,
     isAliasKey,
+    isEmeritusBlock,
+    isComment,
     baseIndent,
     subIndent,
     tokens

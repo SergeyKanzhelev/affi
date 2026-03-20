@@ -58,6 +58,20 @@
     font-size: 10px;
     color: #57606a;
     text-align: center;
+    display: none; /* Hide by default */
+}
+
+.affi-show-stats #affi-footer {
+    display: block;
+}
+
+.affi-footer-link {
+    color: #0969da;
+    text-decoration: none;
+}
+
+.affi-footer-link:hover {
+    text-decoration: underline;
 }
 
 .affi-truncated-msg {
@@ -141,6 +155,11 @@
 .affi-user-zero {
     opacity: 0.4;
     text-decoration: line-through;
+}
+
+.affi-emeritus {
+    text-decoration: line-through;
+    opacity: 0.8;
 }
 
 .affi-stats {
