@@ -1,179 +1,714 @@
 {
+  "users_affiliation": {
+    "08volt": "Unknown",
+    "196ikuchil": "Unknown",
+    "a-hilaly": "AWS",
+    "a-robinson": "Cloudflare Inc",
+    "a7i": "Zendesk Inc.",
+    "aaron-prindle": "Google LLC",
+    "abgworrall": "Google LLC",
+    "abhiraut": "Stripe Inc.",
+    "adrianmoisey": "Independent",
+    "adrianreber": "Red Hat Inc.",
+    "ahg-g": "Google LLC",
+    "ahmedtd": "Google LLC",
+    "ahrtr": "VMware Inc.",
+    "aibarbetta": "Unknown",
+    "ajaysundark": "Google LLC",
+    "akhilerm": "VMware Inc.",
+    "aledbf": "Gitpod GmbH",
+    "alejandrox1": "Texas Advanced Computing Center (TACC)",
+    "aleksandra-malinowska": "Google LLC",
+    "alexander-demicev": "SUSE LLC",
+    "alexzielenski": "Google LLC",
+    "alisondy": "Bain & Company",
+    "alvaroaleman": "Confluent",
+    "ambiknai": "International Business Machines Corporation",
+    "ameukam": "ALADJI INTERNATIONAL",
+    "amulyam24": "International Business Machines Corporation",
+    "amwat": "Meta Platforms Inc.",
+    "anammedina21": "Unknown",
+    "andidog": "Giant Swarm GmbH",
+    "andrewsirenko": "AWS",
+    "andrewsykim": "Google LLC",
+    "andyxning": "Bytedance Ltd",
+    "andyzhangx": "Microsoft Corporation",
+    "anfernee": "Google LLC",
+    "anguslees": "Canva",
+    "ania-borowiec": "Unknown",
+    "annajung": "VMware Inc.",
+    "aojea": "Google LLC",
+    "apelisse": "Google LLC",
+    "api-approvers": "Unknown",
+    "api-reviewers": "Unknown",
+    "apricote": "Hetzner",
+    "arahamad": "International Business Machines Corporation",
+    "aramase": "Microsoft Corporation",
+    "arangogutierrez": "NVIDIA Corporation",
+    "aravindhp": "Red Hat Inc.",
+    "ardaguclu": "Red Hat Inc.",
+    "aroradaman": "Unknown",
+    "arunmk": "Independent",
+    "atiratree": "Unknown",
+    "averagemarcus": "CNCF",
+    "axezhan": "Unknown",
+    "barney-s": "Google LLC",
+    "bart0sh": "Intel Corporation",
+    "bartsmykla": "Kong Inc.",
+    "benjaminkazemi": "Unknown",
+    "benluddy": "Red Hat Inc.",
+    "bentheelder": "Google LLC",
+    "bgrant0607": "Google LLC",
+    "bhope": "Unknown",
+    "bigdarkclown": "Google LLC",
+    "bnallapeta": "Mirantis Inc.",
+    "bobbypage": "Independent",
+    "bobymcbobs": "Independent",
+    "bowei": "Google LLC",
+    "brancz": "Polar Signals",
+    "brianpursley": "Cinlogic LLC",
+    "bridgetkromhout": "Microsoft Corporation",
+    "bskiba": "Google LLC",
+    "byako": "Intel Corporation",
+    "caesarxuchao": "Figma",
+    "cailyn-codes": "Unknown",
+    "calebamiles": "Pivotal",
+    "camilamacedo86": "Foundries",
+    "cantbewong": "Dell Technologies",
+    "carlory": "DaoCloud Network Technology Co. Ltd.",
+    "cartermckinnon": "CoreWeave",
+    "caseydavenport": "Tigera Inc.",
+    "castrojo": "CNCF",
+    "catherinef-dev": "Independent",
+    "cblecker": "Red Hat Inc.",
+    "ccojocar": "Google LLC",
+    "cdrage": "Red Hat Inc.",
+    "cecilerobertmichon": "Microsoft Corporation",
+    "chadmcrowell": "Unknown",
+    "charleszheng44": "Netflix Inc.",
+    "cheftako": "Google LLC",
+    "chenlin07": "Independent",
+    "chris-short": "McClatchy",
+    "chrischdi": "NVIDIA Corporation",
+    "chrisohaver": "Infoblox Inc.",
+    "christopherhein": "Apple Inc.",
+    "chuckha": "NVIDIA Corporation",
+    "cici37": "Google LLC",
+    "cindyxing": "Microsoft Corporation",
+    "cjcullen": "Google LLC",
+    "cji": "Google LLC",
+    "cjwagner": "Google LLC",
+    "claudiubelu": "Cloudbase",
+    "coderanger": "Geomagical",
+    "coffeepac": "Salesforce.com Inc.",
+    "cofyc": "PingCAP",
+    "comtalyst": "Unknown",
+    "connordoyle": "Poggio Labs",
+    "connorjc3": "AWS",
+    "countspongebob": "Amazon",
+    "cpanato": "Chainguard Inc.",
+    "cprivitere": "Equinix Inc.",
+    "craiglpeters": "ThisWay Global",
+    "d-mo": "Mist.io",
+    "damdo": "Red Hat Inc.",
+    "damemi": "Google LLC",
+    "damiansawicki": "Unknown",
+    "danehans": "Solo.io",
+    "dangerontheranger": "Google LLC",
+    "danielvegamyhre": "Google LLC",
+    "danielxiao": "Unknown",
+    "danil-grigorev": "SUSE LLC",
+    "danwinship": "Red Hat Inc.",
+    "daschott": "Microsoft Corporation",
+    "dashpole": "Google LLC",
+    "david-martin": "Red Hat Inc.",
+    "davidewatson": "Meta Platforms Inc.",
+    "davidjumani": "Solo.io",
+    "dbonfigli": "Independent",
+    "dcbw": "Red Hat Inc.",
+    "dchen1107": "Google LLC",
+    "deads2k": "Red Hat Inc.",
+    "deepakkinni": "VMware Inc.",
+    "deitch": "Atomic",
+    "dejanb": "Red Hat Inc.",
+    "dekkagaijin": "Google LLC",
+    "denkensk": "Baidu Online Network Technology (Beijing) Co. Ltd",
+    "derekwaynecarr": "Red Hat Inc.",
+    "detiber": "Cisco Systems Inc.",
+    "dgrisonnet": "Red Hat Inc.",
+    "dims": "NVIDIA Corporation",
+    "dipesh-rawat": "International Business Machines Corporation",
+    "displague": "Equinix Inc.",
+    "divya-mohan0209": "SUSE LLC",
+    "divyenpatel": "VMware Inc.",
+    "dlapcevic": "Google LLC",
+    "dlipovetsky": "D2iQ Inc. (f/k/a Mesosphere)",
+    "dom4ha": "Unknown",
+    "drew-viles": "Unknown",
+    "drewhagen": "Unknown",
+    "drmorr0": "Airbnb",
+    "dulek": "Red Hat Inc.",
+    "dylangraham": "Servian",
+    "eddiezane": "Defense Unicorns",
+    "edwinhr716": "Unknown",
+    "ehashman": "Apple Inc.",
+    "elezar": "NVIDIA Corporation",
+    "elijahquinones": "AWS",
+    "ellistarn": "Amazon",
+    "elmiko": "Red Hat Inc.",
+    "endocrimes": "Independent",
+    "energyliyn": "Independent",
+    "enj": "Microsoft Corporation",
+    "enxebre": "CoreOS Inc.",
+    "ericchiang": "Google LLC",
+    "fabriziopandini": "VMware Inc.",
+    "fedebongio": "Google LLC",
+    "fedosin": "New Relic Inc.",
+    "fei-guo": "Microsoft Corporation",
+    "feiskyer": "Microsoft Corporation",
+    "fengyunpan2": "kwaishou",
+    "ffromani": "Red Hat Inc.",
+    "floreks": "Plural",
+    "fmuyassarov": "Ericsson",
+    "frapposelli": "Broadcom Corporation",
+    "freehan": "Roblox",
+    "fsmunoz": "SAS Institute Inc.",
+    "furkatgofurov7": "SUSE LLC",
+    "gab-satchi": "VMware Inc.",
+    "gabesaba": "Unknown",
+    "gacko": "Unknown",
+    "gautierdelorme": "Apple Inc.",
+    "geekygirldawn": "Independent",
+    "genpage": "Lambda",
+    "gjtempleton": "Skyscanner",
+    "gman0": "CERN",
+    "gnufied": "Red Hat Inc.",
+    "gottwald": "DigitalOcean",
+    "gouthampacha": "Red Hat Inc.",
+    "gracenng": "CNCF",
+    "guineveresaenger": "Pulumi",
+    "haircommander": "Red Hat Inc.",
+    "hakman": "Microsoft Corporation",
+    "hakuna-matatah": "Amazon",
+    "hangyan": "VMware Inc.",
+    "hardikdr": "SAP",
+    "hdp617": "Unknown",
+    "hello2mao": "Baidu Online Network Technology (Beijing) Co. Ltd",
+    "hh": "CNCF",
+    "hirazawaui": "Google LLC",
+    "hlipsig": "Unknown",
+    "huang-wei": "Meta Platforms Inc.",
+    "humblec": "VMware Inc.",
+    "hzxuzhonghu": "Huawei Technologies Co. Ltd",
+    "iancoldwater": "CNCF",
+    "ibabou": "Microsoft Corporation",
+    "idvoretskyi": "CNCF",
+    "ingvagabund": "Red Hat Inc.",
+    "intunderflow": "Unknown",
+    "ivankatliarchuk": "Independent",
+    "ivanvc": "Independent",
+    "jackfrancis": "Microsoft Corporation",
+    "jakobmoellerdev": "Unknown",
+    "janetkuo": "Google LLC",
+    "jaormx": "Equinix Inc.",
+    "jasonbraganza": "Janusworx",
+    "jaypipes": "Microsoft Corporation",
+    "jayunit100": "Tesla Inc.",
+    "jbartosik": "Google LLC",
+    "jbeda": "Independent",
+    "jberkus": "Red Hat Inc.",
+    "jbpratt": "Red Hat Inc.",
+    "jdumars": "Apple Inc.",
+    "jeefy": "CNCF",
+    "jefftree": "DECA Woodlands",
+    "jeffwan": "Bytedance Ltd",
+    "jenshu": "Solo.io",
+    "jeremyot": "Google LLC",
+    "jeremyrickard": "Microsoft Corporation",
+    "jhrozek": "Stacklok",
+    "jiahuif": "Google LLC",
+    "jichenjc": "International Business Machines Corporation",
+    "jimangel": "Google LLC",
+    "jimbugwadia": "CNCF",
+    "jimdaga": "Synopsys Inc",
+    "jingxu97": "Google LLC",
+    "jingyih": "Google LLC",
+    "jkh52": "Google LLC",
+    "jlamillan": "Oracle America Inc.",
+    "jmhbnz": "Red Hat Inc.",
+    "jmickey": "Independent",
+    "joaquimrocha": "Amutable",
+    "joelsmith": "Red Hat Inc.",
+    "joelspeed": "Red Hat Inc.",
+    "johnbelamaric": "Google LLC",
+    "johngmyers": "Proofpoint Inc.",
+    "johnschnake": "AWS",
+    "jont828": "Microsoft Corporation",
+    "jpbetz": "Google LLC",
+    "jprzychodzen": "Google LLC",
+    "jrsapi": "Adobe Inc.",
+    "jsafrane": "Red Hat Inc.",
+    "jsturtevant": "Microsoft Corporation",
+    "justaugustus": "Bloomberg",
+    "justinsb": "Google LLC",
+    "k82cn": "NVIDIA Corporation",
+    "kad": "Intel Corporation",
+    "kannon92": "Red Hat Inc.",
+    "karthik-k-n": "International Business Machines Corporation",
+    "kaslin": "Kubernetes",
+    "katcosgrove": "Dell Technologies",
+    "katharine": "Google LLC",
+    "kayrus": "DevOps Institute",
+    "keithmattix": "Microsoft Corporation",
+    "kerthcet": "DaoCloud Network Technology Co. Ltd.",
+    "kevin-wangzefeng": "CNCF",
+    "kflynn": "Buoyant Inc.",
+    "kfswain": "Unknown",
+    "kgolab": "Google LLC",
+    "khenidak": "Microsoft Corporation",
+    "kikisdeliveryservice": "Red Hat Inc.",
+    "killianmuldoon": "NVIDIA Corporation",
+    "kkeshavamurthy": "Broadcom Corporation",
+    "kl52752": "Unknown",
+    "klueska": "NVIDIA Corporation",
+    "kmala": "Amazon",
+    "knabben": "VMware Inc.",
+    "knelasevero": "Unknown",
+    "knverey": "Shopify Inc.",
+    "koba1t": "Yahoo! Inc.",
+    "kow3ns": "Snowflake",
+    "krmayankk": "Salesforce.com Inc.",
+    "krzysied": "Google LLC",
+    "kwiesmueller": "Google LLC",
+    "kwilczynski": "Red Hat Inc.",
+    "lalitc375": "Google LLC",
+    "lappleapple": "Zalando SE",
+    "lauralorenz": "Google LLC",
+    "lavalamp": "Google LLC",
+    "lentzi90": "Ericsson",
+    "leonardpahlke": "Liquid Reply",
+    "liggitt": "Google LLC",
+    "lingxiankong": "Sourced Group",
+    "liorlieberman": "Google LLC",
+    "lmktfy": "Unknown",
+    "logicalhan": "Google LLC",
+    "logicalshark": "Google LLC",
+    "lojies": "ZTE Corporation",
+    "longwuyuan": "Devopsdragon",
+    "lubronzhan": "VMware Inc.",
+    "lukasmetzner": "Hetzner",
+    "luxas": "CNCF",
+    "m00nf1sh": "Amazon",
+    "maciaszczykm": "Plural",
+    "maciekpytel": "Google LLC",
+    "macsko": "Unknown",
+    "madhavjivrajani": "CNCF",
+    "mandre": "Unknown",
+    "markyjackson-taulia": "Equinix Inc.",
+    "marosset": "Microsoft Corporation",
+    "marquiz": "Intel Corporation",
+    "marseel": "Google LLC",
+    "mattcary": "Unknown",
+    "mattfenwick": "Synopsys Inc",
+    "matthchr": "Microsoft Corporation",
+    "matthyx": "ARMO",
+    "mauriciopoppe": "Google LLC",
+    "maxcao13": "Unknown",
+    "mboersma": "Microsoft Corporation",
+    "mborsz": "Google LLC",
+    "mcbenjemaa": "IONOS",
+    "medyagh": "Google LLC",
+    "mehabhalodiya": "Red Hat Inc.",
+    "mengjiao-liu": "DaoCloud Network Technology Co. Ltd.",
+    "mengqiy": "Amazon",
+    "mfahlandt": "Kubermatic GmbH",
+    "micahhausler": "Amazon",
+    "michaelasp": "Unknown",
+    "michelle192837": "Google LLC",
+    "mikebrow": "International Business Machines Corporation",
+    "mikedanese": "Databricks Inc.",
+    "mikespreitzer": "International Business Machines Corporation",
+    "mikezappa87": "Stateless",
+    "mimowo": "Google LLC",
+    "mkumatag": "International Business Machines Corporation",
+    "mloiseleur": "Unknown",
+    "mm4tt": "Google LLC",
+    "mmamczur": "Google LLC",
+    "mmerkes": "Amazon",
+    "mmiranda96": "Google LLC",
+    "monotek": "Kiwigrid GmbH",
+    "morrislaw": "Microsoft Corporation",
+    "mortent": "Google LLC",
+    "mpuckett159": "Independent",
+    "mrajashree": "Apple Inc.",
+    "mrbobbytables": "Google LLC",
+    "mrfreezeex": "Ledger",
+    "mrhohn": "Google LLC",
+    "mrueg": "Sony Interactive Entertainment LLC",
+    "mrunalp": "Red Hat Inc.",
+    "msau42": "Google LLC",
+    "mtaufen": "Google LLC",
+    "munnerz": "Apple Inc.",
+    "mushuee": "Google LLC",
+    "mwielgus": "Google LLC",
+    "nan-yu": "Google LLC",
+    "natalisucks": "Cisco Systems Inc.",
+    "natasha41575": "Google LLC",
+    "nate-double-u": "The Linux Foundation",
+    "natherz97": "Amazon",
+    "nawazkh": "Microsoft Corporation",
+    "nckturner": "Robinhood Markets Inc.",
+    "ndixita": "Unknown",
+    "neolit123": "Independent",
+    "nikhita": "VMware Inc.",
+    "nilo19": "Microsoft Corporation",
+    "nirrozenbaum": "International Business Machines Corporation",
+    "nirs": "Unknown",
+    "nmn3m": "Unknown",
+    "nojnhuh": "Microsoft Corporation",
+    "npolshakova": "Solo.io",
+    "nrb": "Red Hat Inc.",
+    "odinuge": "Independent",
+    "olemarkus": "Sopra Steria Group",
+    "omerap12": "Perion",
+    "oomichi": "Mitsubishi Electric",
+    "openstacker": "Kiwibank",
+    "pacoxu": "DaoCloud Network Technology Co. Ltd.",
+    "palnabarun": "VMware Inc.",
+    "parispittman": "Apple Inc.",
+    "petr-muller": "Red Hat Inc.",
+    "php-coder": "Independent",
+    "ping035627": "ZTE Corporation",
+    "pjh": "Google LLC",
+    "pkprzekwas": "Unknown",
+    "pohly": "Intel Corporation",
+    "poonam-lamba": "Unknown",
+    "prajyot-parab": "International Business Machines Corporation",
+    "pravk03": "Unknown",
+    "prezha": "Equinix Inc.",
+    "priyankasaggu11929": "Independent",
+    "prksu": "AccelByte",
+    "puerco": "Chainguard Inc.",
+    "pwittrock": "NVIDIA Corporation",
+    "rainbowmango": "Huawei Technologies Co. Ltd",
+    "rajalakshmi-girish": "International Business Machines Corporation",
+    "rajansandeep": "Meta Platforms Inc.",
+    "random-liu": "Google LLC",
+    "randomvariable": "VMware Inc.",
+    "rata": "Amutable",
+    "ravisantoshgudimetla": "Apple Inc.",
+    "rayandas": "OneTrust",
+    "raywainman": "Google LLC",
+    "remyleone": "Scaleway",
+    "rexagod": "Red Hat Inc.",
+    "reylejano": "Red Hat Inc.",
+    "rficcaglia": "Independent",
+    "riaankl": "CNCF",
+    "richabanker": "Unknown",
+    "richardcase": "Omniva",
+    "rifelpet": "Datadog Inc",
+    "ringtail": "Alibaba Group",
+    "ritazh": "Microsoft Corporation",
+    "rjsadow": "iCR",
+    "robscott": "Google LLC",
+    "roycaihw": "Google LLC",
+    "rphillips": "Red Hat Inc.",
+    "rst0git": "Independent",
+    "rthallisey": "NVIDIA Corporation",
+    "rushmash91": "Unknown",
+    "ryanzhang-oss": "Microsoft Corporation",
+    "rytswd": "CNCF",
+    "s-urbaniak": "monday.com Limited",
+    "saad-ali": "Google LLC",
+    "saikat-royc": "Google LLC",
+    "salasberryfin": "SUSE LLC",
+    "salaxander": "Giant Swarm GmbH",
+    "sandeeppissay": "VMware Inc.",
+    "sanposhiho": "Independent",
+    "saranbalaji90": "AWS",
+    "saschagrunert": "Red Hat Inc.",
+    "sataqiu": "Alibaba Group",
+    "satyampsoni": "Unknown",
+    "sayakmukhopadhyay": "Beez Innovacion Labs Pvt. Ltd.",
+    "sayanchowdhury": "Microsoft Corporation",
+    "sbangari": "Microsoft Corporation",
+    "sbueringer": "VMware Inc.",
+    "schrej": "Deutsche Telekom",
+    "sdowell": "Google LLC",
+    "seans3": "Google LLC",
+    "sebgoa": "TriggerMesh Inc.",
+    "serathius": "Google LLC",
+    "sergeykanzhelev": "Google LLC",
+    "sh4d1": "Scaleway",
+    "shaneutt": "Kong Inc.",
+    "shu-mutou": "NEC Corporation",
+    "shubham82": "NEC Corporation",
+    "shyamjvs": "AWS",
+    "shysank": "Roku",
+    "sig-auth-authenticators-approvers": "Unknown",
+    "sig-auth-authenticators-reviewers": "Unknown",
+    "sig-auth-authorizers-approvers": "Unknown",
+    "sig-auth-authorizers-reviewers": "Unknown",
+    "sig-cli-maintainers": "Unknown",
+    "sig-cli-reviewers": "Unknown",
+    "sig-cluster-ops-leads": "Unknown",
+    "sig-pm-leads": "Unknown",
+    "sig-service-catalog-leads": "Unknown",
+    "sig-usability-leads": "Unknown",
+    "silvery1622": "Unknown",
+    "siyuanfoundation": "Google LLC",
+    "sjenning": "Red Hat Inc.",
+    "skitt": "Red Hat Inc.",
+    "smarterclayton": "Google LLC",
+    "smoshiur1237": "Ericsson",
+    "soltysh": "Defense Unicorns",
+    "spencerhance": "Google LLC",
+    "spiffxp": "Google LLC",
+    "spowelljr": "Google LLC",
+    "spzala": "International Business Machines Corporation",
+    "sreeram-venkitesh": "Unknown",
+    "srm09": "Broadcom Corporation",
+    "stephenfin": "Red Hat Inc.",
+    "stevekuznetsov": "Google LLC",
+    "stewart-yu": "Huawei Technologies Co. Ltd",
+    "stmcginnis": "Lambda Labs",
+    "stp-ip": "Rekkur Solutions GmbH",
+    "strongjz": "Isovalent",
+    "sttts": "NVIDIA Corporation",
+    "sudermanjr": "Fairwinds Ops Inc",
+    "sunnylovestiramisu": "Unknown",
+    "swetharepakula": "Google LLC",
+    "szuecs": "Zalando SE",
+    "tabbysable": "Independent",
+    "tallaxes": "Microsoft Corporation",
+    "tallclair": "Google LLC",
+    "tao12345666333": "Kong Inc.",
+    "tengqm": "Beijing Accademy of Aritificial Intelligence (BAAI)",
+    "tenzen-y": "Independent",
+    "terrytangyuan": "Red Hat Inc.",
+    "tessaio": "Independent",
+    "test-infra-oncall": "Unknown",
+    "tghartland": "CERN",
+    "thockin": "Google LLC",
+    "timoreimann": "DigitalOcean",
+    "timothysc": "Broadcom Corporation",
+    "tkashem": "Red Hat Inc.",
+    "tnqn": "VMware Inc.",
+    "tombarron": "Independent",
+    "torredil": "AWS",
+    "tosi3k": "Google LLC",
+    "towca": "Google LLC",
+    "tpepper": "Independent",
+    "tsmetana": "Red Hat Inc.",
+    "tzneal": "AWS",
+    "uablrek": "Independent",
+    "ug-big-data-leads": "Unknown",
+    "upodroid": "Independent",
+    "usize": "Red Hat Inc.",
+    "utam0k": "Preferred Networks Inc.",
+    "v-pap": "Independent",
+    "vadasambar": "Acquia Inc.",
+    "varshaprasad96": "Red Hat Inc.",
+    "verolop": "PlanetScale",
+    "viktoriaas": "Unknown",
+    "vinayakankugoyal": "Google LLC",
+    "vincepri": "Apple Inc.",
+    "vishalanarase": "Civo",
+    "vishesh92": "Apache CloudStack",
+    "vishh": "Google LLC",
+    "voelzmo": "SAP",
+    "vteratipally": "Vinted",
+    "vyom-yadav": "CNCF",
+    "wangzhen127": "Google LLC",
+    "weizhouapache": "Unknown",
+    "wenjiaswe": "Google LLC",
+    "wg-ai-conformance-leads": "Unknown",
+    "wg-api-expression-leads": "Unknown",
+    "wg-app-def-leads": "Unknown",
+    "wg-apply-leads": "Unknown",
+    "wg-container-identity-leads": "Unknown",
+    "wg-iot-edge-leads": "Unknown",
+    "wg-kubeadm-adoption-leads": "Unknown",
+    "wg-multitenancy-leads": "Unknown",
+    "wg-naming-leads": "Unknown",
+    "wg-policy-leads": "Unknown",
+    "wg-resource-management-leads": "Unknown",
+    "wg-security-audit-leads": "Unknown",
+    "wg-serving-leads": "Unknown",
+    "willie-yao": "Microsoft Corporation",
+    "wlan0": "Apple Inc.",
+    "wojtek-t": "Google LLC",
+    "wongma7": "Amazon",
+    "wzshiming": "DaoCloud Network Technology Co. Ltd.",
+    "x13n": "Google LLC",
+    "xdu31": "Unknown",
+    "xing-yang": "VMware Inc.",
+    "xinydev": "Millennium Management LLC",
+    "xlgao-zju": "Independent",
+    "xmcqueen": "Unknown",
+    "xmudrii": "Loodse",
+    "xudongliuharold": "VMware Inc.",
+    "xueweiz": "Observe",
+    "xunzhuo": "Tencent Holdings Limited",
+    "yadvr": "Unknown",
+    "yanglu1031": "Unknown",
+    "yaroslava-serdiuk": "Google LLC",
+    "yastij": "Broadcom Corporation",
+    "yibozhuang": "Apple Inc.",
+    "yifeizhuang": "Google LLC",
+    "yliaog": "Google LLC",
+    "yongruilin": "Google LLC",
+    "youngnick": "Isovalent",
+    "yoyinzyc": "Google LLC",
+    "yue9944882": "AWS",
+    "yujuhong": "Google LLC",
+    "yussufsh": "International Business Machines Corporation",
+    "yuxiangqian": "Google LLC",
+    "zetaab": "Elisa Corporation",
+    "zhanggbj": "VMware Inc.",
+    "zshihang": "Google LLC",
+    "zvonkok": "Red Hat Inc.",
+    "zylxjtu": "Unknown",
+    "yanzhaoli": "VMware Inc.",
+    "christianang": "VMware Inc.",
+    "dougm": "VMware Inc.",
+    "flawedmatrix": "VMware Inc.",
+    "skriss": "Red Hat Inc.",
+    "sunjaybhatia": "VMware Inc.",
+    "wyike": "Unknown",
+    "onlydole": "CNCF",
+    "savitharaghunathan": "Red Hat Inc.",
+    "wg-component-standard-leads": "Unknown",
+    "nimbinatus": "Red Hat Inc.",
+    "tokt": "Unknown",
+    "aoxn": "Alibaba Group",
+    "cheyang": "NetEase Inc",
+    "gujingit": "Independent",
+    "harshanarayana": "Cisco Systems Inc.",
+    "kentatada": "Sony Marketing Inc.",
+    "ericsmalling": "Docker Inc.",
+    "krol3": "Elasticsearch Inc.",
+    "mtardy": "Isovalent",
+    "raesene": "Datadog Inc",
+    "smarticu5": "Unknown",
+    "sig-node-reviewers": "Unknown",
+    "sig-node-approvers": "Unknown",
+    "sig-autoscaling-maintainers": "Unknown",
+    "atoms": "Proxy Live",
+    "miouge1": "BRAINER REMAKERS CO. LTD.",
+    "yankay": "DaoCloud Network Technology Co. Ltd.",
+    "ant31": "CONNY",
+    "chadswen": "AT&T Services Inc.",
+    "cristicalin": "Kubespray",
+    "cyclinder": "DaoCloud Network Technology Co. Ltd.",
+    "floryut": "Agaetis",
+    "liupeng0518": "Inspur Group",
+    "mattymo": "Progmatic",
+    "mzaian": "New Work",
+    "riverzhang": "AlaudaInc",
+    "tico88612": "WiziGo",
+    "woopstar": "PasientSky",
+    "luckysb": "Unknown",
+    "piotrprokop": "NVIDIA Corporation",
+    "adrianchiris": "NVIDIA Corporation",
+    "jjacobelli": "Unknown",
+    "erictune": "Google LLC",
+    "feloy": "Red Hat Inc.",
+    "kbhawkey": "Glassdoor",
+    "sftim": "Independent",
+    "ytsarev": "Upbound",
+    "sheerun": "Ada",
+    "stevehipwell": "LexisNexis Risk Solutions",
+    "vflaux": "Unknown",
+    "zac-nixon": "Amazon",
+    "oliviassss": "AWS",
+    "shraddhabang": "Amazon",
+    "wweiwei-li": "Amazon",
+    "shuqz": "Unknown",
+    "olivierlemasle": "I-TRACING",
+    "grayluck": "Databricks Inc.",
+    "varunmar": "Snowflake",
+    "yangjunmyfm192085": "ZTE Corporation",
+    "slashpai": "Red Hat Inc.",
+    "googs1025": "Bytedance Ltd",
+    "jklaw90": "Zendesk Inc.",
+    "lixiang233": "Independent",
+    "ricardomaraschini": "Red Hat Inc.",
+    "seanmalloy": "Red Hat Inc.",
+    "janeliul": "Unknown",
+    "haoranleo": "Amazon",
+    "jyotimahapatra": "Amazon",
+    "hii-arpit": "Unknown",
+    "slicknik": "HP Inc.",
+    "bacongobbler": "Fermyon",
+    "bryanl": "VMware Inc.",
+    "garethr": "Puppet Inc.",
+    "jascott1": "Intel Corporation",
+    "kadel": "Red Hat Inc.",
+    "mattfarina": "SUSE LLC",
+    "michellen": "Fermyon",
+    "migmartri": "VMware Inc.",
+    "nebril": "Isovalent",
+    "ngtuna": "Bitnami Inc.",
+    "prydonius": "Brex",
+    "seh": "Optimize Health",
+    "surajssd": "Microsoft Corporation",
+    "technosophos": "Microsoft Corporation",
+    "thomastaylor312": "Microsoft Corporation",
+    "vaikas-google": "Chainguard Inc.",
+    "runseb": "Unknown",
+    "containscafeine": "Unknown",
+    "sd-13": "Independent",
+    "aman4433": "International Business Machines Corporation",
+    "anshuman-agarwala": "International Business Machines Corporation",
+    "arshadd-b": "International Business Machines Corporation",
+    "chandankumar4": "MayaData Inc. (f/k/a CloudByte Inc)",
+    "g-gaston": "AWS",
+    "sivchari": "Independent",
+    "wendy-ha18": "Unknown",
+    "adirio": "IKERLAN",
+    "directxman12": "Google LLC",
+    "droot": "Groupon Inc.",
+    "estroz": "Red Hat Inc.",
+    "jmrodri": "Swiftline",
+    "joelanford": "Red Hat Inc.",
+    "rashmigottipati": "Red Hat Inc.",
+    "vitorfloriano": "Unknown",
+    "everettraven": "Unknown",
+    "kavinjsir": "Unknown",
+    "kubebuilder-approvers": "Unknown",
+    "martinforreal": "Microsoft Corporation",
+    "mainred": "Microsoft Corporation",
+    "heyste": "II.Coop",
+    "koksay": "Kubermatic GmbH",
+    "sarab97": "Dunzo",
+    "ncapps": "Unknown",
+    "inteon": "Venafi",
+    "troy0820": "Microsoft Corporation",
+    "bryan-cox": "Red Hat Inc.",
+    "nikparasyr": "SURF",
+    "amacaskill": "Independent",
+    "judemars": "Tesla Motors",
+    "leiyiz": "Google LLC",
+    "pwschuurman": "Google LLC",
+    "songjiaxun": "Google LLC",
+    "tyuchn": "Google LLC",
+    "savirg": "Unknown",
+    "riteshghorse": "Unknown",
+    "dannawang0221": "Unknown",
+    "bertinatto": "Red Hat Inc.",
+    "leakingtapan": "Amazon",
+    "rdpsin": "AWS",
+    "mdzraf": "Unknown",
+    "ahmetb": "LinkedIn",
+    "chriskim06": "Blend",
+    "corneliusweig": "Google LLC"
+  },
   "repositories": {
-    "kubernetes-sigs/about-api": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "lauralorenz": {
-          "pr_comments": 4,
-          "devstats_score": 15
-        },
-        "pmorie": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "skitt": {
-          "pr_comments": 2,
-          "devstats_score": 5
-        }
-      }
-    },
-    "kubernetes-sigs/admission-policies": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/agent-sandbox": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "barney-s": {
-          "pr_comments": 95,
-          "devstats_score": 481
-        },
-        "igooch": {
-          "pr_comments": 26,
-          "devstats_score": 133
-        },
-        "janetkuo": {
-          "pr_comments": 163,
-          "devstats_score": 615
-        },
-        "justinsb": {
-          "pr_comments": 75,
-          "devstats_score": 181
-        },
-        "shruti6991": {
-          "pr_comments": 10,
-          "devstats_score": 47
-        },
-        "soltysh": {
-          "pr_comments": 19,
-          "devstats_score": 5
-        },
-        "vicentefb": {
-          "pr_comments": 43,
-          "devstats_score": 286
-        }
-      }
-    },
-    "kubernetes-sigs/ai-conformance": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "dims": {
-          "pr_comments": 8,
-          "devstats_score": 1
-        },
-        "janetkuo": {
-          "pr_comments": 10,
-          "devstats_score": 10
-        },
-        "mfahlandt": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ritazh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "terrytangyuan": {
-          "pr_comments": 14,
-          "devstats_score": 1
-        }
-      }
-    },
-    "kubernetes-sigs/alibaba-cloud-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "albeeso": {
-          "pr_comments": 37,
-          "devstats_score": 87
-        },
-        "huww98": {
-          "pr_comments": 128,
-          "devstats_score": 294
-        },
-        "iltyty": {
-          "pr_comments": 18,
-          "devstats_score": 30
-        },
-        "mowangdk": {
-          "pr_comments": 252,
-          "devstats_score": 236
-        }
-      }
-    },
     "kubernetes-sigs/apiserver-builder-alpha": {
       "date_generated": "2026-03-19",
       "users": {
         "pwittrock": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yue9944882": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/apiserver-network-proxy": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "anfernee": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cheftako": {
-          "pr_comments": 45,
-          "devstats_score": 70
-        },
-        "elmiko": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ipochi": {
-          "pr_comments": 19,
-          "devstats_score": 50
-        },
-        "jkh52": {
-          "pr_comments": 15,
-          "devstats_score": 23
-        },
-        "tallclair": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        }
-      }
-    },
-    "kubernetes-sigs/apiserver-runtime": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "cheftako": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "deads2k": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gabbifish": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jpbetz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "liggitt": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pwittrock": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "smarterclayton": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sttts": {
           "pr_comments": 0,
           "devstats_score": 0
         },
@@ -366,59 +901,6 @@
         }
       }
     },
-    "kubernetes-sigs/aws-efs-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ashley-wenyizha": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "d-nishi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dankova22": {
-          "pr_comments": 82,
-          "devstats_score": 158
-        },
-        "davidxu12345": {
-          "pr_comments": 46,
-          "devstats_score": 91
-        },
-        "jqmichael": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jsafrane": {
-          "pr_comments": 1,
-          "devstats_score": 4
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "leakingtapan": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mskanth972": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nckturner": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "samuhale": {
-          "pr_comments": 21,
-          "devstats_score": 11
-        },
-        "wongma7": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
     "kubernetes-sigs/aws-encryption-provider": {
       "date_generated": "2026-03-19",
       "users": {
@@ -453,65 +935,6 @@
         "yue9944882": {
           "pr_comments": 11,
           "devstats_score": 26
-        }
-      }
-    },
-    "kubernetes-sigs/aws-file-cache-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "khoang98": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "nckturner": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "wongma7": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/aws-fsx-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "khoang98": {
-          "pr_comments": 43,
-          "devstats_score": 88
-        },
-        "nckturner": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "olemarkus": {
-          "pr_comments": 111,
-          "devstats_score": 2
-        },
-        "torredil": {
-          "pr_comments": 7,
-          "devstats_score": 11
-        }
-      }
-    },
-    "kubernetes-sigs/aws-fsx-openzfs-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "dankova22": {
-          "pr_comments": 0,
-          "devstats_score": 2
-        },
-        "gomesjason": {
-          "pr_comments": 3,
-          "devstats_score": 16
-        },
-        "hughdanliu": {
-          "pr_comments": 6,
-          "devstats_score": 8
-        },
-        "nckturner": {
-          "pr_comments": 0,
-          "devstats_score": 0
         }
       }
     },
@@ -564,318 +987,6 @@
           "devstats_score": 869
         }
       }
-    },
-    "kubernetes-sigs/azuredisk-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andyzhangx": {
-          "pr_comments": 340,
-          "devstats_score": 1099
-        },
-        "cvvz": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "edreed": {
-          "pr_comments": 5,
-          "devstats_score": 11
-        },
-        "feiskyer": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "landreasyan": {
-          "pr_comments": 23,
-          "devstats_score": 46
-        },
-        "nearora-msft": {
-          "pr_comments": 4,
-          "devstats_score": 38
-        },
-        "zeromagic": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/azurefile-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andyzhangx": {
-          "pr_comments": 370,
-          "devstats_score": 1204
-        },
-        "cvvz": {
-          "pr_comments": 3,
-          "devstats_score": 19
-        },
-        "feiskyer": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gnufied": {
-          "pr_comments": 4,
-          "devstats_score": 3
-        },
-        "zeromagic": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/azurelustre-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andyzhangx": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dabradley": {
-          "pr_comments": 26,
-          "devstats_score": 62
-        },
-        "t-mialve": {
-          "pr_comments": 28,
-          "devstats_score": 38
-        }
-      }
-    },
-    "kubernetes-sigs/blob-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andyzhangx": {
-          "pr_comments": 268,
-          "devstats_score": 842
-        },
-        "cvvz": {
-          "pr_comments": 2,
-          "devstats_score": 6
-        },
-        "feiskyer": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/bom": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 95,
-          "devstats_score": 39
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 20,
-          "devstats_score": 12
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 35,
-          "devstats_score": 10
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 1,
-          "devstats_score": 2
-        }
-      }
-    },
-    "kubernetes-sigs/boskos": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "airbornepony": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "amulyam24": {
-          "pr_comments": 9,
-          "devstats_score": 55
-        },
-        "bentheelder": {
-          "pr_comments": 1,
-          "devstats_score": 5
-        },
-        "chases2": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cjwagner": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "detiber": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dims": {
-          "pr_comments": 2,
-          "devstats_score": 1
-        },
-        "justinsb": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        },
-        "krzyzacy": {
-          "pr_comments": 3,
-          "devstats_score": 5
-        },
-        "michelle192837": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "mkumatag": {
-          "pr_comments": 13,
-          "devstats_score": 7
-        },
-        "mpherman2": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "randomvariable": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "richardcase": {
-          "pr_comments": 4,
-          "devstats_score": 5
-        },
-        "stevekuznetsov": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "timwangmusic": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "upodroid": {
-          "pr_comments": 7,
-          "devstats_score": 5
-        }
-      }
-    },
-    "kubernetes-sigs/cli-experimental": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "barney-s": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "knverey": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "koba1t": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        },
-        "liujingfang1": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "monopole": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pwittrock": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "seans3": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "soltysh": {
-          "pr_comments": 19,
-          "devstats_score": 2
-        },
-        "syamsundarkirubakaran": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "varshaprasad96": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cli-utils": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ash2k": {
-          "pr_comments": 8,
-          "devstats_score": 10
-        },
-        "haiyanmeng": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "karlkfi": {
-          "pr_comments": 8,
-          "devstats_score": 91
-        },
-        "mortent": {
-          "pr_comments": 7,
-          "devstats_score": 4
-        },
-        "sdowell": {
-          "pr_comments": 6,
-          "devstats_score": 32
-        },
-        "seans3": {
-          "pr_comments": 6,
-          "devstats_score": 1
-        },
-        "soltysh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/clientgofix": {
-      "date_generated": "2026-03-19",
-      "users": {}
     },
     "kubernetes-sigs/cloud-provider-azure": {
       "date_generated": "2026-03-19",
@@ -944,77 +1055,6 @@
         "elmiko": {
           "pr_comments": 20,
           "devstats_score": 12
-        }
-      }
-    },
-    "kubernetes-sigs/cloud-provider-huaweicloud": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "chengxiangdong": {
-          "pr_comments": 3,
-          "devstats_score": 2
-        },
-        "kevin-wangzefeng": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "niuzhenguo": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "rainbowmango": {
-          "pr_comments": 0,
-          "devstats_score": 2
-        }
-      }
-    },
-    "kubernetes-sigs/cloud-provider-kind": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 60,
-          "devstats_score": 136
-        },
-        "stmcginnis": {
-          "pr_comments": 122,
-          "devstats_score": 56
-        }
-      }
-    },
-    "kubernetes-sigs/cloud-pv-admission-labeler": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/cluster-addons": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "atoato88": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "johnsonj": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "luxas": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rajansandeep": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "stealthybox": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "timothysc": {
-          "pr_comments": 0,
-          "devstats_score": 0
         }
       }
     },
@@ -1107,170 +1147,6 @@
         }
       }
     },
-    "kubernetes-sigs/cluster-api-addon-provider-helm": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "cluster-api-addon-helm-reviewers": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "enxebre": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fabriziopandini": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jackfrancis": {
-          "pr_comments": 17,
-          "devstats_score": 8
-        },
-        "jont828": {
-          "pr_comments": 10,
-          "devstats_score": 26
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mboersma": {
-          "pr_comments": 86,
-          "devstats_score": 95
-        },
-        "neolit123": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sbueringer": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "timothysc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cluster-api-ipam-provider-in-cluster": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "mcbenjemaa": {
-          "pr_comments": 6,
-          "devstats_score": 23
-        },
-        "schrej": {
-          "pr_comments": 14,
-          "devstats_score": 28
-        },
-        "srm09": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cluster-api-operator": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "alexander-demicev": {
-          "pr_comments": 67,
-          "devstats_score": 78
-        },
-        "damdo": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "danil-grigorev": {
-          "pr_comments": 18,
-          "devstats_score": 39
-        },
-        "fabriziopandini": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fedosin": {
-          "pr_comments": 14,
-          "devstats_score": 10
-        },
-        "furkatgofurov7": {
-          "pr_comments": 127,
-          "devstats_score": 181
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "neolit123": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "timothysc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cluster-api-provider-aws": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andidog": {
-          "pr_comments": 51,
-          "devstats_score": 87
-        },
-        "damdo": {
-          "pr_comments": 163,
-          "devstats_score": 487
-        },
-        "dlipovetsky": {
-          "pr_comments": 15,
-          "devstats_score": 26
-        },
-        "fabriziopandini": {
-          "pr_comments": 3,
-          "devstats_score": 1
-        },
-        "faiq": {
-          "pr_comments": 15,
-          "devstats_score": 83
-        },
-        "fiunchinho": {
-          "pr_comments": 23,
-          "devstats_score": 77
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "muraee": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "neolit123": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nrb": {
-          "pr_comments": 124,
-          "devstats_score": 254
-        },
-        "richardcase": {
-          "pr_comments": 130,
-          "devstats_score": 355
-        },
-        "serngawy": {
-          "pr_comments": 48,
-          "devstats_score": 174
-        },
-        "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
     "kubernetes-sigs/cluster-api-provider-azure": {
       "date_generated": "2026-03-19",
       "users": {
@@ -1340,100 +1216,6 @@
         }
       }
     },
-    "kubernetes-sigs/cluster-api-provider-cloudstack": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "chrisdoherty4": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "davidjumani": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dims": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "g-gaston": {
-          "pr_comments": 11,
-          "devstats_score": 2
-        },
-        "jweite-amazon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vishesh92": {
-          "pr_comments": 18,
-          "devstats_score": 50
-        },
-        "weizhouapache": {
-          "pr_comments": 20,
-          "devstats_score": 34
-        },
-        "yadvr": {
-          "pr_comments": 18,
-          "devstats_score": 2
-        }
-      }
-    },
-    "kubernetes-sigs/cluster-api-provider-digitalocean": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "cecilerobertmichon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 68,
-          "devstats_score": 19
-        },
-        "enxebre": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fabriziopandini": {
-          "pr_comments": 3,
-          "devstats_score": 3
-        },
-        "gottwald": {
-          "pr_comments": 10,
-          "devstats_score": 14
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "neolit123": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "prksu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sbueringer": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sreeram-venkitesh": {
-          "pr_comments": 3,
-          "devstats_score": 6
-        },
-        "timoreimann": {
-          "pr_comments": 3,
-          "devstats_score": 2
-        },
-        "timothysc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
     "kubernetes-sigs/cluster-api-provider-gcp": {
       "date_generated": "2026-03-19",
       "users": {
@@ -1478,133 +1260,6 @@
           "devstats_score": 0
         },
         "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cluster-api-provider-ibmcloud": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "amulyam24": {
-          "pr_comments": 117,
-          "devstats_score": 240
-        },
-        "karthik-k-n": {
-          "pr_comments": 65,
-          "devstats_score": 218
-        },
-        "mkumatag": {
-          "pr_comments": 135,
-          "devstats_score": 134
-        },
-        "prajyot-parab": {
-          "pr_comments": 226,
-          "devstats_score": 339
-        },
-        "spzala": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cluster-api-provider-kubemark": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "agradouski": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cchengleo": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cecilerobertmichon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cluster-api-reviewers": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "davidewatson": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "detiber": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "elmiko": {
-          "pr_comments": 15,
-          "devstats_score": 25
-        },
-        "fabriziopandini": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "neolit123": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "timothysc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cluster-api-provider-kubevirt": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "agradouski": {
-          "pr_comments": 5,
-          "devstats_score": 4
-        },
-        "cchengleo": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "davidvossel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fabriziopandini": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "neolit123": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "nirarg": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nunnatsa": {
-          "pr_comments": 36,
-          "devstats_score": 48
-        },
-        "qinqon": {
-          "pr_comments": 15,
-          "devstats_score": 9
-        },
-        "rmohr": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "timothysc": {
           "pr_comments": 0,
           "devstats_score": 0
         }
@@ -1655,107 +1310,6 @@
         }
       }
     },
-    "kubernetes-sigs/cluster-api-provider-vsphere": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "akutz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "andrewsykim": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cecilerobertmichon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "chrischdi": {
-          "pr_comments": 109,
-          "devstats_score": 237
-        },
-        "enxebre": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fabriziopandini": {
-          "pr_comments": 197,
-          "devstats_score": 219
-        },
-        "figo": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "frapposelli": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gab-satchi": {
-          "pr_comments": 1,
-          "devstats_score": 3
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "killianmuldoon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "laozc": {
-          "pr_comments": 0,
-          "devstats_score": 5
-        },
-        "maxrink": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ncdc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "neolit123": {
-          "pr_comments": 14,
-          "devstats_score": 22
-        },
-        "randomvariable": {
-          "pr_comments": 7,
-          "devstats_score": 2
-        },
-        "rvanderp3": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sbueringer": {
-          "pr_comments": 329,
-          "devstats_score": 627
-        },
-        "sidharthsurana": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "srm09": {
-          "pr_comments": 1,
-          "devstats_score": 2
-        },
-        "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vrabbi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yastij": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "zhanggbj": {
-          "pr_comments": 26,
-          "devstats_score": 125
-        }
-      }
-    },
     "kubernetes-sigs/cluster-capacity": {
       "date_generated": "2026-03-19",
       "users": {
@@ -1770,39 +1324,6 @@
         "ravisantoshgudimetla": {
           "pr_comments": 0,
           "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cluster-inventory-api": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "dixudx": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kahirokunn": {
-          "pr_comments": 12,
-          "devstats_score": 78
-        },
-        "mikeshng": {
-          "pr_comments": 16,
-          "devstats_score": 12
-        },
-        "qiujian16": {
-          "pr_comments": 10,
-          "devstats_score": 13
-        },
-        "rainbowmango": {
-          "pr_comments": 7,
-          "devstats_score": 1
-        },
-        "ryanzhang-oss": {
-          "pr_comments": 6,
-          "devstats_score": 20
-        },
-        "skitt": {
-          "pr_comments": 7,
-          "devstats_score": 14
         }
       }
     },
@@ -1837,921 +1358,6 @@
         "thockin": {
           "pr_comments": 0,
           "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/cni-dra-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 10,
-          "devstats_score": 4
-        },
-        "lioneljouin": {
-          "pr_comments": 1,
-          "devstats_score": 14
-        },
-        "mikezappa87": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/community-images": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/container-object-storage-interface": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "blaineexe": {
-          "pr_comments": 102,
-          "devstats_score": 298
-        },
-        "jsafrane": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "msau42": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saad-ali": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "shanduur": {
-          "pr_comments": 40,
-          "devstats_score": 59
-        },
-        "xing-yang": {
-          "pr_comments": 12,
-          "devstats_score": 15
-        }
-      }
-    },
-    "kubernetes-sigs/contributor-playground": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "agamdua": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "aivazart": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "akihirosuda": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "alisondy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "allenstecat": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "allisonwang": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "amarnathkarthik": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ankitpurohit01": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "annehwatson": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "asambeka": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ashahab": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ashutoshkumarsinha": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "asmalllemon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "atoato88": {
-          "pr_comments": 24,
-          "devstats_score": 26
-        },
-        "aylei": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "bartsmykla": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "bensherman": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "bergwolf": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "blueviggen": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "bob-bins": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "bobymcbobs": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "brandon-mcrae-hs": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "capsmalt": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "carlisia": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cblecker": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cezarygerard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "chirimo": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "chris-short": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "coderanger": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cofyc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "congfairy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 44,
-          "devstats_score": 1
-        },
-        "cryptophobia": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cscmucmm": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cyberblack28": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "davidmukiibi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "directxman12": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "divya-mohan0209": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dwmkerr": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "eahydra": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "editaxz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "edsoncelio": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "esudyin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "evillgenius75": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ewt_tang": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fanfanbj": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fengjunliu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fstrudel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gemagomez": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "georgekuruvillak": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "girikuncoro": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gitbytes": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gkarthiks": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gmingsuge": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "godliness": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "grimradical": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "guineveresaenger": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "haiker2011": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "harche": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "harikrishna-patnala": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "hellmage": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "hemani19": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "heyste": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "hh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "iamzhout": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ichekrygin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "idealhack": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ij0516": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "imkin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "indigophillips": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "inductor": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "irbull": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jayapriya90": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jberkus": {
-          "pr_comments": 0,
-          "devstats_score": 1
-        },
-        "jdjgya": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jeefy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jeffwan": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jmulhern": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "joaopluigi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jojohappy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jpeach": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jsturtevant": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "k-toyoda-pi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kaiwu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "karinnainiguez": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kartik-karz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kaslin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "katsew": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kendallnelson": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kmova": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kschumy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kxing-k8s": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kylix3511": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "lazyshot": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "lichen2013": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "lilyerfeng": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "m13m": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "madhavjivrajani": {
-          "pr_comments": 6,
-          "devstats_score": 2
-        },
-        "magaldima": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mandianjun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mangelajo": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mark": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "markyjackson-taulia": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "matsu1235": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "matthewbrahms": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "miles-": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mitsutaka": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mkimuram": {
-          "pr_comments": 5,
-          "devstats_score": 8
-        },
-        "mochizuki875": {
-          "pr_comments": 10,
-          "devstats_score": 5
-        },
-        "morosawamikihito": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mosabua": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mporier": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mrbobbytables": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mrhillsman": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ms4720": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "muthu-s": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mychen66": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nandakishorek": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nasa9084": {
-          "pr_comments": 13,
-          "devstats_score": 5
-        },
-        "nehalandrew": {
-          "pr_comments": 1,
-          "devstats_score": 10
-        },
-        "neolit123": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nessex": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nightghos": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nikhilprathapani": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nikhita": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nin2yasu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "niyue": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nullck": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "okabe-junya": {
-          "pr_comments": 37,
-          "devstats_score": 30
-        },
-        "oleotiger": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "omkensey": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "oneoneonepig": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "oomichi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "osswangxining": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "paavininanda": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 3,
-          "devstats_score": 1
-        },
-        "parispittman": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "paulinelc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "petermbenjamin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pgdagenais": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "phenixblue": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pixiake": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pjsawicki": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pkuzhangkai": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pluradj": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "priyankasaggu11929": {
-          "pr_comments": 3,
-          "devstats_score": 1
-        },
-        "puja": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "qedrakmar": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "quietcoolwu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "raelga": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "raghu67": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rajula96reddy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "richardmarshall": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rifelpet": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rikatz": {
-          "pr_comments": 8,
-          "devstats_score": 7
-        },
-        "rinkiyakedad": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rldutka": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rochesterinnyc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rosti": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "s-ito-ts": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "s-kawamura-w664": {
-          "pr_comments": 0,
-          "devstats_score": 1
-        },
-        "sameerkhan2k1": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "secretasian29": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "serngawy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "shabicheng": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "shu-mutou": {
-          "pr_comments": 353,
-          "devstats_score": 381
-        },
-        "shyaamsn": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "smirl": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "smourapina": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "soggiest": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "spiffxp": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sreeram-venkitesh": {
-          "pr_comments": 6,
-          "devstats_score": 5
-        },
-        "ssurenr": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "stevemcquaid": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "stormqueen1990": {
-          "pr_comments": 0,
-          "devstats_score": 1
-        },
-        "sumitranr": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sureshanaparti": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "swiftdiaries": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "t-inu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tan-c": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tani-yu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tanishshinde": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "taylorhere": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tdihp": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "techgirl1800": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "theghosthucodes": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tlmiller": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tomba7": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tommyp1ckles": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tong101": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tpepper": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tusharsappal": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vikramk7": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "violet2016": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vllry": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "wenlock": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "wentao-zh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "wikix": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "wilhelmguo": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xiangpengzhao": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xiaoanyunfei": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xiaodandan2722": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xiongfeng": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yahhhhhya": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yamahata": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yanhan": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yogeshojha": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yuikotakada": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yumima": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yuqi-zhang": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yylin1": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "zghuang": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "zhanggbj": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ziyi-xie": {
-          "pr_comments": 11,
-          "devstats_score": 11
         }
       }
     },
@@ -2857,60 +1463,6 @@
         }
       }
     },
-    "kubernetes-sigs/cosi-driver-sample": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "blaineexe": {
-          "pr_comments": 8,
-          "devstats_score": 6
-        },
-        "jsafrane": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "krishchow": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "msau42": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saad-ali": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "shanduur": {
-          "pr_comments": 12,
-          "devstats_score": 11
-        },
-        "wlan0": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xing-yang": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/crdify": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "everettraven": {
-          "pr_comments": 12,
-          "devstats_score": 49
-        },
-        "joelspeed": {
-          "pr_comments": 6,
-          "devstats_score": 17
-        },
-        "jpbetz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
     "kubernetes-sigs/cri-tools": {
       "date_generated": "2026-03-19",
       "users": {
@@ -2961,48 +1513,6 @@
         }
       }
     },
-    "kubernetes-sigs/cve-feed-osv": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "iancoldwater": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "knqyf263": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tabbysable": {
-          "pr_comments": 10,
-          "devstats_score": 3
-        }
-      }
-    },
-    "kubernetes-sigs/depstat": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "alenkacz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dims": {
-          "pr_comments": 4,
-          "devstats_score": 45
-        },
-        "navidshaikh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nikhita": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rinkiyakedad": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        }
-      }
-    },
     "kubernetes-sigs/descheduler": {
       "date_generated": "2026-03-19",
       "users": {
@@ -3048,213 +1558,6 @@
         }
       }
     },
-    "kubernetes-sigs/discuss-theme": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/downloadkubernetes": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 92,
-          "devstats_score": 30
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 7,
-          "devstats_score": 3
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 62,
-          "devstats_score": 18
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 7,
-          "devstats_score": 3
-        }
-      }
-    },
-    "kubernetes-sigs/dra-driver-cpu": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ffromani": {
-          "pr_comments": 36,
-          "devstats_score": 115
-        },
-        "johnbelamaric": {
-          "pr_comments": 10,
-          "devstats_score": 7
-        },
-        "klueska": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pohly": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "pravk03": {
-          "pr_comments": 31,
-          "devstats_score": 119
-        }
-      }
-    },
-    "kubernetes-sigs/dra-driver-topology": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "johnbelamaric": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        },
-        "klueska": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "lauralorenz": {
-          "pr_comments": 3,
-          "devstats_score": 40
-        },
-        "pohly": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/dra-example-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "bart0sh": {
-          "pr_comments": 4,
-          "devstats_score": 23
-        },
-        "byako": {
-          "pr_comments": 0,
-          "devstats_score": 2
-        },
-        "elezar": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "klueska": {
-          "pr_comments": 2,
-          "devstats_score": 11
-        },
-        "nojnhuh": {
-          "pr_comments": 21,
-          "devstats_score": 165
-        },
-        "pohly": {
-          "pr_comments": 11,
-          "devstats_score": 59
-        }
-      }
-    },
-    "kubernetes-sigs/dranet": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 51,
-          "devstats_score": 39
-        },
-        "bowei": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "danwinship": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gauravkghildiyal": {
-          "pr_comments": 30,
-          "devstats_score": 24
-        },
-        "michaelasp": {
-          "pr_comments": 14,
-          "devstats_score": 15
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/e2e-framework": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "cpanato": {
-          "pr_comments": 76,
-          "devstats_score": 26
-        },
-        "harshanarayana": {
-          "pr_comments": 8,
-          "devstats_score": 10
-        },
-        "shwethakumbla": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vladimirvivien": {
-          "pr_comments": 19,
-          "devstats_score": 46
-        }
-      }
-    },
-    "kubernetes-sigs/etcd-manager": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "hakman": {
-          "pr_comments": 18,
-          "devstats_score": 51
-        },
-        "justinsb": {
-          "pr_comments": 6,
-          "devstats_score": 6
-        },
-        "rifelpet": {
-          "pr_comments": 12,
-          "devstats_score": 14
-        }
-      }
-    },
-    "kubernetes-sigs/execution-hook": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
     "kubernetes-sigs/external-dns": {
       "date_generated": "2026-03-19",
       "users": {
@@ -3285,144 +1588,6 @@
         "ytsarev": {
           "pr_comments": 0,
           "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/externalip-webhook": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/gateway-api": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 14,
-          "devstats_score": 33
-        },
-        "arkodg": {
-          "pr_comments": 20,
-          "devstats_score": 53
-        },
-        "bowei": {
-          "pr_comments": 1,
-          "devstats_score": 3
-        },
-        "candita": {
-          "pr_comments": 36,
-          "devstats_score": 364
-        },
-        "danehans": {
-          "pr_comments": 3,
-          "devstats_score": 8
-        },
-        "danwinship": {
-          "pr_comments": 5,
-          "devstats_score": 7
-        },
-        "gcs278": {
-          "pr_comments": 2,
-          "devstats_score": 9
-        },
-        "hbagdi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "howardjohn": {
-          "pr_comments": 56,
-          "devstats_score": 247
-        },
-        "jpeach": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "keithmattix": {
-          "pr_comments": 10,
-          "devstats_score": 29
-        },
-        "kflynn": {
-          "pr_comments": 89,
-          "devstats_score": 342
-        },
-        "liorlieberman": {
-          "pr_comments": 67,
-          "devstats_score": 370
-        },
-        "mikemorris": {
-          "pr_comments": 59,
-          "devstats_score": 132
-        },
-        "mlavacca": {
-          "pr_comments": 35,
-          "devstats_score": 87
-        },
-        "rikatz": {
-          "pr_comments": 250,
-          "devstats_score": 694
-        },
-        "robscott": {
-          "pr_comments": 352,
-          "devstats_score": 632
-        },
-        "shaneutt": {
-          "pr_comments": 102,
-          "devstats_score": 329
-        },
-        "snorwin": {
-          "pr_comments": 103,
-          "devstats_score": 333
-        },
-        "sunjaybhatia": {
-          "pr_comments": 1,
-          "devstats_score": 12
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 2
-        },
-        "youngnick": {
-          "pr_comments": 210,
-          "devstats_score": 676
-        }
-      }
-    },
-    "kubernetes-sigs/gateway-api-inference-extension": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ahg-g": {
-          "pr_comments": 552,
-          "devstats_score": 1285
-        },
-        "danehans": {
-          "pr_comments": 157,
-          "devstats_score": 865
-        },
-        "elevran": {
-          "pr_comments": 73,
-          "devstats_score": 333
-        },
-        "kaushikmitr": {
-          "pr_comments": 40,
-          "devstats_score": 162
-        },
-        "kfswain": {
-          "pr_comments": 447,
-          "devstats_score": 1261
-        },
-        "liu-cong": {
-          "pr_comments": 116,
-          "devstats_score": 669
-        },
-        "nirrozenbaum": {
-          "pr_comments": 612,
-          "devstats_score": 2027
-        },
-        "robscott": {
-          "pr_comments": 93,
-          "devstats_score": 426
-        },
-        "shmuelk": {
-          "pr_comments": 88,
-          "devstats_score": 233
         }
       }
     },
@@ -3487,488 +1652,6 @@
         }
       }
     },
-    "kubernetes-sigs/gluster-block-external-provisioner": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/gluster-file-external-provisioner": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/gwctl": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "gauravkghildiyal": {
-          "pr_comments": 24,
-          "devstats_score": 29
-        },
-        "guicassolato": {
-          "pr_comments": 7,
-          "devstats_score": 4
-        },
-        "robscott": {
-          "pr_comments": 15,
-          "devstats_score": 5
-        },
-        "snorwin": {
-          "pr_comments": 34,
-          "devstats_score": 43
-        },
-        "youngnick": {
-          "pr_comments": 6,
-          "devstats_score": 4
-        }
-      }
-    },
-    "kubernetes-sigs/headlamp": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ashu8912": {
-          "pr_comments": 56,
-          "devstats_score": 50
-        },
-        "illume": {
-          "pr_comments": 498,
-          "devstats_score": 1883
-        },
-        "joaquimrocha": {
-          "pr_comments": 236,
-          "devstats_score": 510
-        },
-        "skoeva": {
-          "pr_comments": 243,
-          "devstats_score": 517
-        },
-        "sniok": {
-          "pr_comments": 183,
-          "devstats_score": 513
-        },
-        "vyncent-t": {
-          "pr_comments": 54,
-          "devstats_score": 300
-        },
-        "yolossn": {
-          "pr_comments": 39,
-          "devstats_score": 167
-        }
-      }
-    },
-    "kubernetes-sigs/hydrophone": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aniruddha2000": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dims": {
-          "pr_comments": 11,
-          "devstats_score": 37
-        },
-        "farazkhawaja": {
-          "pr_comments": 23,
-          "devstats_score": 65
-        },
-        "rakshitgondwal": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "reetasingh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rjsadow": {
-          "pr_comments": 32,
-          "devstats_score": 56
-        }
-      }
-    },
-    "kubernetes-sigs/ibm-powervs-block-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "kishen-v": {
-          "pr_comments": 49,
-          "devstats_score": 51
-        },
-        "mkumatag": {
-          "pr_comments": 10,
-          "devstats_score": 3
-        },
-        "yussufsh": {
-          "pr_comments": 148,
-          "devstats_score": 206
-        }
-      }
-    },
-    "kubernetes-sigs/ibm-vpc-block-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ambiknai": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "arahamad": {
-          "pr_comments": 21,
-          "devstats_score": 40
-        },
-        "bradtopol": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "spzala": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/image-builder": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andidog": {
-          "pr_comments": 15,
-          "devstats_score": 3
-        },
-        "averagemarcus": {
-          "pr_comments": 78,
-          "devstats_score": 163
-        },
-        "cecilerobertmichon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "chrischdi": {
-          "pr_comments": 6,
-          "devstats_score": 14
-        },
-        "cpanato": {
-          "pr_comments": 47,
-          "devstats_score": 5
-        },
-        "damdo": {
-          "pr_comments": 7,
-          "devstats_score": 6
-        },
-        "davidjumani": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "detiber": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "devigned": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dims": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "drew-viles": {
-          "pr_comments": 94,
-          "devstats_score": 123
-        },
-        "enxebre": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fabriziopandini": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gab-satchi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gottwald": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "hidekazuna": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jackfrancis": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        },
-        "jichenjc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jsturtevant": {
-          "pr_comments": 104,
-          "devstats_score": 14
-        },
-        "killianmuldoon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kkeshavamurthy": {
-          "pr_comments": 10,
-          "devstats_score": 26
-        },
-        "mboersma": {
-          "pr_comments": 117,
-          "devstats_score": 131
-        },
-        "mdbooth": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mia-cross": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pearl1594": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "perithompson": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "prksu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "randomvariable": {
-          "pr_comments": 3,
-          "devstats_score": 1
-        },
-        "remyleone": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "richardcase": {
-          "pr_comments": 5,
-          "devstats_score": 2
-        },
-        "salasberryfin": {
-          "pr_comments": 12,
-          "devstats_score": 4
-        },
-        "sbueringer": {
-          "pr_comments": 5,
-          "devstats_score": 3
-        },
-        "seanschneeweiss": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sedefsavas": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "srm09": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thebsdbox": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "timoreimann": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tobiasgiese": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "tomy2e": {
-          "pr_comments": 1,
-          "devstats_score": 2
-        },
-        "tuxtof": {
-          "pr_comments": 6,
-          "devstats_score": 2
-        },
-        "vasartori": {
-          "pr_comments": 9,
-          "devstats_score": 18
-        },
-        "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vishesh92": {
-          "pr_comments": 0,
-          "devstats_score": 1
-        },
-        "weizhouapache": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yadvr": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yankcrime": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yastij": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/inference-perf": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "achandrasekar": {
-          "pr_comments": 100,
-          "devstats_score": 365
-        },
-        "arangogutierrez": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "bslabe123": {
-          "pr_comments": 35,
-          "devstats_score": 133
-        },
-        "jeffwan": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jjk-g": {
-          "pr_comments": 58,
-          "devstats_score": 155
-        },
-        "sachinvarghese": {
-          "pr_comments": 64,
-          "devstats_score": 194
-        },
-        "sergeykanzhelev": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "terrytangyuan": {
-          "pr_comments": 12,
-          "devstats_score": 8
-        },
-        "wangchen615": {
-          "pr_comments": 1,
-          "devstats_score": 16
-        }
-      }
-    },
-    "kubernetes-sigs/ingate": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 48,
-          "devstats_score": 2
-        },
-        "danwinship": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gacko": {
-          "pr_comments": 29,
-          "devstats_score": 32
-        },
-        "longwuyuan": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mikezappa87": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rikatz": {
-          "pr_comments": 5,
-          "devstats_score": 46
-        },
-        "shaneutt": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "strongjz": {
-          "pr_comments": 7,
-          "devstats_score": 111
-        },
-        "tao12345666333": {
-          "pr_comments": 22,
-          "devstats_score": 2
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/ingress-controller-conformance": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "bowei": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/ingress2gateway": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "bexxmodd": {
-          "pr_comments": 13,
-          "devstats_score": 13
-        },
-        "johananl": {
-          "pr_comments": 10,
-          "devstats_score": 47
-        },
-        "kkk777-7": {
-          "pr_comments": 28,
-          "devstats_score": 42
-        },
-        "liorlieberman": {
-          "pr_comments": 23,
-          "devstats_score": 95
-        },
-        "rikatz": {
-          "pr_comments": 13,
-          "devstats_score": 44
-        },
-        "robscott": {
-          "pr_comments": 22,
-          "devstats_score": 19
-        },
-        "spencerhance": {
-          "pr_comments": 7,
-          "devstats_score": 21
-        },
-        "stevenjin8": {
-          "pr_comments": 45,
-          "devstats_score": 216
-        },
-        "youngnick": {
-          "pr_comments": 5,
-          "devstats_score": 5
-        }
-      }
-    },
-    "kubernetes-sigs/instrumentation": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/instrumentation-addons": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/instrumentation-tools": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
     "kubernetes-sigs/ip-masq-agent": {
       "date_generated": "2026-03-19",
       "users": {
@@ -3991,272 +1674,6 @@
         "varunmar": {
           "pr_comments": 0,
           "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/iptables-wrappers": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "caseydavenport": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "danwinship": {
-          "pr_comments": 1,
-          "devstats_score": 2
-        },
-        "dcbw": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/jobset": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ahg-g": {
-          "pr_comments": 36,
-          "devstats_score": 89
-        },
-        "andreyvelich": {
-          "pr_comments": 64,
-          "devstats_score": 307
-        },
-        "giuseppett": {
-          "pr_comments": 92,
-          "devstats_score": 434
-        },
-        "kannon92": {
-          "pr_comments": 201,
-          "devstats_score": 719
-        },
-        "moficodes": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/json": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "deads2k": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jpbetz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "liggitt": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        }
-      }
-    },
-    "kubernetes-sigs/karpenter": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "bwagner5": {
-          "pr_comments": 2,
-          "devstats_score": 8
-        },
-        "derekfrank": {
-          "pr_comments": 63,
-          "devstats_score": 263
-        },
-        "ellistarn": {
-          "pr_comments": 36,
-          "devstats_score": 106
-        },
-        "engedaam": {
-          "pr_comments": 86,
-          "devstats_score": 413
-        },
-        "gjtempleton": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jmdeal": {
-          "pr_comments": 144,
-          "devstats_score": 583
-        },
-        "jonathan-innis": {
-          "pr_comments": 190,
-          "devstats_score": 689
-        },
-        "maciekpytel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mwielgus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "njtran": {
-          "pr_comments": 11,
-          "devstats_score": 1
-        },
-        "tallaxes": {
-          "pr_comments": 2,
-          "devstats_score": 15
-        },
-        "tzneal": {
-          "pr_comments": 11,
-          "devstats_score": 6
-        }
-      }
-    },
-    "kubernetes-sigs/karpenter-provider-cluster-api": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "chrischdi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "elmiko": {
-          "pr_comments": 34,
-          "devstats_score": 60
-        },
-        "enxebre": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "fabriziopandini": {
-          "pr_comments": 4,
-          "devstats_score": 1
-        },
-        "faermanj": {
-          "pr_comments": 3,
-          "devstats_score": 2
-        },
-        "jackfrancis": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "joelspeed": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "killianmuldoon": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "maxcao13": {
-          "pr_comments": 9,
-          "devstats_score": 16
-        },
-        "neolit123": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "richardcase": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sbueringer": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/karpenter-provider-ibm-cloud": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "jirn073-76": {
-          "pr_comments": 2,
-          "devstats_score": 5
-        },
-        "pfeifferj": {
-          "pr_comments": 161,
-          "devstats_score": 230
-        }
-      }
-    },
-    "kubernetes-sigs/kernel-module-management": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "mresvanis": {
-          "pr_comments": 6,
-          "devstats_score": 3
-        },
-        "qbarrand": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tomernewman": {
-          "pr_comments": 44,
-          "devstats_score": 86
-        },
-        "ybettan": {
-          "pr_comments": 128,
-          "devstats_score": 426
-        },
-        "yevgeny-shnaidman": {
-          "pr_comments": 161,
-          "devstats_score": 228
-        }
-      }
-    },
-    "kubernetes-sigs/kind": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 39,
-          "devstats_score": 102
-        },
-        "bentheelder": {
-          "pr_comments": 53,
-          "devstats_score": 483
-        },
-        "stmcginnis": {
-          "pr_comments": 111,
-          "devstats_score": 129
-        }
-      }
-    },
-    "kubernetes-sigs/kindnet": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/kjob": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "mbobrovskyi": {
-          "pr_comments": 61,
-          "devstats_score": 181
-        },
-        "mimowo": {
-          "pr_comments": 105,
-          "devstats_score": 92
-        },
-        "mwielgus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/knftables": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 14,
-          "devstats_score": 11
-        },
-        "danwinship": {
-          "pr_comments": 6,
-          "devstats_score": 22
         }
       }
     },
@@ -4293,177 +1710,6 @@
           "devstats_score": 6
         },
         "corneliusweig": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/kro": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "a-hilaly": {
-          "pr_comments": 340,
-          "devstats_score": 794
-        },
-        "barney-s": {
-          "pr_comments": 46,
-          "devstats_score": 42
-        },
-        "bridgetkromhout": {
-          "pr_comments": 6,
-          "devstats_score": 6
-        },
-        "cheftako": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "elmiko": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "eqe-aws": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jakobmoellerdev": {
-          "pr_comments": 220,
-          "devstats_score": 402
-        },
-        "jlbutler": {
-          "pr_comments": 8,
-          "devstats_score": 5
-        },
-        "joelspeed": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "matthchr": {
-          "pr_comments": 30,
-          "devstats_score": 27
-        },
-        "michaelhtm": {
-          "pr_comments": 35,
-          "devstats_score": 78
-        },
-        "n3wscott": {
-          "pr_comments": 23,
-          "devstats_score": 23
-        },
-        "nicslatts": {
-          "pr_comments": 4,
-          "devstats_score": 1
-        },
-        "rynowak": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/kube-agentic-networking": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "david-martin": {
-          "pr_comments": 36,
-          "devstats_score": 40
-        },
-        "evaline-ju": {
-          "pr_comments": 20,
-          "devstats_score": 14
-        },
-        "guicassolato": {
-          "pr_comments": 19,
-          "devstats_score": 61
-        },
-        "haiyanmeng": {
-          "pr_comments": 73,
-          "devstats_score": 100
-        },
-        "liorlieberman": {
-          "pr_comments": 76,
-          "devstats_score": 124
-        }
-      }
-    },
-    "kubernetes-sigs/kube-api-linter": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "everettraven": {
-          "pr_comments": 54,
-          "devstats_score": 222
-        },
-        "joelspeed": {
-          "pr_comments": 90,
-          "devstats_score": 564
-        },
-        "jpbetz": {
-          "pr_comments": 57,
-          "devstats_score": 2
-        },
-        "sivchari": {
-          "pr_comments": 84,
-          "devstats_score": 218
-        }
-      }
-    },
-    "kubernetes-sigs/kube-network-policies": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 82,
-          "devstats_score": 205
-        },
-        "danwinship": {
-          "pr_comments": 11,
-          "devstats_score": 18
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/kube-scheduler-simulator": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "196ikuchil": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sanposhiho": {
-          "pr_comments": 11,
-          "devstats_score": 63
-        }
-      }
-    },
-    "kubernetes-sigs/kube-scheduler-wasm-extension": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "codefromthecrypt": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kerthcet": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sanposhiho": {
-          "pr_comments": 8,
-          "devstats_score": 12
-        }
-      }
-    },
-    "kubernetes-sigs/kube-storage-version-migrator": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "caesarxuchao": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "deads2k": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "lavalamp": {
           "pr_comments": 0,
           "devstats_score": 0
         }
@@ -4531,134 +1777,6 @@
         "vitorfloriano": {
           "pr_comments": 85,
           "devstats_score": 252
-        }
-      }
-    },
-    "kubernetes-sigs/kubebuilder-declarative-pattern": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "atoato88": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "johnsonj": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justinsb": {
-          "pr_comments": 4,
-          "devstats_score": 27
-        },
-        "tomasaschan": {
-          "pr_comments": 5,
-          "devstats_score": 36
-        }
-      }
-    },
-    "kubernetes-sigs/kubebuilder-release-tools": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "adirio": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "camilamacedo86": {
-          "pr_comments": 1,
-          "devstats_score": 3
-        },
-        "directxman12": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "droot": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "estroz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jmrodri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "joelanford": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mengqiy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pwittrock": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "varshaprasad96": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "vincepri": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/kubectl-check-ownerreferences": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/kubectl-validate": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "alexzielenski": {
-          "pr_comments": 2,
-          "devstats_score": 3
-        },
-        "apelisse": {
-          "pr_comments": 2,
-          "devstats_score": 1
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "eddycharly": {
-          "pr_comments": 5,
-          "devstats_score": 6
-        },
-        "jefftree": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jpbetz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "richabanker": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/kubernetes-network-drivers": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 12,
-          "devstats_score": 2
-        },
-        "bowei": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "danwinship": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
         }
       }
     },
@@ -4731,51 +1849,6 @@
         }
       }
     },
-    "kubernetes-sigs/kubetest2": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 16,
-          "devstats_score": 12
-        },
-        "chizhg": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dims": {
-          "pr_comments": 4,
-          "devstats_score": 3
-        },
-        "jbpratt": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "michelle192837": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "qqkyu": {
-          "pr_comments": 18,
-          "devstats_score": 41
-        },
-        "richackard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "upodroid": {
-          "pr_comments": 22,
-          "devstats_score": 16
-        },
-        "xmcqueen": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/kueue": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
     "kubernetes-sigs/kustomize": {
       "date_generated": "2026-03-19",
       "users": {
@@ -4796,64 +1869,6 @@
           "devstats_score": 18
         },
         "varshaprasad96": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/kwok": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "huang-wei": {
-          "pr_comments": 17,
-          "devstats_score": 2
-        },
-        "wzshiming": {
-          "pr_comments": 105,
-          "devstats_score": 250
-        },
-        "yibozhuang": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "yuanchen8911": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/legacyflag": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/logical-cluster": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/logtools": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "dims": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "ehashman": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "logicalhan": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pohly": {
-          "pr_comments": 3,
-          "devstats_score": 3
-        },
-        "serathius": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thockin": {
           "pr_comments": 0,
           "devstats_score": 0
         }
@@ -4900,204 +1915,6 @@
         }
       }
     },
-    "kubernetes-sigs/lws": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ahg-g": {
-          "pr_comments": 29,
-          "devstats_score": 59
-        },
-        "ardaguclu": {
-          "pr_comments": 41,
-          "devstats_score": 164
-        },
-        "kerthcet": {
-          "pr_comments": 82,
-          "devstats_score": 340
-        },
-        "yankay": {
-          "pr_comments": 49,
-          "devstats_score": 105
-        }
-      }
-    },
-    "kubernetes-sigs/maintainer-tools": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 2,
-          "devstats_score": 6
-        },
-        "dims": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "johnbelamaric": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justinsb": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/maintainers": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "dims": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "madhavjivrajani": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mrbobbytables": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "nikhita": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/mcp-lifecycle-operator": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aliok": {
-          "pr_comments": 16,
-          "devstats_score": 22
-        },
-        "arangogutierrez": {
-          "pr_comments": 31,
-          "devstats_score": 13
-        },
-        "matzew": {
-          "pr_comments": 13,
-          "devstats_score": 16
-        },
-        "mikebrow": {
-          "pr_comments": 6,
-          "devstats_score": 7
-        },
-        "mrunalp": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "soltysh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/mcs-api": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "jeremyot": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "lauralorenz": {
-          "pr_comments": 5,
-          "devstats_score": 7
-        },
-        "mrfreezeex": {
-          "pr_comments": 25,
-          "devstats_score": 96
-        },
-        "munnerz": {
-          "pr_comments": 2,
-          "devstats_score": 1
-        },
-        "rainbowmango": {
-          "pr_comments": 2,
-          "devstats_score": 5
-        },
-        "ryanzhang-oss": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "skitt": {
-          "pr_comments": 29,
-          "devstats_score": 39
-        }
-      }
-    },
-    "kubernetes-sigs/mdtoc": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 74,
-          "devstats_score": 17
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "johnbelamaric": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 2,
-          "devstats_score": 1
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 42,
-          "devstats_score": 13
-        },
-        "tallclair": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
     "kubernetes-sigs/metrics-server": {
       "date_generated": "2026-03-19",
       "users": {
@@ -5126,170 +1943,6 @@
           "devstats_score": 2
         }
       }
-    },
-    "kubernetes-sigs/minikube-gui": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "medyagh": {
-          "pr_comments": 39,
-          "devstats_score": 27
-        },
-        "spowelljr": {
-          "pr_comments": 0,
-          "devstats_score": 3
-        }
-      }
-    },
-    "kubernetes-sigs/minikube-os": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/minikube-preloads": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "comradeprogrammer": {
-          "pr_comments": 0,
-          "devstats_score": 1
-        },
-        "medyagh": {
-          "pr_comments": 29,
-          "devstats_score": 27
-        }
-      }
-    },
-    "kubernetes-sigs/multi-network": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 9,
-          "devstats_score": 1
-        },
-        "mikezappa87": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mskrocki": {
-          "pr_comments": 1,
-          "devstats_score": 3
-        }
-      }
-    },
-    "kubernetes-sigs/multi-network-api": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 10,
-          "devstats_score": 22
-        },
-        "mikezappa87": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mskrocki": {
-          "pr_comments": 1,
-          "devstats_score": 26
-        }
-      }
-    },
-    "kubernetes-sigs/multicluster-runtime": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "embik": {
-          "pr_comments": 53,
-          "devstats_score": 106
-        },
-        "jeremyot": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mjudeikis": {
-          "pr_comments": 42,
-          "devstats_score": 39
-        },
-        "skitt": {
-          "pr_comments": 5,
-          "devstats_score": 5
-        },
-        "sttts": {
-          "pr_comments": 23,
-          "devstats_score": 39
-        }
-      }
-    },
-    "kubernetes-sigs/nat64": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 33,
-          "devstats_score": 157
-        },
-        "danwinship": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "siwiutki": {
-          "pr_comments": 3,
-          "devstats_score": 44
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/network-policy-api": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 26,
-          "devstats_score": 55
-        },
-        "danwinship": {
-          "pr_comments": 21,
-          "devstats_score": 133
-        },
-        "huntergregory": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mattfenwick": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "npinaeva": {
-          "pr_comments": 16,
-          "devstats_score": 92
-        },
-        "tssurya": {
-          "pr_comments": 16,
-          "devstats_score": 110
-        }
-      }
-    },
-    "kubernetes-sigs/network-policy-finalizer": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 12,
-          "devstats_score": 5
-        },
-        "danwinship": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/nfs-ganesha-server-and-external-provisioner": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/nfs-subdir-external-provisioner": {
-      "date_generated": "2026-03-19",
-      "users": {}
     },
     "kubernetes-sigs/node-feature-discovery": {
       "date_generated": "2026-03-19",
@@ -5328,130 +1981,6 @@
         }
       }
     },
-    "kubernetes-sigs/node-feature-discovery-operator": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "arangogutierrez": {
-          "pr_comments": 14,
-          "devstats_score": 3
-        },
-        "marquiz": {
-          "pr_comments": 6,
-          "devstats_score": 8
-        },
-        "yevgeny-shnaidman": {
-          "pr_comments": 3,
-          "devstats_score": 10
-        },
-        "zvonkok": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/node-ipam-controller": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 3,
-          "devstats_score": 2
-        },
-        "aojea": {
-          "pr_comments": 17,
-          "devstats_score": 13
-        },
-        "danwinship": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mikezappa87": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mneverov": {
-          "pr_comments": 23,
-          "devstats_score": 39
-        },
-        "sarveshr7": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "shaneutt": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thockin": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/node-readiness-controller": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ajaysundark": {
-          "pr_comments": 85,
-          "devstats_score": 236
-        },
-        "dchen1107": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "haircommander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mrunalp": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sergeykanzhelev": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tallclair": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/noderesourcetopology-api": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/obscli": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/porche": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 1,
-          "devstats_score": 4
-        },
-        "genpage": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "hakman": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justinsb": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "upodroid": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
     "kubernetes-sigs/prometheus-adapter": {
       "date_generated": "2026-03-19",
       "users": {
@@ -5472,101 +2001,6 @@
           "devstats_score": 0
         }
       }
-    },
-    "kubernetes-sigs/promo-tools": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 13,
-          "devstats_score": 4
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 175,
-          "devstats_score": 86
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 7,
-          "devstats_score": 14
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 32,
-          "devstats_score": 23
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 127,
-          "devstats_score": 98
-        },
-        "verolop": {
-          "pr_comments": 6,
-          "devstats_score": 2
-        },
-        "xmudrii": {
-          "pr_comments": 19,
-          "devstats_score": 22
-        }
-      }
-    },
-    "kubernetes-sigs/provider-aws-test-infra": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "dims": {
-          "pr_comments": 36,
-          "devstats_score": 162
-        },
-        "nckturner": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "wongma7": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/provider-ibmcloud-test-infra": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "mkumatag": {
-          "pr_comments": 55,
-          "devstats_score": 89
-        },
-        "prajyot-parab": {
-          "pr_comments": 15,
-          "devstats_score": 21
-        },
-        "rajalakshmi-girish": {
-          "pr_comments": 19,
-          "devstats_score": 37
-        }
-      }
-    },
-    "kubernetes-sigs/prow": {
-      "date_generated": "2026-03-19",
-      "users": {}
     },
     "kubernetes-sigs/randfill": {
       "date_generated": "2026-03-19",
@@ -5655,1221 +2089,6 @@
         "tengqm": {
           "pr_comments": 13,
           "devstats_score": 68
-        }
-      }
-    },
-    "kubernetes-sigs/referencegrant-poc": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/release-actions": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 61,
-          "devstats_score": 11
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 0,
-          "devstats_score": 4
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 44,
-          "devstats_score": 12
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/release-notes": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 77,
-          "devstats_score": 25
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/release-sdk": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 75,
-          "devstats_score": 27
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 4,
-          "devstats_score": 1
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 56,
-          "devstats_score": 31
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 6,
-          "devstats_score": 4
-        }
-      }
-    },
-    "kubernetes-sigs/release-team-shadow-stats": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "leonardpahlke": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        }
-      }
-    },
-    "kubernetes-sigs/release-utils": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 66,
-          "devstats_score": 17
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 1,
-          "devstats_score": 2
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 6,
-          "devstats_score": 6
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 39,
-          "devstats_score": 8
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 8,
-          "devstats_score": 5
-        }
-      }
-    },
-    "kubernetes-sigs/resource-state-metrics": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "dgrisonnet": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mrueg": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rexagod": {
-          "pr_comments": 2,
-          "devstats_score": 28
-        }
-      }
-    },
-    "kubernetes-sigs/scheduler-plugins": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "denkensk": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ffromani": {
-          "pr_comments": 10,
-          "devstats_score": 38
-        },
-        "googs1025": {
-          "pr_comments": 17,
-          "devstats_score": 64
-        },
-        "huang-wei": {
-          "pr_comments": 40,
-          "devstats_score": 106
-        },
-        "piotrprokop": {
-          "pr_comments": 1,
-          "devstats_score": 2
-        },
-        "seanmalloy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "swatisehgal": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "tal-or": {
-          "pr_comments": 0,
-          "devstats_score": 2
-        },
-        "zwpaper": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/secrets-store-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aramase": {
-          "pr_comments": 83,
-          "devstats_score": 230
-        },
-        "ritazh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/secrets-store-sync-controller": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aramase": {
-          "pr_comments": 25,
-          "devstats_score": 35
-        },
-        "enj": {
-          "pr_comments": 16,
-          "devstats_score": 8
-        }
-      }
-    },
-    "kubernetes-sigs/security-profiles-operator": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ccojocar": {
-          "pr_comments": 62,
-          "devstats_score": 72
-        },
-        "jaormx": {
-          "pr_comments": 29,
-          "devstats_score": 6
-        },
-        "jhrozek": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ngopalak-redhat": {
-          "pr_comments": 38,
-          "devstats_score": 134
-        },
-        "saschagrunert": {
-          "pr_comments": 264,
-          "devstats_score": 309
-        },
-        "vincent056": {
-          "pr_comments": 8,
-          "devstats_score": 8
-        }
-      }
-    },
-    "kubernetes-sigs/sig-auth-tools": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aramase": {
-          "pr_comments": 1,
-          "devstats_score": 6
-        },
-        "enj": {
-          "pr_comments": 3,
-          "devstats_score": 2
-        },
-        "ritazh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/sig-multicluster-site": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "jeremyot": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kahirokunn": {
-          "pr_comments": 4,
-          "devstats_score": 8
-        },
-        "lauralorenz": {
-          "pr_comments": 6,
-          "devstats_score": 10
-        },
-        "mrfreezeex": {
-          "pr_comments": 4,
-          "devstats_score": 4
-        },
-        "munnerz": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "rainbowmango": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        },
-        "ryanzhang-oss": {
-          "pr_comments": 5,
-          "devstats_score": 4
-        },
-        "skitt": {
-          "pr_comments": 6,
-          "devstats_score": 5
-        }
-      }
-    },
-    "kubernetes-sigs/sig-storage-lib-external-provisioner": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andyzhangx": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "chrishenzie": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "gnufied": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "humblec": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jingxu97": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jsafrane": {
-          "pr_comments": 7,
-          "devstats_score": 11
-        },
-        "mauriciopoppe": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "msau42": {
-          "pr_comments": 3,
-          "devstats_score": 11
-        },
-        "pohly": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "raunakshah": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saad-ali": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sunnylovestiramisu": {
-          "pr_comments": 4,
-          "devstats_score": 10
-        },
-        "wongma7": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xing-yang": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        }
-      }
-    },
-    "kubernetes-sigs/sig-storage-local-static-provisioner": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andyzhangx": {
-          "pr_comments": 26,
-          "devstats_score": 83
-        },
-        "cofyc": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jsafrane": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mauriciopoppe": {
-          "pr_comments": 5,
-          "devstats_score": 1
-        },
-        "msau42": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saad-ali": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "wongma7": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/sig-windows-dev-tools": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/sig-windows-samples": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/sig-windows-tools": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aravindhp": {
-          "pr_comments": 1,
-          "devstats_score": 2
-        },
-        "marosset": {
-          "pr_comments": 6,
-          "devstats_score": 2
-        },
-        "zylxjtu": {
-          "pr_comments": 6,
-          "devstats_score": 4
-        }
-      }
-    },
-    "kubernetes-sigs/signalhound": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "benjaminapetersen": {
-          "pr_comments": 1,
-          "devstats_score": 5
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "drewhagen": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "knabben": {
-          "pr_comments": 19,
-          "devstats_score": 39
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "prajyot-parab": {
-          "pr_comments": 3,
-          "devstats_score": 2
-        },
-        "puerco": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tico88612": {
-          "pr_comments": 19,
-          "devstats_score": 6
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/slack-infra": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "bentheelder": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        },
-        "coderanger": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 45,
-          "devstats_score": 3
-        },
-        "jberkus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jeefy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "mrbobbytables": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/structured-merge-diff": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jefftree": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jpbetz": {
-          "pr_comments": 70,
-          "devstats_score": 26
-        },
-        "liggitt": {
-          "pr_comments": 10,
-          "devstats_score": 44
-        },
-        "yliaog": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "yongruilin": {
-          "pr_comments": 2,
-          "devstats_score": 3
-        }
-      }
-    },
-    "kubernetes-sigs/tejolote": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 127,
-          "devstats_score": 68
-        },
-        "jeremyrickard": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 7,
-          "devstats_score": 11
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 75,
-          "devstats_score": 32
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/testgrid": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "aojea": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "bentheelder": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jbpratt": {
-          "pr_comments": 25,
-          "devstats_score": 64
-        },
-        "michelle192837": {
-          "pr_comments": 21,
-          "devstats_score": 64
-        },
-        "pohly": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmcqueen": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/testgrid-json-exporter": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "hosseinsalahi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "leonardpahlke": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "puerco": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 23,
-          "devstats_score": 1
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/usage-metrics-collector": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "campoy": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ehashman": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "knverey": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ndipebot": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pmorie": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pwittrock": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/verify-conformance": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "bobymcbobs": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "heyste": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "hh": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "koksay": {
-          "pr_comments": 6,
-          "devstats_score": 26
-        },
-        "mfahlandt": {
-          "pr_comments": 10,
-          "devstats_score": 4
-        },
-        "xmudrii": {
-          "pr_comments": 6,
-          "devstats_score": 4
-        }
-      }
-    },
-    "kubernetes-sigs/vsphere-csi-driver": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "akankshapanse": {
-          "pr_comments": 68,
-          "devstats_score": 142
-        },
-        "chethanv28": {
-          "pr_comments": 103,
-          "devstats_score": 159
-        },
-        "deepakkinni": {
-          "pr_comments": 230,
-          "devstats_score": 940
-        },
-        "divyenpatel": {
-          "pr_comments": 188,
-          "devstats_score": 437
-        },
-        "gnufied": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        },
-        "gohilankit": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "kavyashree-r": {
-          "pr_comments": 134,
-          "devstats_score": 265
-        },
-        "kolluria": {
-          "pr_comments": 50,
-          "devstats_score": 228
-        },
-        "raunakshah": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sipriyaa": {
-          "pr_comments": 95,
-          "devstats_score": 342
-        },
-        "xing-yang": {
-          "pr_comments": 54,
-          "devstats_score": 104
-        }
-      }
-    },
-    "kubernetes-sigs/wg-ai-gateway": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/wg-device-management": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "johnbelamaric": {
-          "pr_comments": 6,
-          "devstats_score": 9
-        },
-        "klueska": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pohly": {
-          "pr_comments": 2,
-          "devstats_score": 2
-        }
-      }
-    },
-    "kubernetes-sigs/wg-serving": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ahg-g": {
-          "pr_comments": 8,
-          "devstats_score": 3
-        },
-        "arangogutierrez": {
-          "pr_comments": 11,
-          "devstats_score": 2
-        },
-        "edwinhr716": {
-          "pr_comments": 2,
-          "devstats_score": 7
-        },
-        "halimsam": {
-          "pr_comments": 5,
-          "devstats_score": 33
-        },
-        "jeffwan": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jjk-g": {
-          "pr_comments": 23,
-          "devstats_score": 24
-        },
-        "sergeykanzhelev": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "terrytangyuan": {
-          "pr_comments": 9,
-          "devstats_score": 3
-        }
-      }
-    },
-    "kubernetes-sigs/windows-gmsa": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "jsturtevant": {
-          "pr_comments": 104,
-          "devstats_score": 5
-        },
-        "marosset": {
-          "pr_comments": 1,
-          "devstats_score": 1
-        },
-        "zylxjtu": {
-          "pr_comments": 1,
-          "devstats_score": 2
-        }
-      }
-    },
-    "kubernetes-sigs/windows-operational-readiness": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/windows-service-proxy": {
-      "date_generated": "2026-03-19",
-      "users": {}
-    },
-    "kubernetes-sigs/windows-testing": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "andyzhangx": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "claudiubelu": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "ibabou": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "marosset": {
-          "pr_comments": 38,
-          "devstats_score": 75
-        },
-        "zylxjtu": {
-          "pr_comments": 29,
-          "devstats_score": 66
-        }
-      }
-    },
-    "kubernetes-sigs/work-api": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "jeremyot": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pmorie": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "qiujian16": {
-          "pr_comments": 7,
-          "devstats_score": 2
-        },
-        "rainbowmango": {
-          "pr_comments": 8,
-          "devstats_score": 13
-        }
-      }
-    },
-    "kubernetes-sigs/yaml": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "deads2k": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "derekwaynecarr": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "dims": {
-          "pr_comments": 4,
-          "devstats_score": 13
-        },
-        "jpbetz": {
-          "pr_comments": 57,
-          "devstats_score": 3
-        },
-        "liggitt": {
-          "pr_comments": 7,
-          "devstats_score": 31
-        },
-        "mikedanese": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "smarterclayton": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "sttts": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "tallclair": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "thockin": {
-          "pr_comments": 1,
-          "devstats_score": 38
-        },
-        "wojtek-t": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        }
-      }
-    },
-    "kubernetes-sigs/zeitgeist": {
-      "date_generated": "2026-03-19",
-      "users": {
-        "ameukam": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cici37": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "cpanato": {
-          "pr_comments": 191,
-          "devstats_score": 88
-        },
-        "jeremyrickard": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jimangel": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "jrsapi": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "justaugustus": {
-          "pr_comments": 1,
-          "devstats_score": 4
-        },
-        "n3wscott": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "palnabarun": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "pluies": {
-          "pr_comments": 3,
-          "devstats_score": 6
-        },
-        "puerco": {
-          "pr_comments": 7,
-          "devstats_score": 4
-        },
-        "salaxander": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "saschagrunert": {
-          "pr_comments": 104,
-          "devstats_score": 43
-        },
-        "verolop": {
-          "pr_comments": 0,
-          "devstats_score": 0
-        },
-        "xmudrii": {
-          "pr_comments": 0,
-          "devstats_score": 0
         }
       }
     },
@@ -13285,5 +8504,810 @@
       "date_generated": "2026-03-19",
       "users": {}
     }
+  },
+  "users_roles": {
+    "adrianmoisey": [
+      "Tech Lead (autoscaling)"
+    ],
+    "adrianreber": [
+      "Chair (checkpoint-restore)"
+    ],
+    "ahg-g": [
+      "Tech Lead (scheduling)",
+      "Chair (batch)"
+    ],
+    "ahrtr": [
+      "Tech Lead (etcd)",
+      "Chair (etcd-operator)"
+    ],
+    "alejandrox1": [
+      "Tech Lead (release)"
+    ],
+    "alisondy": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "alvaroaleman": [
+      "Tech Lead (testing)"
+    ],
+    "ameukam": [
+      "Chair (k8s-infra)",
+      "Tech Lead (k8s-infra)"
+    ],
+    "anammedina21": [
+      "Chair (code-of-conduct)"
+    ],
+    "andrewsykim": [
+      "Tech Lead (cloud-provider)"
+    ],
+    "aojea": [
+      "Tech Lead (apps)",
+      "Tech Lead (etcd)",
+      "Chair (multicluster)",
+      "Tech Lead (network)",
+      "Tech Lead (scalability)",
+      "Tech Lead (testing)",
+      "Chair (batch)",
+      "Chair (steering)"
+    ],
+    "aramase": [
+      "Chair (auth)",
+      "Tech Lead (auth)"
+    ],
+    "aravindhp": [
+      "Chair (windows)"
+    ],
+    "ardaguclu": [
+      "Chair (cli)",
+      "Chair (ai-integration)"
+    ],
+    "atiratree": [
+      "Chair (node-lifecycle)"
+    ],
+    "bartsmykla": [
+      "Tech Lead (k8s-infra)"
+    ],
+    "bentheelder": [
+      "Chair (architecture)",
+      "Tech Lead (k8s-infra)",
+      "Tech Lead (scheduling)",
+      "Tech Lead (testing)",
+      "Tech Lead (windows)",
+      "Chair (checkpoint-restore)",
+      "Chair (device-management)",
+      "Chair (code-of-conduct)",
+      "Chair (steering)"
+    ],
+    "bowei": [
+      "Chair (network)"
+    ],
+    "brancz": [
+      "Tech Lead (instrumentation)"
+    ],
+    "bridgetkromhout": [
+      "Chair (cloud-provider)"
+    ],
+    "cailyn-codes": [
+      "Chair (security)"
+    ],
+    "calebamiles": [
+      "Tech Lead (release)"
+    ],
+    "caseydavenport": [
+      "Tech Lead (network)"
+    ],
+    "castrojo": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "cblecker": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "cecilerobertmichon": [
+      "Tech Lead (cluster-lifecycle)"
+    ],
+    "cheftako": [
+      "Tech Lead (cloud-provider)"
+    ],
+    "cjcullen": [
+      "Chair (security-response)"
+    ],
+    "cji": [
+      "Chair (security-response)"
+    ],
+    "cjwagner": [
+      "Tech Lead (testing)"
+    ],
+    "claudiubelu": [
+      "Tech Lead (windows)"
+    ],
+    "cpanato": [
+      "Tech Lead (release)",
+      "Chair (code-of-conduct)"
+    ],
+    "danwinship": [
+      "Tech Lead (network)"
+    ],
+    "dashpole": [
+      "Tech Lead (instrumentation)"
+    ],
+    "dcbw": [
+      "Tech Lead (network)"
+    ],
+    "dchen1107": [
+      "Tech Lead (node)"
+    ],
+    "deads2k": [
+      "Chair (api-machinery)",
+      "Tech Lead (api-machinery)",
+      "Tech Lead (auth)"
+    ],
+    "derekwaynecarr": [
+      "Chair (architecture)",
+      "Tech Lead (node)"
+    ],
+    "detiber": [
+      "Chair (code-of-conduct)"
+    ],
+    "dgrisonnet": [
+      "Tech Lead (instrumentation)"
+    ],
+    "dims": [
+      "Chair (architecture)",
+      "Tech Lead (k8s-infra)",
+      "Tech Lead (testing)"
+    ],
+    "dipesh-rawat": [
+      "Tech Lead (docs)"
+    ],
+    "divya-mohan0209": [
+      "Chair (docs)",
+      "Chair (code-of-conduct)"
+    ],
+    "dom4ha": [
+      "Tech Lead (scheduling)"
+    ],
+    "eddiezane": [
+      "Tech Lead (cli)"
+    ],
+    "ehashman": [
+      "Tech Lead (instrumentation)"
+    ],
+    "elmiko": [
+      "Chair (cloud-provider)",
+      "Tech Lead (cloud-provider)"
+    ],
+    "endocrimes": [
+      "Chair (batch)",
+      "Chair (code-of-conduct)"
+    ],
+    "enj": [
+      "Tech Lead (auth)",
+      "Chair (security-response)"
+    ],
+    "ericchiang": [
+      "Tech Lead (auth)"
+    ],
+    "fabriziopandini": [
+      "Tech Lead (cluster-lifecycle)"
+    ],
+    "fedebongio": [
+      "Chair (api-machinery)"
+    ],
+    "floreks": [
+      "Chair (ui)"
+    ],
+    "fsmunoz": [
+      "Tech Lead (release)"
+    ],
+    "genpage": [
+      "Chair (k8s-infra)"
+    ],
+    "gjtempleton": [
+      "Chair (autoscaling)"
+    ],
+    "haircommander": [
+      "Chair (node)",
+      "Chair (checkpoint-restore)"
+    ],
+    "hakman": [
+      "Chair (k8s-infra)",
+      "Chair (etcd-operator)"
+    ],
+    "hlipsig": [
+      "Chair (code-of-conduct)"
+    ],
+    "huang-wei": [
+      "Tech Lead (scheduling)",
+      "Chair (batch)"
+    ],
+    "iancoldwater": [
+      "Chair (security)"
+    ],
+    "intunderflow": [
+      "Chair (node-lifecycle)"
+    ],
+    "ivanvc": [
+      "Chair (etcd)"
+    ],
+    "jackfrancis": [
+      "Tech Lead (autoscaling)"
+    ],
+    "janetkuo": [
+      "Chair (apps)",
+      "Tech Lead (apps)",
+      "Chair (architecture)"
+    ],
+    "jayunit100": [
+      "Tech Lead (windows)"
+    ],
+    "jberkus": [
+      "Tech Lead (contributor-experience)",
+      "Chair (etcd-operator)"
+    ],
+    "jbpratt": [
+      "Chair (testing)"
+    ],
+    "jdumars": [
+      "Tech Lead (release)",
+      "Chair (code-of-conduct)"
+    ],
+    "jeefy": [
+      "Chair (ui)"
+    ],
+    "jeremyot": [
+      "Chair (multicluster)"
+    ],
+    "jeremyrickard": [
+      "Chair (release)",
+      "Chair (lts)",
+      "Chair (code-of-conduct)"
+    ],
+    "jimangel": [
+      "Tech Lead (docs)"
+    ],
+    "jmhbnz": [
+      "Chair (etcd)",
+      "Chair (etcd-operator)"
+    ],
+    "joaquimrocha": [
+      "Chair (ui)"
+    ],
+    "joelsmith": [
+      "Chair (security-response)"
+    ],
+    "joelspeed": [
+      "Tech Lead (cloud-provider)"
+    ],
+    "johnbelamaric": [
+      "Chair (architecture)",
+      "Chair (device-management)"
+    ],
+    "jpbetz": [
+      "Tech Lead (api-machinery)"
+    ],
+    "jsafrane": [
+      "Tech Lead (storage)"
+    ],
+    "jsturtevant": [
+      "Tech Lead (windows)"
+    ],
+    "justaugustus": [
+      "Chair (release)"
+    ],
+    "justinsb": [
+      "Chair (cluster-lifecycle)",
+      "Chair (etcd-operator)"
+    ],
+    "k82cn": [
+      "Tech Lead (scheduling)"
+    ],
+    "kannon92": [
+      "Chair (batch)"
+    ],
+    "kaslin": [
+      "Chair (contributor-experience)"
+    ],
+    "katcosgrove": [
+      "Tech Lead (auth)",
+      "Tech Lead (docs)",
+      "Tech Lead (release)",
+      "Chair (security)",
+      "Chair (ai-gateway)",
+      "Chair (security-response)",
+      "Chair (steering)"
+    ],
+    "keithmattix": [
+      "Chair (ai-gateway)"
+    ],
+    "kflynn": [
+      "Chair (ai-gateway)"
+    ],
+    "kfswain": [
+      "Chair (ai-gateway)"
+    ],
+    "klueska": [
+      "Chair (device-management)"
+    ],
+    "knabben": [
+      "Tech Lead (windows)"
+    ],
+    "knverey": [
+      "Tech Lead (cli)"
+    ],
+    "koba1t": [
+      "Tech Lead (cli)"
+    ],
+    "kow3ns": [
+      "Chair (apps)",
+      "Tech Lead (apps)"
+    ],
+    "liggitt": [
+      "Tech Lead (auth)",
+      "Chair (lts)"
+    ],
+    "logicalhan": [
+      "Tech Lead (instrumentation)"
+    ],
+    "luxas": [
+      "Tech Lead (cluster-lifecycle)"
+    ],
+    "maciaszczykm": [
+      "Chair (ui)"
+    ],
+    "maciekpytel": [
+      "Tech Lead (autoscaling)"
+    ],
+    "macsko": [
+      "Chair (scheduling)"
+    ],
+    "madhavjivrajani": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "marosset": [
+      "Chair (windows)",
+      "Tech Lead (windows)"
+    ],
+    "marseel": [
+      "Chair (scalability)"
+    ],
+    "mengqiy": [
+      "Chair (scalability)"
+    ],
+    "mfahlandt": [
+      "Chair (architecture)",
+      "Chair (contributor-experience)"
+    ],
+    "micahhausler": [
+      "Chair (auth)",
+      "Chair (lts)",
+      "Chair (security-response)"
+    ],
+    "michelle192837": [
+      "Chair (testing)",
+      "Tech Lead (testing)"
+    ],
+    "mikedanese": [
+      "Tech Lead (auth)"
+    ],
+    "mikezappa87": [
+      "Chair (network)"
+    ],
+    "mimowo": [
+      "Tech Lead (scheduling)"
+    ],
+    "mm4tt": [
+      "Tech Lead (scalability)"
+    ],
+    "mpuckett159": [
+      "Chair (cli)"
+    ],
+    "mrbobbytables": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "mrunalp": [
+      "Chair (node)",
+      "Tech Lead (node)"
+    ],
+    "msau42": [
+      "Tech Lead (storage)"
+    ],
+    "mwielgus": [
+      "Tech Lead (autoscaling)",
+      "Chair (batch)"
+    ],
+    "natalisucks": [
+      "Chair (docs)"
+    ],
+    "natasha41575": [
+      "Tech Lead (cli)"
+    ],
+    "natherz97": [
+      "Chair (security-response)"
+    ],
+    "nckturner": [
+      "Tech Lead (cloud-provider)"
+    ],
+    "neolit123": [
+      "Chair (cluster-lifecycle)"
+    ],
+    "nikhita": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "nirrozenbaum": [
+      "Chair (ai-gateway)"
+    ],
+    "pacoxu": [
+      "Tech Lead (cli)",
+      "Tech Lead (node)",
+      "Tech Lead (storage)",
+      "Tech Lead (testing)",
+      "Chair (ai-integration)",
+      "Chair (steering)"
+    ],
+    "palnabarun": [
+      "Chair (contributor-experience)",
+      "Chair (code-of-conduct)"
+    ],
+    "parispittman": [
+      "Tech Lead (contributor-experience)",
+      "Chair (code-of-conduct)"
+    ],
+    "petr-muller": [
+      "Tech Lead (testing)"
+    ],
+    "pohly": [
+      "Tech Lead (instrumentation)",
+      "Tech Lead (testing)",
+      "Chair (device-management)"
+    ],
+    "priyankasaggu11929": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "puerco": [
+      "Tech Lead (release)",
+      "Chair (security-response)"
+    ],
+    "pwittrock": [
+      "Tech Lead (cli)"
+    ],
+    "raywainman": [
+      "Tech Lead (autoscaling)"
+    ],
+    "rexagod": [
+      "Chair (instrumentation)"
+    ],
+    "reylejano": [
+      "Chair (docs)",
+      "Tech Lead (docs)"
+    ],
+    "richabanker": [
+      "Chair (instrumentation)"
+    ],
+    "ritazh": [
+      "Chair (architecture)",
+      "Chair (auth)",
+      "Tech Lead (auth)",
+      "Tech Lead (contributor-experience)",
+      "Tech Lead (instrumentation)",
+      "Tech Lead (k8s-infra)",
+      "Tech Lead (release)",
+      "Chair (data-protection)",
+      "Chair (security-response)",
+      "Chair (steering)"
+    ],
+    "rjsadow": [
+      "Tech Lead (testing)"
+    ],
+    "robscott": [
+      "Tech Lead (network)"
+    ],
+    "rst0git": [
+      "Chair (checkpoint-restore)"
+    ],
+    "rthallisey": [
+      "Chair (node-lifecycle)"
+    ],
+    "rushmash91": [
+      "Chair (ai-integration)"
+    ],
+    "saad-ali": [
+      "Chair (storage)"
+    ],
+    "salaxander": [
+      "Tech Lead (docs)",
+      "Chair (code-of-conduct)"
+    ],
+    "sanposhiho": [
+      "Chair (scheduling)",
+      "Tech Lead (scheduling)"
+    ],
+    "saschagrunert": [
+      "Tech Lead (api-machinery)",
+      "Tech Lead (cluster-lifecycle)",
+      "Chair (release)",
+      "Chair (lts)",
+      "Chair (node-lifecycle)",
+      "Chair (steering)"
+    ],
+    "seans3": [
+      "Tech Lead (cli)"
+    ],
+    "serathius": [
+      "Tech Lead (etcd)"
+    ],
+    "sergeykanzhelev": [
+      "Chair (node)"
+    ],
+    "shaneutt": [
+      "Chair (network)",
+      "Chair (ai-gateway)"
+    ],
+    "shu-mutou": [
+      "Chair (ui)"
+    ],
+    "shyamjvs": [
+      "Tech Lead (scalability)"
+    ],
+    "siyuanfoundation": [
+      "Chair (etcd)"
+    ],
+    "skitt": [
+      "Chair (multicluster)"
+    ],
+    "soltysh": [
+      "Chair (apps)",
+      "Tech Lead (apps)",
+      "Tech Lead (autoscaling)",
+      "Tech Lead (cli)",
+      "Tech Lead (cloud-provider)",
+      "Tech Lead (network)",
+      "Chair (ui)",
+      "Chair (batch)",
+      "Chair (etcd-operator)",
+      "Chair (steering)"
+    ],
+    "spiffxp": [
+      "Tech Lead (k8s-infra)",
+      "Tech Lead (testing)"
+    ],
+    "stevekuznetsov": [
+      "Tech Lead (testing)"
+    ],
+    "stmcginnis": [
+      "Chair (code-of-conduct)"
+    ],
+    "sttts": [
+      "Tech Lead (api-machinery)"
+    ],
+    "tabbysable": [
+      "Chair (security)",
+      "Chair (security-response)"
+    ],
+    "tallclair": [
+      "Tech Lead (auth)",
+      "Chair (security-response)"
+    ],
+    "tengqm": [
+      "Tech Lead (docs)"
+    ],
+    "tenzen-y": [
+      "Tech Lead (scheduling)",
+      "Chair (batch)"
+    ],
+    "terrytangyuan": [
+      "Chair (architecture)"
+    ],
+    "thockin": [
+      "Tech Lead (k8s-infra)",
+      "Tech Lead (network)",
+      "Tech Lead (testing)"
+    ],
+    "timothysc": [
+      "Tech Lead (cluster-lifecycle)",
+      "Tech Lead (testing)"
+    ],
+    "towca": [
+      "Chair (autoscaling)"
+    ],
+    "tpepper": [
+      "Tech Lead (release)",
+      "Chair (code-of-conduct)"
+    ],
+    "upodroid": [
+      "Tech Lead (k8s-infra)",
+      "Tech Lead (testing)"
+    ],
+    "usize": [
+      "Chair (ai-gateway)"
+    ],
+    "verolop": [
+      "Tech Lead (release)"
+    ],
+    "viktoriaas": [
+      "Chair (checkpoint-restore)"
+    ],
+    "vinayakankugoyal": [
+      "Chair (security-response)"
+    ],
+    "vincepri": [
+      "Chair (cluster-lifecycle)"
+    ],
+    "vyom-yadav": [
+      "Chair (security-response)"
+    ],
+    "wenjiaswe": [
+      "Tech Lead (etcd)"
+    ],
+    "wojtek-t": [
+      "Tech Lead (scalability)"
+    ],
+    "xing-yang": [
+      "Chair (storage)",
+      "Chair (data-protection)"
+    ],
+    "xmcqueen": [
+      "Chair (testing)"
+    ],
+    "xmudrii": [
+      "Tech Lead (k8s-infra)",
+      "Tech Lead (release)"
+    ],
+    "xunzhuo": [
+      "Chair (ai-gateway)"
+    ],
+    "youngnick": [
+      "Tech Lead (network)"
+    ],
+    "yuxiangqian": [
+      "Chair (data-protection)"
+    ],
+    "zvonkok": [
+      "Chair (ai-integration)"
+    ],
+    "zylxjtu": [
+      "Tech Lead (windows)"
+    ],
+    "mattfarina": [
+      "Tech Lead (apps)"
+    ],
+    "prydonius": [
+      "Tech Lead (apps)"
+    ],
+    "erictune": [
+      "Tech Lead (auth)"
+    ],
+    "adohe": [
+      "Tech Lead (cli)"
+    ],
+    "fabianofranz": [
+      "Tech Lead (cli)"
+    ],
+    "hogepodge": [
+      "Tech Lead (cloud-provider)"
+    ],
+    "jagosan": [
+      "Tech Lead (cloud-provider)"
+    ],
+    "roberthbailey": [
+      "Tech Lead (cluster-lifecycle)"
+    ],
+    "phillels": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "grodrigues3": [
+      "Tech Lead (contributor-experience)"
+    ],
+    "bradamant3": [
+      "Tech Lead (docs)",
+      "Chair (code-of-conduct)"
+    ],
+    "chenopis": [
+      "Tech Lead (docs)"
+    ],
+    "irvifa": [
+      "Tech Lead (docs)"
+    ],
+    "jaredbhatti": [
+      "Tech Lead (docs)"
+    ],
+    "kbarnard10": [
+      "Tech Lead (docs)"
+    ],
+    "kbhawkey": [
+      "Tech Lead (docs)"
+    ],
+    "onlydole": [
+      "Tech Lead (docs)"
+    ],
+    "sftim": [
+      "Tech Lead (docs)"
+    ],
+    "zacharysarah": [
+      "Tech Lead (docs)"
+    ],
+    "piosz": [
+      "Tech Lead (instrumentation)"
+    ],
+    "pmorie": [
+      "Chair (multicluster)"
+    ],
+    "quinton-hoole": [
+      "Chair (multicluster)"
+    ],
+    "rikatz": [
+      "Tech Lead (network)"
+    ],
+    "lioneljouin": [
+      "Tech Lead (network)"
+    ],
+    "mskrocki": [
+      "Tech Lead (network)"
+    ],
+    "npinaeva": [
+      "Tech Lead (network)"
+    ],
+    "tssurya": [
+      "Tech Lead (network)"
+    ],
+    "hasheddan": [
+      "Tech Lead (release)"
+    ],
+    "alculquicondor": [
+      "Tech Lead (scheduling)",
+      "Chair (batch)"
+    ],
+    "bsalamat": [
+      "Tech Lead (scheduling)"
+    ],
+    "childsb": [
+      "Tech Lead (storage)"
+    ],
+    "fejta": [
+      "Tech Lead (testing)"
+    ],
+    "danielromlein": [
+      "Chair (ui)"
+    ],
+    "patricklang": [
+      "Tech Lead (windows)"
+    ],
+    "benmoss": [
+      "Tech Lead (windows)"
+    ],
+    "ddebroy": [
+      "Tech Lead (windows)"
+    ],
+    "michmike": [
+      "Tech Lead (windows)"
+    ],
+    "swatisehgal": [
+      "Chair (batch)"
+    ],
+    "aevaonline": [
+      "Chair (code-of-conduct)"
+    ],
+    "carolynvs": [
+      "Chair (code-of-conduct)"
+    ],
+    "celestehorgan": [
+      "Chair (code-of-conduct)"
+    ],
+    "eparis": [
+      "Chair (code-of-conduct)"
+    ],
+    "karenhchu": [
+      "Chair (code-of-conduct)"
+    ],
+    "tashimi": [
+      "Chair (code-of-conduct)"
+    ],
+    "vllry": [
+      "Chair (code-of-conduct)"
+    ],
+    "lukehinds": [
+      "Chair (security-response)"
+    ],
+    "swamymsft": [
+      "Chair (security-response)"
+    ]
   }
 }

@@ -170,23 +170,74 @@
     display: none; /* Hide by default */
 }
 
-.affi-show-stats .affi-stats {
+.affi-affiliation-text {
+    display: none; /* Hide by default */
+}
+
+.affi-role-text {
+    display: none; /* Hide by default */
+}
+
+.affi-stats-text,
+.affi-affiliation-text,
+.affi-role-text {
+    display: none;
+}
+
+.affi-show-stats .affi-stats-text {
     display: inline;
 }
 
-#affi-stats-toggle {
-    margin: 8px 16px;
-    padding: 4px 12px;
-    font-size: 11px;
-    cursor: pointer;
+.affi-show-affiliations .affi-affiliation-text {
+    display: inline;
+}
+
+.affi-show-roles .affi-role-text {
+    display: inline;
+}
+
+/* Ensure common stats container handles layout correctly */
+.affi-stats {
+    font-size: 10px;
+    color: #57606a;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: none; 
+}
+
+/* Show the base container if ANY of the three types of text are being shown */
+.affi-show-stats .affi-stats, 
+.affi-show-affiliations .affi-stats, 
+.affi-show-roles .affi-stats {
+    display: inline;
+}
+
+#affi-button-bar {
+    padding: 8px 16px;
+    display: flex;
+    gap: 4px;
     background: #f6f8fa;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.affi-toggle-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+    cursor: pointer;
+    background: #ffffff;
     border: 1px solid #d0d7de;
-    border-radius: 6px;
+    border-radius: 4px;
     color: #24292f;
 }
 
-#affi-stats-toggle:hover {
+.affi-toggle-btn:hover {
     background: #f3f4f6;
+}
+
+.affi-toggle-btn.active {
+    background: #0969da;
+    color: #ffffff;
+    border-color: #0969da;
 }
 
 .affi-alias {

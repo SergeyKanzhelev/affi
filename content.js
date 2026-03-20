@@ -155,18 +155,37 @@
     return a;
   }
 
-  function createStatsSpan(repoStats, globalStats) {
+  function createStatsSpan(repoStats, globalStats, affiliation, roles) {
     const span = document.createElement('span');
     span.className = 'affi-stats';
     
+    // Roles - only add if we have them
+    if (roles && roles.length > 0) {
+        const roleSpan = document.createElement('span');
+        roleSpan.className = 'affi-role-text';
+        roleSpan.innerText = ` *${roles.join(', ')}*`;
+        span.appendChild(roleSpan);
+    }
+
+    // Affiliation - only add if we have it
+    if (affiliation && affiliation !== 'Unknown') {
+        const affiSpan = document.createElement('span');
+        affiSpan.className = 'affi-affiliation-text';
+        affiSpan.innerText = ` [${affiliation}]`;
+        span.appendChild(affiSpan);
+    }
+
+    // Stats - always add the span, but CSS will control its text visibility
+    const statsTextSpan = document.createElement('span');
+    statsTextSpan.className = 'affi-stats-text';
     const getVal = (s, key) => (s && s[key] !== undefined) ? s[key] : '?';
-    
     const rPRs = getVal(repoStats, 'pr_comments');
     const rDS = getVal(repoStats, 'devstats_score');
     const gPRs = getVal(globalStats, 'pr_comments');
     const gDS = getVal(globalStats, 'devstats_score');
-
-    span.innerText = ` (Repo: ${rPRs}/${rDS} | All: ${gPRs}/${gDS})`;
+    statsTextSpan.innerText = ` (Repo: ${rPRs}/${rDS} | All: ${gPRs}/${gDS})`;
+    span.appendChild(statsTextSpan);
+    
     return span;
   }
 
@@ -212,6 +231,10 @@
             userStats = statsData.repositories[matchingKey].users || {};
         }
     }
+
+    // Access global affiliations and roles
+    const userAffiliations = statsData ? (statsData.users_affiliation || {}) : {};
+    const userRoles = statsData ? (statsData.users_roles || {}) : {};
 
     // Calculate global stats across all repos and find latest date
     let latestDate = '';
@@ -348,14 +371,16 @@
                     const mLower = member.toLowerCase();
                     const rStat = userStats[mLower];
                     const gStat = globalStats[mLower];
+                    const affiliation = userAffiliations[mLower];
+                    const roles = userRoles[mLower];
                     
                     const statusClass = getContributorStatus(rStat, gStat);
                     const link = createGitHubLink(member, statusClass);
                     if (inEmeritusSection) link.classList.add('affi-emeritus');
                     item.appendChild(link);
                     
-                    if (rStat || gStat) {
-                        item.appendChild(createStatsSpan(rStat, gStat));
+                    if (rStat || gStat || affiliation || roles) {
+                        item.appendChild(createStatsSpan(rStat, gStat, affiliation, roles));
                     }
                     list.appendChild(item);
                   });
@@ -377,13 +402,15 @@
             } else if (!part.startsWith('#') && analysis.isListItem && part.match(/^[\w-]+$/) && part !== '-') {
               const rStat = userStats[partLower];
               const gStat = globalStats[partLower];
+              const affiliation = userAffiliations[partLower];
+              const roles = userRoles[partLower];
               const statusClass = getContributorStatus(rStat, gStat);
               const link = createGitHubLink(part, statusClass);
               if (inEmeritusSection) link.classList.add('affi-emeritus');
               lineDiv.appendChild(link);
               
-              if (rStat || gStat) {
-                  lineDiv.appendChild(createStatsSpan(rStat, gStat));
+              if (rStat || gStat || affiliation || roles) {
+                  lineDiv.appendChild(createStatsSpan(rStat, gStat, affiliation, roles));
               }
             } else {
               lineDiv.appendChild(document.createTextNode(part));
@@ -397,13 +424,65 @@
       contentDiv.appendChild(fileSection);
     });
 
-    const statsToggle = document.createElement('button');
-    statsToggle.id = 'affi-stats-toggle';
-    statsToggle.innerText = 'Show Activity Stats';
-    statsToggle.onclick = () => {
-        const showing = container.classList.toggle('affi-show-stats');
-        statsToggle.innerText = showing ? 'Hide Activity Stats' : 'Show Activity Stats';
+    // Button Bar
+    const buttonBar = document.createElement('div');
+    buttonBar.id = 'affi-button-bar';
+
+    const createToggle = (label, cls) => {
+        const b = document.createElement('button');
+        b.className = 'affi-toggle-btn';
+        b.innerText = label;
+        b.onclick = () => {
+            const isActive = container.classList.toggle(cls);
+            b.classList.toggle('active', isActive);
+        };
+        return b;
     };
+
+    const btnStats = createToggle('stats', 'affi-show-stats');
+    const btnAffi = createToggle('affi', 'affi-show-affiliations');
+    const btnRoles = createToggle('roles', 'affi-show-roles');
+    
+    const btnAll = document.createElement('button');
+    btnAll.className = 'affi-toggle-btn';
+    btnAll.innerText = 'all';
+
+    const updateAllButton = () => {
+        const targetClasses = ['affi-show-stats', 'affi-show-affiliations', 'affi-show-roles'];
+        const allActive = targetClasses.every(c => container.classList.contains(c));
+        btnAll.classList.toggle('active', allActive);
+    };
+
+    // Override onclick for individual buttons to also update the 'all' button
+    [btnStats, btnAffi, btnRoles].forEach((btn, i) => {
+        const cls = ['affi-show-stats', 'affi-show-affiliations', 'affi-show-roles'][i];
+        btn.onclick = () => {
+            const isActive = container.classList.toggle(cls);
+            btn.classList.toggle('active', isActive);
+            updateAllButton();
+        };
+    });
+
+    btnAll.onclick = () => {
+        const targetClasses = ['affi-show-stats', 'affi-show-affiliations', 'affi-show-roles'];
+        const anyMissing = targetClasses.some(c => !container.classList.contains(c));
+        
+        targetClasses.forEach(c => {
+            if (anyMissing) container.classList.add(c);
+            else container.classList.remove(c);
+        });
+
+        // Update all buttons
+        btnStats.classList.toggle('active', container.classList.contains('affi-show-stats'));
+        btnAffi.classList.toggle('active', container.classList.contains('affi-show-affiliations'));
+        btnRoles.classList.toggle('active', container.classList.contains('affi-show-roles'));
+        updateAllButton();
+    };
+
+    buttonBar.appendChild(btnStats);
+    buttonBar.appendChild(btnAffi);
+    buttonBar.appendChild(btnRoles);
+    buttonBar.appendChild(btnAll);
 
     // Find collection date for this repo or fallback to latest across all
     let displayDate = latestDate;
@@ -418,7 +497,7 @@
 
     container.appendChild(toggle);
     container.appendChild(header);
-    container.appendChild(statsToggle);
+    container.appendChild(buttonBar);
     container.appendChild(contentDiv);
 
     // Create dynamic footer
