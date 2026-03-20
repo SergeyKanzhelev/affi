@@ -1,0 +1,7 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/pod-security-admission --repository-devstats=kubernetes/pod-security-admission --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:24:02
+Processed /private/tmp/affi_stats/kubernetes_pod-security-admission/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_pod-security-admission/OWNERS_ALIASES
+Found 0 unique aliases
+Found 2 unique users

@@ -1,0 +1,16 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/component-helpers --repository-devstats=kubernetes/component-helpers --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:24:00
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/apimachinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/nodedeclaredfeatures/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/nodedeclaredfeatures/features/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/resource/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-helpers/OWNERS_ALIASES
+Found 0 unique aliases
+Found 18 unique users

@@ -1,0 +1,7 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/windows-service-proxy --repository-devstats=kubernetes-sigs/windows-service-proxy --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:14:59
+Processed /private/tmp/affi_stats/kubernetes-sigs_windows-service-proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_windows-service-proxy/OWNERS_ALIASES
+Found 0 unique aliases
+Found 6 unique users

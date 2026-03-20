@@ -1,0 +1,9 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/controller-manager --repository-devstats=kubernetes/controller-manager --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:23:58
+Processed /private/tmp/affi_stats/kubernetes_controller-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_controller-manager/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_controller-manager/pkg/features/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_controller-manager/OWNERS_ALIASES
+Found 0 unique aliases
+Found 13 unique users

@@ -1,0 +1,3 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kindnet --repository-devstats=kubernetes-sigs/kindnet --period-devstats=y --dryrun ---
+Running script : 03-19-2026 02:30:32

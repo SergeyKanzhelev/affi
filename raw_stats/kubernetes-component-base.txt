@@ -1,0 +1,21 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/component-base --repository-devstats=kubernetes/component-base --period-devstats=y --dryrun ---
+Running script : 03-19-2026 01:23:18
+Processed /private/tmp/affi_stats/kubernetes_component-base/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/cli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/codec/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/compatibility/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/configz/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/featuregate/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/logs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/logs/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/term/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/tracing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/tracing/api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/version/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/zpages/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_component-base/OWNERS_ALIASES
+Found 0 unique aliases
+Found 18 unique users

@@ -54,12 +54,22 @@ def clone_repo(tmp_dir, repo_url, repo_name):
 def parse_raw_output(raw_file):
     print(f"Parsing raw output from {raw_file}...")
     user_stats = {} # user -> stats
+    date_str = None
     
     current_section = None
     with open(raw_file, "r") as f:
         lines = f.readlines()
         
     for line in lines:
+        if "Running script :" in line:
+            # Format: Running script : 03-19-2026 00:21:50
+            match = re.search(r'(\d{2}-\d{2}-\d{4})', line)
+            if match:
+                # Convert MM-DD-YYYY to YYYY-MM-DD
+                mm, dd, yyyy = match.group(1).split('-')
+                date_str = f"{yyyy}-{mm}-{dd}"
+            continue
+
         if "--- COMMAND:" in line:
             if "prune" in line:
                 current_section = "prune"
@@ -99,7 +109,8 @@ def parse_raw_output(raw_file):
             user = trimmed.lower()
             if user not in user_stats:
                 user_stats[user] = {"pr_comments": 0, "devstats_score": 0}
-    return user_stats
+
+    return user_stats, date_str
 
 def main():
     parser = argparse.ArgumentParser()
@@ -113,7 +124,7 @@ def main():
     os.makedirs(RAW_STATS_DIR, exist_ok=True)
     date_str = datetime.now().strftime("%Y-%m-%d")
     repo_slug = repo_name.replace("/", "-")
-    raw_file = os.path.join(RAW_STATS_DIR, f"{date_str}-{repo_slug}.txt")
+    raw_file = os.path.join(RAW_STATS_DIR, f"{repo_slug}.txt")
     
     if args.parse_only:
         if not os.path.exists(raw_file):
@@ -203,13 +214,19 @@ def main():
             "--period-devstats=y", 
             "--dryrun"
         ]
-            
-        run_cmd(cmd, cwd=repo_path, outfile=raw_file)
 
+        stdout = run_cmd(cmd, cwd=repo_path, outfile=raw_file)
+        if stdout is None:
+            print(f"Tool failed for {repo_name}. Removing incomplete raw file {raw_file}.")
+            if os.path.exists(raw_file):
+                os.remove(raw_file)
+            return
     if os.path.exists(raw_file):
-        user_stats = parse_raw_output(raw_file)
+        user_stats, file_date = parse_raw_output(raw_file)
+        actual_date = file_date if file_date else date_str
     else:
         user_stats = {}
+        actual_date = date_str
 
     # Load existing stats if available
     final_stats = {"repositories": {}}
@@ -230,16 +247,35 @@ def main():
         except Exception as e:
             print(f"Warning: Could not load existing stats: {e}")
 
-    # Add/Update current repo
+    # Add/Update current repo in the collection
     final_stats["repositories"][repo_name] = {
-        "date_generated": date_str,
+        "date_generated": actual_date,
         "users": user_stats
     }
 
-    with open(STATS_FILENAME, "w") as f:
-        json.dump(final_stats, f, indent=2)
+    # Sort repositories alphabetically
+    sorted_repos = sorted(final_stats["repositories"].keys())
+    new_final_stats = {"repositories": {}}
     
-    print(f"Successfully updated {STATS_FILENAME} with data for {repo_name} ({len(user_stats)} users).")
+    for repo in sorted_repos:
+        repo_data = final_stats["repositories"][repo]
+        # Sort users alphabetically within each repo
+        users_obj = repo_data.get("users", {})
+        if isinstance(users_obj, dict):
+            sorted_users = sorted(users_obj.keys())
+            new_users = {user: users_obj[user] for user in sorted_users}
+        else:
+            new_users = {}
+        
+        new_final_stats["repositories"][repo] = {
+            "date_generated": repo_data.get("date_generated"),
+            "users": new_users
+        }
+
+    with open(STATS_FILENAME, "w") as f:
+        json.dump(new_final_stats, f, indent=2)
+    
+    print(f"Successfully updated and sorted {STATS_FILENAME} with data for {repo_name}.")
 
 if __name__ == "__main__":
     main()
