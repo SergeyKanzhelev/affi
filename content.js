@@ -507,13 +507,27 @@
     const footer = document.createElement('div');
     footer.id = 'affi-footer';
     
+    // Combined sources line
+    const sourcesContainer = document.createElement('div');
+    sourcesContainer.id = 'affi-footer-sources';
+
+    const sources = [
+        { label: 'Stats', link: 'https://k8s.devstats.cncf.io', text: 'DevStats' },
+        { label: 'Affiliations', link: 'https://github.com/cncf/gitdm', text: 'gitdm' },
+        { label: 'Roles', link: 'https://github.com/kubernetes/community/blob/master/sigs.yaml', text: 'sigs.yaml' }
+    ];
+
+    sources.forEach(src => {
+        const span = document.createElement('span');
+        span.className = 'affi-footer-source';
+        span.innerHTML = `${src.label}: <a href="${src.link}" target="_blank" class="affi-footer-link">${src.text}</a>`;
+        sourcesContainer.appendChild(span);
+    });
+    footer.appendChild(sourcesContainer);
+
     const dateDiv = document.createElement('div');
     dateDiv.innerText = `Data collected on: ${displayDate || 'unknown'}`;
     footer.appendChild(dateDiv);
-
-    const toolDiv = document.createElement('div');
-    toolDiv.innerHTML = 'Collected using <a href="https://github.com/kubernetes-sigs/maintainers/" target="_blank" class="affi-footer-link">maintainers</a> tool.';
-    footer.appendChild(toolDiv);
 
     const updateDiv = document.createElement('div');
     updateDiv.innerHTML = 'Update data at <a href="https://github.com/SergeyKanzhelev/affi" target="_blank" class="affi-footer-link">affi repo</a>.';

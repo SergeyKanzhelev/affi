@@ -61,8 +61,24 @@
     display: none; /* Hide by default */
 }
 
-.affi-show-stats #affi-footer {
+/* Show footer if any of the three types are visible */
+.affi-show-stats #affi-footer,
+.affi-show-affiliations #affi-footer,
+.affi-show-roles #affi-footer {
     display: block;
+}
+
+#affi-footer-sources {
+    margin-bottom: 4px;
+}
+
+.affi-footer-source {
+    display: inline;
+}
+
+.affi-footer-source:not(:last-child)::after {
+    content: " | ";
+    color: #d0d7de;
 }
 
 .affi-footer-link {
