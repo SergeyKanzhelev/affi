@@ -135,8 +135,6 @@ async function renderTests() {
         const overlay = visual.querySelector('.affi-overlay');
         if (overlay) {
             overlay.classList.remove('affi-collapsed');
-            // Also enable stats by default in E2E for better verification
-            overlay.classList.add('affi-show-stats', 'affi-show-affiliations', 'affi-show-roles');
         }
     });
 }
