@@ -55,9 +55,9 @@ async function getTestCases() {
         sourceUrl: "https://github.com/kubernetes/kubernetes/blob/master/pkg/probe/OWNERS",
         hierarchy: {
           files: [
-            { path: "/pkg/probe", content: k8sPkgProbeOwners },
+            { path: "/", content: k8sRootOwners },
             { path: "/pkg", content: k8sPkgOwners },
-            { path: "/", content: k8sRootOwners }
+            { path: "/pkg/probe", content: k8sPkgProbeOwners }
           ],
           truncated: false
         },
@@ -75,6 +75,19 @@ async function getTestCases() {
         },
         aliases: npdAliasesData,
         repoPath: "kubernetes/node-problem-detector"
+      },
+      {
+        name: "Truncated Hierarchy (k8s/k8s/vendor)",
+        sourceUrl: "https://github.com/kubernetes/kubernetes/blob/master/vendor/OWNERS",
+        hierarchy: {
+          files: [
+            { path: "/", content: k8sRootOwners },
+            { path: "/vendor", content: "no_parent_owners: true\napprovers:\n- vendor-owner" }
+          ],
+          truncated: true
+        },
+        aliases: k8sAliasesData,
+        repoPath: "kubernetes/kubernetes"
       }
     ];
 }

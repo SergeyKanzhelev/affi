@@ -104,40 +104,68 @@
 }
 
 .affi-file-section {
-    margin-bottom: 24px;
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 16px;
+    margin-bottom: 4px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.affi-file-section:not(.affi-file-collapsed) {
+    border-color: #d0d7de;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.affi-path-row {
+    padding: 4px 8px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: default;
+    background: #f6f8fa;
+    border-radius: 4px;
+}
+
+.affi-file-section:not(.affi-file-collapsed) > .affi-path-row {
+    border-bottom: 1px solid #d0d7de;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.affi-folder-name {
+    font-weight: normal;
+    color: #24292f;
+}
+
+.affi-owners-label {
+    color: #57606a;
+    opacity: 0.7;
+}
+
+.affi-ignored-tag {
+    color: #cf222e;
+    font-weight: bold;
+    font-size: 10px;
+    margin-right: 2px;
+}
+
+.affi-tree-action {
+    color: #0969da;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.affi-tree-action:hover {
+    text-decoration: underline;
+}
+
+.affi-file-body {
+    margin-bottom: 10px;
 }
 
 .affi-file-collapsed .affi-file-body {
     display: none;
-}
-
-.affi-file-section:last-child {
-    border-bottom: none;
-}
-
-.affi-path-label {
-    background: #f6f8fa;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 11px;
-    color: #57606a;
-    font-weight: bold;
-    margin-bottom: 8px;
-    border: 1px solid #d0d7de;
-}
-
-.affi-source-link {
-    font-size: 10px;
-    color: #0969da;
-    text-decoration: none;
-    font-weight: normal;
-    margin-left: 8px;
-}
-
-.affi-source-link:hover {
-    text-decoration: underline;
 }
 
 .affi-line {

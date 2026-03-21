@@ -125,39 +125,84 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
   contentDiv.className = 'affi-content';
 
   hierarchy.files.forEach((file, index) => {
-    const isFirst = index === 0;
+    const isLast = index === hierarchy.files.length - 1;
+    
     const fileSection = document.createElement('div');
     fileSection.className = 'affi-file-section';
-    if (!isFirst) fileSection.classList.add('affi-file-collapsed');
-
-    const pathLabel = document.createElement('div');
-    pathLabel.className = 'affi-path-label';
-
-    const labelText = document.createElement('span');
-    labelText.innerText = `${isFirst ? '▼' : '▶'} File: ${file.path}/OWNERS`;
-    pathLabel.appendChild(labelText);
-
-
-    const sourceLink = document.createElement('a');
-    const relativePath = file.path === '/' ? '' : (file.path.startsWith('/') ? file.path : '/' + file.path);
-    sourceLink.href = `${githubBlobUrl}${relativePath}/OWNERS`;
-    sourceLink.target = '_blank';
-    sourceLink.innerText = ' [view source]';
-    sourceLink.className = 'affi-source-link';
-    sourceLink.onclick = (e) => e.stopPropagation();
-    pathLabel.appendChild(sourceLink);
-
-    pathLabel.style.cursor = 'pointer';
+    if (!isLast) fileSection.classList.add('affi-file-collapsed');
+    // Indent the whole frame
+    fileSection.style.marginLeft = `${index * 20}px`;
     
+    const pathRow = document.createElement('div');
+    pathRow.className = 'affi-path-row';
+
+    // Toggle [+] at beginning
+    const toggleBtn = document.createElement('span');
+    toggleBtn.className = 'affi-tree-action';
+    toggleBtn.style.minWidth = '20px';
+    toggleBtn.style.display = 'inline-block';
+    toggleBtn.innerText = isLast ? '[-]' : '[+]';
+    toggleBtn.onclick = () => {
+        const isCollapsed = fileSection.classList.toggle('affi-file-collapsed');
+        toggleBtn.innerText = isCollapsed ? '[+]' : '[-]';
+    };
+    pathRow.appendChild(toggleBtn);
+
+    // Folder name: show relative to previous
+    const folderSpan = document.createElement('span');
+    folderSpan.className = 'affi-folder-name';
+    if (file.path === '/') {
+        folderSpan.innerText = '/';
+    } else {
+        const prevPath = index > 0 ? hierarchy.files[index-1].path : '';
+        let relPath = file.path;
+        if (prevPath && prevPath !== '/' && file.path.startsWith(prevPath)) {
+            relPath = file.path.substring(prevPath.length);
+            if (relPath.startsWith('/')) relPath = relPath.substring(1);
+        } else if (prevPath === '/' && file.path.startsWith('/')) {
+            relPath = file.path.substring(1);
+        }
+        folderSpan.innerText = relPath + (relPath.endsWith('/') ? '' : '/');
+    }
+    pathRow.appendChild(folderSpan);
+
+    // Pale OWNERS label
+    const ownersLabel = document.createElement('span');
+    ownersLabel.className = 'affi-owners-label';
+    ownersLabel.innerText = 'OWNERS ';
+    pathRow.appendChild(ownersLabel);
+
+    // Ignored tag logic: if ANY subsequent file has no_parent_owners, this one is ignored
+    let isIgnored = false;
+    for (let j = index + 1; j < hierarchy.files.length; j++) {
+        if (shouldTruncate(hierarchy.files[j].content)) {
+            isIgnored = true;
+            break;
+        }
+    }
+
+    if (isIgnored) {
+        const ignoredTag = document.createElement('span');
+        ignoredTag.className = 'affi-ignored-tag';
+        ignoredTag.innerText = '[ignored] ';
+        pathRow.appendChild(ignoredTag);
+    }
+
+    // Open link
+    const openLink = document.createElement('a');
+    openLink.className = 'affi-tree-action';
+    openLink.innerText = '[open]';
+    const relativePath = file.path === '/' ? '' : (file.path.startsWith('/') ? file.path : '/' + file.path);
+    openLink.href = `${githubBlobUrl}${relativePath}/OWNERS`;
+    pathRow.appendChild(openLink);
+
+    fileSection.appendChild(pathRow);
+
     const fileBody = document.createElement('div');
     fileBody.className = 'affi-file-body';
-
-    pathLabel.onclick = () => {
-        const isCollapsed = fileSection.classList.toggle('affi-file-collapsed');
-        labelText.innerText = `${isCollapsed ? '▶' : '▼'} File: ${file.path}/OWNERS`;
-    };
-
-    fileSection.appendChild(pathLabel);
+    fileBody.style.paddingLeft = '24px';
+    fileBody.style.marginLeft = '8px'; 
+    
     fileSection.appendChild(fileBody);
 
     const lines = file.content.split('\n');
@@ -193,19 +238,19 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
         analysis.tokens.forEach(part => {
           const partLower = part.toLowerCase();
           if (aliases[part]) {
+            const btn = document.createElement('button');
+            btn.className = 'affi-expand-btn';
+            btn.innerText = '[+]';
+
             const span = document.createElement('span');
             span.className = 'affi-alias';
             span.innerText = part;
 
-            const btn = document.createElement('button');
-            btn.className = 'affi-expand-btn';
-            btn.innerText = ' [+]';
-            
             const expandAlias = () => {
-              const next = btn.nextElementSibling;
+              const next = btn.nextElementSibling.nextElementSibling; // Skip the span
               if (next && next.classList.contains('affi-expanded-list')) {
                 next.remove();
-                btn.innerText = ' [+]';
+                btn.innerText = '[+]';
               } else {
                 const list = document.createElement('div');
                 list.className = 'affi-expanded-list';
@@ -231,8 +276,8 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
                   }
                   list.appendChild(item);
                 });
-                btn.after(list);
-                btn.innerText = ' [-]';
+                span.after(list);
+                btn.innerText = '[-]';
               }
             };
 
@@ -241,8 +286,8 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
               expandAlias();
             };
             
-            lineDiv.appendChild(span);
             lineDiv.appendChild(btn);
+            lineDiv.appendChild(span);
             
             // Expand automatically on load
             expandAlias();
@@ -270,13 +315,6 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
     });
     contentDiv.appendChild(fileSection);
   });
-
-  if (hierarchy.truncated) {
-    const truncatedDiv = document.createElement('div');
-    truncatedDiv.className = 'affi-truncated-msg';
-    truncatedDiv.innerText = '❌ no_parent_owners';
-    contentDiv.appendChild(truncatedDiv);
-  }
 
   // Button Bar
   const buttonBar = document.createElement('div');

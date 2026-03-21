@@ -137,17 +137,8 @@
     let results = await Promise.all(fetchPromises);
     results = results.filter(r => r !== null);
 
-    let filteredResults = [];
-    let truncated = false;
-    for (let i = results.length - 1; i >= 0; i--) {
-      filteredResults.push(results[i]);
-      if (shouldTruncate(results[i].content)) {
-        if (i > 0) truncated = true;
-        break;
-      }
-    }
-
-    return { files: filteredResults, truncated };
+    let truncated = results.some((r, i) => i > 0 && shouldTruncate(r.content));
+    return { files: results, truncated };
   }
 
   if (typeof location !== 'undefined') {
