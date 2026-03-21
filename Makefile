@@ -308,5 +308,5 @@ parse-stats:
 
 dist:
 	rm -f affi.zip
-	zip -r affi.zip manifest.json content.js parser.js styles.css js-yaml.min.js maintainers_stats.json icons/
+	zip -r affi.zip manifest.json content.js ui.js parser.js styles.css js-yaml.min.js maintainers_stats.json icons/
 
