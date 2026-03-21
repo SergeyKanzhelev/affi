@@ -1,7 +1,10 @@
-.PHONY: test install
+.PHONY: test install serve
 
 install:
 	npm install
+
+serve:
+	npm run serve
 
 REPOS ?= kubernetes/kubernetes \
 	kubernetes/website \

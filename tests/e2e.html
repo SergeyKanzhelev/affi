@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Affi E2E Test Page</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f0f2f5;
+            margin: 0;
+        }
+        #test-rows {
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+        .test-row {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-width: 450px;
+            flex: 0 0 450px;
+        }
+        .test-header {
+            margin-bottom: 10px;
+        }
+        .test-header h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+        }
+        .test-header p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #57606a;
+        }
+        .test-container {
+            width: 100%;
+            height: 550px;
+            border: 1px solid #d0d7de;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+        }
+        .test-footer {
+            margin-top: 10px;
+        }
+        .source-code {
+            display: none;
+            margin-top: 10px;
+        }
+        .source-code.visible {
+            display: block;
+        }
+        .toggle-source-btn {
+            background: #f6f8fa;
+            color: #24292f;
+            border: 1px solid #d0d7de;
+            padding: 4px 8px;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        /* Override Affi styles for embedding */
+        .affi-overlay {
+            position: relative !important;
+            top: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            border-left: none !important;
+            box-shadow: none !important;
+            transform: none !important;
+            display: flex !important; /* Ensure it's visible even if collapsed logic is weird */
+        }
+        .affi-toggle {
+            display: none !important;
+        }
+        #controls {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        #countdown {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #d73a49;
+        }
+        button {
+            padding: 8px 16px;
+            cursor: pointer;
+            background: #2da44e;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #2c974b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Affi E2E Testing</h1>
+    
+    <div id="controls">
+        <div>Next refresh in: <span id="countdown">10</span>s</div>
+        <button id="refresh-btn">Force Refresh</button>
+    </div>
+
+    <div id="test-rows">
+        <!-- Rows will be injected here -->
+    </div>
+
+    <script src="../js-yaml.min.js"></script>
+    <script src="../parser.js"></script>
+    <script src="../ui.js"></script>
+    <script src="e2e.js"></script>
+</body>
+</html>
