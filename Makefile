@@ -1,10 +1,15 @@
-.PHONY: test install serve
+.PHONY: test install serve sync-firefox dist-chrome dist-firefox dist
 
 install:
 	npm install
 
 serve:
 	npm run serve
+
+sync-firefox:
+	@mkdir -p firefox/icons
+	rsync -av ./ firefox/ --exclude 'firefox' --exclude 'node_modules' --exclude 'raw_stats' --exclude 'tests' --exclude '.git' --exclude 'Makefile' --exclude 'package.json' --exclude 'package-lock.json' --exclude 'generate_stats.py' --exclude 'README.md' --exclude 'LICENSE' --exclude 'PRIVACY.md' --exclude 'screenshot-1.1.png' --exclude 'manifest.json'
+	cp firefox/manifest.json.src firefox/manifest.json
 
 REPOS ?= kubernetes/kubernetes \
 	kubernetes/website \
@@ -306,7 +311,12 @@ parse-stats:
 		done; \
 	fi
 
-dist:
-	rm -f affi.zip
-	zip -r affi.zip manifest.json content.js ui.js parser.js styles.css js-yaml.min.js maintainers_stats.json icons/
+dist-chrome:
+	rm -f affi-chrome.zip
+	zip -r affi-chrome.zip manifest.json content.js ui.js parser.js styles.css js-yaml.min.js maintainers_stats.json icons/
 
+dist-firefox: sync-firefox
+	rm -f affi-firefox.zip
+	cd firefox && zip -r ../affi-firefox.zip manifest.json content.js ui.js parser.js styles.css js-yaml.min.js maintainers_stats.json icons/
+
+dist: dist-chrome dist-firefox

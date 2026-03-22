@@ -1,13 +1,15 @@
 # Affi - Kubernetes OWNERS Hierarchy & Stats
 
-[Available on the Chrome Web Store](https://chromewebstore.google.com/detail/affi/fflpjbbjhlededagabjhaodefilblglg?pli=1)
+- [Available on the Chrome Web Store](https://chromewebstore.google.com/detail/affi/fflpjbbjhlededagabjhaodefilblglg?pli=1)
+- [Available on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/affi/) (Link TBD - In Review)
 
-Affi is a Chrome extension designed for Kubernetes developers and maintainers. It provides an interactive overlay when viewing `OWNERS` and `OWNERS_ALIASES` files on GitHub, making it easier to understand maintainer hierarchies and contribution activity.
+Affi is a browser extension designed for Kubernetes developers and maintainers.
+ It provides an interactive overlay when viewing `OWNERS` and `OWNERS_ALIASES` files on GitHub, making it easier to understand maintainer hierarchies and contribution activity.
 
 ## Features
 
 - **Hierarchical OWNERS View:** Automatically traverses from the repository root down to the current directory to show all relevant `OWNERS` files.
-- **Intelligent Truncation:** Respects the `no_parent_owners: true` flag, providing visual feedback (`❌ no_parent_owners`) when the hierarchy stops.
+- **Intelligent Truncation:** Respects the `no_parent_owners: true` flag by visually marking ancestor folders as `[ignored]`, providing a clear view of which files actually contribute to the current directory's ownership.
 - **Interactive Alias Expansion:** Resolves aliases using the `OWNERS_ALIASES` file and allows expanding them into a list of GitHub handles with one click.
 - **Contributor Activity Stats:** Toggleable statistics for individual maintainers, showing both repository-specific and global (across all Kubernetes repos) activity.
 - **Visual Engagement Cues:** Intuitively identifies active, low-activity, and completely inactive maintainers based on PR comments and DevStats scores.
@@ -29,18 +31,28 @@ All information displayed by the extension (statistics, affiliations, and roles)
 ## Project Structure
 
 - `content.js`: Core extension logic for DOM manipulation and navigation handling.
+- `ui.js`: Modular logic for rendering the interactive tree overlay.
 - `parser.js`: Modular logic for parsing `OWNERS` YAML and individual line analysis.
+- `firefox/`: Contains the Firefox-specific manifest source.
 - `generate_stats.py`: A Python pipeline that uses the `maintainers` Go tool to build the activity database.
 - `maintainers_stats.json`: The generated JSON database containing activity metrics for the Kubernetes ecosystem.
-- `tests/`: A comprehensive Jest-based unit test suite.
-- `Makefile`: Streamlined targets for testing and statistics generation.
+- `tests/`: A comprehensive Jest-based unit test suite and E2E test page.
+- `Makefile`: Streamlined targets for building, syncing, and testing.
 
 ## Installation (Developer Mode)
 
+### Chrome
 1. Clone this repository.
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** (toggle in the top right).
 4. Click **Load unpacked** and select the project directory.
+
+### Firefox
+1. Clone this repository.
+2. Run `make sync-firefox` to prepare the `firefox/` directory.
+3. Open Firefox and navigate to `about:debugging`.
+4. Click **This Firefox** in the sidebar.
+5. Click **Load Temporary Add-on...** and select `firefox/manifest.json`.
 
 ## Statistics Generation
 

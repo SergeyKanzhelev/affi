@@ -30,11 +30,12 @@ describe('Affi Content Script - Hierarchy logic', () => {
 
       const result = await fetchOwnersHierarchy('https://raw.githubusercontent.com/u/r/b', 'pkg/probe/OWNERS');
       
-      // Should contain pkg/probe/OWNERS and pkg/OWNERS, but NOT root OWNERS
-      expect(result.files.length).toBe(2);
+      // Should contain root, pkg/OWNERS and pkg/probe/OWNERS
+      expect(result.files.length).toBe(3);
       expect(result.truncated).toBe(true);
-      expect(result.files[0].path).toBe('pkg');
-      expect(result.files[1].path).toBe('pkg/probe');
+      expect(result.files[0].path).toBe('/');
+      expect(result.files[1].path).toBe('pkg');
+      expect(result.files[2].path).toBe('pkg/probe');
     });
   });
 
