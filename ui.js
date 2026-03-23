@@ -45,6 +45,8 @@ function createStatsSpan(repoStats, globalStats, affiliation, roles) {
 }
 
 function getContributorStatus(rStat, gStat) {
+  if (!rStat && !gStat) return '';
+
   const rComments = rStat ? (rStat.pr_comments || 0) : 0;
   const rDev = rStat ? (rStat.devstats_score || 0) : 0;
   const gComments = gStat ? (gStat.pr_comments || 0) : 0;

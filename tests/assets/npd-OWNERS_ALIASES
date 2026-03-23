@@ -9,6 +9,7 @@ aliases:
     - klueska
     - SergeyKanzhelev
     - tallclair
+    - no-stats-fake-user
   sig-node-reviewers:
     - Random-Liu
     - dchen1107
