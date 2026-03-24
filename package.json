@@ -1,11 +1,12 @@
 {
   "name": "affi",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "",
   "main": "content.js",
   "scripts": {
     "test": "jest",
-    "serve": "npx http-server -c-1 ."
+    "serve": "npx http-server -c-1 .",
+    "screenshot": "node scripts/take_screenshot.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "type": "commonjs",
   "devDependencies": {
     "jest": "^30.3.0",
-    "jest-environment-jsdom": "^30.3.0"
+    "jest-environment-jsdom": "^30.3.0",
+    "puppeteer": "^22.0.0"
   }
 }

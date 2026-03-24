@@ -6,6 +6,12 @@
 Affi is a browser extension designed for Kubernetes developers and maintainers.
  It provides an interactive overlay when viewing `OWNERS` and `OWNERS_ALIASES` files on GitHub, making it easier to understand maintainer hierarchies and contribution activity.
 
+### Default View
+![Affi Default View](screenshot-1.3.png)
+
+### All Stats & Features
+![Affi All Features](screenshot-1.3-all.png)
+
 ## Features
 
 - **Hierarchical OWNERS View:** Automatically traverses from the repository root down to the current directory to show all relevant `OWNERS` files.

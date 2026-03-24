@@ -1,4 +1,4 @@
-.PHONY: test install serve sync-firefox dist-chrome dist-firefox dist
+.PHONY: test install serve sync-firefox dist-chrome dist-firefox dist screenshot
 
 install:
 	npm install
@@ -6,9 +6,12 @@ install:
 serve:
 	npm run serve
 
+screenshot:
+	npm run screenshot
+
 sync-firefox:
 	@mkdir -p firefox/icons
-	rsync -av ./ firefox/ --exclude 'firefox' --exclude 'node_modules' --exclude 'raw_stats' --exclude 'tests' --exclude '.git' --exclude 'Makefile' --exclude 'package.json' --exclude 'package-lock.json' --exclude 'generate_stats.py' --exclude 'README.md' --exclude 'LICENSE' --exclude 'PRIVACY.md' --exclude 'screenshot-1.1.png' --exclude 'manifest.json'
+	rsync -av ./ firefox/ --exclude 'firefox' --exclude 'node_modules' --exclude 'raw_stats' --exclude 'tests' --exclude '.git' --exclude 'Makefile' --exclude 'package.json' --exclude 'package-lock.json' --exclude 'generate_stats.py' --exclude 'README.md' --exclude 'LICENSE' --exclude 'PRIVACY.md' --exclude 'screenshot-*.png' --exclude 'manifest.json'
 	cp firefox/manifest.json.src firefox/manifest.json
 
 REPOS ?= kubernetes/kubernetes \
