@@ -1,17 +1,17 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/downloadkubernetes --repository-devstats=kubernetes-sigs/downloadkubernetes --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:54:08
+Running script : 03-26-2026 02:25:39
 Processed /private/tmp/affi_stats/kubernetes-sigs_downloadkubernetes/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_downloadkubernetes/OWNERS_ALIASES
 Found 3 unique aliases
 Found 13 unique users
-...........
+....
 
 
 >>>>> Contributions from kubernetes-sigs/downloadkubernetes devstats repo and kubernetes-sigs/downloadkubernetes github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-cpanato : 30 : 92 
-saschagrunert : 18 : 62 
+cpanato : 28 : 90 
+saschagrunert : 18 : 72 
 puerco : 3 : 7 
 xmudrii : 3 : 7 
 

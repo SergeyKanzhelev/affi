@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/cloud-provider-gcp --repository-devstats=kubernetes/cloud-provider-gcp --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:08:47
+Running script : 03-26-2026 01:33:41
 Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/cluster/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/cmd/auth-provider-gcp/OWNERS
@@ -13,21 +13,21 @@ Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/test/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_cloud-provider-gcp/OWNERS_ALIASES
 Found 1 unique aliases
 Found 35 unique users
-..........................
+..................
 
 
 >>>>> Contributions from kubernetes/cloud-provider-gcp devstats repo and kubernetes/cloud-provider-gcp github repo : 13
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-YifeiZhuang : 141 : 47 
-mmamczur : 80 : 46 
-aojea : 61 : 24 
-hdp617 : 25 : 18 
-bowei : 25 : 17 
+YifeiZhuang : 142 : 49 
+mmamczur : 79 : 45 
+hdp617 : 25 : 23 
+aojea : 60 : 22 
+bowei : 25 : 18 
 felipeyepez(FelipeYepez) : 61 : 14 
-justinsb : 46 : 8 
+justinsb : 46 : 9 
 LogicalShark : 16 : 7 
 elmiko : 1 : 5 
-BenTheElder : 15 : 3 
+BenTheElder : 16 : 3 
 cheftako : 7 : 2 
 joelspeed(JoelSpeed) : 2 : 1 
 seans3 : 1 : 4 

@@ -1,9 +1,36 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/code-generator --repository-devstats=kubernetes/code-generator --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:05:24
+Running script : 03-26-2026 01:28:40
 Processed /private/tmp/affi_stats/kubernetes_code-generator/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_code-generator/cmd/client-gen/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_code-generator/cmd/go-to-protobuf/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_code-generator/OWNERS_ALIASES
 Found 0 unique aliases
 Found 6 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/code-generator --period-devstats=y --dryrun ---
+Running script : 03-26-2026 01:28:41
+Processed /private/tmp/affi_stats/kubernetes_code-generator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_code-generator/cmd/client-gen/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_code-generator/cmd/go-to-protobuf/OWNERS
+Found 0 unique aliases
+Found 6 unique users
+............
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/code-generator github repo : 6
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+jpbetz : 621 : 56 
+caesarxuchao : 1 : 0 
+deads2k : 106 : 0 
+sttts : 67 : 3 
+smarterclayton : 10 : 0 
+wojtek-t : 274 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 0
+
+
+>>>>> Low reviews/approvals in kubernetes/code-generator (GH pr comments <= 10 && devstats <=20): 2
+caesarxuchao
+smarterclayton
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

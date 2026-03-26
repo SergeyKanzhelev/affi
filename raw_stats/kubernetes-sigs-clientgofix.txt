@@ -1,7 +1,26 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/clientgofix --repository-devstats=kubernetes-sigs/clientgofix --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:01:33
+Running script : 03-26-2026 02:33:43
 Processed /private/tmp/affi_stats/kubernetes-sigs_clientgofix/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_clientgofix/OWNERS_ALIASES
 Found 0 unique aliases
 Found 2 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/clientgofix --period-devstats=y --dryrun ---
+Running script : 03-26-2026 02:33:43
+Processed /private/tmp/affi_stats/kubernetes-sigs_clientgofix/OWNERS
+Found 0 unique aliases
+Found 2 unique users
+.
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes-sigs/clientgofix github repo : 1
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+liggitt : 2558 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 1
+mikedanese
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/clientgofix (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/release --repository-devstats=kubernetes/release --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:13:22
+Running script : 03-26-2026 00:19:16
 Processed /private/tmp/affi_stats/kubernetes_release/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_release/cmd/ci-reporter/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_release/cmd/krel/OWNERS
@@ -20,14 +20,14 @@ Found 34 unique users
 
 >>>>> Contributions from kubernetes/release devstats repo and kubernetes/release github repo : 11
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-cpanato : 171 : 210 
-saschagrunert : 84 : 132 
-xmudrii : 89 : 42 
+cpanato : 169 : 209 
+saschagrunert : 92 : 149 
+xmudrii : 89 : 45 
 puerco : 28 : 34 
-BenTheElder : 27 : 11 
-ameukam : 20 : 14 
-aojea : 5 : 11 
-Verolop : 3 : 9 
+BenTheElder : 23 : 11 
+ameukam : 20 : 16 
+Verolop : 3 : 10 
+aojea : 5 : 9 
 danwinship : 5 : 2 
 palnabarun : 7 : 2 
 Vyom-Yadav : 2 : 0 
@@ -59,9 +59,10 @@ spiffxp
 thockin
 
 
->>>>> Low reviews/approvals in kubernetes/release (GH pr comments <= 10 && devstats <=20): 4
+>>>>> Low reviews/approvals in kubernetes/release (GH pr comments <= 10 && devstats <=20): 5
 Verolop
 Vyom-Yadav
+aojea
 danwinship
 palnabarun
 --dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,16 +1,15 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kubernetes-network-drivers --repository-devstats=kubernetes-sigs/kubernetes-network-drivers --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:31:48
+Running script : 03-26-2026 03:16:33
 Processed /private/tmp/affi_stats/kubernetes-sigs_kubernetes-network-drivers/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_kubernetes-network-drivers/OWNERS_ALIASES
 Found 0 unique aliases
 Found 4 unique users
-.......
+.
 
 
 >>>>> Contributions from kubernetes-sigs/kubernetes-network-drivers devstats repo and kubernetes-sigs/kubernetes-network-drivers github repo : 1
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-aojea : 2 : 12 
+aojea : 2 : 10 
 
 
 >>>>> Missing Contributions in kubernetes-sigs/kubernetes-network-drivers (devstats == 0): 3
@@ -19,5 +18,6 @@ danwinship
 thockin
 
 
->>>>> Low reviews/approvals in kubernetes-sigs/kubernetes-network-drivers (GH pr comments <= 10 && devstats <=20): 0
+>>>>> Low reviews/approvals in kubernetes-sigs/kubernetes-network-drivers (GH pr comments <= 10 && devstats <=20): 1
+aojea
 --dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

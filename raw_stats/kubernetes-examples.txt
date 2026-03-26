@@ -1,15 +1,14 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/examples --repository-devstats=kubernetes/examples --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:02:28
+Running script : 03-26-2026 01:25:37
 Processed /private/tmp/affi_stats/kubernetes_examples/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_examples/_archived/cockroachdb/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_examples/_archived/cpu-manager/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_examples/_archived/podsecuritypolicy/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_examples/databases/cassandra/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_examples/OWNERS_ALIASES
 Found 0 unique aliases
 Found 16 unique users
-.........
+..
 
 
 >>>>> Contributions from kubernetes/examples devstats repo and kubernetes/examples github repo : 2

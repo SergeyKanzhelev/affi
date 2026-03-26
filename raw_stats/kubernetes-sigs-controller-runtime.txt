@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/controller-runtime --repository-devstats=kubernetes-sigs/controller-runtime --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:36:29
+Running script : 03-26-2026 02:07:19
 Processed /private/tmp/affi_stats/kubernetes-sigs_controller-runtime/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_controller-runtime/pkg/envtest/komega/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_controller-runtime/OWNERS_ALIASES
@@ -11,9 +11,9 @@ Found 13 unique users
 
 >>>>> Contributions from kubernetes-sigs/controller-runtime devstats repo and kubernetes-sigs/controller-runtime github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-sbueringer : 571 : 166 
-alvaroaleman : 372 : 124 
-troy0820 : 52 : 22 
+sbueringer : 528 : 155 
+alvaroaleman : 350 : 116 
+troy0820 : 42 : 21 
 JoelSpeed : 29 : 11 
 
 

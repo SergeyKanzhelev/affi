@@ -1,23 +1,22 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/release-sdk --repository-devstats=kubernetes-sigs/release-sdk --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:05:43
+Running script : 03-26-2026 02:40:42
 Processed /private/tmp/affi_stats/kubernetes-sigs_release-sdk/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_release-sdk/OWNERS_ALIASES
 Found 3 unique aliases
 Found 13 unique users
-...........
+....
 
 
->>>>> Contributions from kubernetes-sigs/release-sdk devstats repo and kubernetes-sigs/release-sdk github repo : 5
+>>>>> Contributions from kubernetes-sigs/release-sdk devstats repo and kubernetes-sigs/release-sdk github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-cpanato : 27 : 75 
-saschagrunert : 31 : 56 
+cpanato : 26 : 74 
+saschagrunert : 33 : 68 
 xmudrii : 4 : 6 
 justaugustus : 1 : 1 
-puerco : 1 : 4 
 
 
->>>>> Missing Contributions in kubernetes-sigs/release-sdk (devstats == 0): 8
+>>>>> Missing Contributions in kubernetes-sigs/release-sdk (devstats == 0): 9
 Verolop
 ameukam
 cici37
@@ -25,11 +24,11 @@ jeremyrickard
 jimangel
 jrsapi
 palnabarun
+puerco
 salaxander
 
 
->>>>> Low reviews/approvals in kubernetes-sigs/release-sdk (GH pr comments <= 10 && devstats <=20): 3
+>>>>> Low reviews/approvals in kubernetes-sigs/release-sdk (GH pr comments <= 10 && devstats <=20): 2
 justaugustus
-puerco
 xmudrii
 --dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

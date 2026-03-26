@@ -1,20 +1,19 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/network-policy-api --repository-devstats=kubernetes-sigs/network-policy-api --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:06:58
+Running script : 03-26-2026 02:43:04
 Processed /private/tmp/affi_stats/kubernetes-sigs_network-policy-api/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_network-policy-api/cmd/policy-assistant/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_network-policy-api/OWNERS_ALIASES
 Found 0 unique aliases
 Found 6 unique users
-.......
+....
 
 
 >>>>> Contributions from kubernetes-sigs/network-policy-api devstats repo and kubernetes-sigs/network-policy-api github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-aojea : 55 : 26 
-danwinship : 133 : 21 
-npinaeva : 92 : 16 
-tssurya : 110 : 16 
+aojea : 54 : 23 
+danwinship : 130 : 20 
+npinaeva : 92 : 15 
+tssurya : 110 : 15 
 
 
 >>>>> Missing Contributions in kubernetes-sigs/network-policy-api (devstats == 0): 2

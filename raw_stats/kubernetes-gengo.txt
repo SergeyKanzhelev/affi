@@ -1,9 +1,8 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/gengo --repository-devstats=kubernetes/gengo --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:57:02
+Running script : 03-26-2026 01:21:06
 Processed /private/tmp/affi_stats/kubernetes_gengo/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_gengo/examples/defaulter-gen/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_gengo/OWNERS_ALIASES
 Found 0 unique aliases
 Found 6 unique users
 ..
@@ -12,7 +11,7 @@ Found 6 unique users
 >>>>> Contributions from kubernetes/gengo devstats repo and kubernetes/gengo github repo : 2
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
 jpbetz : 94 : 68 
-thockin : 108 : 12 
+thockin : 107 : 12 
 
 
 >>>>> Missing Contributions in kubernetes/gengo (devstats == 0): 4

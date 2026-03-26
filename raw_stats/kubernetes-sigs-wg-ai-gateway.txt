@@ -1,3 +1,0 @@
-
---- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/wg-ai-gateway --repository-devstats=kubernetes-sigs/wg-ai-gateway --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:30:29

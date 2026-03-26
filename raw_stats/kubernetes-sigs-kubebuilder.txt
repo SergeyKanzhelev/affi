@@ -1,18 +1,18 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kubebuilder --repository-devstats=kubernetes-sigs/kubebuilder --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:34:31
+Running script : 03-26-2026 02:05:24
 Processed /private/tmp/affi_stats/kubernetes-sigs_kubebuilder/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_kubebuilder/OWNERS_ALIASES
 Found 4 unique aliases
 Found 15 unique users
-....
+........
 
 
 >>>>> Contributions from kubernetes-sigs/kubebuilder devstats repo and kubernetes-sigs/kubebuilder github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-camilamacedo86 : 2447 : 495 
-vitorfloriano : 252 : 85 
-Kavinjsir : 17 : 2 
+camilamacedo86 : 2406 : 491 
+vitorfloriano : 245 : 84 
+Kavinjsir : 7 : 2 
 rashmigottipati : 1 : 1 
 
 

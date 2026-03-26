@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kube-agentic-networking --repository-devstats=kubernetes-sigs/kube-agentic-networking --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:30:39
+Running script : 03-26-2026 03:15:00
 Processed /private/tmp/affi_stats/kubernetes-sigs_kube-agentic-networking/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_kube-agentic-networking/cmd/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_kube-agentic-networking/pkg/OWNERS
@@ -10,16 +10,16 @@ Processed /private/tmp/affi_stats/kubernetes-sigs_kube-agentic-networking/tests/
 Processed /private/tmp/affi_stats/kubernetes-sigs_kube-agentic-networking/OWNERS_ALIASES
 Found 4 unique aliases
 Found 5 unique users
-..........
+.....
 
 
 >>>>> Contributions from kubernetes-sigs/kube-agentic-networking devstats repo and kubernetes-sigs/kube-agentic-networking github repo : 5
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-LiorLieberman : 124 : 76 
-haiyanmeng : 100 : 73 
-david-martin : 40 : 36 
-evaline-ju : 14 : 20 
-guicassolato : 61 : 19 
+LiorLieberman : 130 : 82 
+haiyanmeng : 106 : 86 
+david-martin : 41 : 37 
+evaline-ju : 14 : 22 
+guicassolato : 62 : 20 
 
 
 >>>>> Missing Contributions in kubernetes-sigs/kube-agentic-networking (devstats == 0): 0

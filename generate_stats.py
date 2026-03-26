@@ -89,7 +89,7 @@ def run_cmd(cmd, cwd=None, outfile=None):
     if result.returncode != 0:
         print(f"Error executing command: {result.stderr}")
         return None
-    return result.stdout
+    return result.stdout if result.stdout is not None else ""
 
 def install_tool():
     log("Installing maintainers tool...")
@@ -107,9 +107,26 @@ def install_tool():
 def clone_repo(tmp_dir, repo_url, repo_name):
     log(f"Cloning {repo_name} (shallow)...")
     repo_path = os.path.join(tmp_dir, repo_name.replace("/", "_"))
-    if os.path.exists(repo_path):
-        run_cmd(["git", "pull", "--depth", "1"], cwd=repo_path)
+    
+    is_git = False
+    if os.path.exists(os.path.join(repo_path, ".git")):
+        # Check if it's a valid git repository
+        result = subprocess.run(["git", "-C", repo_path, "rev-parse", "--is-inside-work-tree"], capture_output=True, text=True)
+        if result.returncode == 0:
+            is_git = True
+    
+    if is_git:
+        log(f"Updating existing clone in {repo_path}...")
+        if run_cmd(["git", "pull", "--depth", "1"], cwd=repo_path) is None:
+            log(f"Warning: git pull failed in {repo_path}, re-cloning...")
+            import shutil
+            shutil.rmtree(repo_path)
+            run_cmd(["git", "clone", "--depth", "1", repo_url, repo_path])
     else:
+        if os.path.exists(repo_path):
+            log(f"Removing non-git directory {repo_path}...")
+            import shutil
+            shutil.rmtree(repo_path)
         run_cmd(["git", "clone", "--depth", "1", repo_url, repo_path])
     return repo_path
 def fetch_affiliations(gitdm_path, tmp_dir, required_users):
@@ -253,55 +270,17 @@ def main():
 
         repo_path = clone_repo(tmp_dir, repo_url, repo_name)
 
-        aliases_file = os.path.join(repo_path, "OWNERS_ALIASES")
-        if not os.path.exists(aliases_file):
-            log(f"Creating dummy {aliases_file} to prevent tool panic...")
-            with open(aliases_file, "w") as f:
-                f.write("aliases: {}\n")
-
-        log(f"Sanitizing OWNERS files for {repo_name}...")
-        allowed_fields = {"approvers", "reviewers", "labels", "options", "filters"}
-        
-        for root, dirs, files in os.walk(repo_path):
-            for name in files:
-                if name == "OWNERS":
-                    p = os.path.join(root, name)
-                    try:
-                        with open(p, 'r') as f:
-                            lines = f.readlines()
-                        
-                        new_lines = []
-                        if repo_name == "kubernetes/test-infra":
-                            current_block = None
-                            for line in lines:
-                                if line.startswith("approvers:"):
-                                    current_block = "approvers"; new_lines.append(line)
-                                elif line.startswith("reviewers:"):
-                                    current_block = "reviewers"; new_lines.append(line)
-                                elif line.strip().startswith("-") and current_block:
-                                    new_lines.append(line)
-                                elif line.strip() == "":
-                                    new_lines.append(line)
-                                elif not line.startswith(" "):
-                                    current_block = None
-                        else:
-                            keep = True
-                            for line in lines:
-                                match = re.match(r'^(\w+):', line)
-                                if match: keep = match.group(1) in allowed_fields
-                                if keep: new_lines.append(line)
-                        
-                        with open(p, 'w') as fw:
-                            fw.writelines(new_lines)
-                    except Exception as e:
-                        print(f"Skipping sanitization for {p}: {e}")
-
         log(f"Running tool and saving to {raw_file}...")
         cmd = [bin_path, "prune", f"--repository-github={repo_name}", f"--repository-devstats={repo_name}", "--period-devstats=y", "--dryrun"]
         stdout = run_cmd(cmd, cwd=repo_path, outfile=raw_file)
         if stdout is None:
-            if os.path.exists(raw_file): os.remove(raw_file)
-            return
+            # Maybe the repo is not in devstats, let's try with default kubernetes/kubernetes devstats
+            log(f"Warning: Tool failed with devstats for {repo_name}, trying with default devstats...")
+            cmd = [bin_path, "prune", f"--repository-github={repo_name}", "--period-devstats=y", "--dryrun"]
+            stdout = run_cmd(cmd, cwd=repo_path, outfile=raw_file)
+            if stdout is None:
+                if os.path.exists(raw_file): os.remove(raw_file)
+                return
 
     if os.path.exists(raw_file):
         user_stats, file_date = parse_raw_output(raw_file)

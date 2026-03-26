@@ -1,7 +1,26 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/cli-runtime --repository-devstats=kubernetes/cli-runtime --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:22:54
+Running script : 03-26-2026 01:48:55
 Processed /private/tmp/affi_stats/kubernetes_cli-runtime/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_cli-runtime/OWNERS_ALIASES
 Found 0 unique aliases
 Found 2 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/cli-runtime --period-devstats=y --dryrun ---
+Running script : 03-26-2026 01:48:55
+Processed /private/tmp/affi_stats/kubernetes_cli-runtime/OWNERS
+Found 0 unique aliases
+Found 2 unique users
+
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/cli-runtime github repo : 0
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 2
+sig-cli-maintainers
+sig-cli-reviewers
+
+
+>>>>> Low reviews/approvals in kubernetes/cli-runtime (GH pr comments <= 10 && devstats <=20): 0
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

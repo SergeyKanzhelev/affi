@@ -1,3 +1,104 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/prow --repository-devstats=kubernetes-sigs/prow --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:10:27
+Running script : 03-26-2026 02:47:42
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/branchprotector/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/checkconfig/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/clonerefs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/config-bootstrapper/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/crier/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/deck/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/entrypoint/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/external-plugins/cherrypicker/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/gangway/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/gcsupload/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/generic-autobumper/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/gerrit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/ghproxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/hmac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/hook/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/horologium/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/initupload/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/jenkins-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/mkpod/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/moonraker/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/peribolos/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/prow-controller-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/sidecar/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/sinker/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/status-reconciler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/sub/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/cmd/tide/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/bugzilla/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/clonerefs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/crier/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/deck/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/entrypoint/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/gangway/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/gcsupload/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/genyaml/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/gerrit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/hook/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/initupload/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/jenkins/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/jira/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/moonraker/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/plank/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/plugins/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/plugins/bugzilla/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/plugins/cherrypickapproved/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/plugins/jira/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/plugins/testfreeze/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/pod-utils/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/pubsub/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/sidecar/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/spyglass/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/statusreconciler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/pkg/tide/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/site/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_prow/test/integration/OWNERS
+Found 0 unique aliases
+Found 24 unique users
+..............
+
+
+>>>>> Contributions from kubernetes-sigs/prow devstats repo and kubernetes-sigs/prow github repo : 12
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+petr-muller : 204 : 88 
+matthyx : 22 : 31 
+saschagrunert : 12 : 31 
+droslean : 11 : 21 
+AlexNPavel : 7 : 5 
+cblecker : 4 : 18 
+smg247 : 30 : 18 
+jmguzik : 7 : 3 
+krzyzacy : 5 : 3 
+stevekuznetsov : 8 : 3 
+michelle192837 : 6 : 2 
+Priyankasaggu11929 : 1 : 0 
+
+
+>>>>> Missing Contributions in kubernetes-sigs/prow (devstats == 0): 12
+MadhavJivrajani
+Verolop
+alvaroaleman
+chases2
+cjwagner
+cpanato
+jeremyrickard
+justaugustus
+nikhita
+palnabarun
+puerco
+xmudrii
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/prow (GH pr comments <= 10 && devstats <=20): 6
+AlexNPavel
+Priyankasaggu11929
+jmguzik
+krzyzacy
+michelle192837
+stevekuznetsov
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

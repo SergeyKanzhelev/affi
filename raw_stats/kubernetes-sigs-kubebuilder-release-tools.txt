@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kubebuilder-release-tools --repository-devstats=kubernetes-sigs/kubebuilder-release-tools --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:01:39
+Running script : 03-26-2026 02:34:02
 Processed /private/tmp/affi_stats/kubernetes-sigs_kubebuilder-release-tools/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_kubebuilder-release-tools/OWNERS_ALIASES
 Found 4 unique aliases

@@ -1,19 +1,18 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cli-utils --repository-devstats=kubernetes-sigs/cli-utils --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:53:10
+Running script : 03-26-2026 02:24:41
 Processed /private/tmp/affi_stats/kubernetes-sigs_cli-utils/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_cli-utils/OWNERS_ALIASES
 Found 0 unique aliases
 Found 7 unique users
-............
+.....
 
 
 >>>>> Contributions from kubernetes-sigs/cli-utils devstats repo and kubernetes-sigs/cli-utils github repo : 5
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-ash2k : 10 : 8 
-karlkfi : 91 : 8 
+ash2k : 10 : 7 
+karlkfi : 36 : 7 
 mortent : 4 : 7 
-sdowell : 32 : 6 
+sdowell : 16 : 5 
 seans3 : 1 : 6 
 
 
@@ -22,8 +21,9 @@ haiyanmeng
 soltysh
 
 
->>>>> Low reviews/approvals in kubernetes-sigs/cli-utils (GH pr comments <= 10 && devstats <=20): 3
+>>>>> Low reviews/approvals in kubernetes-sigs/cli-utils (GH pr comments <= 10 && devstats <=20): 4
 ash2k
 mortent
+sdowell
 seans3
 --dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

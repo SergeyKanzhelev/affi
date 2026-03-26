@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/release-team-shadow-stats --repository-devstats=kubernetes-sigs/release-team-shadow-stats --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:09:39
+Running script : 03-26-2026 02:46:40
 Processed /private/tmp/affi_stats/kubernetes-sigs_release-team-shadow-stats/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_release-team-shadow-stats/OWNERS_ALIASES
 Found 3 unique aliases

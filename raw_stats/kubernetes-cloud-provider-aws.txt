@@ -1,23 +1,23 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/cloud-provider-aws --repository-devstats=kubernetes/cloud-provider-aws --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:07:35
+Running script : 03-26-2026 01:32:25
 Processed /private/tmp/affi_stats/kubernetes_cloud-provider-aws/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_cloud-provider-aws/OWNERS_ALIASES
 Found 1 unique aliases
 Found 11 unique users
-..............
+........
 
 
 >>>>> Contributions from kubernetes/cloud-provider-aws devstats repo and kubernetes/cloud-provider-aws github repo : 8
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-kmala : 187 : 121 
-cartermckinnon : 91 : 30 
+kmala : 183 : 123 
+cartermckinnon : 90 : 30 
 elmiko : 56 : 24 
 joelspeed(JoelSpeed) : 16 : 6 
 dims : 9 : 1 
 mmerkes : 5 : 3 
-olemarkus : 5 : 110 
-yue9944882 : 68 : 29 
+olemarkus : 5 : 132 
+yue9944882 : 68 : 28 
 
 
 >>>>> Missing Contributions in kubernetes/cloud-provider-aws (devstats == 0): 3

@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/repo-infra --repository-devstats=kubernetes/repo-infra --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:59:04
+Running script : 03-26-2026 01:23:26
 Processed /private/tmp/affi_stats/kubernetes_repo-infra/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_repo-infra/OWNERS_ALIASES
 Found 3 unique aliases
@@ -10,7 +10,7 @@ Found 13 unique users
 
 >>>>> Contributions from kubernetes/repo-infra devstats repo and kubernetes/repo-infra github repo : 2
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-saschagrunert : 3 : 23 
+saschagrunert : 3 : 31 
 xmudrii : 1 : 2 
 
 

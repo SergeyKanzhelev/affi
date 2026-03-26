@@ -1,17 +1,17 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cri-tools --repository-devstats=kubernetes-sigs/cri-tools --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:27:36
+Running script : 03-26-2026 01:58:53
 Processed /private/tmp/affi_stats/kubernetes-sigs_cri-tools/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cri-tools/OWNERS_ALIASES
 Found 1 unique aliases
 Found 8 unique users
-........
+...
 
 
 >>>>> Contributions from kubernetes-sigs/cri-tools devstats repo and kubernetes-sigs/cri-tools github repo : 3
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-saschagrunert : 208 : 169 
-feiskyer : 4 : 21 
+saschagrunert : 207 : 176 
+feiskyer : 4 : 20 
 haircommander : 7 : 9 
 
 

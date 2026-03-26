@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/registry.k8s.io --repository-devstats=kubernetes/registry.k8s.io --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:24:56
+Running script : 03-26-2026 01:54:21
 Processed /private/tmp/affi_stats/kubernetes_registry.k8s.io/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_registry.k8s.io/OWNERS_ALIASES
 Found 0 unique aliases
 Found 5 unique users
 ....

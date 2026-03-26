@@ -1,9 +1,40 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/instrumentation-addons --repository-devstats=kubernetes-sigs/instrumentation-addons --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:06:38
+Running script : 03-26-2026 02:42:09
 Processed /private/tmp/affi_stats/kubernetes-sigs_instrumentation-addons/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_instrumentation-addons/fluentd-elasticsearch/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_instrumentation-addons/fluentd-gcp/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_instrumentation-addons/OWNERS_ALIASES
 Found 2 unique aliases
 Found 8 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/instrumentation-addons --period-devstats=y --dryrun ---
+Running script : 03-26-2026 02:42:09
+Processed /private/tmp/affi_stats/kubernetes-sigs_instrumentation-addons/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_instrumentation-addons/fluentd-elasticsearch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_instrumentation-addons/fluentd-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_instrumentation-addons/OWNERS_ALIASES
+Found 2 unique aliases
+Found 8 unique users
+.......
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes-sigs/instrumentation-addons github repo : 4
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+dashpole : 47 : 1 
+dgrisonnet : 104 : 0 
+logicalhan : 9 : 0 
+x13n : 8 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 4
+brancz
+coffeepac
+ehashman
+monotek
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/instrumentation-addons (GH pr comments <= 10 && devstats <=20): 2
+logicalhan
+x13n
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,9 +1,41 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kube-aggregator --repository-devstats=kubernetes/kube-aggregator --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:59:24
+Running script : 03-26-2026 01:24:29
 Processed /private/tmp/affi_stats/kubernetes_kube-aggregator/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kube-aggregator/pkg/apis/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kube-aggregator/pkg/registry/apiservice/etcd/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_kube-aggregator/OWNERS_ALIASES
 Found 0 unique aliases
 Found 11 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kube-aggregator --period-devstats=y --dryrun ---
+Running script : 03-26-2026 01:24:29
+Processed /private/tmp/affi_stats/kubernetes_kube-aggregator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kube-aggregator/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kube-aggregator/pkg/registry/apiservice/etcd/OWNERS
+Found 0 unique aliases
+Found 11 unique users
+.............
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/kube-aggregator github repo : 8
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+jpbetz : 621 : 56 
+jefftree(Jefftree) : 329 : 1 
+caesarxuchao : 1 : 0 
+cheftako : 23 : 0 
+deads2k : 106 : 0 
+liggitt : 2558 : 0 
+sttts : 67 : 3 
+smarterclayton : 10 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 3
+alexzielenski
+api-approvers
+api-reviewers
+
+
+>>>>> Low reviews/approvals in kubernetes/kube-aggregator (GH pr comments <= 10 && devstats <=20): 2
+caesarxuchao
+smarterclayton
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

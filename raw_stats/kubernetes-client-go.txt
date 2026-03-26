@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/client-go --repository-devstats=kubernetes/client-go --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:57:01
+Running script : 03-26-2026 01:18:55
 Processed /private/tmp/affi_stats/kubernetes_client-go/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_client-go/applyconfigurations/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_client-go/kubernetes/typed/authentication/OWNERS
@@ -25,6 +25,90 @@ Processed /private/tmp/affi_stats/kubernetes_client-go/util/certificate/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_client-go/util/csaupgrade/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_client-go/util/keyutil/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_client-go/util/retry/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_client-go/OWNERS_ALIASES
 Found 0 unique aliases
 Found 39 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/client-go --period-devstats=y --dryrun ---
+Running script : 03-26-2026 01:18:56
+Processed /private/tmp/affi_stats/kubernetes_client-go/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/applyconfigurations/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/kubernetes/typed/authentication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/kubernetes/typed/authorization/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/kubernetes/typed/rbac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/listers/rbac/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/openapi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/pkg/apis/clientauthentication/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/plugin/pkg/client/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/rest/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/tools/auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/tools/cache/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/tools/events/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/tools/leaderelection/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/tools/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/tools/portforward/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/tools/record/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/tools/remotecommand/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/transport/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/util/cert/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/util/certificate/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/util/csaupgrade/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/util/keyutil/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_client-go/util/retry/OWNERS
+Found 0 unique aliases
+Found 39 unique users
+.....................................
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/client-go github repo : 23
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+aojea : 1210 : 7 
+jpbetz : 621 : 56 
+soltysh : 604 : 17 
+seans3 : 179 : 4 
+sttts : 67 : 3 
+ingvagabund : 23 : 1 
+michaelasp : 542 : 0 
+jefftree(Jefftree) : 329 : 1 
+enj : 204 : 1 
+jsafrane : 117 : 0 
+justinsb : 13 : 2 
+liggitt : 2558 : 0 
+lojies : 14 : 0 
+luxas : 10 : 1 
+janetkuo : 52 : 0 
+dims : 1344 : 0 
+skitt : 86 : 0 
+smarterclayton : 10 : 0 
+deads2k : 106 : 0 
+caesarxuchao : 1 : 0 
+thockin : 717 : 0 
+wojtek-t : 274 : 0 
+yliaog : 732 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 16
+KnVerey
+alexzielenski
+apelisse
+api-approvers
+cjcullen
+derekwaynecarr
+jayunit100
+mikedanese
+sig-auth-authenticators-approvers
+sig-auth-authenticators-reviewers
+sig-auth-authorizers-approvers
+sig-auth-authorizers-reviewers
+sig-auth-certificates-approvers
+sig-auth-certificates-reviewers
+sig-instrumentation-approvers
+sig-instrumentation-reviewers
+
+
+>>>>> Low reviews/approvals in kubernetes/client-go (GH pr comments <= 10 && devstats <=20): 5
+caesarxuchao
+justinsb
+lojies
+luxas
+smarterclayton
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

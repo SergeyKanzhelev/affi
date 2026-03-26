@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/ingress-controller-conformance --repository-devstats=kubernetes-sigs/ingress-controller-conformance --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:58:04
+Running script : 03-26-2026 02:29:40
 Processed /private/tmp/affi_stats/kubernetes-sigs_ingress-controller-conformance/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_ingress-controller-conformance/OWNERS_ALIASES
 Found 0 unique aliases
 Found 2 unique users
 

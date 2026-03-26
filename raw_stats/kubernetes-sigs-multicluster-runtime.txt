@@ -1,18 +1,18 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/multicluster-runtime --repository-devstats=kubernetes-sigs/multicluster-runtime --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:27:30
+Running script : 03-26-2026 03:10:44
 Processed /private/tmp/affi_stats/kubernetes-sigs_multicluster-runtime/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_multicluster-runtime/OWNERS_ALIASES
 Found 0 unique aliases
 Found 5 unique users
-..........
+....
 
 
 >>>>> Contributions from kubernetes-sigs/multicluster-runtime devstats repo and kubernetes-sigs/multicluster-runtime github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-embik : 106 : 53 
-mjudeikis : 39 : 42 
-sttts : 39 : 23 
+embik : 101 : 51 
+mjudeikis : 37 : 37 
+sttts : 34 : 22 
 skitt : 5 : 5 
 
 

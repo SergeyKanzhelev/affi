@@ -1,9 +1,8 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/apiserver-runtime --repository-devstats=kubernetes-sigs/apiserver-runtime --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:04:21
+Running script : 03-26-2026 02:38:05
 Processed /private/tmp/affi_stats/kubernetes-sigs_apiserver-runtime/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_apiserver-runtime/internal/sample-apiserver/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_apiserver-runtime/OWNERS_ALIASES
 Found 0 unique aliases
 Found 9 unique users
 

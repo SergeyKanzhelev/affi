@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cni-dra-driver --repository-devstats=kubernetes-sigs/cni-dra-driver --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:25:11
+Running script : 03-26-2026 03:07:59
 Processed /private/tmp/affi_stats/kubernetes-sigs_cni-dra-driver/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_cni-dra-driver/OWNERS_ALIASES
 Found 0 unique aliases
 Found 3 unique users
 ..
@@ -10,8 +9,8 @@ Found 3 unique users
 
 >>>>> Contributions from kubernetes-sigs/cni-dra-driver devstats repo and kubernetes-sigs/cni-dra-driver github repo : 2
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-LionelJouin : 14 : 1 
-aojea : 4 : 10 
+LionelJouin : 13 : 1 
+aojea : 4 : 8 
 
 
 >>>>> Missing Contributions in kubernetes-sigs/cni-dra-driver (devstats == 0): 1

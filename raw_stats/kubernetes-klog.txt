@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/klog --repository-devstats=kubernetes/klog --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:23:12
+Running script : 03-26-2026 01:50:01
 Processed /private/tmp/affi_stats/kubernetes_klog/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_klog/OWNERS_ALIASES
 Found 0 unique aliases
 Found 5 unique users
 .
@@ -10,7 +9,7 @@ Found 5 unique users
 
 >>>>> Contributions from kubernetes/klog devstats repo and kubernetes/klog github repo : 1
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-pohly : 17 : 5 
+pohly : 18 : 6 
 
 
 >>>>> Missing Contributions in kubernetes/klog (devstats == 0): 4

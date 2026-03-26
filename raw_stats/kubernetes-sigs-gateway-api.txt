@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/gateway-api --repository-devstats=kubernetes-sigs/gateway-api --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:58:06
+Running script : 03-26-2026 02:29:53
 Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api/conformance/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api/geps/OWNERS
@@ -9,25 +9,25 @@ Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api/site-src/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api/OWNERS_ALIASES
 Found 9 unique aliases
 Found 22 unique users
-.................................
+...........................
 
 
 >>>>> Contributions from kubernetes-sigs/gateway-api devstats repo and kubernetes-sigs/gateway-api github repo : 20
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-rikatz : 694 : 250 
-youngnick : 676 : 210 
-robscott : 632 : 352 
-snorwin : 333 : 103 
-shaneutt : 329 : 102 
+rikatz : 696 : 257 
+youngnick : 654 : 206 
+robscott : 611 : 339 
+snorwin : 338 : 108 
+shaneutt : 322 : 97 
 kflynn : 342 : 89 
-LiorLieberman : 370 : 67 
+LiorLieberman : 371 : 67 
 mikemorris : 132 : 59 
-howardjohn : 247 : 56 
-candita : 364 : 36 
-mlavacca : 87 : 35 
+howardjohn : 246 : 54 
+mlavacca : 87 : 38 
+candita : 353 : 35 
 arkodg : 53 : 20 
-aojea : 33 : 14 
-keithmattix : 29 : 10 
+aojea : 33 : 12 
+keithmattix : 30 : 10 
 gcs278 : 9 : 2 
 danehans : 8 : 3 
 danwinship : 7 : 5 

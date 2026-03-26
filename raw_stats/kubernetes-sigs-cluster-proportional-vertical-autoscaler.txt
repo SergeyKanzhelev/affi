@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-proportional-vertical-autoscaler --repository-devstats=kubernetes-sigs/cluster-proportional-vertical-autoscaler --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:31:24
+Running script : 03-26-2026 02:02:16
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-proportional-vertical-autoscaler/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-proportional-vertical-autoscaler/OWNERS_ALIASES
 Found 0 unique aliases
 Found 3 unique users
 ..
@@ -10,7 +9,7 @@ Found 3 unique users
 
 >>>>> Contributions from kubernetes-sigs/cluster-proportional-vertical-autoscaler devstats repo and kubernetes-sigs/cluster-proportional-vertical-autoscaler github repo : 2
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-bowei : 4 : 5 
+bowei : 3 : 4 
 MrHohn : 1 : 1 
 
 

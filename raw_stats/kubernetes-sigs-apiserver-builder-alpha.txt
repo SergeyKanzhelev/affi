@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/apiserver-builder-alpha --repository-devstats=kubernetes-sigs/apiserver-builder-alpha --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:29:22
+Running script : 03-26-2026 02:00:31
 Processed /private/tmp/affi_stats/kubernetes-sigs_apiserver-builder-alpha/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_apiserver-builder-alpha/OWNERS_ALIASES
 Found 0 unique aliases
 Found 2 unique users
 

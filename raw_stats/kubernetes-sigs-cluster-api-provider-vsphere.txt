@@ -1,18 +1,18 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-provider-vsphere --repository-devstats=kubernetes-sigs/cluster-api-provider-vsphere --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:41:54
+Running script : 03-26-2026 02:12:20
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-vsphere/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-vsphere/OWNERS_ALIASES
 Found 6 unique aliases
 Found 24 unique users
-...............
+..............
 
 
 >>>>> Contributions from kubernetes-sigs/cluster-api-provider-vsphere devstats repo and kubernetes-sigs/cluster-api-provider-vsphere github repo : 9
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-sbueringer : 627 : 329 
-chrischdi : 237 : 109 
-fabriziopandini : 219 : 197 
+sbueringer : 567 : 331 
+chrischdi : 222 : 104 
+fabriziopandini : 217 : 199 
 zhanggbj : 125 : 26 
 neolit123 : 22 : 14 
 gab-satchi : 3 : 1 

@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/k8s.io --repository-devstats=kubernetes/k8s.io --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:39:27
+Running script : 03-26-2026 01:01:43
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/apps/cert-manager/OWNERS
@@ -143,6 +143,7 @@ Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-s
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-gateway-api-inference-extension/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-git-sync/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-gmsa-webhook/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-headlamp/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-infra-tools/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-ingress-controller-conformance/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-ingress-nginx/OWNERS
@@ -187,186 +188,185 @@ Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-s
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/registry.k8s.io/images/k8s-staging-zeitgeist/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_k8s.io/OWNERS_ALIASES
 Found 55 unique aliases
-Found 347 unique users
-......................................................................................................................................................................................................................................................................................................
+Found 348 unique users
+...............................................................................................................................................................................................................................................................................................
 
 
->>>>> Contributions from kubernetes/k8s.io devstats repo and kubernetes/k8s.io github repo : 171
+>>>>> Contributions from kubernetes/k8s.io devstats repo and kubernetes/k8s.io github repo : 170
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-ameukam : 238 : 138 
-upodroid : 207 : 120 
-hakman : 101 : 93 
-tenzen-y : 140 : 64 
-strongjz : 59 : 90 
-BenTheElder : 192 : 46 
+ameukam : 233 : 139 
+upodroid : 199 : 118 
+hakman : 101 : 94 
+tenzen-y : 124 : 63 
+sbueringer : 56 : 57 
+BenTheElder : 187 : 46 
 mboersma : 126 : 74 
-mkumatag : 65 : 54 
-mimowo : 92 : 39 
-Gacko : 89 : 29 
-cpanato : 81 : 148 
-bentheelder(BenTheElder) : 192 : 46 
 xmudrii : 86 : 92 
-kannon92 : 56 : 11 
+mkumatag : 51 : 52 
+mimowo : 83 : 39 
+cpanato : 80 : 149 
+dims : 51 : 51 
+bentheelder(BenTheElder) : 187 : 46 
+Gacko : 77 : 29 
+kannon92 : 49 : 10 
 puerco : 11 : 16 
-Huang-Wei : 6 : 18 
-zhanggbj : 13 : 8 
+zhanggbj : 13 : 9 
 xing-yang : 16 : 18 
-willie-yao : 17 : 15 
-jackfrancis : 21 : 31 
+willie-yao : 15 : 14 
+jsturtevant : 7 : 106 
 Prajyot-Parab : 43 : 23 
 Priyankasaggu11929 : 22 : 20 
-jsturtevant : 7 : 105 
-torredil : 10 : 16 
-Verolop : 11 : 25 
-fabriziopandini : 32 : 44 
-justinsb : 22 : 14 
-a-hilaly : 11 : 15 
-Amulyam24 : 14 : 11 
-sbueringer : 56 : 58 
-ahg-g : 14 : 14 
-ahrtr : 47 : 73 
-saschagrunert : 43 : 103 
+justinsb : 22 : 15 
+jackfrancis : 21 : 31 
+Verolop : 12 : 26 
+Vyom-Yadav : 19 : 4 
+torredil : 10 : 17 
+a-hilaly : 11 : 16 
+strongjz : 46 : 79 
+Amulyam24 : 14 : 10 
+ahg-g : 13 : 14 
+ahrtr : 48 : 74 
 kerthcet : 30 : 8 
-kfswain : 20 : 18 
-aojea : 30 : 35 
-jeremyrickard : 20 : 22 
-dipesh-rawat : 15 : 8 
-richardcase : 11 : 14 
-dims : 53 : 50 
-lentzi90 : 18 : 15 
-pacoxu : 19 : 122 
-cartermckinnon : 19 : 11 
+kfswain : 21 : 19 
+ConnorJC3 : 15 : 15 
+aojea : 30 : 33 
+serathius : 13 : 6 
+fabriziopandini : 31 : 44 
+saschagrunert : 43 : 113 
+marosset : 12 : 5 
+Huang-Wei : 6 : 18 
 medyagh : 19 : 33 
-nojnhuh : 12 : 11 
-nirrozenbaum : 11 : 11 
+cartermckinnon : 19 : 11 
+nawazkh : 15 : 6 
+jeremyrickard : 20 : 22 
+lentzi90 : 18 : 17 
+dipesh-rawat : 15 : 8 
+chrischdi : 40 : 25 
 neolit123 : 27 : 11 
-chrischdi : 42 : 25 
-nawazkh : 26 : 9 
-mrueg : 4 : 21 
-damdo : 12 : 19 
-ConnorJC3 : 14 : 13 
-alexander-demicev : 10 : 8 
-enj : 5 : 9 
-ElijahQuinones : 7 : 8 
-rifelpet : 6 : 13 
-robscott : 4 : 10 
-salasberryfin : 5 : 11 
-nrb : 5 : 7 
-towca : 6 : 9 
-danehans : 4 : 9 
-emilienm(EmilienM) : 4 : 11 
-silvery1622 : 7 : 7 
-AverageMarcus : 5 : 7 
+nirrozenbaum : 11 : 11 
+damdo : 10 : 16 
+pacoxu : 19 : 124 
+richardcase : 9 : 12 
 Rajalakshmi-Girish : 9 : 8 
+alexander-demicev : 10 : 8 
 furkatgofurov7 : 10 : 9 
-stp-ip : 4 : 7 
-haircommander : 3 : 6 
-pohly : 3 : 2 
-Danil-Grigorev : 3 : 5 
-humblec : 4 : 4 
-ingvagabund : 5 : 4 
-ivankatliarchuk : 1 : 9 
+nojnhuh : 10 : 10 
+silvery1622 : 7 : 7 
+rifelpet : 6 : 13 
+ElijahQuinones : 7 : 9 
+towca : 6 : 9 
 gabesaba : 5 : 6 
-jakobmoellerdev : 6 : 1 
-janetkuo : 6 : 2 
-jbpratt : 4 : 1 
-kwiesmueller : 1 : 2 
+comradeprogrammer(ComradeProgrammer) : 6 : 5 
+AverageMarcus : 5 : 7 
+AndrewSirenko : 7 : 6 
+palnabarun : 8 : 5 
+mcbenjemaa : 6 : 4 
+gjtempleton : 5 : 5 
+enj : 5 : 9 
+ajaysundark : 10 : 6 
+katcosgrove : 7 : 6 
+salasberryfin : 5 : 11 
+adrianmoisey : 5 : 6 
+elmiko : 10 : 6 
+ingvagabund : 5 : 4 
+divyenpatel : 5 : 4 
+ritazh : 4 : 3 
+raffo(Raffo) : 3 : 3 
 joaquimrocha : 3 : 1 
 johnbelamaric : 1 : 3 
-jsafrane : 1 : 2 
-fmuyassarov : 2 : 2 
-justaugustus : 4 : 5 
-elmiko : 10 : 6 
-dulek : 1 : 4 
-katcosgrove : 7 : 6 
-kayrus : 1 : 6 
-drew-viles : 3 : 6 
-dom4ha : 4 : 2 
-knabben : 1 : 6 
 JAORMX : 2 : 18 
-divyenpatel : 4 : 3 
-GenPage : 2 : 6 
-yussufsh : 1 : 2 
-liorlieberman(LiorLieberman) : 3 : 3 
-marosset : 12 : 5 
-marquiz : 3 : 6 
-marseel : 1 : 2 
-mattcary : 4 : 1 
-yadvr : 1 : 2 
-DanielXiao : 3 : 3 
-mcbenjemaa : 6 : 4 
-dgrisonnet : 3 : 2 
-michelle192837 : 2 : 4 
-DamianSawicki : 7 : 2 
-david-martin : 2 : 9 
-liggitt : 1 : 2 
+janetkuo : 6 : 2 
+justaugustus : 4 : 5 
+jakobmoellerdev : 6 : 1 
+ivankatliarchuk : 1 : 9 
+humblec : 4 : 4 
+kayrus : 1 : 6 
+Danil-Grigorev : 3 : 5 
+haircommander : 3 : 6 
+knabben : 1 : 6 
+fmuyassarov : 2 : 3 
+emilienm(EmilienM) : 4 : 11 
 x13n : 1 : 7 
 wojtek-t : 2 : 3 
-Edwinhr716 : 3 : 3 
-msau42 : 2 : 5 
+liorlieberman(LiorLieberman) : 3 : 3 
+dulek : 1 : 4 
+marquiz : 3 : 6 
 LiorLieberman : 3 : 3 
-comradeprogrammer(ComradeProgrammer) : 6 : 5 
-chenlin07 : 1 : 2 
+mattcary : 4 : 1 
+varshaprasad96 : 1 : 3 
+DanielXiao : 3 : 4 
+SergeyKanzhelev : 3 : 8 
+drew-viles : 3 : 6 
+michelle192837 : 2 : 4 
+DamianSawicki : 7 : 2 
+YifeiZhuang : 3 : 4 
+thockin : 8 : 3 
+ArangoGutierrez : 1 : 18 
+tao12345666333 : 2 : 28 
+mrueg : 4 : 21 
+msau42 : 2 : 5 
+szuecs : 1 : 6 
+dom4ha : 4 : 2 
+Edwinhr716 : 3 : 3 
+dgrisonnet : 3 : 2 
+david-martin : 2 : 9 
+nrb : 3 : 5 
+danehans : 4 : 10 
+a7i : 4 : 4 
+stp-ip : 4 : 7 
+pravk03 : 14 : 3 
 cheftako : 3 : 3 
 ccojocar : 1 : 5 
-cblecker : 2 : 18 
-varshaprasad96 : 1 : 3 
-palnabarun : 8 : 5 
-gjtempleton : 5 : 5 
-pravk03 : 14 : 2 
-AndrewSirenko : 7 : 6 
-bnallapeta : 2 : 7 
-raffo(Raffo) : 3 : 3 
+jbpratt : 4 : 1 
 randomvariable : 2 : 5 
 rexagod : 4 : 4 
-SergeyKanzhelev : 3 : 7 
-atiratree : 3 : 1 
-ardaguclu : 3 : 4 
-ritazh : 4 : 3 
-aramase : 6 : 3 
-thockin : 7 : 3 
-ArangoGutierrez : 1 : 18 
+stmcginnis : 2 : 59 
+cblecker : 2 : 18 
+soltysh : 2 : 18 
+bnallapeta : 2 : 9 
+robscott : 4 : 8 
+smoshiur1237 : 4 : 7 
+GenPage : 2 : 6 
 Fedosin : 3 : 3 
 sanposhiho : 2 : 4 
-ajaysundark : 10 : 6 
-adrianmoisey : 5 : 6 
-tao12345666333 : 3 : 30 
-serathius : 13 : 6 
-tabbysable : 2 : 5 
-a7i : 4 : 4 
-szuecs : 1 : 6 
-smoshiur1237 : 4 : 6 
-soltysh : 2 : 18 
-stmcginnis : 2 : 59 
-YifeiZhuang : 3 : 4 
-Vyom-Yadav : 19 : 4 
-sunnylovestiramisu : 2 : 2 
-viktoriaas : 1 : 1 
-prezha : 1 : 1 
-tallclair : 1 : 1 
+atiratree : 3 : 1 
+ardaguclu : 3 : 4 
+aramase : 6 : 3 
+kwiesmueller : 1 : 2 
 schrej : 1 : 0 
 rthallisey : 1 : 1 
-rst0git : 1 : 1 
-reylejano : 1 : 1 
-wangzhen127 : 1 : 1 
-vishesh92 : 2 : 0 
-bridgetkromhout : 1 : 0 
-shyamjvs : 1 : 1 
 siyuanfoundation : 2 : 1 
-MrHohn : 1 : 0 
-wenjiaswe : 2 : 1 
+rst0git : 1 : 1 
+bridgetkromhout : 1 : 0 
+reylejano : 1 : 1 
+pohly : 1 : 1 
+mloiseleur : 2 : 1 
+sunnylovestiramisu : 2 : 2 
 natherz97 : 1 : 0 
+tallclair : 1 : 1 
 mrhohn(MrHohn) : 1 : 0 
 mrbobbytables : 1 : 1 
-Karthik-K-N : 1 : 0 
-AndiDog : 1 : 1 
-matthchr : 1 : 0 
-mloiseleur : 2 : 0 
-zetaab : 2 : 1 
+shyamjvs : 1 : 1 
+MrHohn : 1 : 0 
+chenlin07 : 1 : 2 
 koba1t : 2 : 1 
+matthchr : 1 : 0 
+viktoriaas : 1 : 1 
+vishesh92 : 2 : 0 
+wangzhen127 : 1 : 1 
+wenjiaswe : 2 : 1 
+marseel : 1 : 2 
+liggitt : 1 : 2 
+prezha : 1 : 1 
+Karthik-K-N : 1 : 0 
+AndiDog : 1 : 0 
+yadvr : 1 : 2 
+yussufsh : 1 : 2 
+zetaab : 2 : 1 
+jsafrane : 1 : 2 
 
 
->>>>> Missing Contributions in kubernetes/k8s.io (devstats == 0): 176
+>>>>> Missing Contributions in kubernetes/k8s.io (devstats == 0): 178
 196Ikuchil
 AnaMMedina21
 BobyMCbobs
@@ -514,6 +514,7 @@ salaxander
 shaneutt
 shu-mutou
 skitt
+sniok
 spiffxp
 spowelljr
 spzala
@@ -521,6 +522,7 @@ srm09
 stephenfin
 sttts
 sudermanjr
+tabbysable
 tengqm
 terrytangyuan
 test-infra-oncall
@@ -545,7 +547,8 @@ yuxiangqian
 zvonkok
 
 
->>>>> Low reviews/approvals in kubernetes/k8s.io (GH pr comments <= 10 && devstats <=20): 112
+>>>>> Low reviews/approvals in kubernetes/k8s.io (GH pr comments <= 10 && devstats <=20): 114
+Amulyam24
 AndiDog
 AndrewSirenko
 AverageMarcus
@@ -620,6 +623,8 @@ mrbobbytables
 mrhohn
 msau42
 natherz97
+nawazkh
+nojnhuh
 nrb
 palnabarun
 pohly
@@ -643,7 +648,6 @@ smoshiur1237
 stp-ip
 sunnylovestiramisu
 szuecs
-tabbysable
 tallclair
 thockin
 towca

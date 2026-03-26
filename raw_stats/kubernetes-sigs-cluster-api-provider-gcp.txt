@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-provider-gcp --repository-devstats=kubernetes-sigs/cluster-api-provider-gcp --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:40:41
+Running script : 03-26-2026 02:10:55
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-gcp/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-gcp/OWNERS_ALIASES
 Found 5 unique aliases
@@ -10,10 +10,10 @@ Found 11 unique users
 
 >>>>> Contributions from kubernetes-sigs/cluster-api-provider-gcp devstats repo and kubernetes-sigs/cluster-api-provider-gcp github repo : 6
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-cpanato : 60 : 88 
-damdo : 177 : 50 
-salasberryfin : 93 : 61 
-justinsb : 85 : 22 
+cpanato : 48 : 85 
+damdo : 171 : 51 
+salasberryfin : 91 : 62 
+justinsb : 85 : 23 
 chrischdi : 21 : 5 
 fabriziopandini : 1 : 3 
 

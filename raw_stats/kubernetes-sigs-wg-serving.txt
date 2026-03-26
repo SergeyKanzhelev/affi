@@ -1,21 +1,20 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/wg-serving --repository-devstats=kubernetes-sigs/wg-serving --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:21:20
+Running script : 03-26-2026 03:04:23
 Processed /private/tmp/affi_stats/kubernetes-sigs_wg-serving/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_wg-serving/serving-catalog/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_wg-serving/OWNERS_ALIASES
 Found 0 unique aliases
 Found 8 unique users
-............
+......
 
 
 >>>>> Contributions from kubernetes-sigs/wg-serving devstats repo and kubernetes-sigs/wg-serving github repo : 6
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
 ArangoGutierrez : 2 : 11 
-Edwinhr716 : 7 : 2 
+Edwinhr716 : 6 : 3 
 ahg-g : 3 : 8 
 halimsam : 33 : 5 
-jjk-g : 24 : 23 
+jjk-g : 23 : 24 
 terrytangyuan : 3 : 9 
 
 

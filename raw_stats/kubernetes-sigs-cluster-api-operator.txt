@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-operator --repository-devstats=kubernetes-sigs/cluster-api-operator --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:09:27
+Running script : 03-26-2026 02:46:16
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-operator/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-operator/test/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-operator/OWNERS_ALIASES
@@ -11,9 +11,9 @@ Found 9 unique users
 
 >>>>> Contributions from kubernetes-sigs/cluster-api-operator devstats repo and kubernetes-sigs/cluster-api-operator github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-furkatgofurov7 : 181 : 127 
-alexander-demicev : 78 : 67 
-Danil-Grigorev : 39 : 18 
+furkatgofurov7 : 168 : 122 
+alexander-demicev : 76 : 66 
+Danil-Grigorev : 34 : 17 
 Fedosin : 10 : 14 
 
 

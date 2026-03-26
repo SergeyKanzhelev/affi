@@ -1,30 +1,30 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/ingate --repository-devstats=kubernetes-sigs/ingate --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:25:29
+Running script : 03-26-2026 03:08:42
 Processed /private/tmp/affi_stats/kubernetes-sigs_ingate/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_ingate/charts/ingate/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_ingate/docs/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_ingate/OWNERS_ALIASES
 Found 6 unique aliases
 Found 11 unique users
-...........
+....
 
 
->>>>> Contributions from kubernetes-sigs/ingate devstats repo and kubernetes-sigs/ingate github repo : 5
+>>>>> Contributions from kubernetes-sigs/ingate devstats repo and kubernetes-sigs/ingate github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-Gacko : 32 : 29 
-cpanato : 2 : 48 
-strongjz : 111 : 7 
+Gacko : 24 : 29 
+cpanato : 2 : 47 
+strongjz : 104 : 7 
 rikatz : 46 : 5 
-tao12345666333 : 2 : 22 
 
 
->>>>> Missing Contributions in kubernetes-sigs/ingate (devstats == 0): 6
+>>>>> Missing Contributions in kubernetes-sigs/ingate (devstats == 0): 7
 aojea
 danwinship
 longwuyuan
 mikezappa87
 shaneutt
+tao12345666333
 thockin
 
 

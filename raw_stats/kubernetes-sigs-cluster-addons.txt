@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-addons --repository-devstats=kubernetes-sigs/cluster-addons --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:51:13
+Running script : 03-26-2026 02:21:49
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-addons/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-addons/OWNERS_ALIASES
 Found 1 unique aliases

@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kubelet --repository-devstats=kubernetes/kubelet --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:22:52
+Running script : 03-26-2026 01:47:55
 Processed /private/tmp/affi_stats/kubernetes_kubelet/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kubelet/config/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/OWNERS
@@ -8,6 +8,43 @@ Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/credentialprovider
 Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/deviceplugin/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/dra/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/dra-health/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_kubelet/OWNERS_ALIASES
 Found 0 unique aliases
 Found 12 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kubelet --period-devstats=y --dryrun ---
+Running script : 03-26-2026 01:47:55
+Processed /private/tmp/affi_stats/kubernetes_kubelet/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubelet/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/credentialprovider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/deviceplugin/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/dra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubelet/pkg/apis/dra-health/OWNERS
+Found 0 unique aliases
+Found 12 unique users
+......
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/kubelet github repo : 6
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+bart0sh : 1561 : 0 
+klueska : 68 : 0 
+luxas : 10 : 1 
+mtaufen : 10 : 0 
+pohly : 3342 : 0 
+sttts : 67 : 3 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 6
+api-approvers
+api-reviewers
+sig-auth-api-reviewers
+sig-node-api-reviewers
+sig-node-approvers
+sig-node-reviewers
+
+
+>>>>> Low reviews/approvals in kubernetes/kubelet (GH pr comments <= 10 && devstats <=20): 2
+luxas
+mtaufen
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

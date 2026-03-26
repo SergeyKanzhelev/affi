@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/community --repository-devstats=kubernetes/community --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:24:49
+Running script : 03-26-2026 00:47:24
 Processed /private/tmp/affi_stats/kubernetes_community/.github/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_community/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_community/archive/sig-cluster-ops/OWNERS
@@ -115,42 +115,42 @@ Processed /private/tmp/affi_stats/kubernetes_community/wg-node-lifecycle/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_community/OWNERS_ALIASES
 Found 45 unique aliases
 Found 193 unique users
-............................................................................................................................................................................................................
+......................................................................................................................................................................................................
 
 
->>>>> Contributions from kubernetes/community devstats repo and kubernetes/community github repo : 115
+>>>>> Contributions from kubernetes/community devstats repo and kubernetes/community github repo : 114
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-pacoxu : 80 : 177 
-BenTheElder : 182 : 51 
-soltysh : 154 : 93 
-Priyankasaggu11929 : 78 : 48 
-aojea : 66 : 47 
-cblecker : 56 : 89 
+pacoxu : 80 : 180 
+BenTheElder : 179 : 51 
+soltysh : 155 : 93 
+Priyankasaggu11929 : 79 : 48 
+aojea : 66 : 45 
+cblecker : 57 : 90 
+SergeyKanzhelev : 53 : 19 
 jberkus : 47 : 18 
-SergeyKanzhelev : 53 : 18 
 palnabarun : 37 : 24 
 pohly : 57 : 19 
 dims : 29 : 20 
 haircommander : 27 : 14 
-ahrtr : 15 : 61 
+ivanvc : 8 : 60 
 sanposhiho : 31 : 11 
-janetkuo : 26 : 11 
-ivanvc : 8 : 62 
-liggitt : 39 : 14 
+justaugustus : 8 : 11 
+saschagrunert : 17 : 46 
+liggitt : 39 : 13 
 sreeram-venkitesh : 17 : 11 
-saschagrunert : 17 : 39 
+ahrtr : 15 : 61 
 adrianreber : 23 : 16 
 mfahlandt : 44 : 13 
 shaneutt : 28 : 12 
-stmcginnis : 14 : 68 
-mrbobbytables : 11 : 12 
-justaugustus : 8 : 12 
+stmcginnis : 13 : 68 
+mrbobbytables : 11 : 14 
+janetkuo : 26 : 11 
 fabriziopandini : 7 : 10 
 ritazh : 7 : 13 
 ameukam : 19 : 10 
 ardaguclu : 9 : 10 
 keithmattix : 6 : 9 
-kannon92 : 33 : 8 
+kannon92 : 29 : 8 
 dom4ha : 19 : 8 
 neolit123 : 8 : 9 
 johnbelamaric : 5 : 8 
@@ -167,77 +167,76 @@ nirrozenbaum : 6 : 6
 natalisucks : 6 : 6 
 jackfrancis : 6 : 6 
 rexagod : 3 : 5 
-marosset : 4 : 3 
+cpanato : 1 : 46 
 jeefy : 2 : 5 
-xmudrii : 8 : 5 
+jeremyrickard : 1 : 0 
 jmhbnz : 5 : 4 
-viktoriaas : 6 : 4 
+joaquimrocha : 1 : 1 
 joelspeed(JoelSpeed) : 27 : 5 
 intUnderflow : 9 : 3 
 jpbetz : 2 : 61 
-upodroid : 3 : 3 
+jsafrane : 3 : 2 
 hakman : 5 : 3 
 gjtempleton : 4 : 3 
 kaslin : 15 : 4 
-thockin : 8 : 4 
+floreks : 1 : 1 
 fedebongio : 19 : 3 
-tenzen-y : 9 : 2 
-enj : 6 : 5 
+kflynn : 2 : 1 
+enj : 5 : 5 
 macsko : 3 : 6 
-jbpratt : 2 : 3 
-tabbysable : 8 : 4 
+marosset : 4 : 4 
+mengqiy : 1 : 1 
 endocrimes : 3 : 5 
-sttts : 1 : 3 
+micahhausler : 1 : 2 
 michelle192837 : 13 : 4 
 mikezappa87(MikeZappa87) : 3 : 4 
-MadhavJivrajani : 5 : 4 
+mpuckett159 : 2 : 1 
 divya-mohan0209 : 7 : 3 
-skitt : 13 : 5 
-Vyom-Yadav : 10 : 2 
-adrianmoisey : 11 : 3 
-serathius : 6 : 5 
-aramase : 11 : 5 
-aravindhp : 5 : 2 
-dchen1107 : 1 : 3 
+dipesh-rawat : 3 : 1 
+munnerz : 1 : 2 
+dgrisonnet : 2 : 2 
+natherz97 : 3 : 1 
+deads2k : 1 : 2 
+dchen1107 : 1 : 2 
 npolshakova : 5 : 5 
-cpanato : 1 : 47 
-rushmash91 : 1 : 4 
+jbpratt : 2 : 3 
+claudiubelu : 1 : 1 
 castrojo : 1 : 73 
 puerco : 6 : 1 
 bridgetkromhout : 8 : 3 
 reylejano : 7 : 3 
-rthallisey : 12 : 2 
-atiratree : 136 : 5 
-rst0git : 18 : 5 
 bowei : 3 : 2 
-xing-yang : 2 : 2 
-jsafrane : 3 : 2 
-kflynn : 2 : 1 
-tengqm : 2 : 1 
-natherz97 : 3 : 1 
-dgrisonnet : 2 : 2 
-DylanGraham : 2 : 2 
-siyuanfoundation : 2 : 2 
-dipesh-rawat : 3 : 1 
-mpuckett159 : 2 : 1 
-IanColdwater : 1 : 0 
-floreks : 1 : 1 
-munnerz : 1 : 2 
-micahhausler : 1 : 2 
-mengqiy : 1 : 1 
-deads2k : 1 : 2 
-nikhita : 1 : 2 
-spzala : 1 : 1 
-towca : 1 : 1 
+atiratree : 133 : 5 
+rst0git : 18 : 5 
+rthallisey : 11 : 2 
+rushmash91 : 1 : 4 
 salaxander : 1 : 1 
-joaquimrocha : 1 : 1 
-claudiubelu : 1 : 1 
-jeremyrickard : 1 : 0 
+aravindhp : 5 : 3 
+aramase : 11 : 5 
+serathius : 6 : 5 
+adrianmoisey : 11 : 3 
+Vyom-Yadav : 10 : 2 
+siyuanfoundation : 2 : 2 
+skitt : 13 : 4 
+MadhavJivrajani : 5 : 4 
+spzala : 1 : 1 
+IanColdwater : 1 : 0 
+DylanGraham : 2 : 2 
+sttts : 1 : 4 
+tabbysable : 6 : 4 
+tengqm : 2 : 1 
+tenzen-y : 9 : 2 
+thockin : 8 : 3 
+towca : 1 : 1 
+upodroid : 3 : 3 
+viktoriaas : 6 : 4 
+xing-yang : 2 : 2 
+xmudrii : 8 : 5 
 zvonkok : 1 : 2 
-zylxjtu : 1 : 0 
+zylxjtu : 1 : 1 
 
 
->>>>> Missing Contributions in kubernetes/community (devstats == 0): 78
+>>>>> Missing Contributions in kubernetes/community (devstats == 0): 79
 AnaMMedina21
 EnergyLiYN
 GenPage
@@ -283,6 +282,7 @@ marseel
 msau42
 mwielgus
 nckturner
+nikhita
 parispittman
 petr-muller
 rjsadow
@@ -318,7 +318,7 @@ yuxiangqian
 zetaab
 
 
->>>>> Low reviews/approvals in kubernetes/community (GH pr comments <= 10 && devstats <=20): 82
+>>>>> Low reviews/approvals in kubernetes/community (GH pr comments <= 10 && devstats <=20): 81
 DylanGraham
 IanColdwater
 MadhavJivrajani
@@ -373,7 +373,6 @@ munnerz
 natalisucks
 natherz97
 neolit123
-nikhita
 nirrozenbaum
 npolshakova
 puerco

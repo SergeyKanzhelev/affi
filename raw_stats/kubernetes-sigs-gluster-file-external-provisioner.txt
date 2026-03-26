@@ -1,3 +1,0 @@
-
---- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/gluster-file-external-provisioner --repository-devstats=kubernetes-sigs/gluster-file-external-provisioner --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:02:34

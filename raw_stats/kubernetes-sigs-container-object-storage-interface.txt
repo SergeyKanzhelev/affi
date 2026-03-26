@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/container-object-storage-interface --repository-devstats=kubernetes-sigs/container-object-storage-interface --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:25:20
+Running script : 03-26-2026 03:08:20
 Processed /private/tmp/affi_stats/kubernetes-sigs_container-object-storage-interface/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_container-object-storage-interface/OWNERS_ALIASES
 Found 0 unique aliases
 Found 6 unique users
 ...
@@ -10,8 +9,8 @@ Found 6 unique users
 
 >>>>> Contributions from kubernetes-sigs/container-object-storage-interface devstats repo and kubernetes-sigs/container-object-storage-interface github repo : 3
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-BlaineEXE : 298 : 102 
-shanduur : 59 : 40 
+BlaineEXE : 297 : 102 
+shanduur : 59 : 39 
 xing-yang : 15 : 12 
 
 

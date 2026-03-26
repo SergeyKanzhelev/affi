@@ -1,17 +1,16 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/dra-example-driver --repository-devstats=kubernetes-sigs/dra-example-driver --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:14:00
+Running script : 03-26-2026 02:53:24
 Processed /private/tmp/affi_stats/kubernetes-sigs_dra-example-driver/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_dra-example-driver/OWNERS_ALIASES
 Found 0 unique aliases
 Found 6 unique users
-...........
+.....
 
 
 >>>>> Contributions from kubernetes-sigs/dra-example-driver devstats repo and kubernetes-sigs/dra-example-driver github repo : 5
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-nojnhuh : 165 : 21 
-pohly : 59 : 11 
+nojnhuh : 163 : 21 
+pohly : 58 : 10 
 bart0sh : 23 : 4 
 klueska : 11 : 2 
 byako : 2 : 0 

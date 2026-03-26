@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/node-ipam-controller --repository-devstats=kubernetes-sigs/node-ipam-controller --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:18:49
+Running script : 03-26-2026 03:00:58
 Processed /private/tmp/affi_stats/kubernetes-sigs_node-ipam-controller/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_node-ipam-controller/OWNERS_ALIASES
 Found 1 unique aliases
@@ -11,7 +11,7 @@ Found 8 unique users
 >>>>> Contributions from kubernetes-sigs/node-ipam-controller devstats repo and kubernetes-sigs/node-ipam-controller github repo : 3
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
 mneverov : 39 : 23 
-aojea : 13 : 17 
+aojea : 13 : 15 
 ameukam : 2 : 3 
 
 

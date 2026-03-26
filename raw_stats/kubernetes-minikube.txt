@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/minikube --repository-devstats=kubernetes/minikube --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:14:33
+Running script : 03-26-2026 00:20:34
 Processed /private/tmp/affi_stats/kubernetes_minikube/OWNERS
 Found 0 unique aliases
 Found 4 unique users
@@ -9,9 +9,9 @@ Found 4 unique users
 
 >>>>> Contributions from kubernetes/minikube devstats repo and kubernetes/minikube github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-medyagh : 2757 : 594 
-nirs : 1021 : 151 
-comradeprogrammer(ComradeProgrammer) : 127 : 48 
+medyagh : 2733 : 591 
+nirs : 1003 : 153 
+comradeprogrammer(ComradeProgrammer) : 126 : 48 
 prezha : 75 : 21 
 
 

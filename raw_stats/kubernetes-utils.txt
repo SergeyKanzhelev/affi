@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/utils --repository-devstats=kubernetes/utils --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:03:13
+Running script : 03-26-2026 01:26:20
 Processed /private/tmp/affi_stats/kubernetes_utils/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_utils/cpuset/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_utils/mount/OWNERS
@@ -8,7 +8,6 @@ Processed /private/tmp/affi_stats/kubernetes_utils/nsenter/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_utils/pointer/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_utils/ptr/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_utils/set/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_utils/OWNERS_ALIASES
 Found 0 unique aliases
 Found 20 unique users
 ....
@@ -16,10 +15,10 @@ Found 20 unique users
 
 >>>>> Contributions from kubernetes/utils devstats repo and kubernetes/utils github repo : 4
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-aojea : 43 : 14 
+aojea : 43 : 12 
 danwinship : 32 : 2 
 dims : 12 : 12 
-thockin : 17 : 1 
+thockin : 14 : 1 
 
 
 >>>>> Missing Contributions in kubernetes/utils (devstats == 0): 16

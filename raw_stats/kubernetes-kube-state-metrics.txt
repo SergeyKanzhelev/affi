@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kube-state-metrics --repository-devstats=kubernetes/kube-state-metrics --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:37:06
+Running script : 03-26-2026 00:59:25
 Processed /private/tmp/affi_stats/kubernetes_kube-state-metrics/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_kube-state-metrics/OWNERS_ALIASES
 Found 0 unique aliases
 Found 7 unique users
 ......
@@ -10,11 +9,11 @@ Found 7 unique users
 
 >>>>> Contributions from kubernetes/kube-state-metrics devstats repo and kubernetes/kube-state-metrics github repo : 6
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-mrueg : 201 : 115 
-rexagod : 130 : 29 
-CatherineF-dev : 77 : 28 
+mrueg : 200 : 113 
+rexagod : 123 : 28 
+CatherineF-dev : 75 : 27 
+bhope : 29 : 3 
 dgrisonnet : 29 : 14 
-bhope : 28 : 3 
 nmn3m : 27 : 6 
 
 

@@ -1,25 +1,802 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/test-infra --repository-devstats=kubernetes/test-infra --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:30:17
+Running script : 03-26-2026 00:20:52
 Processed /private/tmp/affi_stats/kubernetes_test-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/GoogleCloudPlatform/k8s-multicluster-ingress/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/containerd/containerd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/image-pushing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/image-pushing/releng/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/cloud-provider-alibaba-cloud/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/cloud-provider-aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/cloud-provider-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/cloud-provider-ibmcloud/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/cloud-provider-openstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/cloud-provider-vsphere/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/community/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/enhancements/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/gengo/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/kops/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/kubeadm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/minikube/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/node-problem-detector/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/org/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/publishing-bot/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/repo-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-api-machinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-arch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-autoscaling/azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-cli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-cloud-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-cloud-provider/aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-cloud-provider/azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-cloud-provider/gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-cloud-provider/gcp/gpu/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-cluster-lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-instrumentation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-k8s-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-k8s-infra/releng/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-k8s-infra/trusted/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-k8s-infra/trusted/image-builder/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-k8s-infra/trusted/releng/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-network/ingress-nginx/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-scalability/DRA/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-scalability/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-security/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/sig-storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes/system-validators/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-client/haskell/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-csi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-csi/csi-driver-iscsi/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-csi/csi-driver-nfs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-csi/csi-driver-smb/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/agent-sandbox/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/ai-conformance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/alibaba-cloud-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/apiserver-network-proxy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/aws-ebs-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/aws-efs-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/aws-encryption-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/aws-fsx-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/aws-fsx-openzfs-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/aws-iam-authenticator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/aws-load-balancer-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/azuredisk-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/azurefile-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/blob-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/bom/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/boskos/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cli-utils/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cloud-provider-azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cloud-provider-kind/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-addons/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-addon-provider-helm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-provider-aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-provider-azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-provider-cloudstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-provider-digitalocean/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-provider-gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-provider-ibmcloud/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-provider-openstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-api-provider-vsphere/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/cluster-capacity/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/container-object-storage-interface/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/controller-runtime/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/controller-tools/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/custom-metrics-apiserver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/descheduler/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/downloadkubernetes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/dranet/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/e2e-framework/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/external-dns/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/externalip-webhook/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/gateway-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/gateway-api-inference-extension/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/gcp-compute-persistent-disk-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/gcp-filestore-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/gwctl/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/hydrophone/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/ibm-powervs-block-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/ibm-vpc-block-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/image-builder/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/ingate/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/ingress-controller-conformance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/ingress2gateway/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/jobset/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/karpenter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kernel-module-management/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kind/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kindnet/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kjob/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/krm-functions-registry/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kro/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kube-agentic-networking/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kube-network-policies/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kube-scheduler-simulator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kube-storage-version-migrator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kubebuilder/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kubespray/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kubetest2/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kueue/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kustomize/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/kwok/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/lws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/mcp-lifecycle-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/mcs-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/mdtoc/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/metrics-server/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/network-policy-api/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/node-feature-discovery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/node-feature-discovery-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/node-ipam-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/node-readiness-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/prometheus-adapter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/promo-tools/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/release-notes/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/release-sdk/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/release-utils/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/scheduler-plugins/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/secrets-store-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/secrets-store-sync-controller/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/security-profiles-operator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/sig-storage-lib-external-provisioner/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/sig-storage-local-static-provisioner/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/sig-windows/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/slack-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/structured-merge-diff/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/tejolote/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/usage-metrics-collector/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/vsphere-csi-driver/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/jobs/kubernetes-sigs/zeitgeist/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/prow/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/prow/cluster/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/amazon/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/conformance/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/google/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/ibm/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/clients/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/cluster-api-core/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/cluster-api-provider-vsphere/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/containerd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/kops/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/minikube/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/presubmits/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-api-machinery/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-apps/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-arch/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-auth/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-autoscaling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-cli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-cloud-provider/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-cloud-provider/aws/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-cloud-provider/azure/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-cloud-provider/gcp/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-cloud-provider/kro/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-cloud-provider/openstack/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-cluster-lifecycle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-contribex/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-etcd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-instrumentation/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-k8s-infra/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-multicluster/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-network/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-release/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-scalability/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-scheduling/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-security/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-storage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-testing/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-ui/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/kubernetes/sig-windows/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/testgrids/openshift/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/tests/jobs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/config/tests/jobs/policy/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/docs/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/experiment/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/experiment/compatibility-versions/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/experiment/coverage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/experiment/keptain/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/experiment/ksandbox/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/experiment/kubelet-serving-certificates/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/experiment/logviewer/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/gcsweb/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/gopherage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/gubernator/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/images/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/images/bootstrap/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/images/krte/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/images/kubekins-e2e/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/images/kubekins-e2e-v2/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/jenkins/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/jobs/e2e_node/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/jobs/e2e_node/containerd/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/jobs/e2e_node/crio/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/kettle/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/kubetest/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/label_sync/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/logexporter/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/metrics/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/pkg/benchmarkjunit/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/releng/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/robots/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/robots/coverage/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/scenarios/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/testgrid/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_test-infra/triage/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_test-infra/OWNERS_ALIASES
-Found 0 unique aliases
-Found 5 unique users
-......................
+Found 55 unique aliases
+Found 434 unique users
+...................................................................................................................................................................................................................................................................................................................
 
 
->>>>> Contributions from kubernetes/test-infra devstats repo and kubernetes/test-infra github repo : 5
+>>>>> Contributions from kubernetes/test-infra devstats repo and kubernetes/test-infra github repo : 184
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-BenTheElder : 657 : 208 
-dims : 291 : 289 
-upodroid : 175 : 199 
-aojea : 119 : 97 
+dims : 287 : 285 
+BenTheElder : 590 : 203 
+bentheelder(BenTheElder) : 590 : 203 
+upodroid : 177 : 199 
+ameukam : 138 : 169 
+pacoxu : 15 : 122 
+jsturtevant : 3 : 107 
+andyzhangx : 19 : 21 
+xmudrii : 49 : 49 
+xing-yang : 27 : 13 
+hakman : 98 : 104 
+Gacko : 25 : 17 
+willie-yao : 29 : 29 
+HirazawaUi : 28 : 16 
+ivanvc : 76 : 88 
+tenzen-y : 26 : 27 
+jackfrancis : 104 : 84 
+sunnylovestiramisu : 25 : 7 
+feiskyer : 6 : 30 
+fabriziopandini : 21 : 24 
+Priyankasaggu11929 : 31 : 33 
+Rajalakshmi-Girish : 61 : 35 
+SergeyKanzhelev : 89 : 61 
+siyuanfoundation : 27 : 18 
+sivchari : 8 : 52 
+serathius : 22 : 20 
+sbueringer : 64 : 40 
+aaron-prindle : 43 : 19 
+adrianmoisey : 20 : 16 
+saschagrunert : 50 : 91 
+ahrtr : 19 : 67 
+droslean : 73 : 102 
+alaypatel07 : 77 : 24 
+kannon92 : 109 : 91 
+rifelpet : 33 : 32 
+kishen-v : 17 : 21 
+raywainman : 22 : 9 
+pohly : 199 : 105 
+haircommander : 19 : 20 
+marosset : 31 : 30 
+aojea : 88 : 90 
+mbobrovskyi : 40 : 20 
+aramase : 20 : 8 
+nojnhuh : 61 : 42 
+nilo19 : 19 : 14 
+neolit123 : 34 : 22 
+bart0sh : 28 : 43 
+mkumatag : 33 : 54 
+mimowo : 48 : 46 
+carlory : 28 : 8 
+cblecker : 24 : 45 
+mboersma : 27 : 41 
+michaelasp : 67 : 22 
+medyagh : 37 : 42 
+cpanato : 30 : 58 
+jmhbnz : 18 : 11 
+damdo : 16 : 18 
+justinsb : 8 : 14 
+chrischdi : 17 : 13 
+tabbysable : 15 : 8 
+omerap12 : 13 : 17 
+strongjz : 7 : 14 
+Prajyot-Parab : 13 : 13 
+janetkuo : 15 : 13 
+nrb : 5 : 7 
+robscott : 2 : 8 
+alexander-demicev : 4 : 7 
+richardcase : 5 : 7 
+liggitt : 4 : 7 
 michelle192837 : 10 : 7 
+mborsz : 2 : 14 
+Huang-Wei : 2 : 17 
+harche : 5 : 15 
+wojtek-t : 4 : 11 
+ccojocar : 1 : 6 
+divya-mohan0209 : 1 : 2 
+gnufied : 7 : 3 
+gauravkghildiyal : 4 : 4 
+harshanarayana : 2 : 1 
+huww98 : 3 : 1 
+ingvagabund : 5 : 6 
+ivankatliarchuk : 1 : 9 
+g-gaston : 3 : 1 
+fmuyassarov : 2 : 2 
+enj : 6 : 5 
+jbpratt : 8 : 5 
+jeremyrickard : 1 : 2 
+jhrozek : 1 : 1 
+elmiko : 1 : 2 
+joaquimrocha : 12 : 0 
+jpbetz : 1 : 57 
+jprzychodzen : 2 : 1 
+jsafrane : 4 : 3 
+AndrewSirenko : 8 : 4 
+furkatgofurov7 : 10 : 3 
+drew-viles : 1 : 2 
+Verolop : 2 : 2 
+kerthcet : 2 : 3 
+kfswain : 4 : 3 
+dlipovetsky : 1 : 1 
+klueska : 2 : 4 
+lentzi90 : 3 : 3 
+gottwald : 1 : 0 
+macsko : 4 : 2 
+mainred : 2 : 1 
+AverageMarcus : 1 : 6 
+marquiz : 3 : 3 
+marseel : 1 : 3 
+dgrisonnet : 3 : 3 
+deads2k : 1 : 0 
+danwinship : 3 : 4 
+mdbooth : 2 : 0 
+cheftako : 4 : 2 
+mengqiy : 4 : 4 
+chases2 : 1 : 4 
+Danil-Grigorev : 4 : 2 
+mikebrow : 3 : 6 
+camilamacedo86 : 13 : 3 
+BlaineEXE : 5 : 4 
+mloiseleur : 2 : 1 
+mmamczur : 2 : 0 
+mowangdk : 2 : 3 
+mrhohn(MrHohn) : 1 : 1 
+msau42 : 6 : 4 
+nawazkh : 18 : 5 
+barney-s : 1 : 2 
+atiratree : 4 : 1 
+nirrozenbaum : 7 : 2 
+ardaguclu : 2 : 3 
+arahamad : 2 : 3 
+ant31 : 3 : 1 
+ArangoGutierrez : 1 : 13 
+palnabarun : 1 : 3 
+pbundyra(PBundyra) : 1 : 1 
+andreyvelich : 2 : 5 
+prezha : 1 : 2 
+puerco : 1 : 2 
+ConnorJC3 : 5 : 2 
+ambiknai : 2 : 2 
+alvaroaleman : 2 : 6 
+rikatz : 1 : 1 
+rjsadow : 1 : 4 
+ajaysundark : 3 : 2 
+salasberryfin : 1 : 12 
+samuelkarp : 2 : 2 
+sanposhiho : 1 : 4 
+ahg-g : 4 : 4 
+a7i : 11 : 3 
+a-hilaly : 15 : 5 
+shanduur : 2 : 3 
+shyamjvs : 2 : 2 
+YifeiZhuang : 2 : 4 
+kayrus : 1 : 5 
+sjenning : 2 : 1 
+skitt : 1 : 1 
+soltysh : 1 : 20 
+stephenfin : 1 : 1 
+stevekuznetsov : 2 : 2 
+LogicalShark : 1 : 1 
+LiorLieberman : 4 : 6 
+Jont828 : 7 : 3 
+tallclair : 6 : 4 
+tao12345666333 : 1 : 19 
+JoelSpeed : 1 : 1 
+tico88612 : 4 : 1 
+torredil : 8 : 6 
+tosi3k : 1 : 1 
+towca : 2 : 6 
+AnishShah : 3 : 2 
+utam0k : 1 : 1 
+vannten(VannTen) : 4 : 1 
+vishesh92 : 2 : 0 
+vitorfloriano : 7 : 3 
+wangzhen127 : 3 : 3 
+weizhouapache : 1 : 1 
+GiuseppeTT : 6 : 6 
+EmilienM : 2 : 2 
+ElijahQuinones : 7 : 5 
+Edwinhr716 : 5 : 5 
+yankay : 1 : 2 
+yevgeny-shnaidman : 1 : 1 
+yujuhong : 1 : 0 
+yussufsh : 5 : 3 
+zhanggbj : 4 : 4 
 
 
->>>>> Missing Contributions in kubernetes/test-infra (devstats == 0): 0
+>>>>> Missing Contributions in kubernetes/test-infra (devstats == 0): 250
+AnaMMedina21
+AndiDog
+AxeZhan
+BaluDontu
+ConnorDoyle
+DanielXiao
+Dyanngg
+Fedosin
+G-Harmon
+GenPage
+HanFa
+IanColdwater
+JAORMX
+Jeffwan
+JeremyOT
+JimBugwadia
+Katharine
+KnVerey
+M00nF1sh
+MadhavJivrajani
+MushuEE
+Random-Liu
+SandeepPissay
+SaranBalaji90
+SataQiu
+XudongLiuHarold
+abgworrall
+abhiraut
+adelina-t
+adrianchiris
+adtac
+afbjorklund
+akutz
+andrewsykim
+andyxning
+aoxn
+aravindhp
+astoycos
+atoato88
+baludontu
+bertinatto
+bobbypage
+bobymcbobs
+bowei
+brancz
+brendandburns
+brianpursley
+bridgetkromhout
+bwagner5
+cadmuxe
+caesarxuchao
+cailyn-codes
+calebamiles
+cantbewong
+castrojo
+chadswen
+chenlin07
+cheyang
+chrigl
+chrisdoherty4
+chrislovecnm
+cici37
+cjcullen
+cji
+cjwagner
+claudiubelu
+cofyc
+craiglpeters
+cyclinder
+damemi
+danilo-gemoli
+dashpole
+david-martin
+davidjumani
+davidz627
+dchen1107
+deepakkinni
+denkensk
+derekwaynecarr
+divyenpatel
+dom4ha
+dougm
+dulek
+eddiezane
+ehashman
+ellistarn
+endocrimes
+engedaam
+erikjiang
+faiq
+fedebongio
+figo
+fillzpp
+fiunchinho
+floreks
+frapposelli
+gab-satchi
+gabesaba
+gandhipr
+gjtempleton
+grodrigues3
+gujingit
+gyliu513
+gyuho
+hdp617
+hh
+hlipsig
+hongkailiu
+humblec
+idvoretskyi
+imkin
+intUnderflow
+inteon
+ipochi
+ixdy
+jakobmoellerdev
+jaypipes
+jberkus
+jdumars
+jeefy
+jeremyot
+jiayingz
+jichenjc
+jingxu97
+jkh52
+jmdeal
+jmguzik
+joelanford
+joelsmith
+johnbelamaric
+johngmyers
+johnsonj
+jonathan-innis
+justaugustus
+kad
+karataliu
+karlkfi
+kaslin
+katcosgrove
+khenidak
+kishorj
+kkeshavamurthy
+knabben
+knelasevero
+knverey
+koba1t
+kow3ns
+kwiesmueller
+kwilczynski
+lauralorenz
+lavalamp
+leakingtapan
+lingxiankong
+liujingfang1
+lubronzhan
+maciekpytel
+marpaia
+mattcary
+mattfarina
+matthchr
+mauriciopoppe
+mengjiao-liu
+mfahlandt
+micahhausler
+mikedanese
+mikezappa87
+mindprince
+mlavacca
+mm4tt
+mmiranda96
+mneverov
+monopole
+mortent
+mpuckett159
+mrbobbytables
+mrunalp
+munnerz
+mwielgus
+mzaian
+natalisucks
+nckturner
+nikhita
+nilekhc
+njtran
+olemarkus
+onyiny-ang
+oomichi
+parispittman
+pjbgf
+pmorie
+poonam-lamba
+prksu
+prydonius
+pwittrock
+qbarrand
+raffo
+rajansandeep
+ramineni
+randomvariable
+rexagod
+reylejano
+richabanker
+ritazh
+rramkumar1
+rthallisey
+s-urbaniak
+saad-ali
+saikat-royc
+sairameshv
+salaxander
+sarveshr7
+seans3
+shaneutt
+shu-mutou
+silvery1622
+smg247
+spiffxp
+spowelljr
+spzala
+srm09
+stealthybox
+sttts
+sudermanjr
+swatisehgal
+szuecs
+tallaxes
+tengqm
+terrytangyuan
+thockin
+timoreimann
+tzneal
+varshaprasad96
+vincepri
+vishh
+vladimirvivien
+voelzmo
+vteratipally
+wenjiaswe
+wongma7
+wzshiming
+xlgao-zju
+xmcqueen
+yadvr
+yastij
+ybettan
+yongruilin
+youngnick
+yuxiangqian
+zetaab
+zvonkok
 
 
->>>>> Low reviews/approvals in kubernetes/test-infra (GH pr comments <= 10 && devstats <=20): 1
+>>>>> Low reviews/approvals in kubernetes/test-infra (GH pr comments <= 10 && devstats <=20): 113
+AndrewSirenko
+AnishShah
+AverageMarcus
+BlaineEXE
+ConnorJC3
+Danil-Grigorev
+Edwinhr716
+ElijahQuinones
+EmilienM
+GiuseppeTT
+JoelSpeed
+Jont828
+LiorLieberman
+LogicalShark
+Verolop
+YifeiZhuang
+a-hilaly
+a7i
+ahg-g
+ajaysundark
+alexander-demicev
+alvaroaleman
+ambiknai
+andreyvelich
+ant31
+arahamad
+aramase
+ardaguclu
+atiratree
+barney-s
+camilamacedo86
+ccojocar
+chases2
+cheftako
+danwinship
+deads2k
+dgrisonnet
+divya-mohan0209
+dlipovetsky
+drew-viles
+elmiko
+enj
+fmuyassarov
+furkatgofurov7
+g-gaston
+gauravkghildiyal
+gnufied
+gottwald
+harshanarayana
+huww98
+ingvagabund
+ivankatliarchuk
+jbpratt
+jeremyrickard
+jhrozek
+joaquimrocha
+jprzychodzen
+jsafrane
+kayrus
+kerthcet
+kfswain
+klueska
+lentzi90
+liggitt
+macsko
+mainred
+marquiz
+marseel
+mdbooth
+mengqiy
 michelle192837
+mikebrow
+mloiseleur
+mmamczur
+mowangdk
+mrhohn
+msau42
+nawazkh
+nirrozenbaum
+nrb
+palnabarun
+pbundyra
+prezha
+puerco
+richardcase
+rikatz
+rjsadow
+robscott
+samuelkarp
+sanposhiho
+shanduur
+shyamjvs
+sjenning
+skitt
+stephenfin
+stevekuznetsov
+tabbysable
+tallclair
+tico88612
+torredil
+tosi3k
+towca
+utam0k
+vannten
+vishesh92
+vitorfloriano
+wangzhen127
+weizhouapache
+yankay
+yevgeny-shnaidman
+yujuhong
+yussufsh
+zhanggbj
 --dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

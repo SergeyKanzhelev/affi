@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/enhancements --repository-devstats=kubernetes/enhancements --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:14:51
+Running script : 03-26-2026 00:39:20
 Processed /private/tmp/affi_stats/kubernetes_enhancements/.githooks/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_enhancements/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_enhancements/api/OWNERS
@@ -68,95 +68,93 @@ Processed /private/tmp/affi_stats/kubernetes_enhancements/test/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_enhancements/OWNERS_ALIASES
 Found 47 unique aliases
 Found 146 unique users
-.............................................................................................................................................................
+....................................................................................................................................
 
 
->>>>> Contributions from kubernetes/enhancements devstats repo and kubernetes/enhancements github repo : 81
+>>>>> Contributions from kubernetes/enhancements devstats repo and kubernetes/enhancements github repo : 79
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+soltysh : 455 : 110 
+jpbetz : 155 : 137 
+mrunalp : 72 : 96 
 deads2k : 180 : 67 
-jpbetz : 155 : 135 
-SergeyKanzhelev : 497 : 92 
-soltysh : 456 : 110 
-johnbelamaric : 340 : 63 
-wojtek-t : 438 : 61 
-kannon92 : 430 : 77 
+SergeyKanzhelev : 500 : 94 
+dom4ha : 312 : 50 
+ffromani : 204 : 25 
+wojtek-t : 437 : 61 
+sanposhiho : 460 : 29 
 liggitt : 358 : 62 
 macsko : 327 : 47 
-haircommander : 327 : 64 
-dom4ha : 313 : 50 
-aojea : 153 : 46 
-pohly : 521 : 45 
-thockin : 368 : 29 
-mrunalp : 72 : 96 
+pohly : 517 : 45 
+thockin : 365 : 29 
+haircommander : 326 : 65 
+BenTheElder : 232 : 36 
+johnbelamaric : 334 : 63 
+kannon92 : 430 : 77 
+aojea : 152 : 44 
+enj : 88 : 21 
 xing-yang : 50 : 20 
-dchen1107 : 33 : 34 
-sanposhiho : 465 : 29 
-BenTheElder : 240 : 36 
-saschagrunert : 32 : 26 
-ffromani : 204 : 25 
-tallclair : 142 : 20 
-enj : 89 : 22 
-skitt : 30 : 18 
-ardaguclu : 56 : 13 
-richabanker : 77 : 16 
-ndixita : 75 : 12 
-kikisdeliveryservice : 37 : 18 
-dgrisonnet : 37 : 14 
-joelspeed(JoelSpeed) : 67 : 6 
-aramase : 53 : 14 
+tallclair : 137 : 20 
+danwinship : 128 : 15 
 adrianmoisey : 101 : 17 
 jackfrancis : 90 : 16 
-danwinship : 128 : 15 
-serathius : 45 : 11 
-msau42 : 30 : 8 
+richabanker : 78 : 16 
+dgrisonnet : 36 : 14 
+dchen1107 : 33 : 34 
 MrFreezeex : 44 : 7 
+skitt : 30 : 18 
+serathius : 43 : 11 
+saschagrunert : 32 : 33 
+aramase : 53 : 14 
+ndixita : 76 : 12 
+ardaguclu : 56 : 13 
 ryanzhang-oss : 37 : 8 
+kikisdeliveryservice : 36 : 18 
+msau42 : 30 : 8 
 dashpole : 29 : 6 
-ritazh : 24 : 5 
+dims : 21 : 15 
 Priyankasaggu11929 : 30 : 3 
+elmiko : 35 : 5 
+towca : 22 : 10 
+ahrtr : 2 : 55 
+dipesh-rawat : 24 : 1 
+ritazh : 24 : 5 
+rexagod : 49 : 5 
+pacoxu : 20 : 118 
+janetkuo : 30 : 3 
+mikebrow : 40 : 5 
+joelspeed(JoelSpeed) : 67 : 6 
+tenzen-y : 18 : 5 
+bowei : 15 : 3 
+derekwaynecarr : 2 : 4 
+micahhausler : 13 : 4 
+neolit123 : 13 : 7 
+shaneutt : 1 : 4 
+aravindhp : 6 : 0 
 zylxjtu : 10 : 4 
 jsafrane : 12 : 13 
-klueska : 11 : 6 
-dims : 23 : 16 
-janetkuo : 30 : 3 
-marosset : 15 : 5 
-micahhausler : 13 : 4 
-mikebrow : 40 : 5 
-rexagod : 49 : 5 
-towca : 22 : 10 
-gjtempleton : 6 : 4 
-tenzen-y : 18 : 5 
-elmiko : 35 : 5 
-neolit123 : 13 : 7 
-pacoxu : 20 : 116 
-bowei : 15 : 3 
-RainbowMango : 8 : 2 
-hakman : 5 : 1 
-ahrtr : 2 : 55 
-divya-mohan0209 : 3 : 1 
-yujuhong : 6 : 1 
-derekwaynecarr : 2 : 4 
 bridgetkromhout : 5 : 0 
-xmudrii : 2 : 0 
-dipesh-rawat : 69 : 1 
-siyuanfoundation : 4 : 1 
-aravindhp : 5 : 0 
+hakman : 5 : 1 
+yujuhong : 6 : 1 
 ameukam : 10 : 1 
-sttts : 5 : 9 
 munnerz : 3 : 2 
-alvaroaleman : 1 : 1 
-tengqm : 1 : 1 
-tabbysable : 1 : 0 
-shaneutt : 1 : 4 
-justaugustus : 1 : 1 
-mpuckett159 : 1 : 1 
+xmudrii : 2 : 0 
+marosset : 15 : 5 
+siyuanfoundation : 4 : 0 
+divya-mohan0209 : 3 : 1 
+gjtempleton : 6 : 4 
+sttts : 5 : 10 
+klueska : 11 : 6 
+RainbowMango : 8 : 2 
 joaquimrocha : 1 : 0 
-eddiezane : 1 : 1 
-saad-ali : 1 : 1 
 katcosgrove : 1 : 0 
+alvaroaleman : 1 : 1 
+eddiezane : 1 : 1 
+justaugustus : 1 : 1 
+saad-ali : 1 : 1 
+mpuckett159 : 1 : 1 
 
 
->>>>> Missing Contributions in kubernetes/enhancements (devstats == 0): 65
+>>>>> Missing Contributions in kubernetes/enhancements (devstats == 0): 67
 AnaMMedina21
 CecileRobertMichon
 GenPage
@@ -216,6 +214,8 @@ salaxander
 shu-mutou
 shyamjvs
 spzala
+tabbysable
+tengqm
 upodroid
 vincepri
 wongma7
@@ -224,7 +224,7 @@ yuxiangqian
 zetaab
 
 
->>>>> Low reviews/approvals in kubernetes/enhancements (GH pr comments <= 10 && devstats <=20): 30
+>>>>> Low reviews/approvals in kubernetes/enhancements (GH pr comments <= 10 && devstats <=20): 28
 RainbowMango
 alvaroaleman
 ameukam
@@ -249,8 +249,6 @@ saad-ali
 shaneutt
 siyuanfoundation
 sttts
-tabbysable
-tengqm
 tenzen-y
 xmudrii
 yujuhong

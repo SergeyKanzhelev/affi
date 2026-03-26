@@ -1,7 +1,31 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/sample-apiserver --repository-devstats=kubernetes/sample-apiserver --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:59:23
+Running script : 03-26-2026 01:24:09
 Processed /private/tmp/affi_stats/kubernetes_sample-apiserver/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_sample-apiserver/OWNERS_ALIASES
 Found 0 unique aliases
 Found 6 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/sample-apiserver --period-devstats=y --dryrun ---
+Running script : 03-26-2026 01:24:09
+Processed /private/tmp/affi_stats/kubernetes_sample-apiserver/OWNERS
+Found 0 unique aliases
+Found 6 unique users
+......
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/sample-apiserver github repo : 6
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+jpbetz : 621 : 56 
+cheftako : 23 : 0 
+deads2k : 106 : 0 
+liggitt : 2558 : 0 
+sttts : 67 : 3 
+smarterclayton : 10 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 0
+
+
+>>>>> Low reviews/approvals in kubernetes/sample-apiserver (GH pr comments <= 10 && devstats <=20): 1
+smarterclayton
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

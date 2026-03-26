@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/gateway-api-inference-extension --repository-devstats=kubernetes-sigs/gateway-api-inference-extension --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:22:20
+Running script : 03-26-2026 03:05:28
 Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api-inference-extension/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api-inference-extension/latencypredictor/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api-inference-extension/pkg/epp/framework/plugins/scheduling/scorer/predictedlatency/OWNERS
@@ -9,20 +9,20 @@ Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api-inference-extensio
 Processed /private/tmp/affi_stats/kubernetes-sigs_gateway-api-inference-extension/OWNERS_ALIASES
 Found 2 unique aliases
 Found 9 unique users
-...............
+.............
 
 
 >>>>> Contributions from kubernetes-sigs/gateway-api-inference-extension devstats repo and kubernetes-sigs/gateway-api-inference-extension github repo : 9
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-nirrozenbaum : 2027 : 612 
-ahg-g : 1285 : 552 
-kfswain : 1261 : 447 
-danehans : 865 : 157 
-liu-cong : 669 : 116 
-robscott : 426 : 93 
-elevran : 333 : 73 
-shmuelk : 233 : 88 
-kaushikmitr : 162 : 40 
+nirrozenbaum : 2033 : 623 
+ahg-g : 1217 : 543 
+kfswain : 1225 : 441 
+danehans : 859 : 155 
+liu-cong : 637 : 113 
+robscott : 409 : 86 
+elevran : 334 : 74 
+shmuelk : 234 : 89 
+kaushikmitr : 157 : 44 
 
 
 >>>>> Missing Contributions in kubernetes-sigs/gateway-api-inference-extension (devstats == 0): 0

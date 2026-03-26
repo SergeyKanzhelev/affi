@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/committee-security-response --repository-devstats=kubernetes/committee-security-response --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:23:20
+Running script : 03-26-2026 01:51:12
 Processed /private/tmp/affi_stats/kubernetes_committee-security-response/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_committee-security-response/OWNERS_ALIASES
 Found 1 unique aliases

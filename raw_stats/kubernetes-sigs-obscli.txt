@@ -1,7 +1,41 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/obscli --repository-devstats=kubernetes-sigs/obscli --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:18:48
+Running script : 03-26-2026 02:59:58
 Processed /private/tmp/affi_stats/kubernetes-sigs_obscli/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_obscli/OWNERS_ALIASES
 Found 3 unique aliases
 Found 13 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/obscli --period-devstats=y --dryrun ---
+Running script : 03-26-2026 02:59:59
+Processed /private/tmp/affi_stats/kubernetes-sigs_obscli/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_obscli/OWNERS_ALIASES
+Found 3 unique aliases
+Found 13 unique users
+..............
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes-sigs/obscli github repo : 9
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+Verolop : 87 : 0 
+ameukam : 28 : 0 
+cici37 : 122 : 0 
+cpanato : 56 : 42 
+saschagrunert : 216 : 30 
+xmudrii : 91 : 1 
+jimangel : 2 : 0 
+palnabarun : 24 : 0 
+puerco : 8 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 4
+jeremyrickard
+jrsapi
+justaugustus
+salaxander
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/obscli (GH pr comments <= 10 && devstats <=20): 2
+jimangel
+puerco
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

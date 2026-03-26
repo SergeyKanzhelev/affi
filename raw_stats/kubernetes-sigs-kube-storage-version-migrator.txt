@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/kube-storage-version-migrator --repository-devstats=kubernetes-sigs/kube-storage-version-migrator --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:45:56
+Running script : 03-26-2026 02:15:45
 Processed /private/tmp/affi_stats/kubernetes-sigs_kube-storage-version-migrator/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_kube-storage-version-migrator/OWNERS_ALIASES
 Found 2 unique aliases

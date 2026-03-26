@@ -1,20 +1,19 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kubeadm --repository-devstats=kubernetes/kubeadm --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:58:20
+Running script : 03-26-2026 01:23:07
 Processed /private/tmp/affi_stats/kubernetes_kubeadm/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kubeadm/kinder/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kubeadm/kinder/hack/orderimports/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_kubeadm/OWNERS_ALIASES
 Found 0 unique aliases
 Found 7 unique users
-...........
+.....
 
 
 >>>>> Contributions from kubernetes/kubeadm devstats repo and kubernetes/kubeadm github repo : 5
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-neolit123 : 225 : 33 
-HirazawaUi : 47 : 14 
-pacoxu : 24 : 114 
+neolit123 : 223 : 34 
+HirazawaUi : 48 : 15 
+pacoxu : 24 : 116 
 carlory : 13 : 10 
 SataQiu : 7 : 4 
 

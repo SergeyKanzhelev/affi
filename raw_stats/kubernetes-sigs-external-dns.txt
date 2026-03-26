@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/external-dns --repository-devstats=kubernetes-sigs/external-dns --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:28:10
+Running script : 03-26-2026 01:59:09
 Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/.github/workflows/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/apis/OWNERS
@@ -28,21 +28,22 @@ Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/registry/noop/OWN
 Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/registry/txt/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/scripts/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/source/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/source/informers/OWNERS
+Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/source/template/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/tests/integration/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_external-dns/OWNERS_ALIASES
 Found 0 unique aliases
 Found 8 unique users
-......
+..........
 
 
 >>>>> Contributions from kubernetes-sigs/external-dns devstats repo and kubernetes-sigs/external-dns github repo : 6
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-ivankatliarchuk : 2146 : 460 
-mloiseleur : 940 : 395 
-stevehipwell : 118 : 132 
-vflaux : 254 : 81 
-raffo(Raffo) : 67 : 75 
-szuecs : 112 : 75 
+ivankatliarchuk : 2048 : 472 
+mloiseleur : 904 : 401 
+stevehipwell : 113 : 130 
+vflaux : 256 : 86 
+raffo(Raffo) : 65 : 75 
+szuecs : 102 : 74 
 
 
 >>>>> Missing Contributions in kubernetes-sigs/external-dns (devstats == 0): 2

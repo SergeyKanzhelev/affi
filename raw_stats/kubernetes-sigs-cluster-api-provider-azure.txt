@@ -1,23 +1,22 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-provider-azure --repository-devstats=kubernetes-sigs/cluster-api-provider-azure --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:36:45
+Running script : 03-26-2026 02:07:42
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-azure/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-azure/docs/book/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-provider-azure/OWNERS_ALIASES
 Found 5 unique aliases
-Found 16 unique users
-................
+Found 15 unique users
+..........
 
 
->>>>> Contributions from kubernetes-sigs/cluster-api-provider-azure devstats repo and kubernetes-sigs/cluster-api-provider-azure github repo : 10
+>>>>> Contributions from kubernetes-sigs/cluster-api-provider-azure devstats repo and kubernetes-sigs/cluster-api-provider-azure github repo : 9
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-mboersma : 469 : 300 
-nojnhuh : 503 : 178 
-jackfrancis : 217 : 166 
+mboersma : 469 : 310 
+nojnhuh : 502 : 178 
+jackfrancis : 215 : 167 
+willie-yao : 380 : 138 
 bryan-cox : 55 : 28 
-jsturtevant : 43 : 106 
-nawazkh : 408 : 77 
-willie-yao : 394 : 140 
+jsturtevant : 41 : 107 
 marosset : 25 : 7 
 Jont828 : 15 : 3 
 enxebre : 2 : 2 

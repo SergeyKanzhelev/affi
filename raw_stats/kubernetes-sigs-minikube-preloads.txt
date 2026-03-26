@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/minikube-preloads --repository-devstats=kubernetes-sigs/minikube-preloads --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:30:19
+Running script : 03-26-2026 03:14:05
 Processed /private/tmp/affi_stats/kubernetes-sigs_minikube-preloads/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_minikube-preloads/OWNERS_ALIASES
 Found 0 unique aliases
 Found 2 unique users
 ..

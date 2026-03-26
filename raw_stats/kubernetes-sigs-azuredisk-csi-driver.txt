@@ -1,16 +1,15 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/azuredisk-csi-driver --repository-devstats=kubernetes-sigs/azuredisk-csi-driver --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:49:05
+Running script : 03-26-2026 02:19:38
 Processed /private/tmp/affi_stats/kubernetes-sigs_azuredisk-csi-driver/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_azuredisk-csi-driver/OWNERS_ALIASES
 Found 0 unique aliases
 Found 7 unique users
-..........
+.....
 
 
 >>>>> Contributions from kubernetes-sigs/azuredisk-csi-driver devstats repo and kubernetes-sigs/azuredisk-csi-driver github repo : 5
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-andyzhangx : 1099 : 340 
+andyzhangx : 1041 : 338 
 landreasyan : 46 : 23 
 edreed : 11 : 5 
 nearora-msft : 38 : 4 

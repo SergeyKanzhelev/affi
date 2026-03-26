@@ -1,8 +1,35 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kube-controller-manager --repository-devstats=kubernetes/kube-controller-manager --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:22:49
+Running script : 03-26-2026 01:47:04
 Processed /private/tmp/affi_stats/kubernetes_kube-controller-manager/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kube-controller-manager/config/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_kube-controller-manager/OWNERS_ALIASES
 Found 0 unique aliases
 Found 7 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kube-controller-manager --period-devstats=y --dryrun ---
+Running script : 03-26-2026 01:47:04
+Processed /private/tmp/affi_stats/kubernetes_kube-controller-manager/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kube-controller-manager/config/OWNERS
+Found 0 unique aliases
+Found 7 unique users
+.....
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/kube-controller-manager github repo : 5
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cheftako : 23 : 0 
+deads2k : 106 : 0 
+sttts : 67 : 3 
+luxas : 10 : 1 
+mtaufen : 10 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 2
+api-approvers
+api-reviewers
+
+
+>>>>> Low reviews/approvals in kubernetes/kube-controller-manager (GH pr comments <= 10 && devstats <=20): 2
+luxas
+mtaufen
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/boskos --repository-devstats=kubernetes-sigs/boskos --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:01:42
+Running script : 03-26-2026 02:34:16
 Processed /private/tmp/affi_stats/kubernetes-sigs_boskos/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_boskos/aws-janitor/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_boskos/cmd/aws-janitor/OWNERS
@@ -14,7 +14,7 @@ Processed /private/tmp/affi_stats/kubernetes-sigs_boskos/internal/ibmcloud-janit
 Processed /private/tmp/affi_stats/kubernetes-sigs_boskos/OWNERS_ALIASES
 Found 6 unique aliases
 Found 19 unique users
-..............
+.........
 
 
 >>>>> Contributions from kubernetes-sigs/boskos devstats repo and kubernetes-sigs/boskos github repo : 9
@@ -22,11 +22,11 @@ Found 19 unique users
 Amulyam24 : 55 : 9 
 mkumatag : 7 : 13 
 BenTheElder : 5 : 1 
+justinsb : 2 : 3 
 krzyzacy : 5 : 3 
 richardcase : 5 : 4 
 upodroid : 5 : 7 
 dims : 1 : 2 
-justinsb : 2 : 2 
 michelle192837 : 1 : 1 
 
 

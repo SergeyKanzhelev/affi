@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-api-addon-provider-helm --repository-devstats=kubernetes-sigs/cluster-api-addon-provider-helm --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:15:51
+Running script : 03-26-2026 02:55:51
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-addon-provider-helm/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-api-addon-provider-helm/OWNERS_ALIASES
 Found 4 unique aliases
@@ -10,9 +10,9 @@ Found 11 unique users
 
 >>>>> Contributions from kubernetes-sigs/cluster-api-addon-provider-helm devstats repo and kubernetes-sigs/cluster-api-addon-provider-helm github repo : 3
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-mboersma : 95 : 86 
+mboersma : 89 : 87 
 Jont828 : 26 : 10 
-jackfrancis : 8 : 17 
+jackfrancis : 8 : 19 
 
 
 >>>>> Missing Contributions in kubernetes-sigs/cluster-api-addon-provider-helm (devstats == 0): 8

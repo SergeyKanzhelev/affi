@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kubernetes --repository-devstats=kubernetes/kubernetes --period-devstats=y --dryrun ---
-Running script : 03-18-2026 23:56:48
+Running script : 03-26-2026 00:02:07
 Processed /private/tmp/affi_stats/kubernetes_kubernetes/.github/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kubernetes/CHANGELOG/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kubernetes/LICENSES/OWNERS
@@ -543,174 +543,172 @@ Processed /private/tmp/affi_stats/kubernetes_kubernetes/third_party/forked/shell
 Processed /private/tmp/affi_stats/kubernetes_kubernetes/OWNERS_ALIASES
 Found 73 unique aliases
 Found 212 unique users
-.........................................................................................................................................................................................................................................................................
+...........................................................................................................................................................................................................................................................................
 
 
->>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/kubernetes github repo : 160
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/kubernetes github repo : 158
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-liggitt : 2654 : 808 
-SergeyKanzhelev : 1157 : 441 
-BenTheElder : 1813 : 371 
-dims : 1397 : 609 
-pohly : 3559 : 558 
-bentheelder(BenTheElder) : 1813 : 371 
-macsko : 1255 : 233 
-bart0sh : 1618 : 225 
-sergeykanzhelev(SergeyKanzhelev) : 1157 : 440 
-aojea : 1290 : 366 
-sanposhiho : 812 : 138 
-wojtek-t : 335 : 150 
-tallclair : 745 : 134 
-jpbetz : 621 : 357 
-aaron-prindle : 412 : 148 
-kannon92 : 400 : 108 
-soltysh : 667 : 272 
-lalitc375 : 412 : 82 
-haircommander : 378 : 138 
-danwinship : 526 : 126 
-thockin : 792 : 317 
-yongruilin : 385 : 151 
-pacoxu : 648 : 493 
-neolit123 : 519 : 147 
-ffromani : 835 : 133 
-HirazawaUi : 687 : 168 
-serathius : 741 : 129 
-dom4ha : 355 : 85 
-mortent : 432 : 68 
-saschagrunert : 228 : 161 
-jefftree(Jefftree) : 352 : 227 
-carlory : 627 : 188 
-richabanker : 485 : 107 
-natasha41575 : 753 : 110 
-ardaguclu : 290 : 83 
+pohly : 3342 : 549 
+liggitt : 2558 : 809 
+SergeyKanzhelev : 1094 : 437 
+BenTheElder : 1693 : 363 
+bentheelder(BenTheElder) : 1693 : 363 
+bart0sh : 1561 : 212 
+dims : 1344 : 603 
+macsko : 1216 : 232 
+aojea : 1210 : 348 
+sergeykanzhelev(SergeyKanzhelev) : 1094 : 437 
+sanposhiho : 753 : 131 
+ffromani : 794 : 122 
+natasha41575 : 724 : 111 
+seans3 : 179 : 128 
+aaron-prindle : 422 : 141 
+haircommander : 354 : 129 
+soltysh : 604 : 274 
+serathius : 683 : 125 
+lalitc375 : 415 : 85 
+tallclair : 666 : 138 
+thockin : 717 : 308 
+kannon92 : 364 : 102 
+jpbetz : 621 : 355 
+danwinship : 494 : 124 
+neolit123 : 515 : 147 
+wojtek-t : 274 : 148 
+saschagrunert : 216 : 171 
+jefftree(Jefftree) : 329 : 216 
+HirazawaUi : 653 : 166 
+richabanker : 467 : 106 
+yongruilin : 382 : 148 
+carlory : 606 : 183 
+pacoxu : 621 : 474 
+adrianmoisey : 171 : 84 
+ardaguclu : 286 : 81 
+dom4ha : 293 : 83 
+ania-borowiec : 345 : 54 
+mortent : 376 : 68 
+yliaog : 732 : 49 
+michaelasp : 542 : 62 
+mimowo : 244 : 59 
+lmktfy : 206 : 66 
+enj : 204 : 59 
+omerap12 : 202 : 40 
+aramase : 166 : 66 
+atiratree : 255 : 44 
 gnufied : 247 : 77 
-enj : 214 : 61 
-michaelasp : 542 : 61 
-Verolop : 87 : 127 
-cici37 : 162 : 77 
-jsafrane : 117 : 96 
-adrianmoisey : 174 : 84 
-seans3 : 180 : 127 
-deads2k : 106 : 63 
-siyuanfoundation : 167 : 69 
-yliaog : 733 : 49 
-aramase : 171 : 68 
-xmudrii : 91 : 115 
-lmktfy : 206 : 64 
-cpanato : 56 : 77 
-ania-borowiec : 362 : 54 
-dgrisonnet : 113 : 58 
-mimowo : 248 : 59 
-xing-yang : 63 : 51 
-atiratree : 255 : 42 
-mkumatag : 114 : 46 
-marosset : 86 : 40 
-sttts : 67 : 51 
-skitt : 86 : 40 
-mrunalp : 76 : 53 
-JoelSpeed : 184 : 40 
-omerap12 : 201 : 40 
-joelspeed(JoelSpeed) : 184 : 40 
-dashpole : 47 : 38 
-aroradaman : 139 : 32 
-msau42 : 64 : 34 
-johnbelamaric : 160 : 35 
-rata : 154 : 29 
-wzshiming : 14 : 53 
-jsturtevant : 34 : 113 
+siyuanfoundation : 161 : 62 
+JoelSpeed : 187 : 41 
+joelspeed(JoelSpeed) : 187 : 41 
 utam0k : 206 : 38 
-tosi3k : 178 : 26 
-klueska : 71 : 28 
-rexagod : 114 : 27 
-jackfrancis : 75 : 23 
-janetkuo : 65 : 22 
-sunnylovestiramisu : 56 : 28 
-humblec : 51 : 19 
-rphillips : 34 : 18 
-brianpursley : 38 : 14 
-sbangari : 16 : 19 
-mengqiy : 75 : 16 
-SataQiu : 31 : 21 
+aroradaman : 138 : 32 
+johnbelamaric : 128 : 37 
+jsafrane : 117 : 95 
+tosi3k : 182 : 30 
+cici37 : 122 : 76 
+mkumatag : 114 : 46 
+rexagod : 112 : 27 
+skitt : 86 : 40 
+xmudrii : 91 : 115 
+xing-yang : 63 : 51 
+deads2k : 106 : 61 
+rata : 134 : 25 
+cpanato : 56 : 76 
+Verolop : 87 : 127 
+dgrisonnet : 104 : 58 
+sttts : 67 : 52 
+mrunalp : 45 : 43 
+msau42 : 64 : 34 
+sunnylovestiramisu : 55 : 27 
+dashpole : 47 : 38 
+marosset : 71 : 37 
+klueska : 68 : 28 
+jackfrancis : 75 : 25 
+SataQiu : 30 : 20 
 palnabarun : 24 : 24 
-AxeZhan : 37 : 17 
-matthyx : 34 : 13 
-kerthcet : 21 : 12 
-dchen1107 : 17 : 16 
+janetkuo : 52 : 24 
+sbangari : 16 : 19 
+humblec : 51 : 19 
+rphillips : 31 : 17 
+brianpursley : 38 : 13 
+AxeZhan : 36 : 17 
+dchen1107 : 17 : 14 
+wzshiming : 14 : 60 
+mengqiy : 66 : 16 
 elmiko : 44 : 14 
+matthyx : 34 : 13 
 daschott : 11 : 11 
-mauriciopoppe : 10 : 10 
-Priyankasaggu11929 : 44 : 3 
-mborsz : 9 : 5 
-mikebrow : 20 : 5 
-yujuhong : 16 : 8 
-yue9944882 : 74 : 7 
-Huang-Wei : 1 : 22 
-x13n : 9 : 9 
-mpuckett159 : 25 : 5 
-ingvagabund : 23 : 5 
-mrhohn(MrHohn) : 2 : 8 
-mattcary : 9 : 7 
-MrHohn : 2 : 8 
-mtaufen : 10 : 3 
-munnerz : 36 : 6 
-tzneal : 5 : 3 
-endocrimes : 1 : 4 
-towca : 18 : 8 
-nmn3m : 64 : 7 
-hzxuzhonghu : 1 : 8 
-tnqn : 3 : 3 
-cheftako : 23 : 6 
-fabriziopandini : 2 : 3 
-cblecker : 1 : 21 
-puerco : 8 : 11 
-tkashem : 40 : 5 
-raywainman : 19 : 7 
-mengjiao-liu : 1 : 4 
+nmn3m : 66 : 9 
+kerthcet : 11 : 10 
+roycaihw : 52 : 9 
 tenzen-y : 35 : 10 
-robscott : 1 : 10 
-roycaihw : 90 : 10 
-feiskyer : 1 : 19 
-tengqm : 5 : 3 
-RainbowMango : 4 : 3 
-gjtempleton : 4 : 3 
-tabbysable : 71 : 2 
-bowei : 40 : 5 
-benluddy : 25 : 10 
-kow3ns : 8 : 6 
-shaneutt : 19 : 4 
-shyamjvs : 5 : 5 
-andyzhangx : 7 : 8 
-andrewsykim : 7 : 5 
+benluddy : 23 : 9 
 smarterclayton : 10 : 8 
-ahg-g : 1 : 4 
-knabben : 3 : 7 
-lojies : 14 : 0 
-kaslin : 1 : 1 
-krmayankk : 1 : 1 
-caesarxuchao : 1 : 2 
-saad-ali : 1 : 2 
-caseydavenport : 1 : 1 
-stevekuznetsov : 7 : 1 
-luxas : 10 : 1 
-claudiubelu : 3 : 1 
-odinuge : 3 : 1 
-damemi : 1 : 0 
-natalisucks : 3 : 0 
-uablrek : 5 : 0 
-justinsb : 13 : 2 
-wangzhen127 : 2 : 1 
-marseel : 3 : 0 
-mrbobbytables : 1 : 0 
-jayunit100 : 1 : 1 
-MikeSpreitzer : 21 : 1 
-MadhavJivrajani : 1 : 1 
+mauriciopoppe : 10 : 10 
+yujuhong : 15 : 6 
+yue9944882 : 71 : 6 
+x13n : 8 : 8 
+towca : 18 : 8 
+jsturtevant : 10 : 112 
+andyzhangx : 7 : 8 
+kow3ns : 8 : 6 
+raywainman : 17 : 6 
+munnerz : 13 : 6 
+puerco : 8 : 11 
+mattcary : 9 : 7 
+cheftako : 23 : 6 
+andrewsykim : 3 : 5 
+MikeSpreitzer : 14 : 2 
+mikebrow : 12 : 4 
+ingvagabund : 23 : 5 
+mpuckett159 : 25 : 5 
+gjtempleton : 2 : 2 
+shyamjvs : 5 : 5 
+tzneal : 4 : 2 
+mtaufen : 10 : 3 
+MrHohn : 2 : 8 
+tnqn : 3 : 3 
+tkashem : 40 : 5 
 dipesh-rawat : 2 : 2 
-DamianSawicki : 1 : 2 
+Priyankasaggu11929 : 44 : 3 
+RainbowMango : 4 : 3 
+bowei : 39 : 5 
+mborsz : 9 : 5 
+knabben : 3 : 7 
+tabbysable : 45 : 2 
+mrhohn(MrHohn) : 2 : 8 
+justinsb : 13 : 3 
+shaneutt : 19 : 4 
+krmayankk : 1 : 1 
+claudiubelu : 3 : 1 
 eddiezane : 3 : 1 
+ahg-g : 1 : 3 
 mikezappa87(MikeZappa87) : 12 : 1 
+stevekuznetsov : 7 : 1 
+endocrimes : 1 : 4 
+fabriziopandini : 1 : 3 
+mengjiao-liu : 1 : 4 
+saad-ali : 1 : 2 
+feiskyer : 1 : 18 
+odinuge : 3 : 1 
+robscott : 1 : 8 
+lojies : 14 : 0 
+luxas : 10 : 1 
+cblecker : 1 : 22 
+marseel : 3 : 0 
+uablrek : 5 : 0 
+natalisucks : 3 : 0 
+wangzhen127 : 2 : 1 
+MadhavJivrajani : 1 : 1 
+caesarxuchao : 1 : 1 
+kaslin : 1 : 1 
+caseydavenport : 1 : 1 
+hzxuzhonghu : 1 : 8 
+Huang-Wei : 1 : 21 
+DamianSawicki : 1 : 2 
+mrbobbytables : 1 : 0 
+damemi : 1 : 0 
 
 
->>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 52
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 54
 IanColdwater
 KnVerey
 Random-Liu
@@ -734,6 +732,7 @@ gautierdelorme
 gracenng
 guineveresaenger
 ibabou
+jayunit100
 jeremyrickard
 jiahuif
 jingxu97
@@ -761,13 +760,15 @@ salaxander
 satyampsoni
 sjenning
 spiffxp
+tengqm
 vincepri
 wlan0
 
 
->>>>> Low reviews/approvals in kubernetes/kubernetes (GH pr comments <= 10 && devstats <=20): 52
+>>>>> Low reviews/approvals in kubernetes/kubernetes (GH pr comments <= 10 && devstats <=20): 53
 DamianSawicki
 MadhavJivrajani
+MikeSpreitzer
 MrHohn
 RainbowMango
 ahg-g
@@ -783,9 +784,9 @@ endocrimes
 fabriziopandini
 gjtempleton
 hzxuzhonghu
-jayunit100
 justinsb
 kaslin
+kerthcet
 knabben
 kow3ns
 krmayankk
@@ -801,6 +802,7 @@ mikezappa87
 mrbobbytables
 mrhohn
 mtaufen
+munnerz
 natalisucks
 odinuge
 raywainman
@@ -810,7 +812,6 @@ shaneutt
 shyamjvs
 smarterclayton
 stevekuznetsov
-tengqm
 tnqn
 towca
 tzneal

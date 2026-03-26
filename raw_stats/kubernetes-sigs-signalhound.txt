@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/signalhound --repository-devstats=kubernetes-sigs/signalhound --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:31:24
+Running script : 03-26-2026 03:15:44
 Processed /private/tmp/affi_stats/kubernetes-sigs_signalhound/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_signalhound/OWNERS_ALIASES
 Found 3 unique aliases

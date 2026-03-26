@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kops --repository-devstats=kubernetes/kops --period-devstats=y --dryrun ---
-Running script : 03-19-2026 00:38:25
+Running script : 03-26-2026 01:00:47
 Processed /private/tmp/affi_stats/kubernetes_kops/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kops/channels/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kops/cmd/kops-controller/OWNERS
@@ -45,20 +45,19 @@ Processed /private/tmp/affi_stats/kubernetes_kops/upup/pkg/fi/cloudup/scaleway/O
 Processed /private/tmp/affi_stats/kubernetes_kops/upup/pkg/fi/cloudup/scalewaytasks/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kops/upup/pkg/fi/cloudup/spotinsttasks/OWNERS
 Processed /private/tmp/affi_stats/kubernetes_kops/upup/pkg/fi/nodeup/OWNERS
-Processed /private/tmp/affi_stats/kubernetes_kops/OWNERS_ALIASES
 Found 0 unique aliases
 Found 8 unique users
-.......
+..........
 
 
 >>>>> Contributions from kubernetes/kops devstats repo and kubernetes/kops github repo : 7
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-hakman : 1005 : 663 
-rifelpet : 235 : 218 
-justinsb : 161 : 104 
-hakuna-matatah : 21 : 7 
-dims : 7 : 5 
-olemarkus : 1 : 111 
+hakman : 1005 : 673 
+rifelpet : 231 : 220 
+justinsb : 156 : 108 
+hakuna-matatah : 19 : 7 
+dims : 5 : 5 
+olemarkus : 1 : 133 
 zetaab : 3 : 15 
 
 
@@ -66,6 +65,7 @@ zetaab : 3 : 15
 johngmyers
 
 
->>>>> Low reviews/approvals in kubernetes/kops (GH pr comments <= 10 && devstats <=20): 1
+>>>>> Low reviews/approvals in kubernetes/kops (GH pr comments <= 10 && devstats <=20): 2
 dims
+hakuna-matatah
 --dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

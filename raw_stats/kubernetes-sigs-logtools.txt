@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/logtools --repository-devstats=kubernetes-sigs/logtools --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:10:55
+Running script : 03-26-2026 02:49:42
 Processed /private/tmp/affi_stats/kubernetes-sigs_logtools/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_logtools/OWNERS_ALIASES
 Found 1 unique aliases

@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/karpenter-provider-cluster-api --repository-devstats=kubernetes-sigs/karpenter-provider-cluster-api --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:19:53
+Running script : 03-26-2026 03:02:23
 Processed /private/tmp/affi_stats/kubernetes-sigs_karpenter-provider-cluster-api/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_karpenter-provider-cluster-api/OWNERS_ALIASES
 Found 4 unique aliases

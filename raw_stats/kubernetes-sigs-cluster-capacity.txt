@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/cluster-capacity --repository-devstats=kubernetes-sigs/cluster-capacity --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:27:14
+Running script : 03-26-2026 01:58:19
 Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-capacity/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_cluster-capacity/OWNERS_ALIASES
 Found 0 unique aliases
 Found 3 unique users
 .

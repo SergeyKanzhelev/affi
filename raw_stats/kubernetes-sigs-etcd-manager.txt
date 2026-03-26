@@ -1,8 +1,7 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/etcd-manager --repository-devstats=kubernetes-sigs/etcd-manager --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:20:57
+Running script : 03-26-2026 03:03:25
 Processed /private/tmp/affi_stats/kubernetes-sigs_etcd-manager/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_etcd-manager/OWNERS_ALIASES
 Found 0 unique aliases
 Found 3 unique users
 ...
@@ -12,7 +11,7 @@ Found 3 unique users
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
 hakman : 51 : 18 
 rifelpet : 14 : 12 
-justinsb : 6 : 6 
+justinsb : 6 : 7 
 
 
 >>>>> Missing Contributions in kubernetes-sigs/etcd-manager (devstats == 0): 0

@@ -1,7 +1,29 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/execution-hook --repository-devstats=kubernetes-sigs/execution-hook --period-devstats=y --dryrun ---
-Running script : 03-19-2026 01:54:55
+Running script : 03-26-2026 02:26:02
 Processed /private/tmp/affi_stats/kubernetes-sigs_execution-hook/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_execution-hook/OWNERS_ALIASES
 Found 0 unique aliases
 Found 4 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/execution-hook --period-devstats=y --dryrun ---
+Running script : 03-26-2026 02:26:03
+Processed /private/tmp/affi_stats/kubernetes-sigs_execution-hook/OWNERS
+Found 0 unique aliases
+Found 4 unique users
+..
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes-sigs/execution-hook github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+kow3ns : 8 : 0 
+xing-yang : 63 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 2
+jingxu97
+liyinan926
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/execution-hook (GH pr comments <= 10 && devstats <=20): 1
+kow3ns
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

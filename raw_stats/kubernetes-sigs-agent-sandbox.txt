@@ -1,6 +1,6 @@
 
 --- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/agent-sandbox --repository-devstats=kubernetes-sigs/agent-sandbox --period-devstats=y --dryrun ---
-Running script : 03-19-2026 02:29:18
+Running script : 03-26-2026 03:12:43
 Processed /private/tmp/affi_stats/kubernetes-sigs_agent-sandbox/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_agent-sandbox/clients/python/agentic-sandbox-client/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_agent-sandbox/dev/OWNERS
@@ -12,7 +12,6 @@ Processed /private/tmp/affi_stats/kubernetes-sigs_agent-sandbox/extensions/examp
 Processed /private/tmp/affi_stats/kubernetes-sigs_agent-sandbox/internal/metrics/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_agent-sandbox/site/OWNERS
 Processed /private/tmp/affi_stats/kubernetes-sigs_agent-sandbox/test/OWNERS
-Processed /private/tmp/affi_stats/kubernetes-sigs_agent-sandbox/OWNERS_ALIASES
 Found 0 unique aliases
 Found 7 unique users
 .......
@@ -20,12 +19,12 @@ Found 7 unique users
 
 >>>>> Contributions from kubernetes-sigs/agent-sandbox devstats repo and kubernetes-sigs/agent-sandbox github repo : 7
 >>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
-janetkuo : 615 : 163 
-barney-s : 481 : 95 
-justinsb : 181 : 75 
-vicentefb : 286 : 43 
-igooch : 133 : 26 
-SHRUTI6991 : 47 : 10 
+janetkuo : 623 : 168 
+barney-s : 485 : 102 
+justinsb : 181 : 76 
+vicentefb : 293 : 49 
+igooch : 137 : 32 
+SHRUTI6991 : 51 : 11 
 soltysh : 5 : 19 
 
 
