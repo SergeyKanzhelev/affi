@@ -1,7 +1,7 @@
 # Affi - Kubernetes OWNERS Hierarchy & Stats
 
 - [Available on the Chrome Web Store](https://chromewebstore.google.com/detail/affi/fflpjbbjhlededagabjhaodefilblglg?pli=1)
-- [Available on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/affi/) (Link TBD - In Review)
+- [Available on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/affi/)
 
 Affi is a browser extension designed for Kubernetes developers and maintainers.
  It provides an interactive overlay when viewing `OWNERS` and `OWNERS_ALIASES` files on GitHub, making it easier to understand maintainer hierarchies and contribution activity.
