@@ -38,7 +38,7 @@ function createStatsSpan(repoStats, globalStats, affiliation, roles) {
   const rDS = getVal(repoStats, 'devstats_score');
   const gPRs = getVal(globalStats, 'pr_comments');
   const gDS = getVal(globalStats, 'devstats_score');
-  statsTextSpan.innerText = ` (Repo: ${rPRs}/${rDS} | All: ${gPRs}/${gDS})`;
+  statsTextSpan.innerText = ` (Repo: ${rDS} commits and ${rPRs} comments | All: ${gDS} commits and ${gPRs} comments)`;
   span.appendChild(statsTextSpan);
   
   return span;
