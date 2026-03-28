@@ -12,7 +12,7 @@ Thank you for your interest in contributing to Affi!
 ### Setup
 1. Clone the repository.
 2. Run `make install` to install dependencies.
-3. For Firefox development, run `make sync-firefox`.
+3. For Firefox development, run `make sync-firefox`. This creates a Firefox-compatible version of the extension in the `firefox/` directory.
 
 ### Testing
 Always ensure tests pass before submitting a Pull Request:
@@ -22,6 +22,23 @@ make test
 You can also verify UI changes using the E2E test page:
 1. Run `make serve`.
 2. Open `http://localhost:8080/tests/e2e.html` in your browser.
+
+#### Testing in Firefox
+To test the extension directly in Firefox:
+1. Run `make sync-firefox` to prepare the `firefox/` directory.
+2. Open Firefox and type `about:debugging` in the address bar.
+3. Click on **"This Firefox"** (or **"This Nightly"**) in the left sidebar.
+4. Click the **"Load Temporary Add-on..."** button.
+5. Navigate to your project folder, enter the `firefox/` directory, and select the `manifest.json` file.
+6. The extension is now loaded and will remain active until you restart Firefox.
+
+#### Testing in Chrome
+To test the extension in Chrome:
+1. Open Chrome and type `chrome://extensions` in the address bar.
+2. Enable **"Developer mode"** using the toggle in the top right corner.
+3. Click the **"Load unpacked"** button.
+4. Select the project's root directory (containing the main `manifest.json`).
+5. The extension is now loaded. You can click the "Refresh" icon on the extension card after making changes to the source code.
 
 ## Release Process
 
