@@ -1,17 +1,82 @@
+:root {
+    --affi-bg-primary: #ffffff;
+    --affi-bg-secondary: #f6f8fa;
+    --affi-border-color: #d0d7de;
+    --affi-text-primary: #24292f;
+    --affi-text-secondary: #57606a;
+    --affi-accent-color: #0969da;
+    --affi-text-on-accent: #ffffff;
+    --affi-shadow: rgba(0,0,0,0.1);
+    --affi-warning-bg: #fff8c5;
+    --affi-warning-border: #d4a72c;
+    --affi-btn-hover: #f3f4f6;
+    --affi-toggle-bg: #ffa500;
+}
+
+/* GitHub Dark Mode Logic */
+/* 1. Explicit Dark Mode */
+:root[data-color-mode="dark"],
+/* 2. Auto Mode with System Dark Preference */
+@media (prefers-color-scheme: dark) {
+    :root[data-color-mode="auto"] {
+        --affi-bg-primary: #0d1117;
+        --affi-bg-secondary: #161b22;
+        --affi-border-color: #30363d;
+        --affi-text-primary: #c9d1d9;
+        --affi-text-secondary: #8b949e;
+        --affi-accent-color: #1f6feb;
+        --affi-text-on-accent: #ffffff;
+        --affi-shadow: rgba(0,0,0,0.3);
+        --affi-warning-bg: rgba(187, 128, 9, 0.15);
+        --affi-warning-border: rgba(187, 128, 9, 0.4);
+        --affi-btn-hover: #21262d;
+    }
+}
+
+/* Fallback for when data-color-mode is not present but system is dark */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-color-mode="light"]) {
+        --affi-bg-primary: #0d1117;
+        --affi-bg-secondary: #161b22;
+        --affi-border-color: #30363d;
+        --affi-text-primary: #c9d1d9;
+        --affi-text-secondary: #8b949e;
+        --affi-accent-color: #1f6feb;
+        --affi-text-on-accent: #ffffff;
+        --affi-shadow: rgba(0,0,0,0.3);
+        --affi-warning-bg: rgba(187, 128, 9, 0.15);
+        --affi-warning-border: rgba(187, 128, 9, 0.4);
+        --affi-btn-hover: #21262d;
+    }
+}
+
+/* Override variables specifically for Dark Dimmed if needed */
+:root[data-color-mode="dark"][data-dark-theme="dark_dimmed"],
+@media (prefers-color-scheme: dark) {
+    :root[data-color-mode="auto"][data-dark-theme="dark_dimmed"] {
+        --affi-bg-primary: #22272e;
+        --affi-bg-secondary: #2d333b;
+        --affi-border-color: #444c56;
+        --affi-text-primary: #adbac7;
+        --affi-text-secondary: #768390;
+    }
+}
+
 .affi-overlay {
     position: fixed;
     top: 60px;
     right: 0;
     width: 600px;
     height: calc(100vh - 100px);
-    background: #ffffff;
-    border-left: 1px solid #d0d7de;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    background: var(--affi-bg-primary);
+    border-left: 1px solid var(--affi-border-color);
+    box-shadow: -2px 0 10px var(--affi-shadow);
     z-index: 9999;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--affi-text-primary);
 }
 
 .affi-overlay.affi-collapsed {
@@ -24,7 +89,7 @@
     top: 20px;
     width: 40px;
     height: 40px;
-    background: #ffa500;
+    background: var(--affi-toggle-bg);
     color: white;
     display: flex;
     align-items: center;
@@ -37,8 +102,8 @@
 
 .affi-header {
     padding: 16px;
-    background: #f6f8fa;
-    border-bottom: 1px solid #d0d7de;
+    background: var(--affi-bg-secondary);
+    border-bottom: 1px solid var(--affi-border-color);
     font-weight: 600;
 }
 
@@ -53,10 +118,10 @@
 
 .affi-footer {
     padding: 8px 16px;
-    background: #f6f8fa;
-    border-top: 1px solid #d0d7de;
+    background: var(--affi-bg-secondary);
+    border-top: 1px solid var(--affi-border-color);
     font-size: 10px;
-    color: #57606a;
+    color: var(--affi-text-secondary);
     text-align: center;
     display: none; /* Hide by default */
 }
@@ -78,11 +143,11 @@
 
 .affi-footer-source:not(:last-child)::after {
     content: " | ";
-    color: #d0d7de;
+    color: var(--affi-border-color);
 }
 
 .affi-footer-link {
-    color: #0969da;
+    color: var(--affi-accent-color);
     text-decoration: none;
 }
 
@@ -93,11 +158,11 @@
 .affi-truncated-msg {
     padding: 8px 12px;
     margin-bottom: 16px;
-    background: #fff8c5;
-    border: 1px solid #d4a72c;
+    background: var(--affi-warning-bg);
+    border: 1px solid var(--affi-warning-border);
     border-radius: 6px;
     font-size: 11px;
-    color: #24292f;
+    color: var(--affi-text-primary);
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -110,8 +175,8 @@
 }
 
 .affi-file-section:not(.affi-file-collapsed) {
-    border-color: #d0d7de;
-    background: #fff;
+    border-color: var(--affi-border-color);
+    background: var(--affi-bg-primary);
     margin-bottom: 12px;
 }
 
@@ -122,23 +187,23 @@
     align-items: center;
     gap: 6px;
     cursor: default;
-    background: #f6f8fa;
+    background: var(--affi-bg-secondary);
     border-radius: 4px;
 }
 
 .affi-file-section:not(.affi-file-collapsed) > .affi-path-row {
-    border-bottom: 1px solid #d0d7de;
+    border-bottom: 1px solid var(--affi-border-color);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 .affi-folder-name {
     font-weight: normal;
-    color: #24292f;
+    color: var(--affi-text-primary);
 }
 
 .affi-owners-label {
-    color: #57606a;
+    color: var(--affi-text-secondary);
     opacity: 0.7;
 }
 
@@ -150,7 +215,7 @@
 }
 
 .affi-tree-action {
-    color: #0969da;
+    color: var(--affi-accent-color);
     cursor: pointer;
     text-decoration: none;
     font-size: 10px;
@@ -175,7 +240,7 @@
 }
 
 .affi-link {
-    color: #0969da;
+    color: var(--affi-accent-color);
     text-decoration: none;
     font-weight: 500;
 }
@@ -208,7 +273,7 @@
 
 .affi-stats {
     font-size: 10px;
-    color: #57606a;
+    color: var(--affi-text-secondary);
     font-weight: normal;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     display: none; /* Hide by default */
@@ -243,7 +308,7 @@
 /* Ensure common stats container handles layout correctly */
 .affi-stats {
     font-size: 10px;
-    color: #57606a;
+    color: var(--affi-text-secondary);
     font-weight: normal;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     display: none; 
@@ -260,53 +325,54 @@
     padding: 8px 16px;
     display: flex;
     gap: 4px;
-    background: #f6f8fa;
-    border-bottom: 1px solid #d0d7de;
+    background: var(--affi-bg-secondary);
+    border-bottom: 1px solid var(--affi-border-color);
 }
 
 .affi-toggle-btn {
     padding: 4px 8px;
     font-size: 10px;
     cursor: pointer;
-    background: #ffffff;
-    border: 1px solid #d0d7de;
+    background: var(--affi-bg-primary);
+    border: 1px solid var(--affi-border-color);
     border-radius: 4px;
-    color: #24292f;
+    color: var(--affi-text-primary);
 }
 
 .affi-toggle-btn:hover {
-    background: #f3f4f6;
+    background: var(--affi-btn-hover);
 }
 
 .affi-toggle-btn.active {
-    background: #0969da;
-    color: #ffffff;
-    border-color: #0969da;
+    background: var(--affi-accent-color);
+    color: var(--affi-text-on-accent);
+    border-color: var(--affi-accent-color);
 }
 
 .affi-alias {
-    color: #24292f;
+    color: var(--affi-text-primary);
     font-weight: normal;
 }
 
 .affi-expand-btn {
     background: none;
     border: none;
-    color: #57606a;
+    color: var(--affi-text-secondary);
     cursor: pointer;
     font-size: 10px;
     padding: 0 4px;
 }
 
 .affi-expand-btn:hover {
-    color: #0969da;
+    color: var(--affi-accent-color);
 }
 
 .affi-expanded-list {
     margin: 2px 0;
-    color: #57606a;
+    color: var(--affi-text-secondary);
 }
 
 .affi-expanded-list div {
     line-height: 1.4;
 }
+
