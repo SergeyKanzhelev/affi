@@ -18,7 +18,7 @@
   "host_permissions": ["https://github.com/*", "https://raw.githubusercontent.com/*"],
   "content_scripts": [
     {
-      "matches": ["https://github.com/*/*/blob/*/OWNERS", "https://github.com/*/*/blob/*/OWNERS_ALIASES"],
+      "matches": ["https://github.com/*"],
       "js": ["js-yaml.min.js", "parser.js", "ui.js", "content.js"],
       "css": ["styles.css"]
     }
