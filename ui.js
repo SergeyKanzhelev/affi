@@ -434,6 +434,7 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
   overlayDiv.appendChild(footer);
 
   container.appendChild(overlayDiv);
+  return overlayDiv;
 }
 
 window.renderAffiOverlay = renderAffiOverlay;
