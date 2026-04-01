@@ -1158,9 +1158,100 @@
     "evaline-ju": "Unknown",
     "benjaminapetersen": "Microsoft Corporation",
     "aliok": "Red Hat Inc.",
-    "matzew": "Red Hat Inc."
+    "matzew": "Red Hat Inc.",
+    "kubernetes-csi-reviewers": "Unknown",
+    "kubernetes-csi-approvers": "Unknown",
+    "lpabon": "CNCF",
+    "j-griffith": "NVIDIA Corporation"
   },
   "repositories": {
+    "kubernetes-csi/csi-driver-smb": {
+      "date_generated": "2026-04-01",
+      "users": {
+        "andyzhangx": {
+          "pr_comments": 47,
+          "devstats_score": 149
+        },
+        "jingxu97": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "kubernetes-csi-approvers": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "kubernetes-csi-reviewers": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "msau42": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "pohly": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "zeromagic": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        }
+      }
+    },
+    "kubernetes-csi/csi-lib-iscsi": {
+      "date_generated": "2026-04-01",
+      "users": {
+        "andyzhangx": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "humblec": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "j-griffith": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "jsafrane": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "msau42": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "saad-ali": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "xing-yang": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        }
+      }
+    },
+    "kubernetes-csi/docs": {
+      "date_generated": "2026-04-01",
+      "users": {
+        "lpabon": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "msau42": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "saad-ali": {
+          "pr_comments": 3,
+          "devstats_score": 4
+        },
+        "xing-yang": {
+          "pr_comments": 9,
+          "devstats_score": 6
+        }
+      }
+    },
     "kubernetes-sigs/about-api": {
       "date_generated": "2026-03-26",
       "users": {
@@ -17802,7 +17893,6 @@
     ],
     "jeremyrickard": [
       "Chair (release)",
-      "Chair (lts)",
       "Chair (code-of-conduct)"
     ],
     "jimangel": [
@@ -17885,8 +17975,7 @@
       "Tech Lead (apps)"
     ],
     "liggitt": [
-      "Tech Lead (auth)",
-      "Chair (lts)"
+      "Tech Lead (auth)"
     ],
     "logicalhan": [
       "Tech Lead (instrumentation)"
@@ -17922,7 +18011,6 @@
     ],
     "micahhausler": [
       "Chair (auth)",
-      "Chair (lts)",
       "Chair (security-response)"
     ],
     "michelle192837": [
@@ -18068,7 +18156,6 @@
       "Tech Lead (api-machinery)",
       "Tech Lead (cluster-lifecycle)",
       "Chair (release)",
-      "Chair (lts)",
       "Chair (node-lifecycle)",
       "Chair (steering)"
     ],
@@ -18351,6 +18438,9 @@
       "Chair (security-response)"
     ],
     "swamymsft": [
+      "Chair (security-response)"
+    ],
+    "stlaz": [
       "Chair (security-response)"
     ]
   }

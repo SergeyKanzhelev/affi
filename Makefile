@@ -289,7 +289,19 @@ REPOS ?= kubernetes/kubernetes \
 	kubernetes-sigs/signalhound \
 	kubernetes-sigs/dranet \
 	kubernetes-sigs/kubernetes-network-drivers \
-	kubernetes-sigs/mcp-lifecycle-operator
+	kubernetes-sigs/mcp-lifecycle-operator \
+	kubernetes-csi/csi-driver-nfs \
+	kubernetes-csi/csi-driver-smb \
+	kubernetes-csi/external-snapshotter \
+	kubernetes-csi/external-provisioner \
+	kubernetes-csi/csi-driver-host-path \
+	kubernetes-csi/external-attacher \
+	kubernetes-csi/csi-driver-iscsi \
+	kubernetes-csi/node-driver-registrar \
+	kubernetes-csi/livenessprobe \
+	kubernetes-csi/csi-release-tools \
+	kubernetes-csi/docs \
+	kubernetes-csi/csi-lib-iscsi
 
 REPO ?=
 

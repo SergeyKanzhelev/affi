@@ -1,0 +1,24 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-csi/docs --repository-devstats=kubernetes-csi/docs --period-devstats=y --dryrun ---
+Running script : 04-01-2026 13:57:59
+Processed /private/tmp/affi_stats/kubernetes-csi_docs/OWNERS
+Found 0 unique aliases
+Found 4 unique users
+..
+
+
+>>>>> Contributions from kubernetes-csi/docs devstats repo and kubernetes-csi/docs github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+xing-yang : 6 : 9 
+saad-ali : 4 : 3 
+
+
+>>>>> Missing Contributions in kubernetes-csi/docs (devstats == 0): 2
+lpabon
+msau42
+
+
+>>>>> Low reviews/approvals in kubernetes-csi/docs (GH pr comments <= 10 && devstats <=20): 2
+saad-ali
+xing-yang
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES
