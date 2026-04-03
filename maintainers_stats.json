@@ -47,7 +47,7 @@
     "arangogutierrez": "NVIDIA Corporation",
     "aravindhp": "Red Hat Inc.",
     "ardaguclu": "Red Hat Inc.",
-    "aroradaman": "Unknown",
+    "aroradaman": "VMware Inc.",
     "arunmk": "Independent",
     "atiratree": "Unknown",
     "averagemarcus": "CNCF",
@@ -1162,9 +1162,43 @@
     "kubernetes-csi-reviewers": "Unknown",
     "kubernetes-csi-approvers": "Unknown",
     "lpabon": "CNCF",
-    "j-griffith": "NVIDIA Corporation"
+    "j-griffith": "NVIDIA Corporation",
+    "fejta": "SpaceX",
+    "guptanswati": "NVIDIA Corporation",
+    "jgehrcke": "TBD - TV",
+    "shivamerla": "NVIDIA Corporation",
+    "cdesiniotis": "Unknown"
   },
   "repositories": {
+    "kubernetes-csi/.github": {
+      "date_generated": "2026-04-03",
+      "users": {
+        "cblecker": {
+          "pr_comments": 15,
+          "devstats_score": 1
+        },
+        "fejta": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "idvoretskyi": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mrbobbytables": {
+          "pr_comments": 0,
+          "devstats_score": 1
+        },
+        "nikhita": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "spiffxp": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        }
+      }
+    },
     "kubernetes-csi/csi-driver-smb": {
       "date_generated": "2026-04-01",
       "users": {
@@ -1249,6 +1283,48 @@
         "xing-yang": {
           "pr_comments": 9,
           "devstats_score": 6
+        }
+      }
+    },
+    "kubernetes-csi/kubernetes-csi.github.io": {
+      "date_generated": "2026-04-03",
+      "users": {
+        "lpabon": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "saad-ali": {
+          "pr_comments": 0,
+          "devstats_score": 1
+        }
+      }
+    },
+    "kubernetes-sigs/.github": {
+      "date_generated": "2026-04-03",
+      "users": {
+        "cblecker": {
+          "pr_comments": 15,
+          "devstats_score": 1
+        },
+        "fejta": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "idvoretskyi": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mrbobbytables": {
+          "pr_comments": 0,
+          "devstats_score": 1
+        },
+        "nikhita": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "spiffxp": {
+          "pr_comments": 0,
+          "devstats_score": 0
         }
       }
     },
@@ -6923,6 +6999,35 @@
         }
       }
     },
+    "kubernetes-sigs/nvidia-dra-driver-gpu": {
+      "date_generated": "2026-04-03",
+      "users": {
+        "cdesiniotis": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "dims": {
+          "pr_comments": 7,
+          "devstats_score": 1324
+        },
+        "guptanswati": {
+          "pr_comments": 21,
+          "devstats_score": 19
+        },
+        "jgehrcke": {
+          "pr_comments": 279,
+          "devstats_score": 2
+        },
+        "klueska": {
+          "pr_comments": 208,
+          "devstats_score": 68
+        },
+        "shivamerla": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        }
+      }
+    },
     "kubernetes-sigs/obscli": {
       "date_generated": "2026-03-26",
       "users": {
@@ -8609,6 +8714,35 @@
           "devstats_score": 0
         },
         "xmudrii": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        }
+      }
+    },
+    "kubernetes/.github": {
+      "date_generated": "2026-04-03",
+      "users": {
+        "cblecker": {
+          "pr_comments": 15,
+          "devstats_score": 1
+        },
+        "fejta": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "idvoretskyi": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mrbobbytables": {
+          "pr_comments": 0,
+          "devstats_score": 1
+        },
+        "nikhita": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "spiffxp": {
           "pr_comments": 0,
           "devstats_score": 0
         }
@@ -14340,6 +14474,35 @@
         "yujuhong": {
           "pr_comments": 6,
           "devstats_score": 15
+        }
+      }
+    },
+    "kubernetes/kubernetes-template-project": {
+      "date_generated": "2026-04-03",
+      "users": {
+        "cblecker": {
+          "pr_comments": 15,
+          "devstats_score": 1
+        },
+        "fejta": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "idvoretskyi": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "mrbobbytables": {
+          "pr_comments": 0,
+          "devstats_score": 1
+        },
+        "nikhita": {
+          "pr_comments": 0,
+          "devstats_score": 0
+        },
+        "spiffxp": {
+          "pr_comments": 0,
+          "devstats_score": 0
         }
       }
     },

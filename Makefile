@@ -14,299 +14,17 @@ sync-firefox:
 	rsync -av ./ firefox/ --exclude 'firefox' --exclude 'node_modules' --exclude 'raw_stats' --exclude 'tests' --exclude '.git' --exclude 'Makefile' --exclude 'package.json' --exclude 'package-lock.json' --exclude 'generate_stats.py' --exclude 'README.md' --exclude 'LICENSE' --exclude 'PRIVACY.md' --exclude 'screenshot-*.png' --exclude 'manifest.json'
 	cp firefox/manifest.json.src firefox/manifest.json
 
-REPOS ?= kubernetes/kubernetes \
-	kubernetes/website \
-	kubernetes/release \
-	kubernetes/minikube \
-	kubernetes/test-infra \
-	kubernetes/enhancements \
-	kubernetes/community \
-	kubernetes/kube-state-metrics \
-	kubernetes/node-problem-detector \
-	kubernetes/kompose \
-	kubernetes/kops \
-	kubernetes/git-sync \
-	kubernetes/k8s.io \
-	kubernetes/client-go \
-	kubernetes/gengo \
-	kubernetes/perf-tests \
-	kubernetes/ingress-nginx \
-	kubernetes/kubeadm \
-	kubernetes/repo-infra \
-	kubernetes/dns \
-	kubernetes/apimachinery \
-	kubernetes/apiserver \
-	kubernetes/sample-apiserver \
-	kubernetes/kube-aggregator \
-	kubernetes/metrics \
-	kubernetes/kubectl \
-	kubernetes/autoscaler \
-	kubernetes/examples \
-	kubernetes/api \
-	kubernetes/apiextensions-apiserver \
-	kubernetes/utils \
-	kubernetes/kube-openapi \
-	kubernetes/sig-release \
-	kubernetes/code-generator \
-	kubernetes/steering \
-	kubernetes/ingress-gce \
-	kubernetes/sample-controller \
-	kubernetes/publishing-bot \
-	kubernetes/cloud-provider-aws \
-	kubernetes/cloud-provider-openstack \
-	kubernetes/cloud-provider-gcp \
-	kubernetes/cloud-provider-vsphere \
-	kubernetes/org \
-	kubernetes/contributor-site \
-	kubernetes/kube-controller-manager \
-	kubernetes/kube-scheduler \
-	kubernetes/kubelet \
-	kubernetes/kube-proxy \
-	kubernetes/cli-runtime \
-	kubernetes/sample-cli-plugin \
-	kubernetes/cloud-provider-alibaba-cloud \
-	kubernetes/cluster-bootstrap \
-	kubernetes/cloud-provider \
-	kubernetes/klog \
-	kubernetes/node-api \
-	kubernetes/cloud-provider-sample \
-	kubernetes/component-base \
-	kubernetes/csi-translation-lib \
-	kubernetes/committee-security-response \
-	kubernetes/cri-api \
-	kubernetes/legacy-cloud-providers \
-	kubernetes/system-validators \
-	kubernetes/controller-manager \
-	kubernetes/mount-utils \
-	kubernetes/component-helpers \
-	kubernetes/sig-testing \
-	kubernetes/pod-security-admission \
-	kubernetes/sig-security \
-	kubernetes/registry.k8s.io \
-	kubernetes/kms \
-	kubernetes/dynamic-resource-allocation \
-	kubernetes/cel-admission-webhook \
-	kubernetes/endpointslice \
-	kubernetes/cri-client \
-	kubernetes/externaljwt \
-	kubernetes/streaming \
-	kubernetes/cri-streaming \
-	kubernetes-sigs/randfill \
-	kubernetes-sigs/kubespray \
-	kubernetes-sigs/node-feature-discovery \
-	kubernetes-sigs/cluster-proportional-autoscaler \
-	kubernetes-sigs/cluster-capacity \
-	kubernetes-sigs/reference-docs \
-	kubernetes-sigs/cri-tools \
-	kubernetes-sigs/external-dns \
-	kubernetes-sigs/custom-metrics-apiserver \
-	kubernetes-sigs/aws-load-balancer-controller \
-	kubernetes-sigs/apiserver-builder-alpha \
-	kubernetes-sigs/prometheus-adapter \
-	kubernetes-sigs/ip-masq-agent \
-	kubernetes-sigs/metrics-server \
-	kubernetes-sigs/descheduler \
-	kubernetes-sigs/aws-iam-authenticator \
-	kubernetes-sigs/cluster-proportional-vertical-autoscaler \
-	kubernetes-sigs/lwkd \
-	kubernetes-sigs/application \
-	kubernetes-sigs/cluster-api \
-	kubernetes-sigs/aws-encryption-provider \
-	kubernetes-sigs/kubebuilder \
-	kubernetes-sigs/cloud-provider-azure \
-	kubernetes-sigs/apisnoop \
-	kubernetes-sigs/kustomize \
-	kubernetes-sigs/controller-runtime \
-	kubernetes-sigs/gcp-compute-persistent-disk-csi-driver \
-	kubernetes-sigs/cluster-api-provider-azure \
-	kubernetes-sigs/cluster-api-provider-openstack \
-	kubernetes-sigs/controller-tools \
-	kubernetes-sigs/cloud-provider-equinix-metal \
-	kubernetes-sigs/gcp-filestore-csi-driver \
-	kubernetes-sigs/aws-ebs-csi-driver \
-	kubernetes-sigs/krew \
-	kubernetes-sigs/krew-index \
-	kubernetes-sigs/cluster-api-provider-gcp \
-	kubernetes-sigs/cluster-api-provider-aws \
-	kubernetes-sigs/cluster-api-provider-vsphere \
-	kubernetes-sigs/alibaba-cloud-csi-driver \
-	kubernetes-sigs/cluster-api-provider-digitalocean \
-	kubernetes-sigs/contributor-playground \
-	kubernetes-sigs/kube-storage-version-migrator \
-	kubernetes-sigs/structured-merge-diff \
-	kubernetes-sigs/kind \
-	kubernetes-sigs/sig-storage-lib-external-provisioner \
-	kubernetes-sigs/yaml \
-	kubernetes-sigs/azurefile-csi-driver \
-	kubernetes-sigs/aws-fsx-csi-driver \
-	kubernetes-sigs/sig-storage-local-static-provisioner \
-	kubernetes-sigs/windows-testing \
-	kubernetes-sigs/aws-efs-csi-driver \
-	kubernetes-sigs/azuredisk-csi-driver \
-	kubernetes-sigs/secrets-store-csi-driver \
-	kubernetes-sigs/promo-tools \
-	kubernetes-sigs/windows-gmsa \
-	kubernetes-sigs/blob-csi-driver \
-	kubernetes-sigs/kubebuilder-declarative-pattern \
-	kubernetes-sigs/release-notes \
-	kubernetes-sigs/cluster-addons \
-	kubernetes-sigs/slack-infra \
-	kubernetes-sigs/cli-experimental \
-	kubernetes-sigs/legacyflag \
-	kubernetes-sigs/cluster-api-provider-ibmcloud \
-	kubernetes-sigs/apiserver-network-proxy \
-	kubernetes-sigs/vsphere-csi-driver \
-	kubernetes-sigs/cli-utils \
-	kubernetes-sigs/sig-windows-tools \
-	kubernetes-sigs/downloadkubernetes \
-	kubernetes-sigs/execution-hook \
-	kubernetes-sigs/node-feature-discovery-operator \
-	kubernetes-sigs/mdtoc \
-	kubernetes-sigs/image-builder \
-	kubernetes-sigs/zeitgeist \
-	kubernetes-sigs/discuss-theme \
-	kubernetes-sigs/ingress-controller-conformance \
-	kubernetes-sigs/gateway-api \
-	kubernetes-sigs/headlamp \
-	kubernetes-sigs/cloud-provider-huaweicloud \
-	kubernetes-sigs/iptables-wrappers \
-	kubernetes-sigs/scheduler-plugins \
-	kubernetes-sigs/clientgofix \
-	kubernetes-sigs/nfs-subdir-external-provisioner \
-	kubernetes-sigs/nfs-ganesha-server-and-external-provisioner \
-	kubernetes-sigs/kubebuilder-release-tools \
-	kubernetes-sigs/boskos \
-	kubernetes-sigs/gluster-block-external-provisioner \
-	kubernetes-sigs/gluster-file-external-provisioner \
-	kubernetes-sigs/security-profiles-operator \
-	kubernetes-sigs/sig-windows-samples \
-	kubernetes-sigs/instrumentation-tools \
-	kubernetes-sigs/externalip-webhook \
-	kubernetes-sigs/kubetest2 \
-	kubernetes-sigs/mcs-api \
-	kubernetes-sigs/apiserver-runtime \
-	kubernetes-sigs/cluster-api-provider-kubemark \
-	kubernetes-sigs/e2e-framework \
-	kubernetes-sigs/ibm-powervs-block-csi-driver \
-	kubernetes-sigs/kubectl-check-ownerreferences \
-	kubernetes-sigs/work-api \
-	kubernetes-sigs/depstat \
-	kubernetes-sigs/release-utils \
-	kubernetes-sigs/release-sdk \
-	kubernetes-sigs/instrumentation \
-	kubernetes-sigs/sig-windows-dev-tools \
-	kubernetes-sigs/about-api \
-	kubernetes-sigs/instrumentation-addons \
-	kubernetes-sigs/provider-aws-test-infra \
-	kubernetes-sigs/network-policy-api \
-	kubernetes-sigs/cosi-driver-sample \
-	kubernetes-sigs/ibm-vpc-block-csi-driver \
-	kubernetes-sigs/kube-scheduler-simulator \
-	kubernetes-sigs/cluster-api-provider-kubevirt \
-	kubernetes-sigs/json \
-	kubernetes-sigs/cluster-api-provider-cloudstack \
-	kubernetes-sigs/maintainers \
-	kubernetes-sigs/azurelustre-csi-driver \
-	kubernetes-sigs/bom \
-	kubernetes-sigs/cluster-api-operator \
-	kubernetes-sigs/release-team-shadow-stats \
-	kubernetes-sigs/kernel-module-management \
-	kubernetes-sigs/windows-operational-readiness \
-	kubernetes-sigs/prow \
-	kubernetes-sigs/kueue \
-	kubernetes-sigs/testgrid-json-exporter \
-	kubernetes-sigs/cluster-api-ipam-provider-in-cluster \
-	kubernetes-sigs/verify-conformance \
-	kubernetes-sigs/logtools \
-	kubernetes-sigs/tejolote \
-	kubernetes-sigs/kwok \
-	kubernetes-sigs/hydrophone \
-	kubernetes-sigs/ingress2gateway \
-	kubernetes-sigs/karpenter \
-	kubernetes-sigs/sig-auth-tools \
-	kubernetes-sigs/porche \
-	kubernetes-sigs/usage-metrics-collector \
-	kubernetes-sigs/dra-example-driver \
-	kubernetes-sigs/minikube-gui \
-	kubernetes-sigs/release-actions \
-	kubernetes-sigs/windows-service-proxy \
-	kubernetes-sigs/aws-file-cache-csi-driver \
-	kubernetes-sigs/sig-multicluster-site \
-	kubernetes-sigs/cluster-api-addon-provider-helm \
-	kubernetes-sigs/logical-cluster \
-	kubernetes-sigs/community-images \
-	kubernetes-sigs/cloud-provider-kind \
-	kubernetes-sigs/aws-fsx-openzfs-csi-driver \
-	kubernetes-sigs/jobset \
-	kubernetes-sigs/kubectl-validate \
-	kubernetes-sigs/kube-scheduler-wasm-extension \
-	kubernetes-sigs/knftables \
-	kubernetes-sigs/noderesourcetopology-api \
-	kubernetes-sigs/cloud-pv-admission-labeler \
-	kubernetes-sigs/cluster-inventory-api \
-	kubernetes-sigs/obscli \
-	kubernetes-sigs/node-ipam-controller \
-	kubernetes-sigs/lws \
-	kubernetes-sigs/testgrid \
-	kubernetes-sigs/referencegrant-poc \
-	kubernetes-sigs/karpenter-provider-cluster-api \
-	kubernetes-sigs/kube-network-policies \
-	kubernetes-sigs/secrets-store-sync-controller \
-	kubernetes-sigs/wg-device-management \
-	kubernetes-sigs/etcd-manager \
-	kubernetes-sigs/karpenter-provider-ibm-cloud \
-	kubernetes-sigs/cve-feed-osv \
-	kubernetes-sigs/wg-serving \
-	kubernetes-sigs/multi-network \
-	kubernetes-sigs/multi-network-api \
-	kubernetes-sigs/gateway-api-inference-extension \
-	kubernetes-sigs/gwctl \
-	kubernetes-sigs/kro \
-	kubernetes-sigs/crdify \
-	kubernetes-sigs/cni-dra-driver \
-	kubernetes-sigs/container-object-storage-interface \
-	kubernetes-sigs/ingate \
-	kubernetes-sigs/kjob \
-	kubernetes-sigs/kube-api-linter \
-	kubernetes-sigs/inference-perf \
-	kubernetes-sigs/nat64 \
-	kubernetes-sigs/multicluster-runtime \
-	kubernetes-sigs/provider-ibmcloud-test-infra \
-	kubernetes-sigs/network-policy-finalizer \
-	kubernetes-sigs/maintainer-tools \
-	kubernetes-sigs/dra-driver-cpu \
-	kubernetes-sigs/resource-state-metrics \
-	kubernetes-sigs/agent-sandbox \
-	kubernetes-sigs/admission-policies \
-	kubernetes-sigs/ai-conformance \
-	kubernetes-sigs/minikube-preloads \
-	kubernetes-sigs/minikube-os \
-	kubernetes-sigs/wg-ai-gateway \
-	kubernetes-sigs/kindnet \
-	kubernetes-sigs/dra-driver-topology \
-	kubernetes-sigs/kube-agentic-networking \
-	kubernetes-sigs/node-readiness-controller \
-	kubernetes-sigs/signalhound \
-	kubernetes-sigs/dranet \
-	kubernetes-sigs/kubernetes-network-drivers \
-	kubernetes-sigs/mcp-lifecycle-operator \
-	kubernetes-csi/csi-driver-nfs \
-	kubernetes-csi/csi-driver-smb \
-	kubernetes-csi/external-snapshotter \
-	kubernetes-csi/external-provisioner \
-	kubernetes-csi/csi-driver-host-path \
-	kubernetes-csi/external-attacher \
-	kubernetes-csi/csi-driver-iscsi \
-	kubernetes-csi/node-driver-registrar \
-	kubernetes-csi/livenessprobe \
-	kubernetes-csi/csi-release-tools \
-	kubernetes-csi/docs \
-	kubernetes-csi/csi-lib-iscsi
+REPOS_FILE = repositories.txt
+REPOS = $(shell cat $(REPOS_FILE))
 
 REPO ?=
 
 test:
 	npm test
+
+update-repos:
+	python3 update_repos.py > $(REPOS_FILE).tmp
+	mv $(REPOS_FILE).tmp $(REPOS_FILE)
 
 generate-stats:
 	@if [ -n "$(REPO)" ]; then \
@@ -316,6 +34,14 @@ generate-stats:
 			python3 generate_stats.py --repo $$repo; \
 		done; \
 	fi
+
+generate-new-stats:
+	@for repo in $(REPOS); do \
+		if ! grep -q "\"$$repo\":" maintainers_stats.json; then \
+			echo "Generating stats for new repo: $$repo"; \
+			python3 generate_stats.py --repo $$repo; \
+		fi \
+	done
 
 parse-stats:
 	@if [ -n "$(REPO)" ]; then \
