@@ -1,7 +1,15 @@
 (function() {
-  console.log('Affi extension initialized');
+  console.debug('Affi extension initialized');
 
-  const runtimeAPI = (typeof chrome !== 'undefined' && chrome.runtime) ? chrome : browser;
+  const runtimeAPI = (typeof chrome !== 'undefined' && chrome.runtime) ? chrome : (typeof browser !== 'undefined' ? browser : null);
+
+  function fetchWithTimeout(url, options, timeout) {
+    if (timeout === undefined) timeout = 10000;
+    const controller = new AbortController();
+    const id = setTimeout(() => controller.abort(), timeout);
+    const opts = Object.assign({}, options || {}, { signal: controller.signal });
+    return fetch(url, opts).finally(() => clearTimeout(id));
+  }
 
   const MAX_OWNERS_DEPTH = 20;
 
@@ -147,8 +155,8 @@
     try {
       const statsUrl = runtimeAPI.runtime.getURL('maintainers_stats.json');
       const [aliasesResp, statsResp] = await Promise.all([
-        fetch(aliasesUrl).then(r => r.ok ? r.text() : ''),
-        fetch(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+        fetchWithTimeout(aliasesUrl).then(r => r.ok ? r.text() : ''),
+        fetchWithTimeout(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({}))
       ]);
 
       // Abort if user has navigated away since this init started
@@ -217,7 +225,7 @@
 
     const fetchPromises = truncatedFolders.map(folder => {
       const url = `${baseUrl}/${folder ? folder + '/' : ''}OWNERS`;
-      return fetch(url).then(async r => {
+      return fetchWithTimeout(url).then(async r => {
         if (!r.ok) return null;
         const text = await r.text();
         return { path: folder || '/', content: text };
@@ -239,7 +247,8 @@
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
       fetchOwnersHierarchy,
-      parseGitHubBlobContext
+      parseGitHubBlobContext,
+      fetchWithTimeout
     };
   }
 })();

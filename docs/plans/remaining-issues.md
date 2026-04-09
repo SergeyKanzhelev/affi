@@ -48,14 +48,14 @@ Addressing security, reliability, and maintenance gaps.
   - Add a compatibility shim `const runtimeAPI = (typeof chrome !== 'undefined' && chrome.runtime) ? chrome : browser;` to `content.js` and use it for `getURL`.
   - **Validation:** grep -q "runtimeAPI" content.js
 
-- [ ] **Add fetch timeout via AbortController**
+- [x] **Add fetch timeout via AbortController**
   - Implement `fetchWithTimeout` helper and use it for all fetch calls in `content.js`.
   - **Validation:** grep -q "fetchWithTimeout" content.js
 
-- [ ] **Replace innerHTML with safe DOM construction**
+- [x] **Replace innerHTML with safe DOM construction**
   - Replace `innerHTML` usage in `ui.js` (lines 421, 431) with `document.createTextNode` and `document.createElement`.
   - **Validation:** grep -n "innerHTML" ui.js | wc -l | grep -q "0"
 
-- [ ] **Remove noisy console.log**
+- [x] **Remove noisy console.log**
   - Remove or change to `console.debug` the "Affi extension initialized" log in `content.js`.
   - **Validation:** ! grep -q "Affi extension initialized" content.js

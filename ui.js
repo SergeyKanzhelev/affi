@@ -426,7 +426,13 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
   sources.forEach(src => {
       const span = document.createElement('span');
       span.className = 'affi-footer-source';
-      span.innerHTML = `${src.label}: <a href="${src.link}" target="_blank" class="affi-footer-link">${src.text}</a>`;
+      span.appendChild(document.createTextNode(`${src.label}: `));
+      const srcLink = document.createElement('a');
+      srcLink.href = src.link;
+      srcLink.target = '_blank';
+      srcLink.className = 'affi-footer-link';
+      srcLink.textContent = src.text;
+      span.appendChild(srcLink);
       sourcesContainer.appendChild(span);
   });
   footer.appendChild(sourcesContainer);
@@ -436,7 +442,14 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
   footer.appendChild(dateDiv);
 
   const updateDiv = document.createElement('div');
-  updateDiv.innerHTML = 'Update data at <a href="https://github.com/SergeyKanzhelev/affi" target="_blank" class="affi-footer-link">affi repo</a>.';
+  updateDiv.appendChild(document.createTextNode('Update data at '));
+  const updateLink = document.createElement('a');
+  updateLink.href = 'https://github.com/SergeyKanzhelev/affi';
+  updateLink.target = '_blank';
+  updateLink.className = 'affi-footer-link';
+  updateLink.textContent = 'affi repo';
+  updateDiv.appendChild(updateLink);
+  updateDiv.appendChild(document.createTextNode('.'));
   footer.appendChild(updateDiv);
 
   overlayDiv.appendChild(footer);
