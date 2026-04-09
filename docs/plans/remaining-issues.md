@@ -41,7 +41,7 @@ Addressing security, reliability, and maintenance gaps.
   - Correct `PRIVACY.md` to accurately reflect network calls to GitHub's raw content servers.
   - **Validation:** grep -q "raw.githubusercontent.com" PRIVACY.md
 
-- [ ] **Harden CI/CD**
+- [x] **Harden CI/CD**
   - Add `npm audit` and automated E2E tests to GitHub Actions.
   - **Validation:** ls .github/workflows/ci.yml
 - [ ] **Fix Firefox API incompatibility**
