@@ -21,7 +21,7 @@ Addressing security, reliability, and maintenance gaps.
   - Add `MAX_OWNERS_DEPTH = 20` to `content.js` and truncate the folder list before fetching.
   - **Validation:** grep -q "MAX_OWNERS_DEPTH" content.js
 
-- [ ] **Set Firefox MV3 minimum version**
+- [x] **Set Firefox MV3 minimum version**
   - Add `strict_min_version: "131.0"` to `firefox/manifest.json` and update `README.md`.
   - **Validation:** grep -q "131.0" firefox/manifest.json
 

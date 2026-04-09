@@ -54,6 +54,8 @@ All information displayed by the extension (statistics, affiliations, and roles)
 4. Click **Load unpacked** and select the project directory.
 
 ### Firefox
+Requires Firefox 131.0 or later (Manifest V3 support).
+
 1. Clone this repository.
 2. Run `make sync-firefox` to prepare the `firefox/` directory.
 3. Open Firefox and navigate to `about:debugging`.
