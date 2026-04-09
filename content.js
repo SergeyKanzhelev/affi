@@ -3,12 +3,11 @@
 
   const runtimeAPI = (typeof chrome !== 'undefined' && chrome.runtime) ? chrome : (typeof browser !== 'undefined' ? browser : null);
 
-  function fetchWithTimeout(url, options, timeout) {
+  function fetchWithTimeout(url, timeout) {
     if (timeout === undefined) timeout = 10000;
     const controller = new AbortController();
     const id = setTimeout(() => controller.abort(), timeout);
-    const opts = Object.assign({}, options || {}, { signal: controller.signal });
-    return fetch(url, opts).finally(() => clearTimeout(id));
+    return fetch(url, { signal: controller.signal }).finally(() => clearTimeout(id));
   }
 
   const MAX_OWNERS_DEPTH = 20;
@@ -153,15 +152,14 @@
     const aliasesUrl = `${rawBaseUrl}/OWNERS_ALIASES`;
 
     try {
-      const statsUrl = runtimeAPI.runtime.getURL('maintainers_stats.json');
+      const statsUrl = runtimeAPI ? runtimeAPI.runtime.getURL('maintainers_stats.json') : null;
       const [aliasesResp, statsResp] = await Promise.all([
         fetchWithTimeout(aliasesUrl).then(r => r.ok ? r.text() : ''),
-        fetchWithTimeout(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+        statsUrl ? fetchWithTimeout(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({})) : Promise.resolve({})
       ]);
 
       // Abort if user has navigated away since this init started
       if (navSeq !== mySeq) {
-          isInitializing = false;
           return;
       }
 
@@ -173,7 +171,6 @@
 
       // Final check before rendering (URL might have changed during fetch)
       if (navSeq !== mySeq || window.location.pathname !== pathname) {
-          isInitializing = false;
           return;
       }
 
@@ -189,7 +186,6 @@
       if (navSeq === mySeq) {
         const existing = document.querySelector('.affi-overlay');
         if (!existing) {
-          const fetchError = { error: true, message: err.message || 'Unknown error' };
           const errDiv = document.createElement('div');
           errDiv.className = 'affi-overlay';
           errDiv.dataset.path = pathname;
@@ -199,7 +195,7 @@
           errDiv.appendChild(toggle);
           const msg = document.createElement('div');
           msg.className = 'affi-error-message';
-          msg.textContent = `Affi: Failed to load OWNERS data. ${fetchError.message}`;
+          msg.textContent = `Affi: Failed to load OWNERS data. ${err.message || 'Unknown error'}`;
           errDiv.appendChild(msg);
           document.body.appendChild(errDiv);
         }

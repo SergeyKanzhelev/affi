@@ -71,18 +71,12 @@ function getContributorStatus(rStat, gStat) {
 
 function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsData, repoPath) {
   // Find matching repo in additive structure
-  let userStats = {};
-  if (statsData && statsData.repositories) {
-      // Robust check for repo matching (handle casing and trailing slashes)
-      const matchingKey = Object.keys(statsData.repositories).find(k => {
-          const cleanK = k.toLowerCase().replace(/\/$/, "");
-          const cleanP = repoPath.replace(/\/$/, "");
-          return cleanK === cleanP;
-      });
-      if (matchingKey) {
-          userStats = statsData.repositories[matchingKey].users || {};
-      }
-  }
+  const cleanRepoPath = repoPath.replace(/\/$/, "");
+  const matchingKey = (statsData && statsData.repositories)
+      ? Object.keys(statsData.repositories).find(k => k.toLowerCase().replace(/\/$/, "") === cleanRepoPath)
+      : null;
+  const matchingRepo = matchingKey ? statsData.repositories[matchingKey] : null;
+  let userStats = matchingRepo ? (matchingRepo.users || {}) : {};
 
   // Access global affiliations and roles
   const userAffiliations = statsData ? (statsData.users_affiliation || {}) : {};
@@ -330,20 +324,16 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
   const buttonBar = document.createElement('div');
   buttonBar.className = 'affi-button-bar';
 
-  const createToggle = (label, cls) => {
+  const createToggle = (label) => {
       const b = document.createElement('button');
       b.className = 'affi-toggle-btn';
       b.innerText = label;
-      b.onclick = () => {
-          const isActive = overlayDiv.classList.toggle(cls);
-          b.classList.toggle('active', isActive);
-      };
       return b;
   };
 
-  const btnStats = createToggle('stats', 'affi-show-stats');
-  const btnAffi = createToggle('affi', 'affi-show-affiliations');
-  const btnRoles = createToggle('roles', 'affi-show-roles');
+  const btnStats = createToggle('stats');
+  const btnAffi = createToggle('affi');
+  const btnRoles = createToggle('roles');
   
   const btnAll = document.createElement('button');
   btnAll.className = 'affi-toggle-btn';
@@ -394,15 +384,7 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
   buttonBar.appendChild(btnAll);
 
   // Find collection date for this repo or fallback to latest across all
-  let displayDate = latestDate;
-  if (statsData && statsData.repositories) {
-      const matchingKey = Object.keys(statsData.repositories).find(k => {
-          return k.toLowerCase().replace(/\/$/, "") === repoPath.replace(/\/$/, "");
-      });
-      if (matchingKey && statsData.repositories[matchingKey].date_generated) {
-          displayDate = statsData.repositories[matchingKey].date_generated;
-      }
-  }
+  const displayDate = (matchingRepo && matchingRepo.date_generated) ? matchingRepo.date_generated : latestDate;
 
   overlayDiv.appendChild(toggle);
   overlayDiv.appendChild(header);

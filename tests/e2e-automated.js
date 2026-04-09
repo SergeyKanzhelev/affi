@@ -49,15 +49,7 @@ describe('Mock Firefox API - fetchOwnersHierarchy', () => {
     expect(result.files[0].content).toContain('alice');
   });
 
-  test('stops at no_parent_owners boundary (Firefox browser global simulation)', async () => {
-    // Simulate environment where browser global exists (Firefox shape)
-    const originalBrowser = global.browser;
-    global.browser = {
-      runtime: {
-        getURL: (path) => `moz-extension://fake-id/${path}`,
-      },
-    };
-
+  test('marks truncated when no_parent_owners is found', async () => {
     fetch.mockImplementation((url) => {
       if (url.includes('pkg/sub/OWNERS')) {
         return Promise.resolve({
@@ -85,11 +77,9 @@ describe('Mock Firefox API - fetchOwnersHierarchy', () => {
       'pkg/sub/OWNERS'
     );
 
-    // root, pkg (with no_parent_owners), pkg/sub
+    // root, pkg (with no_parent_owners), pkg/sub — all fetched in parallel
     expect(result.files.length).toBe(3);
     expect(result.truncated).toBe(true);
-
-    global.browser = originalBrowser;
   });
 
   test('handles fetch failures gracefully', async () => {
@@ -121,7 +111,7 @@ describe('Mock Firefox API - fetchOwnersHierarchy', () => {
   });
 
   test('respects MAX_OWNERS_DEPTH by not fetching more than 20 levels', async () => {
-    // Build a 25-level deep OWNERS path
+    // Build a 25-level deep OWNERS path (26 folders including root, capped at 20)
     const levels = Array.from({ length: 25 }, (_, i) => `l${i}`);
     const deepPath = levels.join('/') + '/OWNERS';
 
@@ -137,8 +127,9 @@ describe('Mock Firefox API - fetchOwnersHierarchy', () => {
       deepPath
     );
 
-    // Should fetch at most MAX_OWNERS_DEPTH (20) folders plus root
-    expect(result.files.length).toBeLessThanOrEqual(21);
+    // Should fetch exactly MAX_OWNERS_DEPTH (20) folders, not all 26
+    expect(fetch.mock.calls.length).toBe(20);
+    expect(result.files.length).toBe(20);
   });
 });
 
