@@ -37,7 +37,7 @@ Addressing security, reliability, and maintenance gaps.
   - Add Puppeteer-based E2E tests and mock Firefox API tests.
   - **Validation:** ls tests/e2e-automated.js && npm test
 
-- [ ] **Update Privacy Policy**
+- [x] **Update Privacy Policy**
   - Correct `PRIVACY.md` to accurately reflect network calls to GitHub's raw content servers.
   - **Validation:** grep -q "raw.githubusercontent.com" PRIVACY.md
 
