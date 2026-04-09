@@ -25,7 +25,7 @@ Addressing security, reliability, and maintenance gaps.
   - Add `strict_min_version: "131.0"` to `firefox/manifest.json` and update `README.md`.
   - **Validation:** grep -q "131.0" firefox/manifest.json
 
-- [ ] **Fix dependency versions**
+- [x] **Fix dependency versions**
   - Update `jest` versions in `package.json` to valid stable versions and run `npm install`.
   - **Validation:** npm list jest
 
