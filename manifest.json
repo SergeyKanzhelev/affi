@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "affi",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "author": "Sergey Kanzhelev",
   "description": "Understand aliases in Kubernetes OWNERS files.",
   "homepage_url": "https://github.com/SergeyKanzhelev/affi",
@@ -18,6 +18,9 @@
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none';"
   },
   "web_accessible_resources": [
     {

@@ -1,10 +1,23 @@
 (function() {
-  console.log('Affi extension initialized');
+  console.debug('Affi extension initialized');
+
+  const runtimeAPI = (typeof chrome !== 'undefined' && chrome.runtime) ? chrome : (typeof browser !== 'undefined' ? browser : null);
+
+  function fetchWithTimeout(url, timeout) {
+    if (timeout === undefined) timeout = 10000;
+    const controller = new AbortController();
+    const id = setTimeout(() => controller.abort(), timeout);
+    return fetch(url, { signal: controller.signal }).finally(() => clearTimeout(id));
+  }
+
+  const MAX_OWNERS_DEPTH = 20;
 
   let lastUrl = typeof location !== 'undefined' ? location.href : '';
   let isInitializing = false;
+  let navSeq = 0;
 
   function onUrlChange() {
+    navSeq++;
     const existing = document.querySelector('.affi-overlay');
     if (existing) {
         existing.remove();
@@ -116,7 +129,7 @@
 
   async function init() {
     if (isInitializing) return;
-    
+
     const pathname = window.location.pathname;
     const blobContext = parseGitHubBlobContext(pathname, document);
     if (!blobContext) return;
@@ -134,15 +147,22 @@
     }
 
     isInitializing = true;
+    const mySeq = navSeq;
     const rawBaseUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}`;
     const aliasesUrl = `${rawBaseUrl}/OWNERS_ALIASES`;
 
     try {
-      const statsUrl = chrome.runtime.getURL('maintainers_stats.json');
+      const statsUrl = runtimeAPI ? runtimeAPI.runtime.getURL('maintainers_stats.json') : null;
       const [aliasesResp, statsResp] = await Promise.all([
-        fetch(aliasesUrl).then(r => r.ok ? r.text() : ''),
-        fetch(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+        fetchWithTimeout(aliasesUrl).then(r => r.ok ? r.text() : ''),
+        statsUrl ? fetchWithTimeout(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({})) : Promise.resolve({})
       ]);
+
+      // Abort if user has navigated away since this init started
+      if (navSeq !== mySeq) {
+          return;
+      }
+
       const aliasesData = aliasesResp ? parseYamlAliases(aliasesResp) : {};
 
       const hierarchy = await fetchOwnersHierarchy(rawBaseUrl, filePath);
@@ -150,8 +170,7 @@
       const repoPath = window.location.pathname.split('/').slice(1, 3).join('/').toLowerCase();
 
       // Final check before rendering (URL might have changed during fetch)
-      if (window.location.pathname !== pathname) {
-          isInitializing = false;
+      if (navSeq !== mySeq || window.location.pathname !== pathname) {
           return;
       }
 
@@ -164,6 +183,23 @@
       }
     } catch (err) {
       console.error('Affi: Error fetching data', err);
+      if (navSeq === mySeq) {
+        const existing = document.querySelector('.affi-overlay');
+        if (!existing) {
+          const errDiv = document.createElement('div');
+          errDiv.className = 'affi-overlay';
+          errDiv.dataset.path = pathname;
+          const toggle = document.createElement('div');
+          toggle.className = 'affi-toggle';
+          toggle.innerText = 'Affi';
+          errDiv.appendChild(toggle);
+          const msg = document.createElement('div');
+          msg.className = 'affi-error-message';
+          msg.textContent = `Affi: Failed to load OWNERS data. ${err.message || 'Unknown error'}`;
+          errDiv.appendChild(msg);
+          document.body.appendChild(errDiv);
+        }
+      }
     } finally {
       isInitializing = false;
     }
@@ -181,9 +217,11 @@
       folders.push(currentFolder);
     }
 
-    const fetchPromises = folders.map(folder => {
+    const truncatedFolders = folders.slice(0, MAX_OWNERS_DEPTH);
+
+    const fetchPromises = truncatedFolders.map(folder => {
       const url = `${baseUrl}/${folder ? folder + '/' : ''}OWNERS`;
-      return fetch(url).then(async r => {
+      return fetchWithTimeout(url).then(async r => {
         if (!r.ok) return null;
         const text = await r.text();
         return { path: folder || '/', content: text };
@@ -205,7 +243,8 @@
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
       fetchOwnersHierarchy,
-      parseGitHubBlobContext
+      parseGitHubBlobContext,
+      fetchWithTimeout
     };
   }
 })();

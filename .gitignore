@@ -18,3 +18,8 @@ affi*.zip
 # Platform specific folders (synchronized via Makefile)
 /firefox/*
 !/firefox/manifest.json.src
+
+# Ignore all dot-folders (for experiments with various tooling like .gemini, as well as for IDE config folders like .idea, .vscode, etc.)
+.*/
+# Except:
+!.github/

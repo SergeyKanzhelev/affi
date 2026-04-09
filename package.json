@@ -1,6 +1,6 @@
 {
   "name": "affi",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "",
   "main": "content.js",
   "scripts": {
@@ -12,6 +12,12 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "jest": {
+    "testMatch": [
+      "**/*.test.js",
+      "**/e2e-automated.js"
+    ]
+  },
   "devDependencies": {
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",

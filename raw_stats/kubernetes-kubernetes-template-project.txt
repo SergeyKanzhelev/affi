@@ -1,0 +1,33 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kubernetes-template-project --repository-devstats=kubernetes/kubernetes-template-project --period-devstats=y --dryrun ---
+Running script : 04-03-2026 11:52:37
+Processed /private/tmp/affi_stats/kubernetes_kubernetes-template-project/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes-template-project/OWNERS_ALIASES
+Found 1 unique aliases
+Found 6 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes/kubernetes-template-project --period-devstats=y --dryrun ---
+Running script : 04-03-2026 11:52:37
+Processed /private/tmp/affi_stats/kubernetes_kubernetes-template-project/OWNERS
+Processed /private/tmp/affi_stats/kubernetes_kubernetes-template-project/OWNERS_ALIASES
+Found 1 unique aliases
+Found 6 unique users
+..
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes/kubernetes-template-project github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cblecker : 1 : 15 
+mrbobbytables : 1 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 4
+fejta
+idvoretskyi
+nikhita
+spiffxp
+
+
+>>>>> Low reviews/approvals in kubernetes/kubernetes-template-project (GH pr comments <= 10 && devstats <=20): 1
+mrbobbytables
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

@@ -1,0 +1,31 @@
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/.github --repository-devstats=kubernetes-sigs/.github --period-devstats=y --dryrun ---
+Running script : 04-03-2026 11:51:22
+Processed /private/tmp/affi_stats/kubernetes-sigs_.github/OWNERS
+Found 0 unique aliases
+Found 6 unique users
+
+--- COMMAND: /Users/sergeykanzhelev/go/bin/maintainers prune --repository-github=kubernetes-sigs/.github --period-devstats=y --dryrun ---
+Running script : 04-03-2026 11:51:22
+Processed /private/tmp/affi_stats/kubernetes-sigs_.github/OWNERS
+Found 0 unique aliases
+Found 6 unique users
+..
+
+
+>>>>> Contributions from kubernetes/kubernetes devstats repo and kubernetes-sigs/.github github repo : 2
+>>>>> GitHub ID : Devstats contrib count : GitHub PR comment count
+cblecker : 1 : 15 
+mrbobbytables : 1 : 0 
+
+
+>>>>> Missing Contributions in kubernetes/kubernetes (devstats == 0): 4
+fejta
+idvoretskyi
+nikhita
+spiffxp
+
+
+>>>>> Low reviews/approvals in kubernetes-sigs/.github (GH pr comments <= 10 && devstats <=20): 1
+mrbobbytables
+--dryrun is set to true, will skip updating OWNERS and OWNER_ALIASES

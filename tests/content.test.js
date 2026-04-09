@@ -3,13 +3,14 @@ const { fetchOwnersHierarchy, parseGitHubBlobContext } = require('../content.js'
 global.shouldTruncate = require('../parser.js').shouldTruncate;
 global.jsyaml = require('../js-yaml.min.js');
 
-// Mock fetch
-global.fetch = jest.fn();
-
 describe('Affi Content Script - Hierarchy logic', () => {
 
   beforeEach(() => {
-    fetch.mockClear();
+    global.fetch = jest.fn();
+  });
+
+  afterEach(() => {
+    delete global.fetch;
   });
 
   describe('fetchOwnersHierarchy', () => {

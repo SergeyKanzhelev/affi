@@ -38,6 +38,14 @@ describe('Affi Parser Logic', () => {
       const content = "approvers:\n- user1";
       expect(parseYamlAliases(content)).toEqual({});
     });
+
+    test('returns _parseError object on invalid YAML', () => {
+      const content = "aliases: {\n  broken yaml:";
+      const result = parseYamlAliases(content);
+      expect(result._parseError).toBe(true);
+      expect(typeof result._parseErrorMessage).toBe('string');
+      expect(result._parseErrorMessage.length).toBeGreaterThan(0);
+    });
   });
 
   describe('analyzeOwnersLine', () => {

@@ -32,7 +32,7 @@ The extension uses a pre-generated database (`maintainers_stats.json`) derived f
 
 ## Privacy & Performance
 
-All information displayed by the extension (statistics, affiliations, and roles) is **static** and bundled directly within the extension. No external API calls are made to GitHub, CNCF, or DevStats during use. To ensure you have the most up-to-date data, please keep the extension updated to the latest version. See [PRIVACY.md](PRIVACY.md) for more details.
+Contributor statistics, affiliations, and roles are **static** and bundled directly within the extension. When viewing an OWNERS file on GitHub, the extension fetches the `OWNERS` and `OWNERS_ALIASES` files for that repository from `raw.githubusercontent.com`. No calls are made to the GitHub API, CNCF, or DevStats during use. Fetches time out after 10 seconds. To ensure you have the most up-to-date stats data, please keep the extension updated to the latest version. See [PRIVACY.md](PRIVACY.md) for more details.
 
 ## Project Structure
 
@@ -54,6 +54,8 @@ All information displayed by the extension (statistics, affiliations, and roles)
 4. Click **Load unpacked** and select the project directory.
 
 ### Firefox
+Requires Firefox 131.0 or later (Manifest V3 support).
+
 1. Clone this repository.
 2. Run `make sync-firefox` to prepare the `firefox/` directory.
 3. Open Firefox and navigate to `about:debugging`.
