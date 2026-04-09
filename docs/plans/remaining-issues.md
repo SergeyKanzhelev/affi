@@ -13,7 +13,7 @@ Addressing security, reliability, and maintenance gaps.
   - Add `content_security_policy` to both `manifest.json` and `firefox/manifest.json`.
   - **Validation:** grep -q "content_security_policy" manifest.json
 
-- [ ] **Fix navigation race condition**
+- [x] **Fix navigation race condition**
   - Implement a monotonic navigation counter `navSeq` in `content.js` to prevent stale renders.
   - **Validation:** grep -q "navSeq" content.js
 

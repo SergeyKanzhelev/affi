@@ -3,8 +3,10 @@
 
   let lastUrl = typeof location !== 'undefined' ? location.href : '';
   let isInitializing = false;
+  let navSeq = 0;
 
   function onUrlChange() {
+    navSeq++;
     const existing = document.querySelector('.affi-overlay');
     if (existing) {
         existing.remove();
@@ -116,7 +118,7 @@
 
   async function init() {
     if (isInitializing) return;
-    
+
     const pathname = window.location.pathname;
     const blobContext = parseGitHubBlobContext(pathname, document);
     if (!blobContext) return;
@@ -134,6 +136,7 @@
     }
 
     isInitializing = true;
+    const mySeq = navSeq;
     const rawBaseUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}`;
     const aliasesUrl = `${rawBaseUrl}/OWNERS_ALIASES`;
 
@@ -143,6 +146,13 @@
         fetch(aliasesUrl).then(r => r.ok ? r.text() : ''),
         fetch(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({}))
       ]);
+
+      // Abort if user has navigated away since this init started
+      if (navSeq !== mySeq) {
+          isInitializing = false;
+          return;
+      }
+
       const aliasesData = aliasesResp ? parseYamlAliases(aliasesResp) : {};
 
       const hierarchy = await fetchOwnersHierarchy(rawBaseUrl, filePath);
@@ -150,7 +160,7 @@
       const repoPath = window.location.pathname.split('/').slice(1, 3).join('/').toLowerCase();
 
       // Final check before rendering (URL might have changed during fetch)
-      if (window.location.pathname !== pathname) {
+      if (navSeq !== mySeq || window.location.pathname !== pathname) {
           isInitializing = false;
           return;
       }
