@@ -33,7 +33,7 @@ Addressing security, reliability, and maintenance gaps.
   - Add user-facing feedback for fetch failures and YAML parse errors in `content.js` and `ui.js`.
   - **Validation:** grep -q "error: true" content.js && grep -q "_parseError" parser.js
 
-- [ ] **Address Testing Gaps**
+- [x] **Address Testing Gaps**
   - Add Puppeteer-based E2E tests and mock Firefox API tests.
   - **Validation:** ls tests/e2e-automated.js && npm test
 

@@ -12,6 +12,12 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "jest": {
+    "testMatch": [
+      "**/*.test.js",
+      "**/e2e-automated.js"
+    ]
+  },
   "devDependencies": {
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
