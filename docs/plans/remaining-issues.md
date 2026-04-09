@@ -9,7 +9,7 @@ Addressing security, reliability, and maintenance gaps.
 
 ## Tasks
 
-- [ ] **Implement Content Security Policy**
+- [x] **Implement Content Security Policy**
   - Add `content_security_policy` to both `manifest.json` and `firefox/manifest.json`.
   - **Validation:** grep -q "content_security_policy" manifest.json
 
