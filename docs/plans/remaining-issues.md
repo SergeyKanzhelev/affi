@@ -29,7 +29,7 @@ Addressing security, reliability, and maintenance gaps.
   - Update `jest` versions in `package.json` to valid stable versions and run `npm install`.
   - **Validation:** npm list jest
 
-- [ ] **Improve Error Handling**
+- [x] **Improve Error Handling**
   - Add user-facing feedback for fetch failures and YAML parse errors in `content.js` and `ui.js`.
   - **Validation:** grep -q "error: true" content.js && grep -q "_parseError" parser.js
 

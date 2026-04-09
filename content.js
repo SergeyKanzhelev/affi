@@ -176,6 +176,24 @@
       }
     } catch (err) {
       console.error('Affi: Error fetching data', err);
+      if (navSeq === mySeq) {
+        const existing = document.querySelector('.affi-overlay');
+        if (!existing) {
+          const fetchError = { error: true, message: err.message || 'Unknown error' };
+          const errDiv = document.createElement('div');
+          errDiv.className = 'affi-overlay';
+          errDiv.dataset.path = pathname;
+          const toggle = document.createElement('div');
+          toggle.className = 'affi-toggle';
+          toggle.innerText = 'Affi';
+          errDiv.appendChild(toggle);
+          const msg = document.createElement('div');
+          msg.className = 'affi-error-message';
+          msg.textContent = `Affi: Failed to load OWNERS data. ${fetchError.message}`;
+          errDiv.appendChild(msg);
+          document.body.appendChild(errDiv);
+        }
+      }
     } finally {
       isInitializing = false;
     }

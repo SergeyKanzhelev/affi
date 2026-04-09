@@ -26,6 +26,7 @@ function parseYamlAliases(content) {
     if (doc && doc.aliases) return doc.aliases;
   } catch (e) {
     console.error('Affi: Error parsing YAML', e);
+    return { _parseError: true, _parseErrorMessage: e.message };
   }
   return {};
 }

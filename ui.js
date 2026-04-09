@@ -110,6 +110,14 @@ function renderAffiOverlay(container, hierarchy, aliases, githubBlobUrl, statsDa
 
   const overlayDiv = document.createElement('div');
   overlayDiv.className = 'affi-overlay affi-overlay-instance';
+
+  if (aliases && aliases._parseError) {
+    const warnDiv = document.createElement('div');
+    warnDiv.className = 'affi-parse-error';
+    warnDiv.textContent = 'Affi: OWNERS_ALIASES could not be parsed' +
+      (aliases._parseErrorMessage ? `: ${aliases._parseErrorMessage}` : '.');
+    overlayDiv.appendChild(warnDiv);
+  }
   
   const toggle = document.createElement('div');
   toggle.className = 'affi-toggle';
