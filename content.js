@@ -1,6 +1,8 @@
 (function() {
   console.log('Affi extension initialized');
 
+  const runtimeAPI = (typeof chrome !== 'undefined' && chrome.runtime) ? chrome : browser;
+
   const MAX_OWNERS_DEPTH = 20;
 
   let lastUrl = typeof location !== 'undefined' ? location.href : '';
@@ -143,7 +145,7 @@
     const aliasesUrl = `${rawBaseUrl}/OWNERS_ALIASES`;
 
     try {
-      const statsUrl = chrome.runtime.getURL('maintainers_stats.json');
+      const statsUrl = runtimeAPI.runtime.getURL('maintainers_stats.json');
       const [aliasesResp, statsResp] = await Promise.all([
         fetch(aliasesUrl).then(r => r.ok ? r.text() : ''),
         fetch(statsUrl).then(r => r.ok ? r.json() : {}).catch(() => ({}))

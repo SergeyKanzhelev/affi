@@ -44,7 +44,7 @@ Addressing security, reliability, and maintenance gaps.
 - [x] **Harden CI/CD**
   - Add `npm audit` and automated E2E tests to GitHub Actions.
   - **Validation:** ls .github/workflows/ci.yml
-- [ ] **Fix Firefox API incompatibility**
+- [x] **Fix Firefox API incompatibility**
   - Add a compatibility shim `const runtimeAPI = (typeof chrome !== 'undefined' && chrome.runtime) ? chrome : browser;` to `content.js` and use it for `getURL`.
   - **Validation:** grep -q "runtimeAPI" content.js
 
