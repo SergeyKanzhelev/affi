@@ -17,7 +17,7 @@ Addressing security, reliability, and maintenance gaps.
   - Implement a monotonic navigation counter `navSeq` in `content.js` to prevent stale renders.
   - **Validation:** grep -q "navSeq" content.js
 
-- [ ] **Limit OWNERS hierarchy fetch depth**
+- [x] **Limit OWNERS hierarchy fetch depth**
   - Add `MAX_OWNERS_DEPTH = 20` to `content.js` and truncate the folder list before fetching.
   - **Validation:** grep -q "MAX_OWNERS_DEPTH" content.js
 

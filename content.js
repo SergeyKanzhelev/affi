@@ -1,6 +1,8 @@
 (function() {
   console.log('Affi extension initialized');
 
+  const MAX_OWNERS_DEPTH = 20;
+
   let lastUrl = typeof location !== 'undefined' ? location.href : '';
   let isInitializing = false;
   let navSeq = 0;
@@ -191,7 +193,9 @@
       folders.push(currentFolder);
     }
 
-    const fetchPromises = folders.map(folder => {
+    const truncatedFolders = folders.slice(0, MAX_OWNERS_DEPTH);
+
+    const fetchPromises = truncatedFolders.map(folder => {
       const url = `${baseUrl}/${folder ? folder + '/' : ''}OWNERS`;
       return fetch(url).then(async r => {
         if (!r.ok) return null;
