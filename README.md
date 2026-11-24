@@ -41,6 +41,7 @@ Contributor statistics, affiliations, and roles are **static** and bundled direc
 - `parser.js`: Modular logic for parsing `OWNERS` YAML and individual line analysis.
 - `firefox/`: Contains the Firefox-specific manifest source.
 - `generate_stats.py`: A Python pipeline that uses the `maintainers` Go tool to build the activity database.
+- `scripts/harvest.py`, `scripts/package_data.py`, `scripts/freshness.py`: keep the database fresh (see Statistics Generation).
 - `maintainers_stats.json`: The generated JSON database containing activity metrics for the Kubernetes ecosystem.
 - `tests/`: A comprehensive Jest-based unit test suite and E2E test page.
 - `Makefile`: Streamlined targets for building, syncing, and testing.
@@ -64,11 +65,23 @@ Requires Firefox 131.0 or later (Manifest V3 support).
 
 ## Statistics Generation
 
-To update the maintainer statistics database:
+The data is kept fresh by an orchestrator keep-fresh task on a host
+(design: [docs/plans/20261124-keep-fresh-data.md](docs/plans/20261124-keep-fresh-data.md)):
 
-1. Ensure you have [Go](https://go.dev/) and [Python 3](https://www.python.org/) installed.
-2. Run `make generate-stats` to fetch and parse data for all Kubernetes and kubernetes-sigs repositories.
-3. Refresh the extension in Chrome.
+- `make harvest` (`scripts/harvest.py`, daily) collects into a cache outside the
+  repo, `$AFFI_DATA_DIR` (default `~/.local/share/affi-data`): the repo list
+  weekly, `sigs.yaml` weekly, gitdm monthly, and the `maintainers` tool for
+  repos with no data or data older than 30 days, oldest first, within a time
+  budget (`--budget`, default 75m).
+- `make check-fresh` (`scripts/freshness.py`, weekly) fails when the repo is
+  behind the cache.
+- `make package-data` copies the cache into `repositories.txt` and
+  `raw_stats/` and rebuilds `maintainers_stats.json` from scratch. It is
+  offline and takes seconds.
+
+By hand, with [Go](https://go.dev/) and [Python 3](https://www.python.org/):
+`make generate-stats` (or `REPO=org/name`) collects straight into `raw_stats/`
+and rebuilds; `make parse-stats` only rebuilds.
 
 ## Testing
 

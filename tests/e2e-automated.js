@@ -6,7 +6,9 @@
  *    parseGitHubBlobContext work correctly when the browser global uses
  *    the Firefox WebExtension API shape (browser.*) rather than chrome.*.
  * 2. Puppeteer-based E2E tests - skipped by default; set env var
- *    AFFI_E2E=1 and run a local HTTP server to enable them.
+ *    AFFI_E2E=1 and run a local HTTP server to enable them. Puppeteer is
+ *    ESM-only, so jest also needs NODE_OPTIONS=--experimental-vm-modules
+ *    to load it.
  */
 
 const { fetchOwnersHierarchy, parseGitHubBlobContext } = require('../content.js');
