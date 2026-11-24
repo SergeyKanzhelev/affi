@@ -78,6 +78,19 @@ The project uses Jest for unit testing. To run the tests:
 make test
 ```
 
+## CI
+
+CI runs the same steps in two places, and they must stay in sync:
+
+- [`.github/workflows/ci.yml`](.github/workflows/ci.yml): GitHub Actions, on pushes and pull requests.
+- The keep-fresh check, `myoverlay/repos/SergeyKanzhelev/affi/checks/tests.json` in the
+  [env](https://github.com/SergeyKanzhelev/env) repo: the orchestrator runs it on `main`
+  every 6 hours and files a fix when it fails, so `main` stays green even when GitHub
+  Actions does not run.
+
+A change to one (a new step, a changed flag or tool version, a new test suite) goes into
+the other in the same change; otherwise the keep-fresh task tests something CI does not.
+
 ## Contributing
 
 Contributions are welcome! Please ensure that all new features include corresponding unit tests and that `make test` passes before submitting a PR.
