@@ -1,83 +1,75 @@
-import os
-import subprocess
-import json
-import re
+"""Collect and build the maintainers stats database bundled with the extension.
+
+Two separate steps:
+
+- **collect** (expensive, network): run the `maintainers` tool for one repo and
+  write its raw output to `raw_stats/<org>-<repo>.txt`.
+- **build** (cheap, offline): rebuild `maintainers_stats.json` from
+  `repositories.txt`, `raw_stats/`, `sigs.yaml` and a gitdm clone. Roles and
+  affiliations are rebuilt for every user, not only filled in for new ones.
+
+Downloads (the tool, repo clones, sigs.yaml, gitdm) are kept in the data dir,
+`$AFFI_DATA_DIR` or `~/.local/share/affi-data`, which `scripts/harvest.py`
+also uses as its cache.
+"""
+
 import argparse
-from pathlib import Path
-from datetime import datetime
-
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
 import time
+import urllib.request
+from datetime import datetime
+from pathlib import Path
 
-# Configuration
 STATS_FILENAME = "maintainers_stats.json"
+REPOS_FILENAME = "repositories.txt"
 RAW_STATS_DIR = "raw_stats"
 GITDM_REPO = "https://github.com/cncf/gitdm"
+SIGS_YAML_URL = "https://raw.githubusercontent.com/kubernetes/community/master/sigs.yaml"
+MAINTAINERS_MODULE = "github.com/kubernetes-sigs/maintainers"
+MAINTAINERS_VERSION = "v0.3.1-0.20260125181707-b1b98a9d7942"  # main, 2026-01-25: v0.3.0 cannot read emeritus_approvers
+
 
 def log(msg):
     timestamp = datetime.now().strftime("%H:%M:%S")
-    print(f"[{timestamp}] {msg}")
+    print(f"[{timestamp}] {msg}", flush=True)
 
-import urllib.request
 
-SIGS_YAML_URL = "https://raw.githubusercontent.com/kubernetes/community/master/sigs.yaml"
+def data_dir():
+    d = os.environ.get("AFFI_DATA_DIR") or os.path.join(Path.home(), ".local", "share", "affi-data")
+    os.makedirs(d, exist_ok=True)
+    return d
 
-def fetch_roles(tmp_dir):
-    gitdm_date = datetime.now().strftime("%Y-%m-%d")
-    cache_dir = os.path.join(tmp_dir, f"community_{gitdm_date}")
-    os.makedirs(cache_dir, exist_ok=True)
-    path = os.path.join(cache_dir, "sigs.yaml")
-    
-    if not os.path.exists(path):
-        log(f"Downloading sigs.yaml for {gitdm_date}...")
-        urllib.request.urlretrieve(SIGS_YAML_URL, path)
-    else:
-        log(f"Using cached sigs.yaml from {path}")
 
-    try:
-        with open(path, 'r', encoding="utf-8") as f:
-            content = f.read()
-            roles = {} # user -> list of roles
-            
-            current_label = "Unknown"
-            lines = content.split('\n')
-            current_section = None
-            
-            for line in lines:
-                # Identify SIG/WG label (e.g., sig-api-machinery)
-                label_match = re.match(r'^\s*label: (.*)', line)
-                if label_match:
-                    current_label = label_match.group(1).strip()
-                    continue
-                
-                # Check for leadership blocks
-                if "chairs:" in line: 
-                    current_section = f"Chair ({current_label})"
-                elif "tech_leads:" in line: 
-                    current_section = f"Tech Lead ({current_label})"
-                # Reset if we hit a new top-level list item or non-indented line
-                elif line.startswith("  -") or (line.strip() and not line.startswith(" ")):
-                    # But don't reset if we just started a sig
-                    if "sigs:" not in line:
-                        current_section = None
-                
-                if current_section and "github:" in line:
-                    user_match = re.search(r'github:\s*([\w-]+)', line)
-                    if user_match:
-                        user = user_match.group(1).lower()
-                        if user not in roles: roles[user] = []
-                        if current_section not in roles[user]:
-                            roles[user].append(current_section)
-            return roles
-    except Exception as e:
-        log(f"Error fetching roles: {e}")
-        return {}
+def raw_file_name(repo):
+    return repo.replace("/", "-") + ".txt"
 
-def run_cmd(cmd, cwd=None, outfile=None):
+
+def read_repo_list(path):
+    with open(path, encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip()]
+
+
+last_error = ""  # the most telling stderr line of the last failed run_cmd
+
+
+def error_line(stderr):
+    lines = [l.strip() for l in stderr.splitlines() if l.strip()]
+    for l in reversed(lines):
+        if l.startswith(("Error", "error", "panic", "fatal")):
+            return l[:300]
+    return lines[-1][:300] if lines else ""
+
+
+def run_cmd(cmd, cwd=None, outfile=None, env=None):
+    global last_error
     log(f"Executing: {' '.join(cmd)}")
-    env = os.environ.copy()
-    if "GOPATH" not in env:
-        env["GOPATH"] = str(Path.home() / "go")
-    
+    env = dict(env or os.environ)
+    env.setdefault("GOPATH", str(Path.home() / "go"))
     if outfile:
         with open(outfile, "a") as f:
             f.write(f"\n--- COMMAND: {' '.join(cmd)} ---\n")
@@ -85,277 +77,370 @@ def run_cmd(cmd, cwd=None, outfile=None):
             result = subprocess.run(cmd, stdout=f, stderr=subprocess.PIPE, text=True, cwd=cwd, env=env)
     else:
         result = subprocess.run(cmd, capture_output=True, text=True, cwd=cwd, env=env)
-    
     if result.returncode != 0:
-        print(f"Error executing command: {result.stderr}")
+        log(f"Error executing command: {result.stderr.strip()[-2000:]}")
+        last_error = error_line(result.stderr) or f"exit {result.returncode}"
         return None
     return result.stdout if result.stdout is not None else ""
 
-def install_tool():
-    log("Installing maintainers tool...")
-    run_cmd(["go", "install", "github.com/dims/maintainers@latest"])
-    home = str(Path.home())
-    bin_path = os.path.join(home, "go", "bin", "maintainers")
+
+# ---------------------------------------------------------------- collection
+
+def install_tool(ddir):
+    """Install the pinned maintainers tool into <data dir>/bin; return its path or None."""
+    bin_dir = os.path.join(ddir, "bin")
+    bin_path = os.path.join(bin_dir, "maintainers")
+    marker = bin_path + ".version"
+    try:
+        with open(marker) as f:
+            if f.read().strip() == MAINTAINERS_VERSION and os.path.exists(bin_path):
+                return bin_path
+    except FileNotFoundError:
+        pass
+    log(f"Installing maintainers {MAINTAINERS_VERSION}...")
+    os.makedirs(bin_dir, exist_ok=True)
+    env = dict(os.environ, GOBIN=bin_dir)
+    if run_cmd(["go", "install", f"{MAINTAINERS_MODULE}@{MAINTAINERS_VERSION}"], env=env) is None:
+        log(f"go install failed: {last_error}")
+        return None
     if not os.path.exists(bin_path):
-        try:
-            subprocess.run(["maintainers", "version"], capture_output=True)
-            return "maintainers"
-        except FileNotFoundError:
-            return None
+        return None
+    with open(marker, "w") as f:
+        f.write(MAINTAINERS_VERSION + "\n")
     return bin_path
 
-def clone_repo(tmp_dir, repo_url, repo_name):
-    log(f"Cloning {repo_name} (shallow)...")
-    repo_path = os.path.join(tmp_dir, repo_name.replace("/", "_"))
-    
-    is_git = False
-    if os.path.exists(os.path.join(repo_path, ".git")):
-        # Check if it's a valid git repository
-        result = subprocess.run(["git", "-C", repo_path, "rev-parse", "--is-inside-work-tree"], capture_output=True, text=True)
-        if result.returncode == 0:
-            is_git = True
-    
-    if is_git:
-        log(f"Updating existing clone in {repo_path}...")
-        if run_cmd(["git", "pull", "--depth", "1"], cwd=repo_path) is None:
-            log(f"Warning: git pull failed in {repo_path}, re-cloning...")
-            import shutil
-            shutil.rmtree(repo_path)
-            run_cmd(["git", "clone", "--depth", "1", repo_url, repo_path])
-    else:
-        if os.path.exists(repo_path):
-            log(f"Removing non-git directory {repo_path}...")
-            import shutil
-            shutil.rmtree(repo_path)
-        run_cmd(["git", "clone", "--depth", "1", repo_url, repo_path])
+
+def clone_repo(clones_dir, repo):
+    """Shallow clone repo under clones_dir, replacing any leftover; return its path or None."""
+    repo_path = os.path.join(clones_dir, repo.replace("/", "_"))
+    os.makedirs(clones_dir, exist_ok=True)
+    if os.path.exists(repo_path):
+        shutil.rmtree(repo_path)
+    log(f"Cloning {repo} (shallow)...")
+    if run_cmd(["git", "clone", "--depth", "1", f"https://github.com/{repo}", repo_path]) is None:
+        return None
     return repo_path
-def fetch_affiliations(gitdm_path, tmp_dir, required_users):
-    log(f"Fetching CNCF affiliations for {len(required_users)} users...")
-    
-    affiliations = {}
-    if not required_users:
-        return affiliations
 
-    # Create a temporary file with regex patterns ^user:
-    users_file = os.path.join(tmp_dir, "users_to_lookup.txt")
-    with open(users_file, "w") as f:
-        for u in sorted(required_users):
-            f.write(f"^{re.escape(u)}:\n")
 
-    # Use grep -i -E to find user lines
+# Top-level keys the maintainers tool accepts; it parses strictly and stops at any other.
+OWNERS_KEYS = {"filters", "approvers", "reviewers", "required_reviewers", "labels",
+               "emeritus_approvers", "emeritus_reviewers", "options"}
+ALIASES_KEYS = {"aliases"}
+TOP_KEY = re.compile(r"^([A-Za-z_][\w-]*)\s*:")
+
+
+def strip_unknown_keys(text, allowed):
+    """Drop top-level YAML keys not in allowed, with their blocks. Returns (text, dropped keys)."""
+    out, dropped, skipping = [], [], False
+    for line in text.splitlines(keepends=True):
+        m = TOP_KEY.match(line)
+        if m:
+            skipping = m.group(1) not in allowed
+            if skipping:
+                dropped.append(m.group(1))
+        elif skipping and (line[:1] in (" ", "\t", "-", "#") or not line.strip()):
+            continue
+        else:
+            skipping = False
+        if not skipping:
+            out.append(line)
+    return "".join(out), dropped
+
+
+def prepare_clone(repo_path):
+    """Make a clone's OWNERS files readable by the maintainers tool.
+
+    OWNERS files of vendored code are not this repo's maintainers, so they go.
+    Keys the tool does not know (emeritus lists in OWNERS_ALIASES, typos such
+    as `emeritus-approves`) are dropped. The next update resets the clone.
+    """
+    for vendored in Path(repo_path).glob("**/vendor/**/OWNERS*"):
+        vendored.unlink()
+    for path in Path(repo_path).glob("**/OWNERS*"):
+        if path.name not in ("OWNERS", "OWNERS_ALIASES") or not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        new, dropped = strip_unknown_keys(text, ALIASES_KEYS if path.name == "OWNERS_ALIASES" else OWNERS_KEYS)
+        if dropped:
+            log(f"Ignoring {', '.join(dropped)} in {os.path.relpath(path, repo_path)}")
+            path.write_text(new, encoding="utf-8")
+
+
+def collect_repo(repo, raw_dir, ddir, bin_path=None):
+    """Run the maintainers tool for repo into raw_dir. Returns None on success, else an error.
+
+    The previous raw file is replaced only when the run succeeds.
+    """
+    bin_path = bin_path or install_tool(ddir)
+    if not bin_path:
+        return "could not install the maintainers tool"
+    repo_path = clone_repo(os.path.join(ddir, "clones"), repo)
+    if not repo_path:
+        return f"clone failed: {last_error}"
     try:
-        # -i for case-insensitive, -E for extended regex
-        cmd_str = f"grep -i -E -h -A 10 -f {users_file} {gitdm_path}/developers_affiliations*.txt"
-        process = subprocess.run(cmd_str, shell=True, capture_output=True, text=True)
-        
-        if process.returncode == 0:
-            lines = process.stdout.split('\n')
-            current_user = None
-            for line in lines:
-                # Identification logic: Look for "^SomeUser:"
-                user_match = re.match(r'^([\w-]+):', line)
-                if user_match:
-                    user_candidate = user_match.group(1).lower()
-                    if user_candidate in required_users:
-                        current_user = user_candidate
-                    else:
-                        current_user = None
-                    continue
-                
-                # Company line (indented): usually starting with a tab or spaces
-                if current_user and (line.startswith(" ") or line.startswith("\t")) and line.strip():
-                    company_line = line.strip()
-                    # Skip if it looks like another user line
-                    if ":" in company_line and not any(keyword in company_line for keyword in ["from", "until"]):
-                        continue
+        prepare_clone(repo_path)
+        return run_tool(repo, raw_dir, repo_path, bin_path)
+    finally:
+        # A repo is revisited about monthly: a fresh shallow clone then costs
+        # about what an update would, and keeping ~300 clones costs ~20 GB.
+        shutil.rmtree(repo_path, ignore_errors=True)
 
-                    is_current = "until" not in company_line
-                    # Surgically extract company name before "from" or "until"
-                    company = re.split(r'\s+from\s+|\s+until\s+', company_line)[0].strip()
-                    
-                    if current_user not in affiliations or is_current:
-                        affiliations[current_user] = company
-    except Exception as e:
-        log(f"Error during fast affiliation lookup: {e}")
-    
+
+def run_tool(repo, raw_dir, repo_path, bin_path):
+    """Run `maintainers prune` in a prepared clone; write raw_dir/<org>-<repo>.txt on success."""
+    os.makedirs(raw_dir, exist_ok=True)
+    raw_file = os.path.join(raw_dir, raw_file_name(repo))
+    tmp_file = raw_file + ".tmp"
+    if os.path.exists(tmp_file):
+        os.remove(tmp_file)
+
+    cmd = [bin_path, "prune", f"--repository-github={repo}", f"--repository-devstats={repo}",
+           "--period-devstats=y", "--dryrun"]
+    if run_cmd(cmd, cwd=repo_path, outfile=tmp_file) is None:
+        # Not every repo is in DevStats on its own: fall back to the default (kubernetes/kubernetes).
+        log(f"Warning: tool failed with devstats for {repo}, trying with default devstats...")
+        cmd = [bin_path, "prune", f"--repository-github={repo}", "--period-devstats=y", "--dryrun"]
+        if run_cmd(cmd, cwd=repo_path, outfile=tmp_file) is None:
+            if os.path.exists(tmp_file):
+                os.remove(tmp_file)
+            return f"maintainers prune failed: {last_error}"
+    os.replace(tmp_file, raw_file)
+    return None
+
+
+def fetch_sigs(ddir):
+    """Download sigs.yaml into the data dir; return its path."""
+    path = os.path.join(ddir, "sigs.yaml")
+    log("Downloading sigs.yaml...")
+    req = urllib.request.Request(SIGS_YAML_URL, headers={"User-Agent": "Affi-Stats-Generator"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        body = resp.read()
+    with open(path + ".tmp", "wb") as f:
+        f.write(body)
+    os.replace(path + ".tmp", path)
+    return path
+
+
+def fetch_gitdm(ddir):
+    """Clone or update the gitdm repo in the data dir; return its path or None."""
+    path = os.path.join(ddir, "gitdm")
+    if os.path.isdir(os.path.join(path, ".git")):
+        log("Updating gitdm...")
+        if (run_cmd(["git", "fetch", "--depth", "1", "origin", "HEAD"], cwd=path) is not None
+                and run_cmd(["git", "reset", "--hard", "FETCH_HEAD"], cwd=path) is not None):
+            return path
+        shutil.rmtree(path)
+    log("Cloning gitdm...")
+    if run_cmd(["git", "clone", "--depth", "1", GITDM_REPO, path]) is None:
+        return None
+    return path
+
+
+# ------------------------------------------------------------------ building
+
+def parse_roles(sigs_path):
+    """Map github user (lowercase) -> list of roles, from sigs.yaml.
+
+    A role comes from a `chairs:` or `tech_leads:` list; the list ends at the
+    first line indented no deeper than its key, whatever the file's layout.
+    """
+    roles = {}
+    current_label = "Unknown"
+    section, section_indent = None, -1
+    with open(sigs_path, encoding="utf-8") as f:
+        lines = f.read().split("\n")
+    for line in lines:
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        indent = len(line) - len(line.lstrip(" -"))
+        if section and indent <= section_indent:
+            section = None
+        label_match = re.match(r"^\s*label:\s*(\S+)", line)
+        if label_match:
+            current_label = label_match.group(1).strip()
+            continue
+        key_match = re.match(r"^(\s*)(chairs|tech_leads):\s*$", line)
+        if key_match:
+            kind = "Chair" if key_match.group(2) == "chairs" else "Tech Lead"
+            section, section_indent = f"{kind} ({current_label})", len(key_match.group(1))
+            continue
+        if section:
+            user_match = re.search(r"github:\s*([\w-]+)", line)
+            if user_match:
+                user = user_match.group(1).lower()
+                roles.setdefault(user, [])
+                if section not in roles[user]:
+                    roles[user].append(section)
+    return roles
+
+
+def lookup_affiliations(gitdm_path, users):
+    """Map each user to their current company in gitdm; users not found are left out."""
+    affiliations = {}
+    if not users:
+        return affiliations
+    files = sorted(str(p) for p in Path(gitdm_path).glob("developers_affiliations*.txt"))
+    if not files:
+        raise RuntimeError(f"no developers_affiliations*.txt in {gitdm_path}")
+    patterns = "".join(f"^{re.escape(u)}:\n" for u in sorted(users))
+    process = subprocess.run(["grep", "-i", "-E", "-h", "-A", "10", "-f", "/dev/stdin", *files],
+                             input=patterns, capture_output=True, text=True)
+    if process.returncode not in (0, 1):
+        raise RuntimeError(f"grep over gitdm failed: {process.stderr.strip()}")
+    current_user = None
+    for line in process.stdout.split("\n"):
+        user_match = re.match(r"^([\w-]+):", line)
+        if user_match:
+            candidate = user_match.group(1).lower()
+            current_user = candidate if candidate in users else None
+            continue
+        if current_user and (line.startswith(" ") or line.startswith("\t")) and line.strip():
+            company_line = line.strip()
+            if ":" in company_line and not any(k in company_line for k in ["from", "until"]):
+                continue
+            is_current = "until" not in company_line
+            company = re.split(r"\s+from\s+|\s+until\s+", company_line)[0].strip()
+            if current_user not in affiliations or is_current:
+                affiliations[current_user] = company
     return affiliations
 
+
 def parse_raw_output(raw_file):
-    log(f"Parsing raw output from {raw_file}...")
-    user_stats = {} # user -> stats
+    """Parse one raw maintainers output: (user -> stats, YYYY-MM-DD of the run or None)."""
+    user_stats = {}
     date_str = None
-    
     current_section = None
-    with open(raw_file, "r") as f:
+    with open(raw_file, "r", encoding="utf-8", errors="replace") as f:
         lines = f.readlines()
-        
     for line in lines:
         if "Running script :" in line:
-            match = re.search(r'(\d{2}-\d{2}-\d{4})', line)
+            match = re.search(r"(\d{2}-\d{2}-\d{4})", line)
             if match:
-                mm, dd, yyyy = match.group(1).split('-')
+                mm, dd, yyyy = match.group(1).split("-")
                 date_str = f"{yyyy}-{mm}-{dd}"
             continue
-
         if "--- COMMAND:" in line:
-            if "prune" in line:
-                current_section = "prune"
-            else:
-                current_section = None
+            current_section = "prune" if "prune" in line else None
             continue
-            
         if current_section == "prune":
-            match1 = re.search(r'^([\w-]+):\s*(\d+)\s*PR comments,\s*(\d+)\s*devstats', line)
-            match2 = re.search(r'^([\w-]+)\s*:\s*(\d+)\s*:\s*(\d+)', line)
-            
+            match1 = re.search(r"^([\w-]+):\s*(\d+)\s*PR comments,\s*(\d+)\s*devstats", line)
+            match2 = re.search(r"^([\w-]+)\s*:\s*(\d+)\s*:\s*(\d+)", line)
             if match1:
                 user = match1.group(1).strip().lower()
-                pr_comments = int(match1.group(2))
-                devstats_score = int(match1.group(3))
-                user_stats[user] = {"pr_comments": pr_comments, "devstats_score": devstats_score}
+                user_stats[user] = {"pr_comments": int(match1.group(2)), "devstats_score": int(match1.group(3))}
             elif match2:
                 user = match2.group(1).strip().lower()
-                devstats_score = int(match2.group(2))
-                pr_comments = int(match2.group(3))
-                user_stats[user] = {"pr_comments": pr_comments, "devstats_score": devstats_score}
-            
+                user_stats[user] = {"pr_comments": int(match2.group(3)), "devstats_score": int(match2.group(2))}
             if "Missing Contributions" in line:
                 current_section = "missing_contributions"
-        
         elif current_section == "missing_contributions":
             trimmed = line.strip()
-            if not trimmed: 
+            if not trimmed:
                 current_section = "prune"
                 continue
             if trimmed.startswith(">") or trimmed.startswith("-"):
                 continue
-
             user = trimmed.lower()
             if user not in user_stats:
                 user_stats[user] = {"pr_comments": 0, "devstats_score": 0}
-
     return user_stats, date_str
+
+
+def raw_date(raw_file):
+    """The YYYY-MM-DD a raw file was generated, or None."""
+    return parse_raw_output(raw_file)[1]
+
+
+def build_stats(repos, raw_dir, sigs_path, gitdm_path, previous=None):
+    """Build the stats database from scratch.
+
+    repos: the repos to include (others, e.g. archived ones, drop out).
+    A listed repo with no raw file keeps its entry from `previous`, if any.
+    """
+    previous_repos = (previous or {}).get("repositories", {})
+    repositories = {}
+    for repo in sorted(set(repos)):
+        raw_file = os.path.join(raw_dir, raw_file_name(repo))
+        if os.path.exists(raw_file):
+            user_stats, date_str = parse_raw_output(raw_file)
+            repositories[repo] = {
+                "date_generated": date_str or "unknown",
+                "users": {u: user_stats[u] for u in sorted(user_stats)},
+            }
+        elif repo in previous_repos:
+            repositories[repo] = previous_repos[repo]
+
+    all_users = set()
+    for repo_data in repositories.values():
+        all_users.update(repo_data["users"].keys())
+
+    found = lookup_affiliations(gitdm_path, all_users)
+    affiliations = {u: found.get(u, "Unknown") for u in sorted(all_users)}
+
+    roles_raw = parse_roles(sigs_path)
+    roles = {u: roles_raw[u] for u in sorted(roles_raw)}
+
+    return {"users_affiliation": affiliations, "users_roles": roles, "repositories": repositories}
+
+
+def stats_json(stats):
+    return json.dumps(stats, indent=2) + "\n"
+
+
+def load_stats(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return None
+
+
+def build_into(repo_root, sigs_path, gitdm_path):
+    """Rebuild <repo_root>/maintainers_stats.json from the files in repo_root."""
+    stats_path = os.path.join(repo_root, STATS_FILENAME)
+    repos = read_repo_list(os.path.join(repo_root, REPOS_FILENAME))
+    stats = build_stats(repos, os.path.join(repo_root, RAW_STATS_DIR), sigs_path, gitdm_path,
+                        previous=load_stats(stats_path))
+    with open(stats_path, "w", encoding="utf-8") as f:
+        f.write(stats_json(stats))
+    return stats
+
 
 def main():
     start_time = time.time()
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--repo", default="kubernetes/kubernetes", help="Repository to analyze (org/repo)")
-    parser.add_argument("--parse-only", action="store_true", help="Only parse existing raw stats for today, don't run the tool")
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--repo", action="append", default=[], help="collect this repo (org/name); repeatable")
+    parser.add_argument("--collect-only", action="store_true", help="collect, do not rebuild the database")
+    parser.add_argument("--build", action="store_true", help="only rebuild the database from raw_stats/")
     args = parser.parse_args()
 
-    repo_name = args.repo
-    repo_url = f"https://github.com/{repo_name}"
-    
-    os.makedirs(RAW_STATS_DIR, exist_ok=True)
-    date_str = datetime.now().strftime("%Y-%m-%d")
-    repo_slug = repo_name.replace("/", "-")
-    raw_file = os.path.join(RAW_STATS_DIR, f"{repo_slug}.txt")
-    
-    tmp_dir = "/tmp/affi_stats"
-    os.makedirs(tmp_dir, exist_ok=True)
-
-    if args.parse_only:
-        if not os.path.exists(raw_file):
-            log(f"Error: Raw file {raw_file} not found for parsing.")
-            return
-    else:
-        bin_path = install_tool()
+    ddir = data_dir()
+    failed = []
+    if not args.build:
+        if not args.repo:
+            parser.error("--repo is required unless --build is given")
+        bin_path = install_tool(ddir)
         if not bin_path:
-            log("Installation failed.")
-            return
+            log("Installation of the maintainers tool failed.")
+            return 1
+        for repo in args.repo:
+            err = collect_repo(repo, RAW_STATS_DIR, ddir, bin_path)
+            if err:
+                log(f"{repo}: {err}")
+                failed.append(repo)
 
-        if os.path.exists(raw_file):
-            log(f"Removing existing raw file {raw_file}...")
-            os.remove(raw_file)
+    if not args.collect_only:
+        sigs_path = fetch_sigs(ddir)
+        gitdm_path = fetch_gitdm(ddir)
+        if not gitdm_path:
+            log("Could not get gitdm.")
+            return 1
+        build_into(".", sigs_path, gitdm_path)
+        log(f"Rebuilt {STATS_FILENAME}.")
 
-        repo_path = clone_repo(tmp_dir, repo_url, repo_name)
+    log(f"Done in {time.time() - start_time:.0f}s.")
+    return 1 if failed else 0
 
-        log(f"Running tool and saving to {raw_file}...")
-        cmd = [bin_path, "prune", f"--repository-github={repo_name}", f"--repository-devstats={repo_name}", "--period-devstats=y", "--dryrun"]
-        stdout = run_cmd(cmd, cwd=repo_path, outfile=raw_file)
-        if stdout is None:
-            # Maybe the repo is not in devstats, let's try with default kubernetes/kubernetes devstats
-            log(f"Warning: Tool failed with devstats for {repo_name}, trying with default devstats...")
-            cmd = [bin_path, "prune", f"--repository-github={repo_name}", "--period-devstats=y", "--dryrun"]
-            stdout = run_cmd(cmd, cwd=repo_path, outfile=raw_file)
-            if stdout is None:
-                if os.path.exists(raw_file): os.remove(raw_file)
-                return
-
-    if os.path.exists(raw_file):
-        user_stats, file_date = parse_raw_output(raw_file)
-        actual_date = file_date if file_date else date_str
-    else:
-        user_stats = {}; actual_date = date_str
-
-    # Load existing stats if available
-    final_stats = {"users_affiliation": {}, "users_roles": {}, "repositories": {}}
-    if os.path.exists(STATS_FILENAME):
-        try:
-            with open(STATS_FILENAME, "r") as f:
-                final_stats = json.load(f)
-        except Exception as e:
-            print(f"Warning: Could not load existing stats: {e}")
-
-    # Update current repo
-    sorted_users = sorted(user_stats.keys())
-    new_users = {user: user_stats[user] for user in sorted_users}
-    final_stats["repositories"][repo_name] = {
-        "date_generated": actual_date,
-        "users": new_users
-    }
-
-    # Global update of affiliations
-    all_users = set()
-    for repo_data in final_stats["repositories"].values():
-        all_users.update(repo_data["users"].keys())
-
-    # Identify users who need affiliation or role lookup
-    existing_affi = final_stats.get("users_affiliation", {})
-    existing_roles = final_stats.get("users_roles", {})
-    
-    missing_affi_users = {u for u in all_users if u not in existing_affi or existing_affi[u] == "Unknown"}
-    missing_role_users = {u for u in all_users if u not in existing_roles}
-
-    if missing_affi_users:
-        # Clone gitdm once per day into a date-stamped folder
-        gitdm_date = datetime.now().strftime("%Y-%m-%d")
-        gitdm_path = os.path.join(tmp_dir, f"gitdm_{gitdm_date}")
-        if not os.path.exists(gitdm_path):
-            log(f"Cloning gitdm for {gitdm_date}...")
-            run_cmd(["git", "clone", "--depth", "1", GITDM_REPO, gitdm_path])
-        else:
-            log(f"Using existing gitdm clone from {gitdm_path}")
-
-        new_affiliations = fetch_affiliations(gitdm_path, tmp_dir, missing_affi_users)
-        # Merge new into existing
-        for u, company in new_affiliations.items():
-            existing_affi[u] = company
-        
-        # Fill remaining with Unknown
-        for u in all_users:
-            if u not in existing_affi:
-                existing_affi[u] = "Unknown"
-    
-    if missing_role_users:
-        new_roles = fetch_roles(tmp_dir) # fetch_roles currently parses whole file
-        # Update existing roles with all data from sigs.yaml
-        for u, user_roles in new_roles.items():
-            existing_roles[u] = user_roles
-    
-    final_stats["users_affiliation"] = existing_affi
-    final_stats["users_roles"] = existing_roles
-
-    # Sort repositories alphabetically
-    sorted_repos = sorted(final_stats["repositories"].keys())
-    new_repos = {repo: final_stats["repositories"][repo] for repo in sorted_repos}
-    final_stats["repositories"] = new_repos
-
-    with open(STATS_FILENAME, "w") as f:
-        json.dump(final_stats, f, indent=2)
-
-    elapsed = time.time() - start_time
-    log(f"Successfully updated and sorted {STATS_FILENAME} with affiliations and {repo_name} data (Elapsed: {elapsed:.2f}s).")
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

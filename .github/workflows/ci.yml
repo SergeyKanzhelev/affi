@@ -25,6 +25,9 @@ jobs:
       - name: Audit dependencies
         run: npm audit --audit-level=high
 
+      - name: Run stats pipeline tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+
       - name: Run unit tests
         run: npx jest --testPathPattern='tests/(content|parser)\.test\.js' --coverage
 
