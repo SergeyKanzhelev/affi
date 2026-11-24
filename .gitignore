@@ -14,6 +14,7 @@ coverage/
 out/
 build/
 affi*.zip
+__pycache__/
 
 # Platform specific folders (synchronized via Makefile)
 /firefox/*
